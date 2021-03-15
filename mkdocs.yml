@@ -1,4 +1,6 @@
 site_name: 3D BAG
+site_author: 3D geoinformation group
+site_description: 3D BAG documentation
 nav:
   - Home: index.md
   - About: about.md
