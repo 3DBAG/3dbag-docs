@@ -1,0 +1,42 @@
+site_name: 3D BAG
+nav:
+  - Home: index.md
+  - About: about.md
+  - Attributes: attributes.md
+  - Changelog: changelog.md
+  - Terms of Use: terms.md
+theme:
+  name: material
+  favicon: img/3d-geoinfo-logo.svg
+  logo: img/3d-geoinfo-logo.svg
+  palette:
+    primary: white
+    accent: light-blue
+  features:
+    - navigation.tabs
+    - navigation.instant
+repo_url: https://github.com/tudelft3d/3dbag-docs
+copyright: Copyright &copy; 2021 3D geoinformation group
+
+extra:
+  alternate:
+
+    # Switch to English
+    - name: English
+      link: en/
+      lang: en
+
+    # Switch to Dutch
+    - name: Nederlands
+      link: nl/
+      lang: nl
+
+plugins:
+  - search:
+      lang:
+        - en
+        - du
+
+markdown_extensions:
+  - toc:
+      permalink: true
