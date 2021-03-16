@@ -1,12 +1,18 @@
+#site_url: https://docs.3dbag.nl
 site_name: 3D BAG
 site_author: 3D geoinformation group
 site_description: 3D BAG documentation
+docs_dir: docs
+site_dir: site
+dev_addr: '127.0.0.1:8000'
 nav:
   - Home: index.md
-  - About: about.md
+  - About:
+    - about.md
+    - 'Terms of Use': 'terms.md'
+    - 'Changelog': 'changelog.md'
   - Attributes: attributes.md
-  - Changelog: changelog.md
-  - Terms of Use: terms.md
+  - "Viewer ": 'https://3dbag.nl'
 theme:
   name: material
   favicon: img/3d-geoinfo-logo.svg
@@ -25,12 +31,12 @@ extra:
 
     # Switch to English
     - name: English
-      link: en/
+      link: ./
       lang: en
 
     # Switch to Dutch
     - name: Nederlands
-      link: nl/
+      link: /nl
       lang: nl
 
 plugins:
@@ -42,3 +48,6 @@ plugins:
 markdown_extensions:
   - toc:
       permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg

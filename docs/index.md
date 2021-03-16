@@ -6,3 +6,5 @@ hide:
 # Introduction
 
 TODO
+
+:material-open-in-new:
