@@ -12,6 +12,14 @@ The documentation is made with [MkDocs](https://www.mkdocs.org/), read its docum
 
 3) Edit the pages in `docs/`
 
+4) Build the pages locally
+   
+   `build.sh`
+
+5) View the generated files
+   
+   `python -m http.server 8000 --directory generated`
+
 ### Theme
 
 The documentation uses the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme, read its documentation for the details.

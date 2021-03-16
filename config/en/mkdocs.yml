@@ -1,0 +1,52 @@
+site_name: '3D BAG'
+site_author: '3D geoinformation group'
+site_description: '3D BAG documentation'
+docs_dir: '../../docs/en'
+site_dir: '../../generated/en'
+repo_url: https://github.com/tudelft3d/3dbag-docs
+copyright: Copyright &copy; 2021 3D geoinformation group
+
+
+theme:
+  language: en
+  custom_dir: '../../overrides/'
+  name: material
+  favicon: assets/images/logo.svg
+  logo: assets/images/logo.svg
+  palette:
+    primary: white
+    accent: light-blue
+  features:
+    - navigation.tabs
+    - navigation.instant
+
+extra:
+  alternate:
+
+    - name: English
+      link: /en/
+      lang: en
+
+    - name: Nederlands
+      link: /nl/
+      lang: nl
+
+plugins:
+  - search:
+      lang: en
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - About:
+    - about.md
+    - 'Terms of Use': 'terms.md'
+    - 'Changelog': 'changelog.md'
+  - Attributes: attributes.md
+  - "Viewer ": 'https://3dbag.nl'
