@@ -43,11 +43,11 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 nav:
-  - Overview:
-    - 'Summary': index.md
-    - 'Data Sources': overview/sources.md
-    - 'About Us': 'overview/group.md'
-    - 'Release Notes': 'overview/release_notes.md'
+  - Overzicht:
+    - 'Overzicht': index.md
+    - 'Databronnen': overview/sources.md
+    - 'Over ons': 'overview/group.md'
+    - 'Release-opmerkingen': 'overview/release_notes.md'
   - Schema:
     - 'General Concepts': 'schema/concepts.md'
     - 'Data Layers': 'schema/layers.md'
