@@ -10,7 +10,7 @@ De 3D BAG omvat landsdekkende datasets met 3D-geometrieën van Nederlandse gebou
 
 De Basisregistratie Adressen en Gebouwen (BAG) is de meest gedetailleerde en open beschikbare dataset van gebouwen en adressen in Nederland. Het bevat informatie over ieder adres in een gebouw, zoals het huidige gebruik, constructiedatum of registratiestatus. De (2D-)geometrieën in de BAG representeren de voetafdrukken van gebouwen als genomen van het bovenaanzicht.
 
-Het Actueel Hoogtebestand Nederland (AHN) is het openlijk beschikbare digitale hoogtemodel van Nederland. De dataset wordt ingewonnen door middel van LiDAR-metingen vanuit de lucht met gemiddeld 8 punten per vierkante meter, en bevat precieze en gedetailleerde hoogtegegevens.
+Het Actueel Hoogtebestand Nederland (AHN) is het openlijk beschikbare digitale hoogtemodel van Nederland. Vanuit de lucht worden door middel van LiDAR-metingen precieze en gedetailleerde hoogtegegevens ingewonnen, resulterend in een dataset met gemiddeld 8 punten per vierkante meter.
 
 Door de voetafdrukken van de BAG te combineren met de hoogtedata uit de AHN, kunnen deze opgetrokken worden tot 3D-modellen.
 
@@ -30,9 +30,9 @@ Onderstaand een opsomming van de belangrijkste punten van de data:
 
 ## Belangrijke toepassingen
 
-<a href=https://www.mdpi.com/2220-9964/4/4/2842/pdf>Dit paper van Biljecki, Stoter, Ledoux, Zlatanova & Çöltekin (2015)</a> geeft een overzicht van toepassingen van 3D-stadsmodellen. Verschillende LoDs zijn nuttig voor verschillende toepassingen. Een aantal belangrijke zijn geluidssimulaties, schaduw- en wind-analyses (LoD1 is hier bruikbaar voor) en het bepalen van de potentie van zonnepanelen (LoD2).
+<a href=https://www.mdpi.com/2220-9964/4/4/2842/pdf>Dit paper van Biljecki, Stoter, Ledoux, Zlatanova, & Çöltekin (2015)</a> geeft een overzicht van toepassingen van 3D-stadsmodellen. Verschillende LoDs zijn nuttig voor verschillende toepassingen. Een aantal belangrijke zijn geluidssimulaties, schaduw- en wind-analyses (LoD1 is hier bruikbaar voor) en het bepalen van de potentie van zonnepanelen (LoD2).
 
-Heb je de 3D BAG gebruikt voor een interessante toepassing? Laat het ons weten op [emailadres]!
+Heb je de 3D BAG gebruikt voor een interessante toepassing? [We horen er graag over!](/nl/contact)
 
 ## Relatie tot andere datasets
 
