@@ -12,11 +12,15 @@ The documentation is made with [MkDocs](https://www.mkdocs.org/), read its docum
 
 3) Edit the pages in `docs/`
 
-4) Build the pages locally
-   
-   `build.sh`
+4) If you edited the attribute catalogue, generate the attribute pages
 
-5) View the generated files
+   `python scripts/generate_attribute_doc.py . 'en'`
+
+5) Build the pages locally
+   
+   `bash scripts/build.sh`
+
+6) View the generated files
    
    `python -m http.server 8000 --directory generated`
 
@@ -26,13 +30,45 @@ The documentation uses the [Material for MkDocs](https://squidfunk.github.io/mkd
 
 ### Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+The multi-language project layout follows the proposal as described in [https://github.com/squidfunk/mkdocs-material/discussions/2346](https://github.com/squidfunk/mkdocs-material/discussions/2346).
 
-### Commands
+```
+    config/                # MkDocs project configuration files per language
+         en/
+            mkdocs.yml
+         nl/
+            mkdocs.yml
+    docs/                  # Documentation content per language. Language-specific figures also go here.
+         en/
+            index.md
+            ...
+         nl/
+            index.md
+            ...
+   scripts/                # Utility scripts
+   overrides/              # Template overrides, e.g. favicon, logo
+```
 
-+ `mkdocs serve` - Start the live-reloading docs server.
-+ `mkdocs build` - Build the documentation site.
-+ `mkdocs -h` - Print help message and exit.
+
+### Documenting the data attributes
+
+The attribute catalogue is a `.json` file in `docs/attributes.json`. The attribute documentation that is displayed in the website is auto-generated from the attribute catalogue, thus the attribute markdown files are completely overwritten. **Do not edit directly the attribute markdown files!**.
+
+The attribute pages are generated with the `generate_attribute_doc.py` script.
+
+`python scripts/generate_attribute_doc.py <project root dir> <language id>`
+
+The attribute catalogue follows a specified schema. Each attribute in the catalogue must have an English (`en`) and Dutch (`nl`) description.
+
+```json
+  "<attribute name>": {
+    "<language ID ('en' | 'nl')>": {
+      "description": "<Attribute description. Mind the period at the end of the sentence.>.",
+      "type": "<data type ( cardinal number | nominal number | real number | categorical | text | list ) >",
+      "unit": "<unit of measurement>",
+      "<optional, only for categorcial> values": {
+        "<categorical value>": "<Value description. Mind the period at the end of the sentence.>."
+      }
+    }
+  }
+```
