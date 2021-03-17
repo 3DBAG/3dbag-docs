@@ -1,0 +1,386 @@
+{
+  "gid": {
+    "en": {
+      "description": "Geometry ID.",
+      "type": "nominal number",
+      "unit": "-"
+    }
+  },
+  "fid": {
+    "en": {
+      "description": "Numeric ID of a building (feature).",
+      "type": "nominal number",
+      "unit": "-"
+    }
+  },
+  "pand_deel_id": {
+    "en": {
+      "description": "Buildingpart ID. A building can have multiple parts when it was cut into parts because of underground parts.",
+      "type": "nominal number",
+      "unit": "-"
+    }
+  },
+  "dd_id": {
+    "en": {
+      "description": "Dak Deel ID. Roofpart ID.",
+      "type": "nominal number",
+      "unit": "-"
+    }
+  },
+  "identificatie": {
+    "en": {
+      "description": "ID of a building.",
+      "type": "text",
+      "unit": "-",
+      "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    },
+    "nl": {
+      "description": "BAG: De unieke aanduiding van een pand.",
+      "type": "text",
+      "unit": "-",
+      "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    }
+  },
+  "oorspronkelijk_bouwjaar": {
+    "en": {
+      "description": "Building construction year.",
+      "type": "date",
+      "unit": "YYYY",
+      "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    },
+    "nl": {
+      "description": "De aanduiding van het jaar waarin een pand oorspronkelijk als bouwkundig gereed is of zal worden opgeleverd.",
+      "type": "date",
+      "unit": "YYYY",
+      "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    }
+  },
+  "status": {
+    "en": {
+      "description": "The current fase in the buildings life-cycle.",
+      "type": "categorical",
+      "unit": "-",
+      "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)",
+      "values": {
+        "Bouwvergunning verleend": "",
+        "Niet gerealiseerd pand": "",
+        "Bouw gestart": "",
+        "Pand in gebruik (niet ingemeten)": "",
+        "Pand in gebruik": "",
+        "Verbouwing pand": "",
+        "Sloopvergunning verleend": "",
+        "Pand gesloopt": "",
+        "Pand buiten gebruik": "",
+        "Pand ten onrechte opgevoerd": ""
+      }
+    },
+    "nl": {
+      "description": "De fase van de levenscyclus van een pand, waarin hetbetreffende pand zich bevindt.",
+      "type": "categorical",
+      "unit": "-",
+      "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)",
+      "values": {
+        "Bouwvergunning verleend": "",
+        "Niet gerealiseerd pand": "",
+        "Bouw gestart": "",
+        "Pand in gebruik (niet ingemeten)": "",
+        "Pand in gebruik": "",
+        "Verbouwing pand": "",
+        "Sloopvergunning verleend": "",
+        "Pand gesloopt": "",
+        "Pand buiten gebruik": "",
+        "Pand ten onrechte opgevoerd": ""
+      }
+    }
+  },
+  "geconstateerd": {
+    "en": {
+      "description": "Indicates that the buildings has included in the BAG registration.",
+      "type": "categorical",
+      "unit": "yes/no",
+      "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    },
+    "nl": {
+      "description": "Een aanduiding waarmee kan worden aangegeven dat een pand in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname.",
+      "type": "categorical",
+      "unit": "yes/no",
+      "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    }
+  },
+  "documentdatum": {
+    "en": {
+      "description": "Building registration date.",
+      "type": "date",
+      "unit": "YYYY-MM-DD",
+      "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    },
+    "nl": {
+      "description": "De datum waarop het brondocument is vastgesteld, opbasis waarvan een opname, mutatie of een verwijderingvan gegevens ten aanzien van een pand heeft plaatsgevonden.",
+      "type": "date",
+      "unit": "YYYY-MM-DD",
+      "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    }
+  },
+  "documentnummer": {
+    "en": {
+      "description": "Document number.",
+      "type": "text",
+      "unit": "YYYY-MM-DD",
+      "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    },
+    "nl": {
+      "description": "De unieke aanduiding van het brondocument op basiswaarvan een opname, mutatie of een verwijdering vangegevens ten aanzien van een pand heeft plaatsgevonden, binnen een gemeente.",
+      "type": "text",
+      "unit": "YYYY-MM-DD",
+      "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    }
+  },
+  "voorkomenidentificatie": {
+    "en": {
+      "description": "Relates to the building registration history and version.",
+      "type": "ordinal number",
+      "unit": "-",
+      "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    },
+    "nl": {
+      "description": "",
+      "type": "ordinal number",
+      "unit": "-",
+      "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    }
+  },
+  "begingeldigheid": {
+    "en": {
+      "description": "Relates to the building registration history and version.",
+      "type": "date",
+      "unit": "YYYY-MM-DD",
+      "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    },
+    "nl": {
+      "description": "De datum waarop een versie van een BAG-object geldig is in de werkelijkheid conform de ingangsdatum in het brondocument. Dit tijdstip wordt vastgelegd in de beginGeldigheid. Als er geen expliciete ingangsdatum van geldigheid is opgenomen, wordt de datum van het brondocument overgenomen.",
+      "type": "date",
+      "unit": "YYYY-MM-DD",
+      "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    }
+  },
+  "eindgeldigheid": {
+    "en": {
+      "description": "Relates to the building registration history and version.",
+      "type": "date",
+      "unit": "YYYY-MM-DD",
+      "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    },
+    "nl": {
+      "description": "De datum waarop de periode van geldigheid van een versie van een BAG-object eindigt. Bijvoorbeeld als gevolg van de vaststelling van een nieuw brondocument. Wanneer er geen tijdstip is ingevuld, dan is de versie nog geldig. Dit tijdstip wordt vastgelegd in de eindGeldigheid.",
+      "type": "date",
+      "unit": "YYYY-MM-DD",
+      "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    }
+  },
+  "tijdstipinactief": {
+    "en": {
+      "description": "Relates to the building registration history and version.",
+      "type": "date-time",
+      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    },
+    "nl": {
+      "description": "",
+      "type": "date-time",
+      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    }
+  },
+  "tijdstipregistratielv": {
+    "en": {
+      "description": "Relates to the building registration history and version.",
+      "type": "date-time",
+      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    },
+    "nl": {
+      "description": "Dit is het tijdstip waarop een versie van een BAG-object is opgenomen in de registratie van de landelijke voorziening. De gegevens komen daarmee beschikbaar voor afnemers.",
+      "type": "date-time",
+      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    }
+  },
+  "tijdstipeindregistratielv": {
+    "en": {
+      "description": "Relates to the building registration history and version.",
+      "type": "date-time",
+      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    },
+    "nl": {
+      "description": "",
+      "type": "date-time",
+      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    }
+  },
+  "tijdstipinactieflv": {
+    "en": {
+      "description": "Relates to the building registration history and version.",
+      "type": "date-time",
+      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    },
+    "nl": {
+      "description": "",
+      "type": "date-time",
+      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    }
+  },
+  "tijdstipnietbaglv": {
+    "en": {
+      "description": "Relates to the building registration history and version.",
+      "type": "date-time",
+      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    },
+    "nl": {
+      "description": "",
+      "type": "date-time",
+      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
+    }
+  },
+  "h_maaiveld": {
+    "en": {
+      "description": "Elevation above sea level (Amsterdam Ordnance Datum) at the ground level of the building. Calculated as the 5th percentile of the ground points found within a 4 meter radius of the building.",
+      "type": "real number",
+      "unit": "metre"
+    }
+  },
+  "dak_type": {
+    "en": {
+      "description": "Roof type of the building.",
+      "type": "categorical",
+      "unit": "-",
+      "values": {
+        "slanted": "Roof with at least one slanted surface.",
+        "multiple horizontal": "Roof with multiple, only horizontal surfaces.",
+        "single horizontal": "Roof with a single horizontal surface.",
+        "no points": "No point was found for the building.",
+        "could not detect": "Could not detect a roof surface, even though points were found."
+      }
+    }
+  },
+  "pw_datum": {
+    "en": {
+      "description": "Acquisition date of the point cloud. In case of the AHN3, this is an assumed acquisition date, which is computed as 1st of December in the year *before* the officially reported acquisition year (inwijnjaar) of a particular AHN3 tile.",
+      "type": "date",
+      "unit": "YYYY-MM-DD"
+    }
+  },
+  "pw_actueel": {
+    "en": {
+      "description": "Indicates that the point cloud is actual w.r.t. the age of the building.",
+      "type": "categorical",
+      "unit": "-",
+      "values": {
+        "yes": "The point cloud was acquired after the construction date of the building.",
+        "no": "The point cloud was acquired before the construction date of the building.",
+        "uncertain": "The point cloud was acquired in the same year as the construction date of the building."
+      }
+    }
+  },
+  "pw_bron": {
+    "en": {
+      "description": "Source of the point cloud.",
+      "type": "text",
+      "unit": "-"
+    }
+  },
+  "reconstructie_methode": {
+    "en": {
+      "description": "Reconstruction method of the building model.",
+      "type": "text",
+      "unit": "-"
+    }
+  },
+  "versie_methode": {
+    "en": {
+      "description": "Version of the building reconstruction method.",
+      "type": "text",
+      "unit": "-"
+    }
+  },
+  "kas_warenhuis": {
+    "en": {
+      "description": "The building is greenhouse or warehouse (according to Top10NL).",
+      "type": "categorical",
+      "unit": "yes/no"
+    }
+  },
+  "ondergronds_type": {
+    "en": {
+      "description": "Underground classification of the building or building part.",
+      "type": "categorical",
+      "unit": "-",
+      "values": {
+        "floating": "Building or building part is floating above other objects.",
+        "above ground": "Building or building part is completely above ground.",
+        "underground": "Building or building part is completely under ground. "
+      }
+    }
+  },
+  "reconstruction_skipped": {
+    "en": {
+      "description": "Indicates whether full LoD1.2/LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.2 if lod11_replace==false).",
+      "type": "categorical",
+      "unit": "yes/no"
+    }
+  },
+  "lod11_replace": {
+    "en": {
+      "description": "Indicates whether the LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.2 reconstruction if `lod12_replace==false`). This can happen when there were points found for instance.",
+      "type": "categorical",
+      "unit": "yes/no"
+    }
+  },
+  "h_dak_min": {
+    "en": {
+      "description": "Elevation above sea level (NAP) at rooflevel. Calculated as the minimum of all elevation points on the corresponding roofpart.",
+      "type": "real number",
+      "unit": "metre"
+    }
+  },
+  "h_dak_50p": {
+    "en": {
+      "description": "Elevation above sea level (NAP) at rooflevel. Calculated as the median of all elevation points on the corresponding roofpart.",
+      "type": "real number",
+      "unit": "metre"
+    }
+  },
+  "h_dak_70p": {
+    "en": {
+      "description": "Elevation above sea level (NAP) at rooflevel. Calculated as the 70th percentile of all elevation points on the corresponding roofpart.",
+      "type": "real number",
+      "unit": "metre"
+    }
+  },
+  "h_dak_max": {
+    "en": {
+      "description": "Elevation above sea level (NAP) at rooflevel. Calculated as the maximum of all elevation points on the corresponding roofpart.",
+      "type": "real number",
+      "unit": "metre"
+    }
+  },
+  "val3dity_codes": {
+    "en": {
+      "description": "[Val3dity error codes](https://val3dity.readthedocs.io/en/latest/errors) for the 3D model. `Null` means valid geometry.",
+      "type": "list",
+      "unit": "metre"
+    }
+  },
+  "_semantics_values": {
+    "en": {
+      "description": "Building surface semantics. This is an array of integers, where an integer refers to a surface type (0: `GroundSurface`, 1: `RoofSurface`, 2: `OuterWallSurface`, 3: `InnerWallSurface`). If a surface does not have a semantic value, NULL is used instead. Thus the length of the array equals the number of surfaces, and the order of values in the array corresponds to the order of surfaces.",
+      "type": "list",
+      "unit": "metre"
+    }
+  }
+}
