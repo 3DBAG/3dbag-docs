@@ -1,4 +1,4 @@
-# Overzicht
+# Algemeen
 
 Welkom bij de documentatie van de vernieuwde 3D BAG! De nieuwe data zijn beter dan ooit tevoren.
 

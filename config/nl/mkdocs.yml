@@ -44,7 +44,7 @@ markdown_extensions:
 
 nav:
   - Overzicht:
-    - 'Overzicht': index.md
+    - 'Algemeen': index.md
     - 'Databronnen': overview/sources.md
     - 'Over ons': 'overview/group.md'
     - 'Release-opmerkingen': 'overview/release_notes.md'
