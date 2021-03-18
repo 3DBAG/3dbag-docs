@@ -1,0 +1,24 @@
+Colors
+-------
+
+Colors are in RGBA
+
+- black: 000000ff
+
+- grey: 999999ff
+
+- red highlight: ff0000ff
+
+- blue light: b4dde6ff
+
+- blue medium: 24a1c8ff
+
+- blue dark: 2d5fc1ff
+
+Fonts
+------
+
+- text body: Inter ( https://fonts.google.com/specimen/Inter?preview.text_type=custom#about )
+
+- monospace: Roboto Mono ( https://fonts.google.com/specimen/Roboto+Mono?preview.text_type=custom#about )
+
