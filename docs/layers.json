@@ -1,0 +1,37 @@
+{
+  "pand": {
+    "en": {
+      "description": "Stores the attributes and geometry of the `Pand` object of the BAG. Stores the attributes of the 3D BAG that relate to the whole building. Contains only those buildings that went into the reconstruction."
+    }
+  },
+  "lod12_3d": {
+    "en": {
+      "description": "A 3D model of the building parts above the terrain, modelled in LoD1.2."
+    }
+  },
+  "lod12_2d": {
+    "en": {
+      "description": "The 2D projection of the LoD1.2 model. The elevation of the detected LoD1.2 roof planes are stored as height attributes ([`h_dak_*`](attributes.md#h_dak_50p)). Only the above terrain parts of the BAG footprint are included."
+    }
+  },
+  "lod13_3d": {
+    "en": {
+      "description": "A 3D model of the building parts above the terrain, modelled in LoD1.3."
+    }
+  },
+  "lod13_2d": {
+    "en": {
+      "description": "The 2D projection of the LoD1.3 model. The elevation of the detected LoD1.3 roof planes are stored as height attributes ([`h_dak_*`](attributes.md#h_dak_50p)). Only the above terrain parts of the BAG footprint are included."
+    }
+  },
+  "lod22_3d": {
+    "en": {
+      "description": "A 3D model of the building parts above the terrain, modelled in LoD2.2."
+    }
+  },
+  "lod22_2d": {
+    "en": {
+      "description": "The 2D projection of the LoD2.2 model. The elevation of the detected LoD2.2 roof planes are stored as height attributes ([`h_dak_*`](attributes.md#h_dak_50p)). Note that the slanted roof planes of the 3D model cannot be reconstructed from these 2D polygons and height attributes. Only the above terrain parts of the BAG footprint are included."
+    }
+  }
+}

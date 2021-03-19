@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
-   sodipodi:docname="3d_bag_layers.svg"
+   sodipodi:docname="3d_bag_layers_en.svg"
    inkscape:export-filename="/home/balazs/Reports/article-3dbag-v2/figures/3d_bag_layers.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
@@ -173,7 +173,7 @@
      showgrid="false"
      inkscape:window-width="2488"
      inkscape:window-height="1376"
-     inkscape:window-x="72"
+     inkscape:window-x="2632"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      showguides="true"
@@ -204,7 +204,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -543,7 +543,7 @@
          id="tspan3792"
          x="7.3273625"
          y="63.683117"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Inter;-inkscape-font-specification:'Inter Medium';fill:url(#linearGradient1124);stroke-width:0.264583">Underground</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Inter;-inkscape-font-specification:'Inter Medium';fill:url(#linearGradient1124);stroke-width:0.264583">Below terrain</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.88056px;line-height:1.25;font-family:Inter;-inkscape-font-specification:'Inter, Normal';stroke-width:0.264583"
@@ -554,7 +554,7 @@
          id="tspan3796"
          x="0.42007723"
          y="59.376095"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Inter;-inkscape-font-specification:'Inter Medium';fill:url(#linearGradient1106);stroke-width:0.264583">Above ground</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Inter;-inkscape-font-specification:'Inter Medium';fill:url(#linearGradient1106);stroke-width:0.264583">Above terrain</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.88056px;line-height:1.25;font-family:Inter;-inkscape-font-specification:'Inter, Normal';stroke-width:0.264583"

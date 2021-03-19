@@ -72,3 +72,7 @@ The attribute catalogue follows a specified schema. Each attribute in the catalo
     }
   }
 ```
+
+### Documenting data layers
+
+Works the same way as the attributes, but with a different python script and json catalogue.
