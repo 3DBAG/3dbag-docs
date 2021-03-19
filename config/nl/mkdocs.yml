@@ -48,4 +48,21 @@ markdown_extensions:
   - admonition
 
 nav:
-  - Overzicht: index.md
+  - Overzicht:
+    - 'Algemeen': index.md
+    - 'Databronnen': overview/sources.md
+    - 'Over ons': 'overview/group.md'
+    - 'Release-opmerkingen': 'overview/release_notes.md'
+  - Schema:
+    - 'General Concepts': 'schema/concepts.md'
+    - 'Data Layers': 'schema/layers.md'
+    - 'Attributes': 'schema/attributes.md'
+  - 'Data delivery':
+      - 'Webservices': 'delivery/webservices.md'
+      - 'GeoPackage': 'delivery/gpkg.md'
+      - 'CityJSON': 'delivery/cityjson.md'
+      - 'PostgreSQL': 'delivery/postgresql.md'
+      - 'Wavefront OBJ': 'delivery/obj.md'
+  - 'Terms of Use': 'terms.md'
+  - Contact: contact.md
+  - 'Viewer': 'https://3dbag.nl'
