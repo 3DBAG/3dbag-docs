@@ -1,12 +1,12 @@
 # Databronnen
 
-De kenmerken en kwaliteit van de 3D BAG hangen af van de invoerdata die gebruikt wordt om het te ontwikkelen. Hoe beter de invoerdata is des te beter het eindproduct kan zijn, en ook keuzes die niet per se met kwaliteit te maken hebben zijn terug te zien. Om de 3D BAG beter te begrijpen is het derhalve belangrijk om te weten waarmee de data gecreëerd zijn.
+De kenmerken en kwaliteit van de 3D BAG hangen af van de invoerdata die gebruikt wordt om het te ontwikkelen. Hoe beter de invoerdata, des te beter het eindproduct kan worden. Ook keuzes die niet per se met kwaliteit te maken hebben zijn daarin terug te zien. Om de 3D BAG beter te begrijpen is het derhalve belangrijk om te weten waarmee de data gecreëerd zijn.
 
 ## BAG
 
 <a href=https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag>De Basisregistratie Adressen en Gebouwen (BAG)</a> is de meest gedetailleerde en open beschikbare dataset van gebouwen en adressen in Nederland. Het bevat informatie over ieder adres in een gebouw, zoals het huidige gebruik, constructiedatum of registratiestatus. Gemeenten hebben als bronhouders van de BAG de verantwoordelijk voor het opnemen van de gegevens in de BAG binnen hun grenzen en het waarborgen van de kwaliteit daarvan. Deze gegevens worden centraal beschikbaar gesteld door het Kadaster.
 
-De BAG bevat meerdere objecttypen, maar voor de 3D BAG worden alleen de panden gebruikt. De (2D-)geometrieën in de BAG representeren de voetafdrukken van gebouwen als genomen van het bovenaanzicht, in tegenstelling tot de BGT die gebaseerd is op het maaiveld. Een overzicht van de attributen die behoren tot BAG-objecten is <a href=https://imbag.github.io/praktijkhandleiding/attributen>hier</a> te vinden.
+De BAG bevat meerdere objecttypen, maar voor de 3D BAG worden alleen de panden gebruikt. De (2D) geometrieën in de BAG representeren de voetafdrukken van gebouwen als genomen van het bovenaanzicht, in tegenstelling tot de BGT die gebaseerd is op het maaiveld. Een overzicht van de attributen die behoren tot BAG-objecten is <a href=https://imbag.github.io/praktijkhandleiding/attributen>hier</a> te vinden.
 
 ## AHN
 
@@ -17,6 +17,8 @@ Voor de 3D BAG wordt er gebruikt gemaakt van AHN3. Gebieden in het land zijn opg
 De temporele data van AHN3 kan niet tot op de dag bepaald worden. Het bevat namelijk alleen de datum waarop een specifieke tegel gemaakt is; niet de precieze inwindatum per punt. Om deze reden wordt er in de 3D BAG aangegeven welke gebouwen mogelijk zijn veranderd in het jaar waarin de hoogtepunten zijn opgenomen en welke gebouwen zeker verouderd zijn.
 
 Verder is er variatie in de puntendichtheid van het AHN per pand-polygoon. Er kunnen gaten zijn, veroorzaakt door bijvoorbeeld occlusie, water/ramen op de daken of de scanhoek bij inwinning. De classificatie van de punten in grond- en gebouwpunten is ook niet altijd perfect. Het aantal beschikbare punten en de verdeling ervan over het dakvlak heeft een grote invloed op de nauwkeurigheid van de reconstructie. De kwaliteitsattributen bij de gebouwen geven hier een indicatie van.
+
+### AHN4?
 
 Op het moment van schrijven komt <a href=https://www.ahn.nl/ahn-4>het nieuwe AHN4</a> binnenkort uit voor een deel van het land. Waar het AHN3 binnen een periode van 5 jaar is ingewonnen, moet dit voor AHN4 binnen 3 jaar gebeuren. Ook kan het zijn dat de kwaliteit ervan verandert wat (zeer waarschijnlijk positieve) impact zal hebben op de algoritmen van de 3D BAG. Het feit dat de nieuwe data up-to-date zijn zorgt er in ieder geval voor dat we de 3D BAG kunnen verbeteren, wat zo snel mogelijk gedaan wordt.
 
