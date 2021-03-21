@@ -7,7 +7,7 @@ Building surface semantics. This is an array of integers, where an integer refer
 
 *Data type*: list
 
-*Unit*: metre
+*Unit*: -
 
 
 ## `begingeldigheid`
@@ -16,7 +16,7 @@ Relates to the building registration history and version.
 
 *Data type*: date
 
-*Unit*: YYYY-MM-DD
+*Unit*: `YYYY-MM-DD`
 
 *Source*: BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
@@ -54,7 +54,7 @@ Building registration date.
 
 *Data type*: date
 
-*Unit*: YYYY-MM-DD
+*Unit*: `YYYY-MM-DD`
 
 *Source*: BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
@@ -65,7 +65,7 @@ Document number.
 
 *Data type*: text
 
-*Unit*: YYYY-MM-DD
+*Unit*: `YYYY-MM-DD`
 
 *Source*: BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
@@ -76,7 +76,7 @@ Relates to the building registration history and version.
 
 *Data type*: date
 
-*Unit*: YYYY-MM-DD
+*Unit*: `YYYY-MM-DD`
 
 *Source*: BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
@@ -206,7 +206,7 @@ Building construction year.
 
 *Data type*: date
 
-*Unit*: YYYY
+*Unit*: `YYYY`
 
 *Source*: BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
@@ -251,7 +251,7 @@ Acquisition date of the point cloud. In case of the AHN3, this is an assumed acq
 
 *Data type*: date
 
-*Unit*: YYYY-MM-DD
+*Unit*: `YYYY-MM-DD`
 
 
 ## `reconstructie_methode`
@@ -303,7 +303,7 @@ Relates to the building registration history and version.
 
 *Data type*: date-time
 
-*Unit*: YYYY-MM-DDThh:mm:ss.sss
+*Unit*: `YYYY-MM-DDThh:mm:ss.sss`
 
 *Source*: BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
@@ -314,7 +314,7 @@ Relates to the building registration history and version.
 
 *Data type*: date-time
 
-*Unit*: YYYY-MM-DDThh:mm:ss.sss
+*Unit*: `YYYY-MM-DDThh:mm:ss.sss`
 
 *Source*: BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
@@ -325,7 +325,7 @@ Relates to the building registration history and version.
 
 *Data type*: date-time
 
-*Unit*: YYYY-MM-DDThh:mm:ss.sss
+*Unit*: `YYYY-MM-DDThh:mm:ss.sss`
 
 *Source*: BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
@@ -336,7 +336,7 @@ Relates to the building registration history and version.
 
 *Data type*: date-time
 
-*Unit*: YYYY-MM-DDThh:mm:ss.sss
+*Unit*: `YYYY-MM-DDThh:mm:ss.sss`
 
 *Source*: BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
@@ -347,7 +347,7 @@ Relates to the building registration history and version.
 
 *Data type*: date-time
 
-*Unit*: YYYY-MM-DDThh:mm:ss.sss
+*Unit*: `YYYY-MM-DDThh:mm:ss.sss`
 
 *Source*: BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
@@ -358,7 +358,7 @@ Relates to the building registration history and version.
 
 *Data type*: list
 
-*Unit*: metre
+*Unit*: -
 
 
 ## `versie_methode`

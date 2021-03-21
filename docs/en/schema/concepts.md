@@ -35,17 +35,17 @@ For the 3D BAG the most relevant primitive is the [Solid](https://val3dity.readt
 !!! note "3D primitives and data formats"
     Not every data format supports the 3D primitives mentioned above. In fact, this applies to all our export formats except CityJSON. Therefore, in such formats we use the geometry types that are the closest equivalent to Solids. The PostgreSQL backup is a bit of an outlier here, because technically PostGIS can store Solids, but only with the [SFCGAL extension](http://www.sfcgal.org/). In order to cause the least friction for restoring the PostgreSQL backup, we store the 3D geometries as `MultiPolygonZ`.
 
-## Valid 3D geometry
+## Valid 3D geometries
 
-why important
+Having valid geometries is important for using the data in various applications. Standards help to define a common set of rules to which both data producers and consumers can adhere to, when working with data. [val3dity](https://val3dity.readthedocs.io/en/latest/) is a software that validates 3D primitives according to the international standard ISO19107.
 
-no consensus
+We integrated val3dity into our process, and so we validate each 3D model after it is reconstructed. However, the building models are validated independently as they go through the reconstruction process, therefore we cannot detect errors in the interaction of multiple models (error codes above 500).
 
-we use val3dity
+!!! note "val3dity_codes"
+    The attribute [`val3dity_codes`](attributes.md#val3dity_codes) stores the error codes from val3dity (if any) for a model.
 
-!!! note
-    The building models are validated independently as they go through the reconstruction process, therefore we cannot detect errors in the interaction of multiple models. See the [error codes above 500](https://val3dity.readthedocs.io/en/latest/errors/#intersection-solids).
-
-!!! val3dity_codes
-    see the attribute 
+<figure>
+  <img src="https://val3dity.readthedocs.io/en/latest/_images/errorcodes.png" />
+  <figcaption>val3dity error codes. See <a href="https://val3dity.readthedocs.io/en/latest/errors/">the full description of each code</a> in the val3dity documentation.</figcaption>
+</figure>
 
