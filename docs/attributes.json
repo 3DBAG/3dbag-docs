@@ -45,13 +45,13 @@
     "en": {
       "description": "Building construction year.",
       "type": "date",
-      "unit": "YYYY",
+      "unit": "`YYYY`",
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
       "description": "De aanduiding van het jaar waarin een pand oorspronkelijk als bouwkundig gereed is of zal worden opgeleverd.",
       "type": "date",
-      "unit": "YYYY",
+      "unit": "`YYYY`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
   },
@@ -111,13 +111,13 @@
     "en": {
       "description": "Building registration date.",
       "type": "date",
-      "unit": "YYYY-MM-DD",
+      "unit": "`YYYY-MM-DD`",
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
       "description": "De datum waarop het brondocument is vastgesteld, opbasis waarvan een opname, mutatie of een verwijderingvan gegevens ten aanzien van een pand heeft plaatsgevonden.",
       "type": "date",
-      "unit": "YYYY-MM-DD",
+      "unit": "`YYYY-MM-DD`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
   },
@@ -125,13 +125,13 @@
     "en": {
       "description": "Document number.",
       "type": "text",
-      "unit": "YYYY-MM-DD",
+      "unit": "`YYYY-MM-DD`",
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
       "description": "De unieke aanduiding van het brondocument op basiswaarvan een opname, mutatie of een verwijdering vangegevens ten aanzien van een pand heeft plaatsgevonden, binnen een gemeente.",
       "type": "text",
-      "unit": "YYYY-MM-DD",
+      "unit": "`YYYY-MM-DD`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
   },
@@ -153,13 +153,13 @@
     "en": {
       "description": "Relates to the building registration history and version.",
       "type": "date",
-      "unit": "YYYY-MM-DD",
+      "unit": "`YYYY-MM-DD`",
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
       "description": "De datum waarop een versie van een BAG-object geldig is in de werkelijkheid conform de ingangsdatum in het brondocument. Dit tijdstip wordt vastgelegd in de beginGeldigheid. Als er geen expliciete ingangsdatum van geldigheid is opgenomen, wordt de datum van het brondocument overgenomen.",
       "type": "date",
-      "unit": "YYYY-MM-DD",
+      "unit": "`YYYY-MM-DD`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
   },
@@ -167,13 +167,13 @@
     "en": {
       "description": "Relates to the building registration history and version.",
       "type": "date",
-      "unit": "YYYY-MM-DD",
+      "unit": "`YYYY-MM-DD`",
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
       "description": "De datum waarop de periode van geldigheid van een versie van een BAG-object eindigt. Bijvoorbeeld als gevolg van de vaststelling van een nieuw brondocument. Wanneer er geen tijdstip is ingevuld, dan is de versie nog geldig. Dit tijdstip wordt vastgelegd in de eindGeldigheid.",
       "type": "date",
-      "unit": "YYYY-MM-DD",
+      "unit": "`YYYY-MM-DD`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
   },
@@ -181,13 +181,13 @@
     "en": {
       "description": "Relates to the building registration history and version.",
       "type": "date-time",
-      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "unit": "`YYYY-MM-DDThh:mm:ss.sss`",
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
       "description": "",
       "type": "date-time",
-      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "unit": "`YYYY-MM-DDThh:mm:ss.sss`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
   },
@@ -195,13 +195,13 @@
     "en": {
       "description": "Relates to the building registration history and version.",
       "type": "date-time",
-      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "unit": "`YYYY-MM-DDThh:mm:ss.sss`",
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
       "description": "Dit is het tijdstip waarop een versie van een BAG-object is opgenomen in de registratie van de landelijke voorziening. De gegevens komen daarmee beschikbaar voor afnemers.",
       "type": "date-time",
-      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "unit": "`YYYY-MM-DDThh:mm:ss.sss`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
   },
@@ -209,13 +209,13 @@
     "en": {
       "description": "Relates to the building registration history and version.",
       "type": "date-time",
-      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "unit": "`YYYY-MM-DDThh:mm:ss.sss`",
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
       "description": "",
       "type": "date-time",
-      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "unit": "`YYYY-MM-DDThh:mm:ss.sss`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
   },
@@ -223,13 +223,13 @@
     "en": {
       "description": "Relates to the building registration history and version.",
       "type": "date-time",
-      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "unit": "`YYYY-MM-DDThh:mm:ss.sss`",
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
       "description": "",
       "type": "date-time",
-      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "unit": "`YYYY-MM-DDThh:mm:ss.sss`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
   },
@@ -237,13 +237,13 @@
     "en": {
       "description": "Relates to the building registration history and version.",
       "type": "date-time",
-      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "unit": "`YYYY-MM-DDThh:mm:ss.sss`",
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
       "description": "",
       "type": "date-time",
-      "unit": "YYYY-MM-DDThh:mm:ss.sss",
+      "unit": "`YYYY-MM-DDThh:mm:ss.sss`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
   },
@@ -272,7 +272,7 @@
     "en": {
       "description": "Acquisition date of the point cloud. In case of the AHN3, this is an assumed acquisition date, which is computed as 1st of December in the year *before* the officially reported acquisition year (inwijnjaar) of a particular AHN3 tile.",
       "type": "date",
-      "unit": "YYYY-MM-DD"
+      "unit": "`YYYY-MM-DD`"
     }
   },
   "pw_actueel": {
@@ -373,14 +373,14 @@
     "en": {
       "description": "[Val3dity error codes](https://val3dity.readthedocs.io/en/latest/errors) for the 3D model. `Null` means valid geometry.",
       "type": "list",
-      "unit": "metre"
+      "unit": "-"
     }
   },
   "_semantics_values": {
     "en": {
       "description": "Building surface semantics. This is an array of integers, where an integer refers to a surface type (0: `GroundSurface`, 1: `RoofSurface`, 2: `OuterWallSurface`, 3: `InnerWallSurface`). If a surface does not have a semantic value, NULL is used instead. Thus the length of the array equals the number of surfaces, and the order of values in the array corresponds to the order of surfaces.",
       "type": "list",
-      "unit": "metre"
+      "unit": "-"
     }
   }
 }

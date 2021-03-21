@@ -9,7 +9,7 @@ In order to create an accurate model of the <span style="color:#24a1c8ff">**abov
 
 From the parts above terrain we then generate the 3D models in LoD1.2, 1.3 and 2.2. We realise that for some applications it is more suitable to read 2D polygons, and the building height information from attributes. Therefore, we also provide a 2D counterpart in each LoD.
 
-!!! lod11_replace
+!!! note "lod11_replace"
     In case of greenhouses and large warehouses we do not cut off any parts of the BAG model, but take the polygon as is, and only generate an LoD1.1 model. Thus, such buildings only have an LoD1.1 model and are marked with the attribute value `lod11_replace = true`.
 
 In case of the 2D models, the polygons represent the 2D projection of the roof planes of the 3D model. For LoD1.2 and LoD1.3 the 3D model can be fully reconstructed from the 2D model, by taking the 2D polygons and extruding each to one of their [`h_dak_*`](attributes.md#h_dak_50p) height values. However, this is not true for the LoD2.2 models, since here we have slanted roof planes, which cannot be represented by a 2D polygon and a single height value.
