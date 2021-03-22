@@ -1,0 +1,1531 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="3D BAG documentation">
+      
+      
+      
+        <meta name="author" content="3D geoinformation group">
+      
+      
+      <link rel="icon" href="../../assets/images/logo.svg">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.6">
+    
+    
+      
+        <title>Data Attributes - 3D BAG</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2c0c5eaf.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ffffff">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Inter";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="light-blue">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#data-attributes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-announce">
+          <div class="md-announce__inner md-grid md-typeset">
+            
+
+Welcome to the documentation of the new 3D BAG! See <a href="overview/release_notes" style="text-decoration: underline; color: white;">what is new.</a>
+
+
+          </div>
+        </aside>
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="3D BAG" class="md-header__button md-logo" aria-label="3D BAG" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            3D BAG
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Data Attributes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+        <div class="md-select">
+          
+          <span class="md-header__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>
+          </span>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="/en/" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="/nl/" class="md-select__link">
+                    Nederlands
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/tudelft3d/3dbag-docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        Overview
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../concepts/" class="md-tabs__link md-tabs__link--active">
+        Schema
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../delivery/webservices/" class="md-tabs__link">
+        Data Delivery
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../terms/" class="md-tabs__link">
+      Terms of Use
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../contact/" class="md-tabs__link">
+      Contact
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://3dbag.nl" class="md-tabs__link">
+      Viewer
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="3D BAG" class="md-nav__button md-logo" aria-label="3D BAG" data-md-component="logo">
+      
+  <img src="../../assets/images/logo.svg" alt="logo">
+
+    </a>
+    3D BAG
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/tudelft3d/3dbag-docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      <label class="md-nav__link" for="__nav_1">
+        Overview
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Overview" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Overview
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Summary
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/sources/" class="md-nav__link">
+        Data Sources
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/group/" class="md-nav__link">
+        About Us
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/release_notes/" class="md-nav__link">
+        Release Notes
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Schema
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Schema" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Schema
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concepts/" class="md-nav__link">
+        General Concepts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layers/" class="md-nav__link">
+        Data Layers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Data Attributes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Data Attributes
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_semantics_values" class="md-nav__link">
+    _semantics_values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#begingeldigheid" class="md-nav__link">
+    begingeldigheid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dak_type" class="md-nav__link">
+    dak_type
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dd_id" class="md-nav__link">
+    dd_id
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentdatum" class="md-nav__link">
+    documentdatum
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentnummer" class="md-nav__link">
+    documentnummer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eindgeldigheid" class="md-nav__link">
+    eindgeldigheid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fid" class="md-nav__link">
+    fid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geconstateerd" class="md-nav__link">
+    geconstateerd
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gid" class="md-nav__link">
+    gid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h_dak_50p" class="md-nav__link">
+    h_dak_50p
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h_dak_70p" class="md-nav__link">
+    h_dak_70p
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h_dak_max" class="md-nav__link">
+    h_dak_max
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h_dak_min" class="md-nav__link">
+    h_dak_min
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h_maaiveld" class="md-nav__link">
+    h_maaiveld
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identificatie" class="md-nav__link">
+    identificatie
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kas_warenhuis" class="md-nav__link">
+    kas_warenhuis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lod11_replace" class="md-nav__link">
+    lod11_replace
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ondergronds_type" class="md-nav__link">
+    ondergronds_type
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oorspronkelijk_bouwjaar" class="md-nav__link">
+    oorspronkelijk_bouwjaar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pand_deel_id" class="md-nav__link">
+    pand_deel_id
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pw_actueel" class="md-nav__link">
+    pw_actueel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pw_bron" class="md-nav__link">
+    pw_bron
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pw_datum" class="md-nav__link">
+    pw_datum
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reconstructie_methode" class="md-nav__link">
+    reconstructie_methode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reconstruction_skipped" class="md-nav__link">
+    reconstruction_skipped
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    status
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tijdstipeindregistratielv" class="md-nav__link">
+    tijdstipeindregistratielv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tijdstipinactief" class="md-nav__link">
+    tijdstipinactief
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tijdstipinactieflv" class="md-nav__link">
+    tijdstipinactieflv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tijdstipnietbaglv" class="md-nav__link">
+    tijdstipnietbaglv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tijdstipregistratielv" class="md-nav__link">
+    tijdstipregistratielv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#val3dity_codes" class="md-nav__link">
+    val3dity_codes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versie_methode" class="md-nav__link">
+    versie_methode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voorkomenidentificatie" class="md-nav__link">
+    voorkomenidentificatie
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Data Delivery
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Data Delivery" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Data Delivery
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../delivery/webservices/" class="md-nav__link">
+        Webservices
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../delivery/gpkg/" class="md-nav__link">
+        GeoPackage
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../delivery/cityjson/" class="md-nav__link">
+        CityJSON
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../delivery/postgresql/" class="md-nav__link">
+        PostgreSQL
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../delivery/obj/" class="md-nav__link">
+        Wavefront OBJ
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../terms/" class="md-nav__link">
+        Terms of Use
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        Contact
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://3dbag.nl" class="md-nav__link">
+        Viewer
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_semantics_values" class="md-nav__link">
+    _semantics_values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#begingeldigheid" class="md-nav__link">
+    begingeldigheid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dak_type" class="md-nav__link">
+    dak_type
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dd_id" class="md-nav__link">
+    dd_id
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentdatum" class="md-nav__link">
+    documentdatum
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentnummer" class="md-nav__link">
+    documentnummer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eindgeldigheid" class="md-nav__link">
+    eindgeldigheid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fid" class="md-nav__link">
+    fid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geconstateerd" class="md-nav__link">
+    geconstateerd
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gid" class="md-nav__link">
+    gid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h_dak_50p" class="md-nav__link">
+    h_dak_50p
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h_dak_70p" class="md-nav__link">
+    h_dak_70p
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h_dak_max" class="md-nav__link">
+    h_dak_max
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h_dak_min" class="md-nav__link">
+    h_dak_min
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h_maaiveld" class="md-nav__link">
+    h_maaiveld
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identificatie" class="md-nav__link">
+    identificatie
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kas_warenhuis" class="md-nav__link">
+    kas_warenhuis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lod11_replace" class="md-nav__link">
+    lod11_replace
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ondergronds_type" class="md-nav__link">
+    ondergronds_type
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oorspronkelijk_bouwjaar" class="md-nav__link">
+    oorspronkelijk_bouwjaar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pand_deel_id" class="md-nav__link">
+    pand_deel_id
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pw_actueel" class="md-nav__link">
+    pw_actueel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pw_bron" class="md-nav__link">
+    pw_bron
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pw_datum" class="md-nav__link">
+    pw_datum
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reconstructie_methode" class="md-nav__link">
+    reconstructie_methode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reconstruction_skipped" class="md-nav__link">
+    reconstruction_skipped
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    status
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tijdstipeindregistratielv" class="md-nav__link">
+    tijdstipeindregistratielv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tijdstipinactief" class="md-nav__link">
+    tijdstipinactief
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tijdstipinactieflv" class="md-nav__link">
+    tijdstipinactieflv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tijdstipnietbaglv" class="md-nav__link">
+    tijdstipnietbaglv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tijdstipregistratielv" class="md-nav__link">
+    tijdstipregistratielv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#val3dity_codes" class="md-nav__link">
+    val3dity_codes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versie_methode" class="md-nav__link">
+    versie_methode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voorkomenidentificatie" class="md-nav__link">
+    voorkomenidentificatie
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/tudelft3d/3dbag-docs/edit/master/docs/schema/attributes.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="data-attributes">Data Attributes<a class="headerlink" href="#data-attributes" title="Permanent link">&para;</a></h1>
+<h2 id="_semantics_values"><code>_semantics_values</code><a class="headerlink" href="#_semantics_values" title="Permanent link">&para;</a></h2>
+<p>Building surface semantics. This is an array of integers, where an integer refers to a surface type (0: <code>GroundSurface</code>, 1: <code>RoofSurface</code>, 2: <code>OuterWallSurface</code>, 3: <code>InnerWallSurface</code>). If a surface does not have a semantic value, NULL is used instead. Thus the length of the array equals the number of surfaces, and the order of values in the array corresponds to the order of surfaces.</p>
+<p><em>Data type</em>: list</p>
+<p><em>Unit</em>: -</p>
+<h2 id="begingeldigheid"><code>begingeldigheid</code><a class="headerlink" href="#begingeldigheid" title="Permanent link">&para;</a></h2>
+<p>Relates to the building registration history and version.</p>
+<p><em>Data type</em>: date</p>
+<p><em>Unit</em>: <code>YYYY-MM-DD</code></p>
+<p><em>Source</em>: BAG. See <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
+<h2 id="dak_type"><code>dak_type</code><a class="headerlink" href="#dak_type" title="Permanent link">&para;</a></h2>
+<p>Roof type of the building.</p>
+<p><em>Data type</em>: categorical</p>
+<p><em>Unit</em>: -</p>
+<p><em>Values</em>:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Values</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>slanted</code></td>
+<td align="left">Roof with at least one slanted surface.</td>
+</tr>
+<tr>
+<td align="left"><code>multiple horizontal</code></td>
+<td align="left">Roof with multiple, only horizontal surfaces.</td>
+</tr>
+<tr>
+<td align="left"><code>single horizontal</code></td>
+<td align="left">Roof with a single horizontal surface.</td>
+</tr>
+<tr>
+<td align="left"><code>no points</code></td>
+<td align="left">No point was found for the building.</td>
+</tr>
+<tr>
+<td align="left"><code>could not detect</code></td>
+<td align="left">Could not detect a roof surface, even though points were found.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dd_id"><code>dd_id</code><a class="headerlink" href="#dd_id" title="Permanent link">&para;</a></h2>
+<p>Dak Deel ID. Roofpart ID.</p>
+<p><em>Data type</em>: nominal number</p>
+<p><em>Unit</em>: -</p>
+<h2 id="documentdatum"><code>documentdatum</code><a class="headerlink" href="#documentdatum" title="Permanent link">&para;</a></h2>
+<p>Building registration date.</p>
+<p><em>Data type</em>: date</p>
+<p><em>Unit</em>: <code>YYYY-MM-DD</code></p>
+<p><em>Source</em>: BAG. See <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
+<h2 id="documentnummer"><code>documentnummer</code><a class="headerlink" href="#documentnummer" title="Permanent link">&para;</a></h2>
+<p>Document number.</p>
+<p><em>Data type</em>: text</p>
+<p><em>Unit</em>: <code>YYYY-MM-DD</code></p>
+<p><em>Source</em>: BAG. See <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
+<h2 id="eindgeldigheid"><code>eindgeldigheid</code><a class="headerlink" href="#eindgeldigheid" title="Permanent link">&para;</a></h2>
+<p>Relates to the building registration history and version.</p>
+<p><em>Data type</em>: date</p>
+<p><em>Unit</em>: <code>YYYY-MM-DD</code></p>
+<p><em>Source</em>: BAG. See <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
+<h2 id="fid"><code>fid</code><a class="headerlink" href="#fid" title="Permanent link">&para;</a></h2>
+<p>Numeric ID of a building (feature).</p>
+<p><em>Data type</em>: nominal number</p>
+<p><em>Unit</em>: -</p>
+<h2 id="geconstateerd"><code>geconstateerd</code><a class="headerlink" href="#geconstateerd" title="Permanent link">&para;</a></h2>
+<p>Indicates that the buildings has included in the BAG registration.</p>
+<p><em>Data type</em>: categorical</p>
+<p><em>Unit</em>: yes/no</p>
+<p><em>Source</em>: BAG. See <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
+<h2 id="gid"><code>gid</code><a class="headerlink" href="#gid" title="Permanent link">&para;</a></h2>
+<p>Geometry ID.</p>
+<p><em>Data type</em>: nominal number</p>
+<p><em>Unit</em>: -</p>
+<h2 id="h_dak_50p"><code>h_dak_50p</code><a class="headerlink" href="#h_dak_50p" title="Permanent link">&para;</a></h2>
+<p>Elevation above sea level (NAP) at rooflevel. Calculated as the median of all elevation points on the corresponding roofpart.</p>
+<p><em>Data type</em>: real number</p>
+<p><em>Unit</em>: metre</p>
+<h2 id="h_dak_70p"><code>h_dak_70p</code><a class="headerlink" href="#h_dak_70p" title="Permanent link">&para;</a></h2>
+<p>Elevation above sea level (NAP) at rooflevel. Calculated as the 70th percentile of all elevation points on the corresponding roofpart.</p>
+<p><em>Data type</em>: real number</p>
+<p><em>Unit</em>: metre</p>
+<h2 id="h_dak_max"><code>h_dak_max</code><a class="headerlink" href="#h_dak_max" title="Permanent link">&para;</a></h2>
+<p>Elevation above sea level (NAP) at rooflevel. Calculated as the maximum of all elevation points on the corresponding roofpart.</p>
+<p><em>Data type</em>: real number</p>
+<p><em>Unit</em>: metre</p>
+<h2 id="h_dak_min"><code>h_dak_min</code><a class="headerlink" href="#h_dak_min" title="Permanent link">&para;</a></h2>
+<p>Elevation above sea level (NAP) at rooflevel. Calculated as the minimum of all elevation points on the corresponding roofpart.</p>
+<p><em>Data type</em>: real number</p>
+<p><em>Unit</em>: metre</p>
+<h2 id="h_maaiveld"><code>h_maaiveld</code><a class="headerlink" href="#h_maaiveld" title="Permanent link">&para;</a></h2>
+<p>Elevation above sea level (Amsterdam Ordnance Datum) at the ground level of the building. Calculated as the 5th percentile of the ground points found within a 4 meter radius of the building.</p>
+<p><em>Data type</em>: real number</p>
+<p><em>Unit</em>: metre</p>
+<h2 id="identificatie"><code>identificatie</code><a class="headerlink" href="#identificatie" title="Permanent link">&para;</a></h2>
+<p>ID of a building.</p>
+<p><em>Data type</em>: text</p>
+<p><em>Unit</em>: -</p>
+<p><em>Source</em>: BAG. See <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
+<h2 id="kas_warenhuis"><code>kas_warenhuis</code><a class="headerlink" href="#kas_warenhuis" title="Permanent link">&para;</a></h2>
+<p>The building is greenhouse or warehouse (according to Top10NL).</p>
+<p><em>Data type</em>: categorical</p>
+<p><em>Unit</em>: yes/no</p>
+<h2 id="lod11_replace"><code>lod11_replace</code><a class="headerlink" href="#lod11_replace" title="Permanent link">&para;</a></h2>
+<p>Indicates whether the LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.2 reconstruction if <code>lod12_replace==false</code>). This can happen when there were points found for instance.</p>
+<p><em>Data type</em>: categorical</p>
+<p><em>Unit</em>: yes/no</p>
+<h2 id="ondergronds_type"><code>ondergronds_type</code><a class="headerlink" href="#ondergronds_type" title="Permanent link">&para;</a></h2>
+<p>Underground classification of the building or building part.</p>
+<p><em>Data type</em>: categorical</p>
+<p><em>Unit</em>: -</p>
+<p><em>Values</em>:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Values</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>floating</code></td>
+<td align="left">Building or building part is floating above other objects.</td>
+</tr>
+<tr>
+<td align="left"><code>above ground</code></td>
+<td align="left">Building or building part is completely above ground.</td>
+</tr>
+<tr>
+<td align="left"><code>underground</code></td>
+<td align="left">Building or building part is completely under ground.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="oorspronkelijk_bouwjaar"><code>oorspronkelijk_bouwjaar</code><a class="headerlink" href="#oorspronkelijk_bouwjaar" title="Permanent link">&para;</a></h2>
+<p>Building construction year.</p>
+<p><em>Data type</em>: date</p>
+<p><em>Unit</em>: <code>YYYY</code></p>
+<p><em>Source</em>: BAG. See <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
+<h2 id="pand_deel_id"><code>pand_deel_id</code><a class="headerlink" href="#pand_deel_id" title="Permanent link">&para;</a></h2>
+<p>Buildingpart ID. A building can have multiple parts when it was cut into parts because of underground parts.</p>
+<p><em>Data type</em>: nominal number</p>
+<p><em>Unit</em>: -</p>
+<h2 id="pw_actueel"><code>pw_actueel</code><a class="headerlink" href="#pw_actueel" title="Permanent link">&para;</a></h2>
+<p>Indicates that the point cloud is actual w.r.t. the age of the building.</p>
+<p><em>Data type</em>: categorical</p>
+<p><em>Unit</em>: -</p>
+<p><em>Values</em>:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Values</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>yes</code></td>
+<td align="left">The point cloud was acquired after the construction date of the building.</td>
+</tr>
+<tr>
+<td align="left"><code>no</code></td>
+<td align="left">The point cloud was acquired before the construction date of the building.</td>
+</tr>
+<tr>
+<td align="left"><code>uncertain</code></td>
+<td align="left">The point cloud was acquired in the same year as the construction date of the building.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pw_bron"><code>pw_bron</code><a class="headerlink" href="#pw_bron" title="Permanent link">&para;</a></h2>
+<p>Source of the point cloud.</p>
+<p><em>Data type</em>: text</p>
+<p><em>Unit</em>: -</p>
+<h2 id="pw_datum"><code>pw_datum</code><a class="headerlink" href="#pw_datum" title="Permanent link">&para;</a></h2>
+<p>Acquisition date of the point cloud. In case of the AHN3, this is an assumed acquisition date, which is computed as 1st of December in the year <em>before</em> the officially reported acquisition year (inwijnjaar) of a particular AHN3 tile.</p>
+<p><em>Data type</em>: date</p>
+<p><em>Unit</em>: <code>YYYY-MM-DD</code></p>
+<h2 id="reconstructie_methode"><code>reconstructie_methode</code><a class="headerlink" href="#reconstructie_methode" title="Permanent link">&para;</a></h2>
+<p>Reconstruction method of the building model.</p>
+<p><em>Data type</em>: text</p>
+<p><em>Unit</em>: -</p>
+<h2 id="reconstruction_skipped"><code>reconstruction_skipped</code><a class="headerlink" href="#reconstruction_skipped" title="Permanent link">&para;</a></h2>
+<p>Indicates whether full LoD1.2/LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.2 if lod11_replace==false).</p>
+<p><em>Data type</em>: categorical</p>
+<p><em>Unit</em>: yes/no</p>
+<h2 id="status"><code>status</code><a class="headerlink" href="#status" title="Permanent link">&para;</a></h2>
+<p>The current fase in the buildings life-cycle.</p>
+<p><em>Data type</em>: categorical</p>
+<p><em>Unit</em>: -</p>
+<p><em>Source</em>: BAG. See <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
+<p><em>Values</em>:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Values</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>Bouwvergunning verleend</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>Niet gerealiseerd pand</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>Bouw gestart</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>Pand in gebruik (niet ingemeten)</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>Pand in gebruik</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>Verbouwing pand</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>Sloopvergunning verleend</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>Pand gesloopt</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>Pand buiten gebruik</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><code>Pand ten onrechte opgevoerd</code></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="tijdstipeindregistratielv"><code>tijdstipeindregistratielv</code><a class="headerlink" href="#tijdstipeindregistratielv" title="Permanent link">&para;</a></h2>
+<p>Relates to the building registration history and version.</p>
+<p><em>Data type</em>: date-time</p>
+<p><em>Unit</em>: <code>YYYY-MM-DDThh:mm:ss.sss</code></p>
+<p><em>Source</em>: BAG. See <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
+<h2 id="tijdstipinactief"><code>tijdstipinactief</code><a class="headerlink" href="#tijdstipinactief" title="Permanent link">&para;</a></h2>
+<p>Relates to the building registration history and version.</p>
+<p><em>Data type</em>: date-time</p>
+<p><em>Unit</em>: <code>YYYY-MM-DDThh:mm:ss.sss</code></p>
+<p><em>Source</em>: BAG. See <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
+<h2 id="tijdstipinactieflv"><code>tijdstipinactieflv</code><a class="headerlink" href="#tijdstipinactieflv" title="Permanent link">&para;</a></h2>
+<p>Relates to the building registration history and version.</p>
+<p><em>Data type</em>: date-time</p>
+<p><em>Unit</em>: <code>YYYY-MM-DDThh:mm:ss.sss</code></p>
+<p><em>Source</em>: BAG. See <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
+<h2 id="tijdstipnietbaglv"><code>tijdstipnietbaglv</code><a class="headerlink" href="#tijdstipnietbaglv" title="Permanent link">&para;</a></h2>
+<p>Relates to the building registration history and version.</p>
+<p><em>Data type</em>: date-time</p>
+<p><em>Unit</em>: <code>YYYY-MM-DDThh:mm:ss.sss</code></p>
+<p><em>Source</em>: BAG. See <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
+<h2 id="tijdstipregistratielv"><code>tijdstipregistratielv</code><a class="headerlink" href="#tijdstipregistratielv" title="Permanent link">&para;</a></h2>
+<p>Relates to the building registration history and version.</p>
+<p><em>Data type</em>: date-time</p>
+<p><em>Unit</em>: <code>YYYY-MM-DDThh:mm:ss.sss</code></p>
+<p><em>Source</em>: BAG. See <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
+<h2 id="val3dity_codes"><code>val3dity_codes</code><a class="headerlink" href="#val3dity_codes" title="Permanent link">&para;</a></h2>
+<p><a href="https://val3dity.readthedocs.io/en/latest/errors">Val3dity error codes</a> for the 3D model. <code>Null</code> means valid geometry.</p>
+<p><em>Data type</em>: list</p>
+<p><em>Unit</em>: -</p>
+<h2 id="versie_methode"><code>versie_methode</code><a class="headerlink" href="#versie_methode" title="Permanent link">&para;</a></h2>
+<p>Version of the building reconstruction method.</p>
+<p><em>Data type</em>: text</p>
+<p><em>Unit</em>: -</p>
+<h2 id="voorkomenidentificatie"><code>voorkomenidentificatie</code><a class="headerlink" href="#voorkomenidentificatie" title="Permanent link">&para;</a></h2>
+<p>Relates to the building registration history and version.</p>
+<p><em>Data type</em>: ordinal number</p>
+<p><em>Unit</em>: -</p>
+<p><em>Source</em>: BAG. See <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../layers/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Data Layers
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../../delivery/webservices/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Webservices
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 3D geoinformation group
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a1c7c35e.min.js"></script>
+      
+    
+  </body>
+</html>
