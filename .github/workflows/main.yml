@@ -34,4 +34,9 @@ jobs:
       - run: python scripts/generate_layers_docs.py . "en"
       - run: python scripts/generate_attribute_doc.py . "nl"
       - run: python scripts/generate_attribute_doc.py . "en"
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./generated
+          publish_branch: gh-pages
       - run: bash scripts/build.sh
