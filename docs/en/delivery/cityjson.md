@@ -4,7 +4,7 @@ The CityJSON specification prescribes how to store the geomety as well as the se
 
 The three guiding principles for the format are compactness, simplicity and ease of use for software development. CityJSON has a 6x smaller size than CityGML due to the JSON-encoding. Furthermore, there are already [several open software that work with CityJSON](https://www.cityjson.org/software/) files. We present a few of them below, try them out!
 
-The CityJSON files of the 3D BAG contain all the three LoDs and the attributes that apply to the whole building.
+The CityJSON files of the 3D BAG contain all the [3D layers](../../schema/layers/#data-layers) (LoD1.2, LoD1.3, LoD2.2), but only the attributes that apply to the whole building.
 
 ## ninja and azul
 
