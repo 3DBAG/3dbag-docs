@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#geopackage-in-3d-in-qgis" class="md-skip">
+        <a href="#geopackage" class="md-skip">
           Ga naar inhoud
         </a>
       
@@ -239,7 +239,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-tabs__item">
       <a href="../webservices/" class="md-tabs__link md-tabs__link--active">
-        Datalevering
+        Data delivery
       </a>
     </li>
   
@@ -251,8 +251,8 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
 
 
   <li class="md-tabs__item">
-    <a href="../../terms/" class="md-tabs__link">
-      Gebruiksvoorwaarden
+    <a href="../../copyright/" class="md-tabs__link">
+      Copyright
     </a>
   </li>
 
@@ -432,7 +432,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-nav__item">
       <a href="../../schema/concepts/" class="md-nav__link">
-        Algemene concepten
+        General Concepts
       </a>
     </li>
   
@@ -444,7 +444,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-nav__item">
       <a href="../../schema/layers/" class="md-nav__link">
-        Datalagen
+        Data Layers
       </a>
     </li>
   
@@ -456,7 +456,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-nav__item">
       <a href="../../schema/attributes/" class="md-nav__link">
-        Attributen
+        Attributes
       </a>
     </li>
   
@@ -484,13 +484,13 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
-        Datalevering
+        Data delivery
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Datalevering" data-md-level="1">
+      <nav class="md-nav" aria-label="Data delivery" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
-          Datalevering
+          Data delivery
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -516,37 +516,12 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          GeoPackage
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         GeoPackage
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhoudsopgave
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#geopackage-in-3d-in-qgis" class="md-nav__link">
-    GeoPackage in 3D in QGIS
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -602,8 +577,8 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
   
     <li class="md-nav__item">
-      <a href="../../terms/" class="md-nav__link">
-        Gebruiksvoorwaarden
+      <a href="../../copyright/" class="md-nav__link">
+        Copyright
       </a>
     </li>
   
@@ -654,21 +629,8 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
 <nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhoudsopgave
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#geopackage-in-3d-in-qgis" class="md-nav__link">
-    GeoPackage in 3D in QGIS
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -685,24 +647,8 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
                   </a>
                 
                 
-                  <h1>GeoPackage</h1>
-                
-                <p><a href=https://www.geopackage.org/>GeoPackage</a> is een open bestandsformaat dat conventies beschrijft hoe data opgeslagen kunnen worden in een <a href=https://www.sqlite.org/index.html>SQLite</a> database. Het ondersteunt vector features, tile matrix sets, attributen en er is ruimte voor extensies. Het formaat ondersteunt 3D-geometrieën, en kan geopend worden met bijvoorbeeld QGIS, ArcGIS of FME.</p>
-<h3 id="geopackage-in-3d-in-qgis">GeoPackage in 3D in QGIS<a class="headerlink" href="#geopackage-in-3d-in-qgis" title="Permanent link">&para;</a></h3>
-<p>Wanneer je de data in QGIS importeert (door het bestand te slepen of te gaan naar <code>Layer</code> -&gt; <code>Add Layer</code> -&gt; <code>Add Vector Layer...</code>) kan je kiezen uit de verschillende lagen die het bestand bevat. Om de data in 3D te zien (vanaf QGIS 3.0, maar afhankelijk van de exacte versie):</p>
-<ul>
-<li>Pas eerst de<code>Layer Properties</code> aan. Ga daar naar de <code>3D View</code> tab, verander <code>No Symbols</code> naar <code>Single Symbol</code> en pas de verandering toe.</li>
-<li>
-<p>Of: in oudere versies van QGIS 3 moet in plaats daarvan op dezelfde plek het knopje <code>Enable 3D renderer</code> aan worden gezet. </p>
-</li>
-<li>
-<p>Ga vervolgens naar <code>View</code> -&gt; <code>3D Map View</code> om de data te bekijken.</p>
-</li>
-</ul>
-<p><img alt="Screenshot" src="../../images/gpkg.jpg" /></p>
-<p><em>De tab in de Layer Properties waar de instellingen aangepast kunnen worden voor de 3D Map View</em></p>
-<p><img alt="Screenshot" src="../../images/gpkg2.jpg" /></p>
-<p><em>Een tegel in GeoPackage-formaat in QGIS. Bovenaan de 3D Map View, onderaan de attributen, en op de achtergrond de features in 2D.</em></p>
+                <h1 id="geopackage">GeoPackage<a class="headerlink" href="#geopackage" title="Permanent link">&para;</a></h1>
+<p><a href=https://www.geopackage.org/>GeoPackage</a> is een open bestandsformaat dat conventies beschrijft hoe data opgeslagen kunnen worden in een <a href=https://www.sqlite.org/index.html>SQLite</a> database. Het ondersteunt vector features, tile matrix sets, attributen en er is ruimte voor extensies. Het formaat ondersteunt 3D-geometrieën.</p>
                 
               
               

@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#de-dump-inladen" class="md-skip">
+        <a href="#postgresql" class="md-skip">
           Ga naar inhoud
         </a>
       
@@ -239,7 +239,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-tabs__item">
       <a href="../webservices/" class="md-tabs__link md-tabs__link--active">
-        Datalevering
+        Data delivery
       </a>
     </li>
   
@@ -251,8 +251,8 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
 
 
   <li class="md-tabs__item">
-    <a href="../../terms/" class="md-tabs__link">
-      Gebruiksvoorwaarden
+    <a href="../../copyright/" class="md-tabs__link">
+      Copyright
     </a>
   </li>
 
@@ -432,7 +432,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-nav__item">
       <a href="../../schema/concepts/" class="md-nav__link">
-        Algemene concepten
+        General Concepts
       </a>
     </li>
   
@@ -444,7 +444,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-nav__item">
       <a href="../../schema/layers/" class="md-nav__link">
-        Datalagen
+        Data Layers
       </a>
     </li>
   
@@ -456,7 +456,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-nav__item">
       <a href="../../schema/attributes/" class="md-nav__link">
-        Attributen
+        Attributes
       </a>
     </li>
   
@@ -484,13 +484,13 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
-        Datalevering
+        Data delivery
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Datalevering" data-md-level="1">
+      <nav class="md-nav" aria-label="Data delivery" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
-          Datalevering
+          Data delivery
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -562,8 +562,8 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#de-dump-inladen" class="md-nav__link">
-    De dump inladen
+  <a href="#postgresql" class="md-nav__link">
+    PostgreSQL
   </a>
   
 </li>
@@ -602,8 +602,8 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
   
     <li class="md-nav__item">
-      <a href="../../terms/" class="md-nav__link">
-        Gebruiksvoorwaarden
+      <a href="../../copyright/" class="md-nav__link">
+        Copyright
       </a>
     </li>
   
@@ -662,8 +662,8 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#de-dump-inladen" class="md-nav__link">
-    De dump inladen
+  <a href="#postgresql" class="md-nav__link">
+    PostgreSQL
   </a>
   
 </li>
@@ -687,20 +687,8 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
                 
                   <h1>PostgreSQL</h1>
                 
-                <p><a href=https://www.postgresql.org/>PostgreSQL</a> is een open source systeem voor object-relationele databases. Met toevoeging van de <a href=https://postgis.net/>PostGIS</a> extensie is er ondersteuning voor geografische objecten. Het is geschikt om big geodata mee te verwerken. Om deze reden bieden wij de volledige 3D BAG data aan als PostgreSQL dump.</p>
-<h3 id="de-dump-inladen">De dump inladen<a class="headerlink" href="#de-dump-inladen" title="Permanent link">&para;</a></h3>
-<p>Met het volgende commando kan je de dump inladen (lees <a href=https://www.postgresql.org/docs/current/app-pgrestore.html>hier</a> voor meer informatie):</p>
-<pre><code>pg_restore \
---no-owner \
---no-privileges \
---format=directory \
---jobs=8 \
-&lt;connectieparameters&gt;
-&lt;pad naar ongezipt bestand&gt;
-</code></pre>
-<p>Stel <code>--jobs</code> in op maximaal 8, omdat er 8 tables zijn. </p>
-<p><code>&lt;connectieparameters&gt;</code> zijn bijvoorbeeld <code>--port</code> en <code>--username</code>. </p>
-<p>Het kan een aantal uur duren tot het inladen gereed is.</p>
+                <h2 id="postgresql">PostgreSQL<a class="headerlink" href="#postgresql" title="Permanent link">&para;</a></h2>
+<p><a href=https://www.postgresql.org/>PostgreSQL</a> is een open source systeem voor object-relationele databases. Met toevoeging van de <a href=https://postgis.net/>PostGIS</a> extensie is er ondersteuning voor geografische objecten. Het is geschikt om big geodata mee te verwerken. Om deze reden bieden wij de volledige 3D BAG data aan als PostgreSQL dump.</p>
                 
               
               

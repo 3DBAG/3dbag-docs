@@ -239,7 +239,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-tabs__item">
       <a href="./" class="md-tabs__link md-tabs__link--active">
-        Datalevering
+        Data delivery
       </a>
     </li>
   
@@ -251,8 +251,8 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
 
 
   <li class="md-tabs__item">
-    <a href="../../terms/" class="md-tabs__link">
-      Gebruiksvoorwaarden
+    <a href="../../copyright/" class="md-tabs__link">
+      Copyright
     </a>
   </li>
 
@@ -432,7 +432,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-nav__item">
       <a href="../../schema/concepts/" class="md-nav__link">
-        Algemene concepten
+        General Concepts
       </a>
     </li>
   
@@ -444,7 +444,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-nav__item">
       <a href="../../schema/layers/" class="md-nav__link">
-        Datalagen
+        Data Layers
       </a>
     </li>
   
@@ -456,7 +456,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-nav__item">
       <a href="../../schema/attributes/" class="md-nav__link">
-        Attributen
+        Attributes
       </a>
     </li>
   
@@ -484,13 +484,13 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
-        Datalevering
+        Data delivery
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Datalevering" data-md-level="1">
+      <nav class="md-nav" aria-label="Data delivery" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
-          Datalevering
+          Data delivery
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -504,51 +504,12 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Webservices
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Webservices
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhoudsopgave
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#wfs" class="md-nav__link">
-    WFS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wms" class="md-nav__link">
-    WMS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#webservices-in-qgis" class="md-nav__link">
-    Webservices in QGIS
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -616,8 +577,8 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
   
     <li class="md-nav__item">
-      <a href="../../terms/" class="md-nav__link">
-        Gebruiksvoorwaarden
+      <a href="../../copyright/" class="md-nav__link">
+        Copyright
       </a>
     </li>
   
@@ -668,35 +629,8 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
 <nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhoudsopgave
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#wfs" class="md-nav__link">
-    WFS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wms" class="md-nav__link">
-    WMS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#webservices-in-qgis" class="md-nav__link">
-    Webservices in QGIS
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -713,20 +647,10 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
                   </a>
                 
                 
-                  <h1>Webservices</h1>
-                
-                <p>De webservices geven de mogelijkheid om met queries in de vorm van een URL te specificeren welke 3D BAG gebouwen je wil downloaden. Dit kan met behulp van bijvoorbeeld QGIS of FME handig gedaan worden.</p>
-<h3 id="wfs">WFS<a class="headerlink" href="#wfs" title="Permanent link">&para;</a></h3>
-<p><a href=https://www.ogc.org/standards/wfs>Web Feature Service (WFS)</a> is een OGC-standaard die beschrijft hoe geografische vectordata opgevraagd, gecreëerd en bewerkt kan worden via internet.</p>
-<p><img alt="Screenshot" src="../../images/wfs.jpg" /></p>
-<p><em>LoD2.2 van de WFS gevisualiseerd in QGIS, met de BRT Achtergrondkaart van PDOK op de achtergrond</em> </p>
-<h3 id="wms">WMS<a class="headerlink" href="#wms" title="Permanent link">&para;</a></h3>
-<p>Ook <a href=https://www.ogc.org/standards/wms>Web Map Service (WMS)</a> is een OGC-standaard, maar dan om kaarten als afbeelding op te vragen.</p>
-<p><img alt="Screenshot" src="../../images/wms.jpg" /></p>
-<p><em>Afbeelding van LoD2.2 van de WMS gevisualiseerd in QGIS, met de BRT Achtergrondkaart van PDOK op de achtergrond</em> </p>
-<h3 id="webservices-in-qgis">Webservices in QGIS<a class="headerlink" href="#webservices-in-qgis" title="Permanent link">&para;</a></h3>
-<p><a href=https://www.youtube.com/watch?v=dWTGOm3Emw4>Hier</a> vind je een QGIS tutorial over webservices van een van onze 3D geoinformation groep collega's. Op 3:18 in de video laat hij specifiek zien hoe je de webservices van de vorige versie van de 3D BAG gebruikt. Het grootste verschil met de nieuwe 3D BAG is dat je nu kan specificeren welke laag van de data je wil gebruiken (de tileset of een van de LoDs).</p>
-<p>In die video wordt eveneens de <a href=https://plugins.qgis.org/plugins/pdokservicesplugin/>PDOK services plugin</a> geïntroduceerd, welke handig is als referentiekaart.</p>
+                <h1 id="wfs">WFS<a class="headerlink" href="#wfs" title="Permanent link">&para;</a></h1>
+<p><a href=https://www.ogc.org/standards/wfs>Web Feature Service (WFS)</a> is een OGC-standaard die beschrijft hoe geografische vectordata opgevraagd, gecreëerd en bewerkt kan worden via internet. Door middel van queries kan je specificeren welke 3D BAG gebouwen je wil downloaden.</p>
+<h1 id="wms">WMS<a class="headerlink" href="#wms" title="Permanent link">&para;</a></h1>
+<p>Ook <a href=https://www.ogc.org/standards/wms>Web Map Service (WMS)</a> is een OGC-standaard, maar dan om kaarten als afbeelding op te vragen. </p>
                 
               
               
@@ -753,7 +677,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
               <span class="md-footer__direction">
                 Vorige
               </span>
-              Attributen
+              Attributes
             </div>
           </div>
         </a>
