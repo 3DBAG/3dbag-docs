@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#wavefront-obj" class="md-skip">
+        <a href="#blender" class="md-skip">
           Ga naar inhoud
         </a>
       
@@ -239,7 +239,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-tabs__item">
       <a href="../webservices/" class="md-tabs__link md-tabs__link--active">
-        Data delivery
+        Datalevering
       </a>
     </li>
   
@@ -252,7 +252,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
 
   <li class="md-tabs__item">
     <a href="../../copyright/" class="md-tabs__link">
-      Copyright
+      Gebruiksvoorwaarden
     </a>
   </li>
 
@@ -432,7 +432,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-nav__item">
       <a href="../../schema/concepts/" class="md-nav__link">
-        General Concepts
+        Algemene concepten
       </a>
     </li>
   
@@ -444,7 +444,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-nav__item">
       <a href="../../schema/layers/" class="md-nav__link">
-        Data Layers
+        Datalagen
       </a>
     </li>
   
@@ -456,7 +456,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-nav__item">
       <a href="../../schema/attributes/" class="md-nav__link">
-        Attributes
+        Attributen
       </a>
     </li>
   
@@ -484,13 +484,13 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
-        Data delivery
+        Datalevering
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Data delivery" data-md-level="1">
+      <nav class="md-nav" aria-label="Datalevering" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
-          Data delivery
+          Datalevering
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -574,8 +574,8 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#wavefront-obj" class="md-nav__link">
-    Wavefront OBJ
+  <a href="#blender" class="md-nav__link">
+    Blender
   </a>
   
 </li>
@@ -603,7 +603,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   
     <li class="md-nav__item">
       <a href="../../copyright/" class="md-nav__link">
-        Copyright
+        Gebruiksvoorwaarden
       </a>
     </li>
   
@@ -662,8 +662,8 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#wavefront-obj" class="md-nav__link">
-    Wavefront OBJ
+  <a href="#blender" class="md-nav__link">
+    Blender
   </a>
   
 </li>
@@ -687,8 +687,18 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
                 
                   <h1>Wavefront OBJ</h1>
                 
-                <h2 id="wavefront-obj">Wavefront OBJ<a class="headerlink" href="#wavefront-obj" title="Permanent link">&para;</a></h2>
-<p><a href=http://paulbourke.net/dataformats/obj/>Wavefront OBJ</a> is een open bestandsformaat voor 3D graphics. Het bevat dus geen attributen van de 3D BAG gebouwen, maar uitsluitend de geometrieën. Het kan geopend worden met bijvoorbeeld <a href=https://www.blender.org/>Blender</a>.</p>
+                <p><a href=http://paulbourke.net/dataformats/obj/>Wavefront OBJ</a> is een open bestandsformaat voor 3D graphics. Het bevat dus geen attributen van de 3D BAG gebouwen, maar uitsluitend de geometrieën. Het is voornamelijk beschikbaar voor het integreren van de 3D BAG data in CAD-software (voor bijvoorbeeld architecturele doeleinden) en software voor 3D-modellering (bijvoorbeeld <a href=https://www.blender.org/>Blender</a>).</p>
+<h3 id="blender">Blender<a class="headerlink" href="#blender" title="Permanent link">&para;</a></h3>
+<p><img alt="Screenshot" src="../images/blender.jpg" /></p>
+<p><em>Een 3D BAG tegel in OBJ-formaat geopend in Blender</em></p>
+<p>OBJ kan makkelijk geïmporteerd worden in Blender. Overigens is er ook een <a href=https://github.com/cityjson/Up3date>CityJSON plugin</a> beschikbaar.</p>
+<p>Omdat de bestanden werkelijke (en dus grote) coördinaten bevatten en niet gecentreerd zijn rondom de origin (0, 0, 0) in Blender zie je in eerste instantie dat de objecten flikkeren. Het is een goed idee om ze te verplaatsen naar het midden van de scene.</p>
+<p><img alt="Screenshot" src="../images/blender2.jpg" /></p>
+<p>Kies bij het importeren van de data voor <code>Z Up</code> zodat het model juist georiënteerd wordt. Om het makkelijker te maken kan je ook <code>Split by Object</code> uitzetten, zodat alle gebouwen als één object geladen worden. Je kan na het importeren de camera focussen op het model door het te selecteren in <code>Scene Collection</code> rechts op het scherm, en vervolgens op <code>.</code> op het numpad te drukken (de normale <code>.</code> op het toetsenbord werkt niet).</p>
+<p><img alt="Screenshot" src="../images/blender3.jpg" /></p>
+<p>Selecteer vervolgens het object (of alle individuele objecten als je ze op die manier ingeladen hebt) en druk op Tab om de Edit Mode te openen. Klik op het pijltje dat gemarkeerd is in bovenstaande screenshot...</p>
+<p><img alt="Screenshot" src="../images/blender4.jpg" /></p>
+<p>En verander X en Y naar 0. Druk wederom op <code>.</code> op het numpad om de camera weer te focussen op het model.</p>
                 
               
               
@@ -727,7 +737,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
               <span class="md-footer__direction">
                 Volgende
               </span>
-              Copyright
+              Gebruiksvoorwaarden
             </div>
           </div>
           <div class="md-footer__button md-icon">
