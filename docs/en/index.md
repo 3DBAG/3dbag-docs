@@ -51,8 +51,7 @@ Do you have an interesting use case for the 3D BAG? [We would love to hear about
 The [3D Basisvoorziening](https://www.pdok.nl/3d-basisvoorziening) is a collection of Dutch national 3D data sets created in a collaboration of the Kadaster and the 3D geoinformation research group. It was made available in the summer of 2020. While the 3D BAG only contains objects from the BAG, the 3D Basisvoorziening also contains object from the Large Scale Topographic Map (BGT) of the Netherlands. Thus, the 3D BAG only contains buildings, while the 3D Basisvoorziening is a watertight 3D model of the whole country. Furthermore, the 3D BAG only uses the AHN as height source, while the 3D Basisvoorziening also uses a yearly updated point cloud created from stereo images ([Beeldmateriaal Nederland](https://www.beeldmateriaal.nl/)). Neither the high resolution [Beeldmateriaal Nederland](https://www.beeldmateriaal.nl/), nor the point cloud created from it is open data.
 <!-- would remove this last sentence -->
 
-<!-- This paragraph is translated from Dutch. You can have a look what which parts (if at all) you would want to retain. -->
-<!-- I would leave this part out
+<!-- I would leave this part out -->
 The buildings from the BAG are used in the 3D Basisvoorziening since the height information is acquired from the air, and the footprints of the BAG are based on the top perspective of the building. Therefore they can be reconstructed more accurately than BGT footprints, because these are based on the ground level. The footprints from the BAG however do not perfectly connect with the BGT, and therefore <a href=https://docs.geostandaarden.nl/3dbv/prod/#voorbewerking-van-bag-en-bgt>pre-processing on the 2D data</a> needs to be done to yield a watertight 3D model in the end.>
 
 The tools and algorithms that are used for generating the 3D Basisvoorziening, are created by the 3D geoinformation group. In fact, the LoD1.3 models in the 3D Basisvoorziening were generated with an older, more stable version of the same algorithms that we use in the 3D BAG. Since then, we have improved the reconstruction process specifically for a better LoD2.2 reconstruction.
@@ -63,7 +62,7 @@ The [3D Geluid](https://www.pdok.nl/3d-input-data-voor-geluidssimulaties-versie-
 
 Both the 3D Geluid and the 3D BAG use the BAG as a basis for the buildings. While the 3D BAG uses the AHN only, the 3D Geluid data has been extended with LoD1.2 models that were generated with the current point cloud of Kadaster where the buildings are newer than AHN.
 
-Besides building models, the 3D Geluid data also contains two additional layers that model the height of the terrain, and the sound absorption values of the various terrain objects. The building models in 3D Geluid data are LoD1.3 andrepresented as 2D only, since the currently common noise calculation software can only handle 2D buildings (+ height attribute).
+Besides building models, the 3D Geluid data also contains two additional layers that model the height of the terrain, and the sound absorption values of the various terrain objects. The building models in 3D Geluid data are LoD1.3 and represented as 2D only, since the currently common noise calculation software can only handle 2D buildings (+ height attribute).
 
 Similarly to the 3D Basisvoorziening, the LoD1.3 models in the 3D Geluid data were generated with an older, more stable version of the same algorithms that we use in the 3D BAG.
 
