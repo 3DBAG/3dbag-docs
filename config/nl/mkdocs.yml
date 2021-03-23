@@ -54,15 +54,15 @@ nav:
     - 'Over ons': 'overview/group.md'
     - 'Release-opmerkingen': 'overview/release_notes.md'
   - Schema:
-    - 'General Concepts': 'schema/concepts.md'
-    - 'Data Layers': 'schema/layers.md'
-    - 'Attributes': 'schema/attributes.md'
-  - 'Data delivery':
+    - 'Algemene concepten': 'schema/concepts.md'
+    - 'Datalagen': 'schema/layers.md'
+    - 'Attributen': 'schema/attributes.md'
+  - 'Datalevering':
       - 'Webservices': 'delivery/webservices.md'
       - 'GeoPackage': 'delivery/gpkg.md'
       - 'CityJSON': 'delivery/cityjson.md'
       - 'PostgreSQL': 'delivery/postgresql.md'
       - 'Wavefront OBJ': 'delivery/obj.md'
-  - 'Copyright': 'copyright.md'
+  - 'Gebruiksvoorwaarden': 'copyright.md'
   - Contact: contact.md
   - 'Viewer': 'https://3dbag.nl'

@@ -8,6 +8,8 @@ De kenmerken en kwaliteit van de 3D BAG hangen af van de invoerdata die gebruikt
 
 De BAG bevat meerdere objecttypen, maar voor de 3D BAG worden alleen de panden gebruikt. De (2D) geometrieën in de BAG representeren de voetafdrukken van gebouwen als genomen van het bovenaanzicht, in tegenstelling tot de BGT die gebaseerd is op het maaiveld. Een overzicht van de attributen die behoren tot BAG-objecten is <a href=https://imbag.github.io/praktijkhandleiding/attributen>hier</a> te vinden.
 
+Als invoerdata voor de 3D BAG wordt altijd de meest recente <a href=https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag/bag-2.0-producten/bag-2.0-wat-is-er-veranderd>BAG 2.0</a> gebruikt. 
+
 ## AHN
 
 <a href=https://www.ahn.nl/>Het Actueel Hoogtebestand Nederland (AHN)</a> is het openlijk beschikbare digitale hoogtemodel van Nederland. Vanuit de lucht worden door middel van LiDAR-metingen precieze en gedetailleerde hoogtegegevens ingewonnen, resulterend in een dataset met gemiddeld 8 punten per vierkante meter.
