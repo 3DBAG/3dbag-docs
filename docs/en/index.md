@@ -67,6 +67,6 @@ Similarly to the 3D Basisvoorziening, the LoD1.3 models in the 3D Geluid data we
 - One of the most common questions related to building heights is the exact number of floors in the building. However, answering this proves to be more complex than dividing the building height by an average floor height (eg 3 meters). Thus, we have [an ongoing MSc research](https://3d.bk.tudelft.nl/education/#theses) that is investigating this topic.
 - Addresses. At the moment we don't add the addresses from the BAG to the 3D BAG. We might add them in the future.
 
+## Funding
 
-![erc_logo](images/erc_logo_small.png) 
-*This project has received funding from the European Research Council (ERC) under the European Unions Horizon2020 Research & Innovation Programme (grant agreement no. 677312 UMnD: Urban modelling in higher dimensions).*
+![erc_logo](images/erc_logo_small.png){ align=left } *This project has received funding from the European Research Council (ERC) under the European Unions Horizon2020 Research & Innovation Programme (grant agreement no. 677312 UMnD: Urban modelling in higher dimensions).*
