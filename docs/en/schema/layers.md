@@ -20,7 +20,7 @@ Some buildings have multiple disjoint part above the terrain, while they are con
 
 The figure below illustrates the relation between the **feature** and the various geometry parts <span style="color:#24a1c8ff">**above terrain**</span>.
 
-![3dbag_ref](../images/3d_bag_layers_reference.svg){ width=100% }
+![3dbag_ref](../../../images_common/3d_bag_layers_reference.svg){ width=100% }
 
 <!-- start layers (DO NOT REMOVE THIS MARKER AND DO NOT EDIT THE TEXT BELOW. SEE README.) -->
 ## `pand`

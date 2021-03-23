@@ -73,4 +73,4 @@ Similarly to the 3D Basisvoorziening, the LoD1.3 models in the 3D Geluid data we
 
 ## Funding
 
-![erc_logo](images/erc_logo_small.png){ align=left } *This project has received funding from the European Research Council (ERC) under the European Unions Horizon2020 Research & Innovation Programme (grant agreement no. 677312 UMnD: Urban modelling in higher dimensions).*
+![erc_logo](../images_common/erc_logo_small.png){ align=left } *This project has received funding from the European Research Council (ERC) under the European Unions Horizon2020 Research & Innovation Programme (grant agreement no. 677312 UMnD: Urban modelling in higher dimensions).*

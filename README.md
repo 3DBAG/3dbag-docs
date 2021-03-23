@@ -45,6 +45,7 @@ The multi-language project layout follows the proposal as described in [https://
          nl/
             index.md
             ...
+   images_common           # Contains the images that are common to both languages
    scripts/                # Utility scripts
    overrides/              # Template overrides, e.g. favicon, logo
 ```
