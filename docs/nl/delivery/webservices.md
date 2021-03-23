@@ -4,17 +4,17 @@ De webservices geven de mogelijkheid om met queries in de vorm van een URL te sp
 
 <a href=https://www.ogc.org/standards/wfs>Web Feature Service (WFS)</a> is een OGC-standaard die beschrijft hoe geografische vectordata opgevraagd, gecreëerd en bewerkt kan worden via internet.
 
-![Screenshot](../../../images_common/wfs.jpg)
+![Screenshot](../../../images_common/wfs.png)
 
-*LoD2.2 van de WFS gevisualiseerd in QGIS, met de BRT Achtergrondkaart van PDOK op de achtergrond* 
+*LoD1.3 van de WFS gevisualiseerd in QGIS, met de BRT Achtergrondkaart van PDOK op de achtergrond* 
 
 ### WMS
 
 Ook <a href=https://www.ogc.org/standards/wms>Web Map Service (WMS)</a> is een OGC-standaard, maar dan om kaarten als afbeelding op te vragen.
 
-![Screenshot](../../../images_common/wms.jpg)
+![Screenshot](../../../images_common/wms.png)
 
-*Afbeelding van LoD2.2 van de WMS gevisualiseerd in QGIS, met de BRT Achtergrondkaart van PDOK op de achtergrond* 
+*Afbeelding van LoD1.3 van de WMS gevisualiseerd in QGIS, met de BRT Achtergrondkaart van PDOK op de achtergrond* 
 
 ### Webservices in QGIS
 
