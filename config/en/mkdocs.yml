@@ -57,12 +57,12 @@ nav:
     - 'General Concepts': 'schema/concepts.md'
     - 'Data Layers': 'schema/layers.md'
     - 'Data Attributes': 'schema/attributes.md'
-  - 'Data delivery':
+  - 'Data Delivery':
       - 'Webservices': 'delivery/webservices.md'
       - 'GeoPackage': 'delivery/gpkg.md'
       - 'CityJSON': 'delivery/cityjson.md'
       - 'PostgreSQL': 'delivery/postgresql.md'
       - 'Wavefront OBJ': 'delivery/obj.md'
-  - 'Terms of Use': 'terms.md'
+  - 'Copyright': 'copyright.md'
   - Contact: contact.md
   - 'Viewer': 'https://3dbag.nl'

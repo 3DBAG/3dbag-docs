@@ -24,7 +24,8 @@ with layers_md.open("w") as fo:
     fo.write(layers_md_txt[:idx_start])
 
     for lname, ldesc in layers.items():
-        fo.write(f"\n## `{lname}`\n\n")
-        fo.write(f"{ldesc[lang]['description']}\n\n")
+        if lang in ldesc:
+            fo.write(f"\n## `{lname}`\n\n")
+            fo.write(f"{ldesc[lang]['description']}\n\n")
 
     fo.write(layers_md_txt[idx_end:])

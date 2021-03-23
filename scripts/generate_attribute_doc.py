@@ -36,14 +36,15 @@ with attributes_md.open("w") as fo:
         fo.write("# Data Attributen\n\n")
 
     for aname, adesc in attr.items():
-        fo.write(f"\n## `{aname}`\n\n")
-        fo.write(f"{adesc[lang]['description']}\n\n")
-        fo.write(f"{type_txt}: {adesc[lang]['type']}\n\n")
-        fo.write(f"{unit_txt}: {adesc[lang]['unit']}\n\n")
-        if "source" in adesc[lang]:
-            fo.write(f"{source_txt}: {adesc[lang]['source']}\n\n")
-        if "values" in adesc[lang]:
-            fo.write(f"{values_txt}:\n\n")
-            fo.write(values_tbl_header)
-            for k, v in adesc[lang]["values"].items():
-                fo.write(f"| `{k}` | {v} |\n")
+        if lang in adesc:
+            fo.write(f"\n## `{aname}`\n\n")
+            fo.write(f"{adesc[lang]['description']}\n\n")
+            fo.write(f"{type_txt}: {adesc[lang]['type']}\n\n")
+            fo.write(f"{unit_txt}: {adesc[lang]['unit']}\n\n")
+            if "source" in adesc[lang]:
+                fo.write(f"{source_txt}: {adesc[lang]['source']}\n\n")
+            if "values" in adesc[lang]:
+                fo.write(f"{values_txt}:\n\n")
+                fo.write(values_tbl_header)
+                for k, v in adesc[lang]["values"].items():
+                    fo.write(f"| `{k}` | {v} |\n")
