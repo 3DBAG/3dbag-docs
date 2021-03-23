@@ -16,7 +16,7 @@ The 3D BAG is open data. This includes all downloadable data files and data dist
 
 We require that you use the credit “© 3D BAG by tudelft3d”. 
 
-In digital media you must also provide a link to [this copyright page](https://docs.3dbag.nl/en/copyright). In printed media, or where links are not possible, its best if you expand the credit to "3D BAG by 3D geoinformation research group" and direct the readers to "3dbag.nl".
+In digital media you must also provide a link to [this copyright page](https://docs.3dbag.nl/en/copyright). In printed media, or where links are not possible, its best if you expand the credit to "3D BAG by 3D geoinformation research group, TU Delft" and direct the readers to "3dbag.nl".
 
 The name *tudelft3d* is a short alias to the full name of our group, *3D geoinformation research group*. We use *tudelft3d* often in our communication.
 
