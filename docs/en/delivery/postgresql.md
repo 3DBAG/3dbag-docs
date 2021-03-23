@@ -16,4 +16,4 @@ pg_restore \
 <path to the unzipped backup file>
 ```
 
-Set `--jobs` to a maximum of 8, as there are only 8 tables. The `<connection parameters>` are `--port` and `--username` for instance. The restore process can take a long time.
+The `<connection parameters>` are `--port` and `--username` for instance. The restore process can take a long time.
