@@ -14,8 +14,6 @@ pg_restore \
 <pad naar ongezipt bestand>
 ```
 
-Stel `--jobs` in op maximaal 8, omdat er 8 tables zijn. 
-
 `<connectieparameters>` zijn bijvoorbeeld `--port` en `--username`. 
 
 Het kan een aantal uur duren tot het inladen gereed is.
