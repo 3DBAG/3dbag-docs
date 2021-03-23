@@ -6,11 +6,11 @@ The quality and characteristics of the 3D BAG partly depend on the source data t
 
 The [Register of Buildings and Addresses](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag) (BAG) is the most detailed, openly available data set on buildings and addresses in the Netherlands. It contains information about each address in a building, such as its current use, construction date or registration status. The data set is regularly updated as new buildings are registered, built or demolished. The municipalities are responsible for the acquisition, maintenance and quality assurance of the data within their boundaries. The data from all municipalities together are centralised and published by Kadaster.
 
-The BAG contains serveral types of geometrical objects. For the 3D BAG only the *buildings* are used. The polygons in the BAG represent the outline of the building as the projection of the building as seen from above (including underground parts). While in comparison, the BGT registers the footprint of the building as it touches the terrain. The geometry of BAG buildings is acquired from aerial photos and terrestrial measurements and the data positional data accuracy is 30cm. An overview of the attributes of the BAG can be found [in the BAG manual](https://imbag.github.io/praktijkhandleiding/attributen). 
+The BAG contains several types of geometrical objects. For the 3D BAG only the *buildings* are used. The polygons in the BAG represent the outline of the building as the projection of the building as seen from above (including underground parts). While in comparison, the BGT registers the footprint of the building as it touches the terrain. The geometry of BAG buildings is acquired from aerial photos and terrestrial measurements and the data positional data accuracy is 30cm. An overview of the attributes of the BAG can be found [in the BAG manual](https://imbag.github.io/praktijkhandleiding/attributen). 
 
 ## AHN
 
-The [National Height Model](https://www.ahn.nl) of the Netherlands (AHN) is the openly available elevation data set of the Netherlands. This is acquired through airborn laser scranning (LiDAR), with an average point density of 8 points per square meter for the current version.
+The [National Height Model](https://www.ahn.nl) of the Netherlands (AHN) is the openly available elevation data set of the Netherlands. This is acquired through airborne laser scanning (LiDAR), with an average point density of 8 points per square meter for the current version.
 
 For the 3D BAG we currently use the third version, AHN3. This version was collected in stages, between 2014 and 2019. [Here](https://www.ahn.nl/historie) you can find the collection dates for each region in the Netherlands.
 
@@ -32,4 +32,4 @@ For the 3D BAG, the BGT is used for detecting the buildings that overlap with ot
 
 The TOP10NL is part of the [TOPNL data sets](https://www.kadaster.nl/zakelijk/producten/geo-informatie/topnl), which belong to the [Topographic Register](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/brt) of the Netherlands. These are topographic maps at various scales, ranging from 1:10,000 to 1:1,500,000. They can be used as data source, as well as base maps in visualisations.
 
-From the TOP10NL we only use the buildings, in order to identify the greenhouses and large warehouses among the BAG objects. Due to their glass roof, greehouses are problematic for our reconstruction algorithm. Therefore we only model them with a simplified shape.
+From the TOP10NL we only use the buildings, in order to identify the greenhouses and large warehouses among the BAG objects. Due to their glass roof, greenhouses are problematic for our reconstruction algorithm. Therefore we only model them with a simplified shape.
