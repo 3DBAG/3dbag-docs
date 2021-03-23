@@ -3,7 +3,7 @@ site_author: '3D geoinformation group'
 site_description: '3D BAG productbeschrijving'
 docs_dir: '../../docs/nl'
 site_dir: '../../generated/nl'
-repo_url: https://github.com/tudelft3d/3dbag-docs
+#repo_url: https://github.com/tudelft3d/3dbag-docs
 copyright: Copyright &copy; 2021 3D geoinformation group
 
 
