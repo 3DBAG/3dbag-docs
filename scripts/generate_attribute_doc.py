@@ -23,7 +23,7 @@ if lang == "en":
     values_txt = "*Values*"
     values_tbl_header = "| Values | Description |\n| :---- | :---------- |\n"
 else:
-    type_txt = "*Data typ*"
+    type_txt = "*Data type*"
     unit_txt = "*Eenheid*"
     source_txt = "*Bron*"
     values_txt = "*Waarden*"
