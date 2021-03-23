@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#geopackage" class="md-skip">
+        <a href="#geopackage-in-3d-in-qgis" class="md-skip">
           Skip to content
         </a>
       
@@ -490,12 +490,37 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          GeoPackage
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         GeoPackage
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#geopackage-in-3d-in-qgis" class="md-nav__link">
+    GeoPackage in 3D in QGIS
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -603,8 +628,21 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#geopackage-in-3d-in-qgis" class="md-nav__link">
+    GeoPackage in 3D in QGIS
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -617,7 +655,29 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
               
                 
                 
-                <h1 id="geopackage">GeoPackage<a class="headerlink" href="#geopackage" title="Permanent link">&para;</a></h1>
+                  <h1>GeoPackage</h1>
+                
+                <p><a href="https://www.geopackage.org/">GeoPakcage</a> is an open geodata format, based on <a href="https://www.sqlite.org/index.html">SQLite</a>. It supports vector features, tile matrix sets, attributes and also extensions. The format can be used for storing certain types of 3D geometries. It is widely adopted an can be used in QGIS, ArcGIS and FME too.</p>
+<p>The 3D BAG GeoPackage files contain <a href="../../schema/layers/#data-layers">all the layers</a>.</p>
+<h2 id="geopackage-in-3d-in-qgis">GeoPackage in 3D in QGIS<a class="headerlink" href="#geopackage-in-3d-in-qgis" title="Permanent link">&para;</a></h2>
+<p>When opening a 3D BAG file in QGIS (by dragging the file or going to <code>Layer</code> -&gt; <code>Add Layer</code> -&gt; <code>Add Vector Layer...</code>), you can choose which layers to import. In QGIS 3 it is possible to view the 3D layers in the 3D viewer (exact steps may vary between versions):</p>
+<ol>
+<li>
+<p>Adjust the <code>Layer Properties</code>. Go to the <code>3D View</code> tab and change <code>No Symbols</code> to <code>Single Symbol</code> and adjust the settings to your preference. In older QGIS 3 versions you will find the button <code>Enable 3D renderer</code> instead.</p>
+</li>
+<li>
+<p>Go to <code>View</code> -&gt; <code>3D Map View</code> to open the 3D viewer.</p>
+</li>
+</ol>
+<figure>
+  <img src="../../../images_common/gpkg.jpg" />
+  <figcaption>The tab in the Layer Properties with the settings for the 3D Map View.</figcaption>
+</figure>
+
+<figure>
+  <img src="../../../images_common/gpkg2.jpg" />
+  <figcaption>A portion of the 3D BAG data in GeoPackage format. On the top is the 3D Map View, in the bottom the attributes, and in the background the 2D features.</figcaption>
+</figure>
                 
               
               

@@ -478,12 +478,51 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Webservices
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Webservices
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wfs" class="md-nav__link">
+    WFS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wms" class="md-nav__link">
+    WMS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webservices-in-qgis" class="md-nav__link">
+    Webservices in QGIS
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -603,8 +642,35 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wfs" class="md-nav__link">
+    WFS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wms" class="md-nav__link">
+    WMS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webservices-in-qgis" class="md-nav__link">
+    Webservices in QGIS
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -617,8 +683,27 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
               
                 
                 
-                <h1 id="wfs">WFS<a class="headerlink" href="#wfs" title="Permanent link">&para;</a></h1>
-<h1 id="wms">WMS<a class="headerlink" href="#wms" title="Permanent link">&para;</a></h1>
+                  <h1>Webservices</h1>
+                
+                <p>Webservices make it possible to specify via an URL exactly which models to download from the 3D BAG. All major GIS software supports these services.</p>
+<p>From the 3D BAG we serve the <a href="../../schema/layers/#data-layers">2D layers</a> and the tile set that we use for distributing the data in various formats.</p>
+<h2 id="wfs">WFS<a class="headerlink" href="#wfs" title="Permanent link">&para;</a></h2>
+<p>The <a href="https://www.ogc.org/standards/wfs">Web Feature Service</a> (WFS) is an Open Geospatial Consortium standard, and it describes how to query, create and modify geospatial data through the internet.</p>
+<figure>
+  <img src="../../../images_common/wfs.png" />
+  <figcaption>LoD1.3 2D WFS layer visualised in QGIS, with the BRT Baselayer from PDOK in the background.</figcaption>
+</figure>
+
+<h2 id="wms">WMS<a class="headerlink" href="#wms" title="Permanent link">&para;</a></h2>
+<p>The <a href="https://www.ogc.org/standards/wms">Web Map Service</a> is an Open Geospatial Consortium standard to retrieve maps as images through the internet.</p>
+<figure>
+  <img src="../../../images_common/wms.png" />
+  <figcaption>LoD1.3 2D WMS layer visualised in QGIS, with the BRT Baselayer from PDOK in the background.</figcaption>
+</figure>
+
+<h2 id="webservices-in-qgis">Webservices in QGIS<a class="headerlink" href="#webservices-in-qgis" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.youtube.com/watch?v=dWTGOm3Emw4">Here</a> you find a tutorial on using webservices in QGIS, created by one of our colleagues at the 3D geoinformation research group. At <code>3:18</code> in the video you can see how to load the webservices of the previous 3D BAG version. The process is the same for the current 3D BAG version.</p>
+<p>The video also refers to the <a href="https://plugins.qgis.org/plugins/pdokservicesplugin/">PDOK services plugin</a>, which is very handy for loading base layers.</p>
                 
               
               

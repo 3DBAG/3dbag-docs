@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#importing-the-postgresql-backup" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -510,9 +515,36 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          PostgreSQL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         PostgreSQL
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importing-the-postgresql-backup" class="md-nav__link">
+    Importing the PostgreSQL backup
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -588,6 +620,35 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importing-the-postgresql-backup" class="md-nav__link">
+    Importing the PostgreSQL backup
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -596,7 +657,19 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
                 
                   <h1>PostgreSQL</h1>
                 
-                
+                <p><a href="https://www.postgresql.org/">PostgreSQL</a> is an open source relational database. With the <a href="https://postgis.net/">PostGIS</a> extension it is suitable for storing and managing very large geospatial databases. Therefore, we provide a PostgreSQL database dump of the complete 3D BAG.</p>
+<p>The 3D BAG PostgreSQL backup file contains <a href="../../schema/attributes/">all attributes</a> and <a href="../../schema/layers/#data-layers">all layers</a> that are available for the 3D BAG. The backup file was created with <code>pg_dump</code>, using the options <code>--no-owner --no-privileges --format=directory</code>.</p>
+<h2 id="importing-the-postgresql-backup">Importing the PostgreSQL backup<a class="headerlink" href="#importing-the-postgresql-backup" title="Permanent link">&para;</a></h2>
+<p>The backup can be restored with the following command. Adapt it to your requirements if needed (read more at <a href="https://www.postgresql.org/docs/current/app-pgrestore.html">pg_restore</a>).</p>
+<pre><code>pg_restore \
+--no-owner \
+--no-privileges \
+--format=directory \
+--jobs=8 \
+&lt;connection parameters&gt; \
+&lt;path to the unzipped backup file&gt;
+</code></pre>
+<p>The <code>&lt;connection parameters&gt;</code> are <code>--port</code> and <code>--username</code> for instance. The restore process can take a long time.</p>
                 
               
               

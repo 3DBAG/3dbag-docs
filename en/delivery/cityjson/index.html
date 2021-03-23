@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ninja-and-azul" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -498,9 +503,50 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          CityJSON
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         CityJSON
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ninja-and-azul" class="md-nav__link">
+    ninja and azul
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qgis-cityjson-loader-plugin" class="md-nav__link">
+    QGIS CityJSON Loader plugin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cjio" class="md-nav__link">
+    cjio
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -588,6 +634,49 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ninja-and-azul" class="md-nav__link">
+    ninja and azul
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qgis-cityjson-loader-plugin" class="md-nav__link">
+    QGIS CityJSON Loader plugin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cjio" class="md-nav__link">
+    cjio
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -596,7 +685,33 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
                 
                   <h1>CityJSON</h1>
                 
-                
+                <p><a href="https://www.cityjson.org/">CityJSON</a> is an open data format for distributing 3D city models (also known as digital twins), and a JSON-encoding of the <a href="https://www.ogc.org/standards/citygml">CityGML</a> data model. CityJSON is in the process of becoming a <a href="https://www.ogc.org/standards/community">community standard</a> of the Open Geospatial Consortium.</p>
+<p>The CityJSON specification prescribes how to store the geomety as well as the semantics of common objects in a city, eg. buildings, vegetation, roads, waterways and bridges. This makes the the data model optimal for spatial analysis.</p>
+<p>The three guiding principles for the format are compactness, simplicity and ease of use for software development. CityJSON has a 6x smaller size than CityGML due to the JSON-encoding. Furthermore, there are already <a href="https://www.cityjson.org/software/">several open software that work with CityJSON</a> files. We present a few of them below, try them out!</p>
+<p>The CityJSON files of the 3D BAG contain all the <a href="../../schema/layers/#data-layers">3D layers</a> (LoD1.2, LoD1.3, LoD2.2), but only the attributes that apply to the whole building.</p>
+<h2 id="ninja-and-azul">ninja and azul<a class="headerlink" href="#ninja-and-azul" title="Permanent link">&para;</a></h2>
+<p><a href="http://ninja.cityjson.org/">ninja</a> is a drag-and-drop web application for visualising and editing CityJSON files.</p>
+<p>On macOS <a href="https://github.com/tudelft3d/azul">azul</a> can visualise several data formats, including CityJSON.</p>
+<figure>
+  <img src="../../../images_common/ninja.jpg" />
+  <figcaption>A portion of the 3D BAG visualised in ninja</figcaption>
+</figure>
+
+<h2 id="qgis-cityjson-loader-plugin">QGIS CityJSON Loader plugin<a class="headerlink" href="#qgis-cityjson-loader-plugin" title="Permanent link">&para;</a></h2>
+<p>With the <a href="https://github.com/cityjson/cityjson-qgis-plugin">CityJSON loader plugin</a> it is possible to load CityJSON files into QGIS 3, and view them in 3D. You can open the 3D viewer by selecting <code>View</code> -&gt; <code>New 3D Map View</code>. For QGIS 3 versions older than 3.2, there is an <a href="https://github.com/cityjson/cityjson-qgis-plugin#3d-view-in-qgis-30">extra step necessary</a>.</p>
+<figure>
+  <img src="../../../images_common/qgis.jpg" />
+  <figcaption>A portion of the 3D BAG visualised in QGIS, with the 3D Map View on the left and the attributes on the right.</figcaption>
+</figure>
+
+<h2 id="cjio">cjio<a class="headerlink" href="#cjio" title="Permanent link">&para;</a></h2>
+<p><a href="https://github.com/cityjson/cjio">cjio</a> is tool with a command-line-interface for working with CityJSON files. For instance, you can get information about the file contents, subset and merge files, convert them to other formats etc.</p>
+<p>List all the attributes (and more) in a 3D BAG file:</p>
+<pre><code class="language-shell">cjio 3dbag_&lt;version&gt;_&lt;tile ID&gt;.json info --long
+</code></pre>
+<p>Extract only the LoD2.2 from a 3D BAG file:</p>
+<pre><code class="language-shell">cjio 3dbag_&lt;version&gt;_&lt;tile ID&gt;.json extract_lod 2 save out.json
+</code></pre>
                 
               
               
