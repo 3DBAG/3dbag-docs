@@ -716,7 +716,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
 <!-- I am unsure if there is a proper Dutch translation for Solid -->
 
 <p>Voor de 3D BAG is de meest relevante primitief de <a href="https://val3dity.readthedocs.io/en/latest/definitions/#solid">Solid</a>, aangezien we gebouwmodellen als zodanig beschouwen. Dit onderscheid is belangrijk omdat er andere (strictere) regels voor Solids gelden, ten opzichte van andere 3D primitieven.</p>
-<div class="admonition nb">
+<div class="admonition note">
 <p class="admonition-title">3D primitieven en dataformaten</p>
 <p>Niet ieder dataformaat ondersteunt de bovengenoemde 3D primitieven. Dat is eigenlijk zo voor al onze exportformaten, behalve CityJSON. Daarom gebruiken we in deze andere formaten de geometrietypes die het meest gelijkwaardig zijn aan Solids. De PostgreSQL backup is hierbij een bijzonder geval, omdat PostGIS technisch gezien Solids kan opslaan, maar alleen met de <a href="http://www.sfcgal.org/">SFCGAL-extensie</a>. Om het inladen van de PostgreSQL backup zo makkelijk mogelijk te maken, slaan we de 3D geometrieën op als <code>MultiPolygonZ</code>.</p>
 </div>
