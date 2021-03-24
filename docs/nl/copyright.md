@@ -6,9 +6,9 @@
 
 De 3D BAG is open data. Dit geldt ook voor alle downloadbare databestanden en data verspreid via webservices. Het staat je vrij om de 3D BAG data te kopiëren, verspreiden en aan te passen, zo lang je:
 
-1. de eer geeft aan de 3D geoinformation group,
+1. credits geeft aan de 3D geoinformation group,
 2. een link naar de licentie bijvoegt,
-3. en het aangeeft als je enige veranderingen aan hebt gebracht aan de data.
+3. en aangeeft als je enige veranderingen aan hebt gebracht aan de data.
 
 *Let op dat sommige inhoud van de documentatie hergebruikt is uit andere teksten. De bron van deze inhoud is expliciet aangegeven, en het is belangrijk om je te houden aan diens respectievelijke licentie wanneer je deze gebruikt.*
 
@@ -16,11 +16,11 @@ De 3D BAG is open data. Dit geldt ook voor alle downloadbare databestanden en da
 
 We vereisen dat je de regel “© 3D BAG by tudelft3d” gebruikt bij je toepassing.
 
-In digitale media moet je eveneens een link naar [deze copyright-pagina](https://docs.3dbag.nl/en/copyright) bijvoegen. In afgedrukte media, of waar links niet mogelijk zijn, is de beste manier om de regel "3D BAG by 3D geoinformation research group, TU Delft" bij te voegen, en de lezers te verwijzen naar "3dbag.nl".
+In digitale media moet je eveneens een link naar [deze copyright-pagina](https://docs.3dbag.nl/en/copyright) bijvoegen. In geprinte media, of waar links niet mogelijk zijn, is de beste manier om de regel "3D BAG by 3D geoinformation research group, TU Delft" bij te voegen, en de lezers te verwijzen naar "3dbag.nl".
 
-De naam *tudelft3d* is een korte alias van de volledige naam van onze groep, *3D geoinformation research group*. We gebruiken *tudelft3d* vaak bij onze communicatiemiddelen.
+De naam *tudelft3d* is een korte alias van de volledige naam van onze groep, *3D geoinformation research group*. We gebruiken *tudelft3d* vaak bij onze communicatie.
 
-Als je de 3D BAG data integreert in een interactieve elektronische kaart, moet je de genoemde tekstregel plaatsen in de rechteronderhoek van de kaart.
+Als je de 3D BAG data integreert in een interactieve elektronische kaart/visualisatie, moet je de genoemde tekstregel plaatsen in de rechteronderhoek van de kaart.
 
 ## Software
 
