@@ -1,4 +1,4 @@
-<a href=http://paulbourke.net/dataformats/obj/>Wavefront OBJ</a> is een open bestandsformaat voor 3D graphics. Het bevat dus geen attributen van de 3D BAG gebouwen, maar uitsluitend de geometrieën. Het is voornamelijk beschikbaar voor het integreren van de 3D BAG data in 3D CAD software (waar mogelijk conversie van de data voor benodigd is) en software voor 3D-modellering (bijvoorbeeld <a href=https://www.blender.org/>Blender</a>).
+[Wavefront OBJ](http://paulbourke.net/dataformats/obj/) is een open bestandsformaat voor 3D graphics. Het bevat dus geen attributen van de 3D BAG gebouwen, maar uitsluitend de geometrieën. Het is voornamelijk beschikbaar voor het integreren van de 3D BAG data in 3D CAD software (waar mogelijk conversie van de data voor benodigd is) en software voor 3D-modellering (bijvoorbeeld [Blender](https://www.blender.org/)).
 
 De OBJ-bestanden van de 3D BAG bevatten alleen de 3D geometrieën en [elke 3D laag](../schema/layers.md#data-layers) is opgeslagen in een apart bestand. Ze zijn gecomprimeerd in een ZIP-bestand per tegel. De object-coördinaten zijn in het [Amersfoort / RD New + NAP height](http://epsg.io/7415) geodetisch coördinatensysteem.
 
@@ -9,7 +9,7 @@ De OBJ-bestanden van de 3D BAG bevatten alleen de 3D geometrieën en [elke 3D la
   <figcaption>Een 3D BAG tegel in OBJ-formaat geopend in Blender.</figcaption>
 </figure>
 
-OBJ kan makkelijk geïmporteerd worden in Blender. Overigens is er ook een <a href=https://github.com/cityjson/Up3date>CityJSON plugin</a> beschikbaar.
+OBJ kan makkelijk geïmporteerd worden in Blender. Overigens is er ook een [CityJSON plugin](https://github.com/cityjson/Up3date) beschikbaar.
 
 Omdat de bestanden werkelijke (en dus grote) coördinaten bevatten en niet gecentreerd zijn rondom de origin (0, 0, 0) in Blender zie je in eerste instantie dat de objecten flikkeren. Het is een goed idee om ze te verplaatsen naar het midden van de scene.
 
