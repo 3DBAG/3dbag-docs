@@ -39,7 +39,7 @@ Een aantal toepassingen van de dataset waar wij van weten:
 - Toepassingen gerelateerd aan het energieverbruik in panden, zoals het voorspellen daarvan, retrofitkosten, geschikte daken identificeren voor zonnepanelen.
 - Het simuleren van windstromen en de verspreiding van vervuilende stoffen in stedelijke gebieden (bijvoorbeeld [Simwind](https://3d.bk.tudelft.nl/projects/simwind/))
 - Het berekenen van geluidsvervuiling in stedelijke gebieden (bijvoorbeeld [3D Noise](https://3d.bk.tudelft.nl/projects/noise3d/))
-- Het analyseren van de stedelijke structuur en het evolueren van nieuwe stedelijke ontwikkelingen.
+- Het analyseren van de stedelijke structuur en het evalueren van nieuwe stedelijke ontwikkelingen.
 
 Heb je de 3D BAG gebruikt voor een interessante toepassing? [We horen er graag over!](contact.md)
 
