@@ -32,6 +32,6 @@ For the 3D BAG, the BGT is used for detecting the buildings that overlap with ot
 
 ## TOP10NL
 
-The TOP10NL is part of the [TOPNL data sets](https://www.kadaster.nl/zakelijk/producten/geo-informatie/topnl), which belong to the [Topographic Register](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/brt) of the Netherlands. These are topographic maps at various scales, ranging from 1:10,000 to 1:1,500,000. They can be used as data source, as well as base maps in visualisations.
+The TOP10NL is part of the [TOPNL data sets](https://www.kadaster.nl/zakelijk/producten/geo-informatie/topnl), which belong to the [Topographic Register](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/brt) of the Netherlands. The TOP10NL can be used at various scales, ranging from 1:5,000 to 1:25,000. It models several object types, including buildings and their function. The TOPNL data can be used as data source, as well as base maps in visualisations.
 
 From the TOP10NL we only use the buildings, in order to identify the greenhouses and large warehouses among the BAG objects. Due to their glass roof, greenhouses are problematic for our reconstruction algorithm. Therefore we only model them with a simplified shape.
