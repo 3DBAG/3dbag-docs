@@ -1,4 +1,4 @@
-[GeoPackage](https://www.geopackage.org/) is an open geodata format, based on [SQLite](https://www.sqlite.org/index.html). It supports vector features, tile matrix sets, attributes and also extensions. The format can be used for storing certain types of 3D geometries. It is widely adopted an can be used in QGIS, ArcGIS and FME too.
+[GeoPackage](https://www.geopackage.org/) is an open geodata format, based on [SQLite](https://www.sqlite.org/index.html). It supports vector features, tile matrix sets, attributes and also extensions. The format can be used for storing certain types of 3D geometry. It is widely adopted an can be used in QGIS, ArcGIS and FME too.
 
 The 3D BAG GeoPackage files contain [all the layers](../../schema/layers/#data-layers).
 
