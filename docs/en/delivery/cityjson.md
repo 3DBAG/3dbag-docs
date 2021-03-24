@@ -1,8 +1,8 @@
 [CityJSON](https://www.cityjson.org/) is an open data format for distributing 3D city models (also known as digital twins), and a JSON-encoding of the [CityGML](https://www.ogc.org/standards/citygml) data model. CityJSON is in the process of becoming a [community standard](https://www.ogc.org/standards/community) of the Open Geospatial Consortium.
 
-The CityJSON specification prescribes how to store the geomety as well as the semantics of common objects in a city, eg. buildings, vegetation, roads, waterways and bridges. This makes the the data model optimal for spatial analysis.
+The CityJSON specification prescribes how to store the 3D geometry as well as the semantics of common objects in a city, eg. buildings, vegetation, roads, waterways and bridges. This makes the the data model optimal for spatial analysis.
 
-The three guiding principles for the format are compactness, simplicity and ease of use for software development. CityJSON has a 6x smaller size than CityGML due to the JSON-encoding. Furthermore, there are already [several open software that work with CityJSON](https://www.cityjson.org/software/) files. We present a few of them below, try them out!
+The three guiding principles for the format are compactness, simplicity and ease of use for software development. CityJSON has approximately a 6x smaller size than CityGML due to the JSON-encoding. Furthermore, there are already [several open software that work with CityJSON](https://www.cityjson.org/software/) files. We present a few of them below. Try them out!
 
 The CityJSON files of the 3D BAG contain all the [3D layers](../../schema/layers/#data-layers) (LoD1.2, LoD1.3, LoD2.2), but only the attributes that apply to the whole building.
 
