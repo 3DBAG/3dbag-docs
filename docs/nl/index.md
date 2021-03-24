@@ -73,7 +73,7 @@ Naast gebouwmodellen, bevat de 3D Geluid data twee aanvullende lagen die de hoog
 
 ## Financiering
 
-![erc_logo](../../images_common/erc_logo_small.png){ align=left } 
+![erc_logo](../images_common/erc_logo_small.png){ align=left } 
 
 *Dit project heeft financiering ontvangen van de Europese onderzoeksraad (ERC) onder het European Unions Horizon2020 Research & Innovation Programme (grant agreement no. 677312 UMnD: Urban modelling in higher dimensions)*
 
