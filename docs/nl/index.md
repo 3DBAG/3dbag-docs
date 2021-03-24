@@ -1,6 +1,6 @@
 # Algemeen overzicht
 
-Welkom bij de documentatie van de 3D BAG door de 3D geoinformation groep! We geloven dat dit de eerste open 3D dataset is die volledig automatisch gegenereerd is en een heel land dekt op dit detailniveau.
+Welkom bij de documentatie van de 3D BAG door de 3D geoinformation groep! Volgens ons is dit de eerste open 3D dataset is die volledig automatisch gegenereerd is en een heel land dekt op dit detailniveau.
 
 Op deze pagina vind je algemene informatie over wat de 3D BAG is en hoe deze ontwikkeld is, een aantal praktische toepassingen waarvoor het gebruikt kan worden en hoe de 3D BAG in relatie staat tot andere Nederlandse datasets.
 
