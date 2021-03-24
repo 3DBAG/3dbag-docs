@@ -41,11 +41,15 @@ plugins:
 markdown_extensions:
   - toc:
       permalink: true
+      toc_depth: 3
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - attr_list
   - admonition
+  - pymdownx.snippets:
+      check_paths: true
+      base_path: "."
 
 nav:
   - Overzicht:
