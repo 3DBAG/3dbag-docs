@@ -25,6 +25,6 @@ Wanneer je de data in QGIS importeert (door het bestand er naar toe te slepen of
   <a href="../../../images_common/gpkg2.png">
     <img src="../../../images_common/gpkg2.png" />
   </a>
-  <figcaption>Een tegel in GeoPackage-formaat in QGIS. Bovenaan de 3D Map View, onderaan de attributen, en op de achtergrond de features in 2D.</figcaption>
+  <figcaption>Een tegel in GeoPackage-formaat in QGIS. Bovenaan de 3D Map View, links de attributen, en onderaan de features in 2D.</figcaption>
 </figure>
 

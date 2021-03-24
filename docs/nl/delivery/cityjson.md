@@ -34,7 +34,7 @@ De [CityJSON Loader plugin](https://github.com/cityjson/cityjson-qgis-plugin) vo
   <a href="../../../images_common/qgis.png">
     <img src="../../../images_common/qgis.png" />
   </a>
-  <figcaption>Een 3D BAG tegel geopend in QGIS, met de 3D Map View links en de attributen rechts.</figcaption>
+  <figcaption>Een 3D BAG tegel geopend in QGIS, met de 3D Map View boven en de features in 2D onder.</figcaption>
 </figure>
 
 ## cjio
