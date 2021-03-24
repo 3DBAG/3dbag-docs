@@ -657,7 +657,7 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
                 
                   <h1>Wavefront OBJ</h1>
                 
-                <p><a href="http://paulbourke.net/dataformats/obj/">Wavefront OBJ</a> is an open data format for 3D graphics. It does not contain any attributes or semantics, only the 3D geometry of the building models. This format is primarily suitable for importing the 3D BAG geometries into 3D graphics applications, or 3D CAD applicatons (this might require additional format conversion).</p>
+                <p><a href="http://paulbourke.net/dataformats/obj/">Wavefront OBJ</a> is an open data format for 3D graphics. It does not contain any attributes or semantics, only the 3D geometry of the building models. This format is primarily suitable for importing the 3D BAG geometries into 3D graphics applications or 3D CAD applicatons (this might require additional format conversion).</p>
 <p>The OBJ files for the 3D BAG contain the 3D geometries only and <a href="../../schema/layers/#data-layers">each 3D layer</a> is stored in a separate file. The three OBJ files are compressed into a single ZIP file per tile. The object coordinates are in the <a href="http://epsg.io/7415">Amersfoort / RD New + NAP height</a> coordinate reference system.</p>
 <h2 id="blender">Blender<a class="headerlink" href="#blender" title="Permanent link">&para;</a></h2>
 <figure>
@@ -666,7 +666,7 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
 </figure>
 
 <p>OBJ files can be directly opened in Blender. Besides, there is also a <a href="https://github.com/cityjson/Up3date">plugin for importing CityJSON files</a> into Blender.</p>
-<p>The objects in the files are a real-world coordinate system, therefore they have very large coordinates. When the file is imported into Blender, they are not centered around the origin (0, 0, 0) which causes the surfaces to flicker. Therefore, it is recommended to move the objects to the origin.</p>
+<p>The objects in the files are a real-world coordinate system. Therefore they have very large coordinates. When the file is imported into Blender, they are not centered around the origin (0, 0, 0) which causes the surfaces to flicker. Therefore, it is recommended to move the objects to the origin.</p>
 <p><img alt="Screenshot" src="../../../images_common/blender2.jpg" /></p>
 <p>When importing the OBJ file, choose the option <code>Z Up</code>, so that the objects are correctly oriented. If you turn off the <code>Split by Object</code>, then all objects (the buildings) are imported as a single Blender object, which makes it easier to move the whole file content. After the import, you can focus the camera to the objects by selecting <code>Scene Collection</code> on the right of the screen, then pressing <code>.</code> on the numpad (the regular <code>.</code> on the keyboard does not work).</p>
 <p><img alt="Screenshot" src="../../../images_common/blender3.jpg" /></p>
