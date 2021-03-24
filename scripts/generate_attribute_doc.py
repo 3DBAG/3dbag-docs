@@ -27,7 +27,7 @@ else:
     unit_txt = "*Eenheid*"
     source_txt = "*Bron*"
     values_txt = "*Waarden*"
-    values_tbl_header = "| Waarden | Omchrijving |\n| :----- | :----------- |\n"
+    values_tbl_header = "| Waarden | Omschrijving |\n| :----- | :----------- |\n"
 
 with attributes_md.open("w") as fo:
     if lang == "en":
