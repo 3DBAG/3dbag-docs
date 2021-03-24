@@ -2,13 +2,13 @@
 
 ## Level of Detail (LoD)
 
-All models are abstractions of reality. Some are closer to the real thing, while others are less so. In 3D GIS, the Level of Detail (LoD) of a 3D model tells the amount of detail that is captured in the model. <!-- A high LoD can still be a bad approximation of reality -->
+All spatial models are abstractions of reality. Some are closer to the real thing, while others are less so. In 3D GIS, the Level of Detail (LoD) of a 3D model describes the amount of detail that is captured in the model. <!-- A high LoD can still be a bad approximation of reality -->
 For instance, consider a very simple building with four corners and a gabled roof. A very rough approximation of this building would be a cube. While on the other end, we could have individual surfaces in the model that follow the shape of the building exactly, each of them labelled with additional information like surface type, material etc.
 
 Higher LoDs (LoD2 and above) can label the surfaces of the model based on their function in the real object. <!-- this is not a hard requirement -->
-These labels are called *semantics*, and accordingly we call the labelled surfaces **semantic surfaces**. For instance in case of building models, we can talk about a *ground surface*, *wall surface*, *roof surface* etc.
+These labels are called *semantics*, and accordingly we call the labelled surfaces **semantic surfaces**. For instance in case of building models, we can identify a *ground surface*, *wall surface*, *roof surface* etc.
 
-In the 3D BAG we use the so called [*improved LoD specification*](http://doi.org/10.1016/j.compenvurbsys.2016.04.005), as it is displayed in the figure below.
+In the 3D BAG, we use the so called [*improved LoD specification*](http://doi.org/10.1016/j.compenvurbsys.2016.04.005), as it is displayed in the figure below.
 
 <figure>
   <img src="https://3d.bk.tudelft.nl/lod/lodtud.png" />
@@ -32,7 +32,7 @@ In 3D GIS, the geometric primitives and their rules need to be extended to the t
   <figcaption>3D primitives handled by val3dity. See: <b>Val3dity: validation of 3D GIS primitives according to the international standards.</b> Hugo Ledoux. Open Geospatial Data, Software and Standards 3 (1), 2018, pp. 1. <a href="http://dx.doi.org/10.1186/s40965-018-0043-x">DOI</a></figcaption>
 </figure>
 
-For the 3D BAG the most relevant primitive is the [Solid](https://val3dity.readthedocs.io/en/latest/definitions/#solid), as we treat the building models as Solids in our process. This distinction is important, because of the rules that apply to Solids, compared to other 3D primitives.
+For the 3D BAG the most relevant primitive is the [Solid](https://val3dity.readthedocs.io/en/latest/definitions/#solid), as we treat the building models as Solids in our process. This distinction is important, because of the (stricter) rules that apply to Solids, compared to other 3D primitives.
 
 !!! note "3D primitives and data formats"
     Not every data format supports the 3D primitives mentioned above. In fact, this applies to all our export formats except CityJSON. Therefore, in such formats we use the geometry types that are the closest equivalent to Solids. The PostgreSQL backup is a bit of an outlier here, because technically PostGIS can store Solids, but only with the [SFCGAL extension](http://www.sfcgal.org/). In order to cause the least friction for restoring the PostgreSQL backup, we store the 3D geometries as `MultiPolygonZ`.
