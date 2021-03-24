@@ -1,6 +1,6 @@
 # Help
 
-Als je vragen hebt over de data of hulp nodig hebt, ga naar [https://geoforum.nl/](https://geoforum.nl/). Gelieve de tag `3D BAG` te gebruiken bij het posten van vragen op het forum.
+Als je vragen hebt over de data of hulp nodig hebt, kun je [https://geoforum.nl/](https://geoforum.nl/) bezoeken. Gelieve de tag `3D BAG` te gebruiken bij het posten van vragen op het forum.
 
 # Feedback
 
