@@ -14,16 +14,16 @@ Wanneer je de data in QGIS importeert (door het bestand er naar toe te slepen of
 - Ga vervolgens naar `View` -> `3D Map View` om de data te bekijken.
 
 <figure>
-  <a href="../../../images_common/gpkg.jpg">
-    <img src="../../../images_common/gpkg.jpg" width="400" />
+  <a href="../../../images_common/gpkg.png">
+    <img src="../../../images_common/gpkg.png" width="400" />
   </a>
   <figcaption>De tab in de Layer Properties waar de instellingen aangepast kunnen worden voor de 3D Map View.</figcaption>
 </figure>
 
 
 <figure>
-  <a href="../../../images_common/gpkg2.jpg">
-    <img src="../../../images_common/gpkg2.jpg" />
+  <a href="../../../images_common/gpkg2.png">
+    <img src="../../../images_common/gpkg2.png" />
   </a>
   <figcaption>Een tegel in GeoPackage-formaat in QGIS. Bovenaan de 3D Map View, onderaan de attributen, en op de achtergrond de features in 2D.</figcaption>
 </figure>
