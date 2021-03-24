@@ -691,11 +691,11 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
                 
                 <h1 id="general-concepts">General Concepts<a class="headerlink" href="#general-concepts" title="Permanent link">&para;</a></h1>
 <h2 id="level-of-detail-lod">Level of Detail (LoD)<a class="headerlink" href="#level-of-detail-lod" title="Permanent link">&para;</a></h2>
-<p>All models are abstractions of reality. Some are closer to the real thing, while others are less so. In 3D GIS, the Level of Detail (LoD) of a 3D model tells the amount of detail that is captured in the model. <!-- A high LoD can still be a bad approximation of reality -->
+<p>All spatial models are abstractions of reality. Some are closer to the real thing, while others are less so. In 3D GIS, the Level of Detail (LoD) of a 3D model describes the amount of detail that is captured in the model. <!-- A high LoD can still be a bad approximation of reality -->
 For instance, consider a very simple building with four corners and a gabled roof. A very rough approximation of this building would be a cube. While on the other end, we could have individual surfaces in the model that follow the shape of the building exactly, each of them labelled with additional information like surface type, material etc.</p>
 <p>Higher LoDs (LoD2 and above) can label the surfaces of the model based on their function in the real object. <!-- this is not a hard requirement -->
-These labels are called <em>semantics</em>, and accordingly we call the labelled surfaces <strong>semantic surfaces</strong>. For instance in case of building models, we can talk about a <em>ground surface</em>, <em>wall surface</em>, <em>roof surface</em> etc.</p>
-<p>In the 3D BAG we use the so called <a href="http://doi.org/10.1016/j.compenvurbsys.2016.04.005"><em>improved LoD specification</em></a>, as it is displayed in the figure below.</p>
+These labels are called <em>semantics</em>, and accordingly we call the labelled surfaces <strong>semantic surfaces</strong>. For instance in case of building models, we can identify a <em>ground surface</em>, <em>wall surface</em>, <em>roof surface</em> etc.</p>
+<p>In the 3D BAG, we use the so called <a href="http://doi.org/10.1016/j.compenvurbsys.2016.04.005"><em>improved LoD specification</em></a>, as it is displayed in the figure below.</p>
 <figure>
   <img src="https://3d.bk.tudelft.nl/lod/lodtud.png" />
   <figcaption><b>An improved LOD specification for 3D building models.</b> Filip Biljecki, Hugo Ledoux, and Jantien Stoter. Computers, Environment and Urban Systems, 59: 25–37, 2016. <a href="http://doi.org/10.1016/j.compenvurbsys.2016.04.005">DOI</a></figcaption>
@@ -714,7 +714,7 @@ These labels are called <em>semantics</em>, and accordingly we call the labelled
   <figcaption>3D primitives handled by val3dity. See: <b>Val3dity: validation of 3D GIS primitives according to the international standards.</b> Hugo Ledoux. Open Geospatial Data, Software and Standards 3 (1), 2018, pp. 1. <a href="http://dx.doi.org/10.1186/s40965-018-0043-x">DOI</a></figcaption>
 </figure>
 
-<p>For the 3D BAG the most relevant primitive is the <a href="https://val3dity.readthedocs.io/en/latest/definitions/#solid">Solid</a>, as we treat the building models as Solids in our process. This distinction is important, because of the rules that apply to Solids, compared to other 3D primitives.</p>
+<p>For the 3D BAG the most relevant primitive is the <a href="https://val3dity.readthedocs.io/en/latest/definitions/#solid">Solid</a>, as we treat the building models as Solids in our process. This distinction is important, because of the (stricter) rules that apply to Solids, compared to other 3D primitives.</p>
 <div class="admonition note">
 <p class="admonition-title">3D primitives and data formats</p>
 <p>Not every data format supports the 3D primitives mentioned above. In fact, this applies to all our export formats except CityJSON. Therefore, in such formats we use the geometry types that are the closest equivalent to Solids. The PostgreSQL backup is a bit of an outlier here, because technically PostGIS can store Solids, but only with the <a href="http://www.sfcgal.org/">SFCGAL extension</a>. In order to cause the least friction for restoring the PostgreSQL backup, we store the 3D geometries as <code>MultiPolygonZ</code>.</p>
