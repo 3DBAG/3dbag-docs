@@ -14,8 +14,9 @@ On macOS [azul](https://github.com/tudelft3d/azul) can visualise several data fo
 
 <figure>
   <img src="../../../images_common/ninja.jpg" />
-  <figcaption>A portion of the 3D BAG visualised in ninja</figcaption>
+  <figcaption>A portion of the 3D BAG visualised in ninja.</figcaption>
 </figure>
+
 
 ## QGIS CityJSON Loader plugin
 

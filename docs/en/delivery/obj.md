@@ -1,4 +1,4 @@
-[Wavefront OBJ](http://paulbourke.net/dataformats/obj/) is an open data format for 3D graphics. It does not contain any attributes or semantics, only the 3D geometry of the building models. This format is primarily suitable for importing the 3D BAG geometries into 3D graphics  applications, or 3D CAD applicatons (this might require additional format conversion).
+[Wavefront OBJ](http://paulbourke.net/dataformats/obj/) is an open data format for 3D graphics. It does not contain any attributes or semantics, only the 3D geometry of the building models. This format is primarily suitable for importing the 3D BAG geometries into 3D graphics applications, or 3D CAD applicatons (this might require additional format conversion).
 
 The OBJ files for the 3D BAG contain the 3D geometries only and [each 3D layer](../schema/layers.md#data-layers) is stored in a separate file. The three OBJ files are compressed into a single ZIP file per tile. The object coordinates are in the [Amersfoort / RD New + NAP height](http://epsg.io/7415) coordinate reference system.
 
