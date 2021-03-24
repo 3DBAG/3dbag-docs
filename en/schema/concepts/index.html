@@ -691,9 +691,9 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
                 
                 <h1 id="general-concepts">General Concepts<a class="headerlink" href="#general-concepts" title="Permanent link">&para;</a></h1>
 <h2 id="level-of-detail-lod">Level of Detail (LoD)<a class="headerlink" href="#level-of-detail-lod" title="Permanent link">&para;</a></h2>
-<p>All spatial models are abstractions of reality. Some are closer to the real thing, while others are less so. In 3D GIS, the Level of Detail (LoD) of a 3D model describes the amount of detail that is captured in the model. <!-- A high LoD can still be a bad approximation of reality -->
+<p>All spatial models are abstractions of reality. Some are closer to the real thing, while others are less so. In 3D GIS, the Level of Detail (LoD) of a 3D model describes the amount of detail that is captured in the model, although a high LoD can still be an inaccurate approximation of reality.
 For instance, consider a very simple building with four corners and a gabled roof. A very rough approximation of this building would be a cube. While on the other end, we could have individual surfaces in the model that follow the shape of the building exactly, each of them labelled with additional information like surface type, material etc.</p>
-<p>Higher LoDs (LoD2 and above) can label the surfaces of the model based on their function in the real object. <!-- this is not a hard requirement -->
+<p>Higher LoDs (LoD2 and above) can label the surfaces of the model based on their function in the real object.
 These labels are called <em>semantics</em>, and accordingly we call the labelled surfaces <strong>semantic surfaces</strong>. For instance in case of building models, we can identify a <em>ground surface</em>, <em>wall surface</em>, <em>roof surface</em> etc.</p>
 <p>In the 3D BAG, we use the so called <a href="http://doi.org/10.1016/j.compenvurbsys.2016.04.005"><em>improved LoD specification</em></a>, as it is displayed in the figure below.</p>
 <figure>
@@ -721,7 +721,7 @@ These labels are called <em>semantics</em>, and accordingly we call the labelled
 </div>
 <h2 id="valid-3d-geometries">Valid 3D geometries<a class="headerlink" href="#valid-3d-geometries" title="Permanent link">&para;</a></h2>
 <p>Having valid geometries is important for using the data in various applications. Standards help to define a common set of rules to which both data producers and consumers can adhere to, when working with data. <a href="https://val3dity.readthedocs.io/en/latest/">val3dity</a> is a software that validates 3D primitives according to the international standard ISO19107.</p>
-<p>We integrated val3dity into our process, and so we validate each 3D model after it is reconstructed. However, the building models are validated independently as they go through the reconstruction process. Therefore we cannot detect errors in the interaction of multiple models (error codes above 500).</p>
+<p>We integrated val3dity into our process, and so we validate each 3D model after it is reconstructed. However, the building models are validated independently as they go through the reconstruction process. Therefore, we cannot detect errors in the interaction of multiple models (error codes above 500).</p>
 <div class="admonition note">
 <p class="admonition-title">val3dity_codes</p>
 <p>The attribute <a href="../attributes/#val3dity_codes"><code>val3dity_codes</code></a> stores the error codes from val3dity (if any) for a model.</p>
