@@ -11,11 +11,11 @@ De OBJ-bestanden van de 3D BAG bevatten alleen de 3D geometrieën en [elke 3D la
 
 OBJ kan makkelijk geïmporteerd worden in Blender. Overigens is er ook een [CityJSON plugin](https://github.com/cityjson/Up3date) beschikbaar.
 
-Omdat de bestanden werkelijke (en dus grote) coördinaten bevatten en niet gecentreerd zijn rondom de origin (0, 0, 0) in Blender zie je in eerste instantie dat de objecten flikkeren. Het is een goed idee om ze te verplaatsen naar het midden van de scene.
+Omdat de bestanden werkelijke (en dus grote) coördinaten bevatten en niet gecentreerd zijn rondom de origin (0, 0, 0) in Blender zie je in eerste instantie dat de objecten flikkeren. Het is daarom een goed idee om ze te verplaatsen naar het midden van de scene.
 
 ![Screenshot](../../../images_common/blender2.jpg)
 
-Kies bij het importeren van de data voor `Z Up` zodat het model juist georiënteerd wordt. Om het makkelijker te maken kan je ook `Split by Object` uitzetten, zodat alle gebouwen als één object geladen worden. Je kan na het importeren de camera focussen op het model door het te selecteren in `Scene Collection` rechts op het scherm, en vervolgens op `.` op het numpad te drukken (de normale `.` op het toetsenbord werkt niet).
+Kies bij het importeren van de data voor `Z Up` zodat het model juist georiënteerd wordt. Om het makkelijker te maken kan je ook `Split by Object` uitzetten, zodat alle gebouwen als één object geladen worden. Je kunt na het importeren de camera focussen op het model door het te selecteren in `Scene Collection` rechts op het scherm, en vervolgens op `.` op het numpad te drukken (de normale `.` op het toetsenbord werkt niet).
 
 ![Screenshot](../../../images_common/blender3.jpg)
 
