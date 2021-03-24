@@ -5,7 +5,9 @@ De OBJ-bestanden van de 3D BAG bevatten alleen de 3D geometrieën en [elke 3D la
 ## Blender
 
 <figure>
-  <img src="../../../images_common/blender.jpg" />
+  <a href="../../../images_common/blender.jpg">
+    <img src="../../../images_common/blender.jpg" />
+  </a>
   <figcaption>Een 3D BAG tegel in OBJ-formaat geopend in Blender.</figcaption>
 </figure>
 
@@ -13,15 +15,27 @@ OBJ kan makkelijk geïmporteerd worden in Blender. Overigens is er ook een [City
 
 Omdat de bestanden werkelijke (en dus grote) coördinaten bevatten en niet gecentreerd zijn rondom de origin (0, 0, 0) in Blender zie je in eerste instantie dat de objecten flikkeren. Het is daarom een goed idee om ze te verplaatsen naar het midden van de scene.
 
-![Screenshot](../../../images_common/blender2.jpg)
+<figure>
+  <a href="../../../images_common/blender2.jpg">
+    <img src="../../../images_common/blender2.jpg" width="600" />
+  </a>
+</figure>
 
 Kies bij het importeren van de data voor `Z Up` zodat het model juist georiënteerd wordt. Om het makkelijker te maken kan je ook `Split by Object` uitzetten, zodat alle gebouwen als één object geladen worden. Je kunt na het importeren de camera focussen op het model door het te selecteren in `Scene Collection` rechts op het scherm, en vervolgens op `.` op het numpad te drukken (de normale `.` op het toetsenbord werkt niet).
 
-![Screenshot](../../../images_common/blender3.jpg)
+<figure>
+  <a href="../../../images_common/blender3.jpg">
+    <img src="../../../images_common/blender3.jpg" width="450" />
+  </a>
+</figure>
 
 Selecteer vervolgens het object (of alle individuele objecten als je ze op die manier ingeladen hebt) en druk op Tab om de Edit Mode te openen. Klik op het pijltje dat gemarkeerd is in bovenstaande screenshot...
 
-![Screenshot](../../../images_common/blender4.jpg)
+<figure>
+  <a href="../../../images_common/blender4.jpg">
+    <img src="../../../images_common/blender4.jpg" width="300" />
+  </a>
+</figure>
 
 En verander X en Y naar 0. Druk wederom op `.` op het numpad om de camera weer te focussen op het model.
 

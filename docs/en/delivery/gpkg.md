@@ -11,11 +11,15 @@ When opening a 3D BAG file in QGIS (by dragging the file or going to `Layer` -> 
 2. Go to `View` -> `3D Map View` to open the 3D viewer.
 
 <figure>
-  <img src="../../../images_common/gpkg.jpg" />
+  <a href="../../../images_common/gpkg.jpg">
+    <img src="../../../images_common/gpkg.jpg" width="400" />
+  </a>
   <figcaption>The tab in the Layer Properties with the settings for the 3D Map View.</figcaption>
 </figure>
 
 <figure>
-  <img src="../../../images_common/gpkg2.jpg" />
+  <a href="../../../images_common/gpkg2.jpg">
+    <img src="../../../images_common/gpkg2.jpg" />
+  </a>
   <figcaption>A portion of the 3D BAG data in GeoPackage format. On the top is the 3D Map View, in the bottom the attributes, and in the background the 2D features.</figcaption>
 </figure>

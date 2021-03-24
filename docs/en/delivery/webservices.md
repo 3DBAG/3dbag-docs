@@ -7,7 +7,9 @@ From the 3D BAG we serve the [2D layers](../schema/layers.md#data-layers) and th
 The [Web Feature Service](https://www.ogc.org/standards/wfs) (WFS) is an Open Geospatial Consortium standard, and it describes how to query, create and modify geospatial data through the internet.
 
 <figure>
-  <img src="../../../images_common/wfs.png" />
+  <a href="../../../images_common/wfs.png">
+    <img src="../../../images_common/wfs.png" width="600" />
+  </a>
   <figcaption>LoD1.3 2D WFS layer visualised in QGIS, with the BRT Baselayer from PDOK in the background.</figcaption>
 </figure>
 
@@ -16,7 +18,9 @@ The [Web Feature Service](https://www.ogc.org/standards/wfs) (WFS) is an Open Ge
 The [Web Map Service](https://www.ogc.org/standards/wms) is an Open Geospatial Consortium standard to retrieve maps as images through the internet.
 
 <figure>
-  <img src="../../../images_common/wms.png" />
+  <a href="../../../images_common/wms.png">
+    <img src="../../../images_common/wms.png" width="600" />
+  </a>
   <figcaption>LoD1.3 2D WMS layer visualised in QGIS, with the BRT Baselayer from PDOK in the background.</figcaption>
 </figure>
 
