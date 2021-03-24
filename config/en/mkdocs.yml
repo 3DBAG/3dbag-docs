@@ -1,5 +1,5 @@
-site_name: '3D BAG'
-site_author: '3D geoinformation group'
+site_name: '3D BAG by tudelft3d'
+site_author: '3D geoinformation research group'
 site_description: '3D BAG documentation'
 docs_dir: '../../docs/en'
 site_dir: '../../generated/en'
