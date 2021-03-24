@@ -6,7 +6,9 @@ The quality and characteristics of the 3D BAG partly depend on the source data t
 
 The [Register of Buildings and Addresses](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag) (BAG) is the most detailed, openly available data set on buildings and addresses in the Netherlands. It contains information about each address in a building, such as its current use, construction date or registration status. The data set is regularly updated as new buildings are registered, built or demolished. The municipalities are responsible for the acquisition, maintenance and quality assurance of the data within their boundaries. The data from all municipalities together are centralised and published by Kadaster.
 
-The BAG contains several types of geometrical objects. For the 3D BAG only the *buildings* are used. The polygons in the BAG represent the outline of the building as the projection of the building as seen from above (including underground parts). While in comparison, the BGT registers the footprint of the building as it touches the terrain. The geometry of BAG buildings is acquired from aerial photos and terrestrial measurements and the data positional data accuracy is 30cm. An overview of the attributes of the BAG can be found [in the BAG manual](https://imbag.github.io/praktijkhandleiding/attributen). 
+The BAG contains several types of geometrical objects. For the 3D BAG only the *buildings* are used. The polygons in the BAG represent the outline of the building as the projection of the building as seen from above (including underground parts). While in comparison, the BGT registers the footprint of the building as it touches the terrain. The geometry of BAG buildings is acquired from aerial photos and terrestrial measurements and the data positional data accuracy is 30 cm. An overview of the attributes of the BAG can be found [in the BAG manual](https://imbag.github.io/praktijkhandleiding/attributen). 
+
+As source for the 3D BAG we always use the most recent [BAG 2.0](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag/bag-2.0-producten/bag-2.0-wat-is-er-veranderd) data.
 
 ## AHN
 
