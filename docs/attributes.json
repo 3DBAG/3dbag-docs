@@ -4,12 +4,22 @@
       "description": "Geometry ID.",
       "type": "nominal number",
       "unit": "-"
+    },
+    "nl": {
+      "description": "Geometrie ID.",
+      "type": "nominaal getal",
+      "unit": "-"
     }
   },
   "fid": {
     "en": {
       "description": "Numeric ID of a building (feature).",
       "type": "nominal number",
+      "unit": "-"
+    },
+    "nl": {
+      "description": "Numeriek ID van een pand (feature).",
+      "type": "nominaal getal",
       "unit": "-"
     }
   },
@@ -18,12 +28,22 @@
       "description": "Buildingpart ID. A building can have multiple parts when it was cut into parts because of underground parts.",
       "type": "nominal number",
       "unit": "-"
+    },
+    "nl": {
+      "description": "Panddeel ID. Een pand kan meerdere delen hebben wanneer het is opgedeeld vanwege ondergrondse delen.",
+      "type": "nominaal getal",
+      "unit": "-"
     }
   },
   "dd_id": {
     "en": {
       "description": "Dak Deel ID. Roofpart ID.",
       "type": "nominal number",
+      "unit": "-"
+    },
+    "nl": {
+      "description": "Dakdeel ID.",
+      "type": "nominaal getal",
       "unit": "-"
     }
   },
@@ -36,7 +56,7 @@
     },
     "nl": {
       "description": "BAG: De unieke aanduiding van een pand.",
-      "type": "text",
+      "type": "tekst",
       "unit": "-",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
@@ -50,7 +70,7 @@
     },
     "nl": {
       "description": "De aanduiding van het jaar waarin een pand oorspronkelijk als bouwkundig gereed is of zal worden opgeleverd.",
-      "type": "date",
+      "type": "datum",
       "unit": "`YYYY`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
@@ -75,8 +95,8 @@
       }
     },
     "nl": {
-      "description": "De fase van de levenscyclus van een pand, waarin hetbetreffende pand zich bevindt.",
-      "type": "categorical",
+      "description": "De fase van de levenscyclus van een pand, waarin het betreffende pand zich bevindt.",
+      "type": "categorisch",
       "unit": "-",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)",
       "values": {
@@ -102,7 +122,7 @@
     },
     "nl": {
       "description": "Een aanduiding waarmee kan worden aangegeven dat een pand in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname.",
-      "type": "categorical",
+      "type": "categorisch",
       "unit": "yes/no",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
@@ -115,8 +135,8 @@
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
-      "description": "De datum waarop het brondocument is vastgesteld, opbasis waarvan een opname, mutatie of een verwijderingvan gegevens ten aanzien van een pand heeft plaatsgevonden.",
-      "type": "date",
+      "description": "De datum waarop het brondocument is vastgesteld, op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een pand heeft plaatsgevonden.",
+      "type": "datum",
       "unit": "`YYYY-MM-DD`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
@@ -129,8 +149,8 @@
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
-      "description": "De unieke aanduiding van het brondocument op basiswaarvan een opname, mutatie of een verwijdering vangegevens ten aanzien van een pand heeft plaatsgevonden, binnen een gemeente.",
-      "type": "text",
+      "description": "De unieke aanduiding van het brondocument op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een pand heeft plaatsgevonden, binnen een gemeente.",
+      "type": "tekst",
       "unit": "`YYYY-MM-DD`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
@@ -143,8 +163,8 @@
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
-      "description": "",
-      "type": "ordinal number",
+      "description": "Houdt verband met de geschiedenis van de pandregistratie en de versie.",
+      "type": "ordinaal getal",
       "unit": "-",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
@@ -158,7 +178,7 @@
     },
     "nl": {
       "description": "De datum waarop een versie van een BAG-object geldig is in de werkelijkheid conform de ingangsdatum in het brondocument. Dit tijdstip wordt vastgelegd in de beginGeldigheid. Als er geen expliciete ingangsdatum van geldigheid is opgenomen, wordt de datum van het brondocument overgenomen.",
-      "type": "date",
+      "type": "datum",
       "unit": "`YYYY-MM-DD`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
@@ -172,7 +192,7 @@
     },
     "nl": {
       "description": "De datum waarop de periode van geldigheid van een versie van een BAG-object eindigt. Bijvoorbeeld als gevolg van de vaststelling van een nieuw brondocument. Wanneer er geen tijdstip is ingevuld, dan is de versie nog geldig. Dit tijdstip wordt vastgelegd in de eindGeldigheid.",
-      "type": "date",
+      "type": "datum",
       "unit": "`YYYY-MM-DD`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
@@ -185,8 +205,8 @@
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
-      "description": "",
-      "type": "date-time",
+      "description": "Houdt verband met de geschiedenis van de pandregistratie en de versie.",
+      "type": "datum-tijd",
       "unit": "`YYYY-MM-DDThh:mm:ss.sss`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
@@ -200,7 +220,7 @@
     },
     "nl": {
       "description": "Dit is het tijdstip waarop een versie van een BAG-object is opgenomen in de registratie van de landelijke voorziening. De gegevens komen daarmee beschikbaar voor afnemers.",
-      "type": "date-time",
+      "type": "datum-tijd",
       "unit": "`YYYY-MM-DDThh:mm:ss.sss`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
@@ -213,8 +233,8 @@
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
-      "description": "",
-      "type": "date-time",
+      "description": "Houdt verband met de geschiedenis van de pandregistratie en de versie.",
+      "type": "datum-tijd",
       "unit": "`YYYY-MM-DDThh:mm:ss.sss`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
@@ -227,8 +247,8 @@
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
-      "description": "",
-      "type": "date-time",
+      "description": "Houdt verband met de geschiedenis van de pandregistratie en de versie.",
+      "type": "datum-tijd",
       "unit": "`YYYY-MM-DDThh:mm:ss.sss`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
@@ -241,8 +261,8 @@
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
-      "description": "",
-      "type": "date-time",
+      "description": "Houdt verband met de geschiedenis van de pandregistratie en de versie.",
+      "type": "datum-tijd",
       "unit": "`YYYY-MM-DDThh:mm:ss.sss`",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
@@ -252,6 +272,11 @@
       "description": "Elevation above sea level (Amsterdam Ordnance Datum) at the ground level of the building. Calculated as the 5th percentile of the ground points found within a 4 meter radius of the building.",
       "type": "real number",
       "unit": "metre"
+    },
+    "nl": {
+      "description": "Elevatie boven zeeniveau (NAP) op het maaiveldniveau van het pand. Berekend als het 5e percentiel van de maaiveldpunten gevonden binnen een radius van 4 meter van het pand.",
+      "type": "reëel getal",
+      "unit": "meter"
     }
   },
   "dak_type": {
@@ -266,12 +291,29 @@
         "no points": "No point was found for the building.",
         "could not detect": "Could not detect a roof surface, even though points were found."
       }
+    },
+    "nl": {
+      "description": "Daktype van het pand.",
+      "type": "categorisch",
+      "unit": "-",
+      "values": {
+        "slanted": "Dat met ten minste één schuin oppervlak.",
+        "multiple horizontal": "Dak met meerdere, uitsluitend horizontale oppervlakken.",
+        "single horizontal": "Dak met een enkel horizontaal oppervlak.",
+        "no points": "Er was geen punt gevonden voor het gebouw.",
+        "could not detect": "Kon geen dakoppervlak detecteren, ondanks dat er punten gevonden waren."
+      }
     }
   },
   "pw_datum": {
     "en": {
-      "description": "Acquisition date of the point cloud. In case of the AHN3, this is an assumed acquisition date, which is computed as 1st of December in the year *before* the officially reported acquisition year (inwijnjaar) of a particular AHN3 tile.",
+      "description": "Acquisition date of the point cloud. In case of the AHN3, this is an assumed acquisition date, which is computed as 1st of December in the year *before* the officially reported acquisition year (inwinjaar) of a particular AHN3 tile.",
       "type": "date",
+      "unit": "`YYYY-MM-DD`"
+    },
+    "nl": {
+      "description": "Inwinningsdatum van de puntenwolk. In het geval van de AHN3 is dit een veronderstelde inwinningsdatum, welke bepaald is als 1 december van het jaar *voor* het officieel gerapporteerde inwinjaar van een specifieke AHN3-tegel.",
+      "type": "datum",
       "unit": "`YYYY-MM-DD`"
     }
   },
@@ -285,12 +327,27 @@
         "no": "The point cloud was acquired before the construction date of the building.",
         "uncertain": "The point cloud was acquired in the same year as the construction date of the building."
       }
+    },
+    "nl": {
+      "description": "Geeft aan of de puntenwolk actueel is ten opzichte van de leeftijd van het pand.",
+      "type": "categorisch",
+      "unit": "-",
+      "values": {
+        "yes": "De puntenwolk is ingewonnen na de constructiedatum van het pand.",
+        "no": "De puntenwolk is ingewonnen voor de constructiedatum van het pand.",
+        "uncertain": "De puntenwolk is ingewonnen in hetzelfde jaar als de constructiedatum van het pand."
+      }
     }
   },
   "pw_bron": {
     "en": {
       "description": "Source of the point cloud.",
       "type": "text",
+      "unit": "-"
+    },
+    "nl": {
+      "description": "Bron van de puntenwolk.",
+      "type": "tekst",
       "unit": "-"
     }
   },
@@ -299,6 +356,11 @@
       "description": "Reconstruction method of the building model.",
       "type": "text",
       "unit": "-"
+    },
+    "nl": {
+      "description": "Reconstructiemethode van het gebouwmodel.",
+      "type": "tekst",
+      "unit": "-"
     }
   },
   "versie_methode": {
@@ -306,12 +368,22 @@
       "description": "Version of the building reconstruction method.",
       "type": "text",
       "unit": "-"
+    },
+    "nl": {
+      "description": "Versie van de reconstructiemethode voor panden.",
+      "type": "tekst",
+      "unit": "-"
     }
   },
   "kas_warenhuis": {
     "en": {
-      "description": "The building is greenhouse or warehouse (according to Top10NL).",
+      "description": "The building is greenhouse or warehouse (according to TOP10NL).",
       "type": "categorical",
+      "unit": "yes/no"
+    },
+    "nl": {
+      "description": "Het gebouw is een kas of een magazijn (volgens de TOP10NL).",
+      "type": "categorisch",
       "unit": "yes/no"
     }
   },
@@ -325,19 +397,39 @@
         "above ground": "Building or building part is completely above ground.",
         "underground": "Building or building part is completely under ground. "
       }
+    },
+    "nl": {
+      "description": "Ondergronds-classificatie van het pand of panddeel.",
+      "type": "categorisch",
+      "unit": "-",
+      "values": {
+        "floating": "Pand of panddeel zweeft boven andere objecten.",
+        "above ground": "Pand of panddeel is volledig bovengronds.",
+        "underground": "Pand of panddeel is volledig ondergronds."
+      }
     }
   },
   "reconstruction_skipped": {
     "en": {
-      "description": "Indicates whether full LoD1.2/LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.2 if lod11_replace==false).",
+      "description": "Indicates whether full LoD1.2/LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.1 if lod11_replace==false).",
       "type": "categorical",
+      "unit": "yes/no"
+    },
+    "nl": {
+      "description": "Geeft aan of de volledige LoD1.2/LoD1.3/LoD2.2 reconstructie is overgeslagen voor deze feature (en ook LoD1.1 als lod11_replace==false).",
+      "type": "categorisch",
       "unit": "yes/no"
     }
   },
   "lod11_replace": {
     "en": {
-      "description": "Indicates whether the LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.2 reconstruction if `lod12_replace==false`). This can happen when there were points found for instance.",
+      "description": "Indicates whether the LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.1 reconstruction if `lod11_replace==false`). This can happen when there were no points found for the building.",
       "type": "categorical",
+      "unit": "yes/no"
+    },
+    "nl": {
+      "description": "Geeft aan of de LoD1.3/LoD2.2 reconstructie is overgeslagen voor deze feature (en ook LoD1.1 als `lod11_replace==false`). Dit kan bijvoorbeeld gebeuren wanneer er geen punten gevonden zijn.",
+      "type": "categorisch",
       "unit": "yes/no"
     }
   },
@@ -346,6 +438,11 @@
       "description": "Elevation above sea level (NAP) at rooflevel. Calculated as the minimum of all elevation points on the corresponding roofpart.",
       "type": "real number",
       "unit": "metre"
+    },
+    "nl": {
+      "description": "Elevatie boven zeeniveau (NAP) op dakniveau. Berekend als het minimum van alle hoogtepunten op het corresponderende dakdeel.",
+      "type": "reëel getal",
+      "unit": "meter"
     }
   },
   "h_dak_50p": {
@@ -353,6 +450,11 @@
       "description": "Elevation above sea level (NAP) at rooflevel. Calculated as the median of all elevation points on the corresponding roofpart.",
       "type": "real number",
       "unit": "metre"
+    },
+    "nl": {
+      "description": "Elevatie boven zeeniveau (NAP) op dakniveau. Berekend als de mediaan van alle hoogtepunten op het corresponderende dakdeel.",
+      "type": "reëel getal",
+      "unit": "meter"
     }
   },
   "h_dak_70p": {
@@ -360,6 +462,11 @@
       "description": "Elevation above sea level (NAP) at rooflevel. Calculated as the 70th percentile of all elevation points on the corresponding roofpart.",
       "type": "real number",
       "unit": "metre"
+    },
+    "nl": {
+      "description": "Elevatie boven zeeniveau (NAP) op dakniveau. Berekend als het 70e percentiel van alle hoogtepunten op het corresponderende dakdeel.",
+      "type": "reëel getal",
+      "unit": "meter"
     }
   },
   "h_dak_max": {
@@ -367,6 +474,11 @@
       "description": "Elevation above sea level (NAP) at rooflevel. Calculated as the maximum of all elevation points on the corresponding roofpart.",
       "type": "real number",
       "unit": "metre"
+    },
+    "nl": {
+      "description": "Elevatie boven zeeniveau (NAP) op dakniveau. Berekend als het maximum van alle hoogtepunten op het corresponderende dakdeel.",
+      "type": "reëel getal",
+      "unit": "meter"
     }
   },
   "val3dity_codes": {
@@ -374,12 +486,22 @@
       "description": "[Val3dity error codes](https://val3dity.readthedocs.io/en/latest/errors) for the 3D model. `Null` means valid geometry.",
       "type": "list",
       "unit": "-"
+    },
+    "nl": {
+      "description": "[Val3dity foutcodes](https://val3dity.readthedocs.io/en/latest/errors) voor het 3D model. `Null` betekent valide geometry.",
+      "type": "lijst",
+      "unit": "-"
     }
   },
   "_semantics_values": {
     "en": {
       "description": "Building surface semantics. This is an array of integers, where an integer refers to a surface type (0: `GroundSurface`, 1: `RoofSurface`, 2: `OuterWallSurface`, 3: `InnerWallSurface`). If a surface does not have a semantic value, NULL is used instead. Thus the length of the array equals the number of surfaces, and the order of values in the array corresponds to the order of surfaces.",
       "type": "list",
+      "unit": "-"
+    },
+    "nl": {
+      "description": "Pand-oppervlaksemantiek. Dit is een array van integers, waarbij een integer verwijst naar een oppervlaktype (0: `GroundSurface`, 1: `RoofSurface`, 2: `OuterWallSurface`, 3: `InnerWallSurface`). Als een oppervlak geen semantische waarde heeft, wordt NULL gebruikt. De lengte van de array staat dus gelijk aan het aantal oppervlakken, en de volgorde van waarden in de array correspondeert met de volgorde van de oppervlakken.",
+      "type": "lijst",
       "unit": "-"
     }
   }
