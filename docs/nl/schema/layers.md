@@ -1,6 +1,6 @@
 # Datalagen
 
-![3dbag_layers](../images/3d_bag_layers_nl.svg){ width=100% }
+![3dbag_layers](../images/3d_bag_layers_nl.png){ width=100% }
 
 De bovenstaande diagram laat het verband zien tussen een gebouw in het echt en hoe het is gemodelleerd in de 3D BAG. De BAG modelleert gebouwen als de grootste omvang, gezien van het bovenaanzicht. In de praktijk is het een enkele 2D polygon per gebouw, gevisualiseerd als de zwarte polygoon in de figuur. Om deze reden bevat het **BAG-polygoon** ook de delen van het gebouw die zich ondergronds bevinden.
 
@@ -19,7 +19,7 @@ Sommige gebouwen hebben meerdere niet-verbonden bovengrondse delen, terwijl ze a
 
 De onderstaande figuur illustreert de relatie tussen de **feature** en de verschillende <span style="color:#24a1c8ff">**bovengrondse**</span> geometrie-delen.
 
-![3dbag_ref](../../../images_common/3d_bag_layers_reference.svg){ width=100% }
+![3dbag_ref](../../../images_common/3d_bag_layers_reference.png){ width=100% }
 
 <!-- start layers (DO NOT REMOVE THIS MARKER AND DO NOT EDIT THE TEXT BELOW. SEE README.) -->
 ## `pand`
