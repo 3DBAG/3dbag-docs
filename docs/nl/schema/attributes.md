@@ -1,4 +1,4 @@
-# Data-attributen
+# Data Attributen
 
 
 ## `_semantics_values`
@@ -116,7 +116,7 @@ Elevatie boven zeeniveau (NAP) op dakniveau. Berekend als de mediaan van alle ho
 
 *Datatype*: reëel getal
 
-*Eenheid*: metre
+*Eenheid*: meter
 
 
 ## `h_dak_70p`
@@ -125,7 +125,7 @@ Elevatie boven zeeniveau (NAP) op dakniveau. Berekend als het 70e percentiel van
 
 *Datatype*: reëel getal
 
-*Eenheid*: metre
+*Eenheid*: meter
 
 
 ## `h_dak_max`
@@ -134,7 +134,7 @@ Elevatie boven zeeniveau (NAP) op dakniveau. Berekend als het maximum van alle h
 
 *Datatype*: reëel getal
 
-*Eenheid*: metre
+*Eenheid*: meter
 
 
 ## `h_dak_min`
@@ -143,7 +143,7 @@ Elevatie boven zeeniveau (NAP) op dakniveau. Berekend als het minimum van alle h
 
 *Datatype*: reëel getal
 
-*Eenheid*: metre
+*Eenheid*: meter
 
 
 ## `h_maaiveld`
@@ -152,7 +152,7 @@ Elevatie boven zeeniveau (NAP) op het maaiveldniveau van het pand. Berekend als 
 
 *Datatype*: reëel getal
 
-*Eenheid*: metre
+*Eenheid*: meter
 
 
 ## `identificatie`
@@ -177,7 +177,7 @@ Het gebouw is een kas of een magazijn (volgens de TOP10NL).
 
 ## `lod11_replace`
 
-Geeft aan of de LoD1.3/LoD2.2 reconstructie is overgeslagen voor deze feature (en ook LoD1.2 als lod12_replace==false). Dit kan bijvoorbeeld gebeuren wanneer er geen punten gevonden zijn.
+Geeft aan of de LoD1.3/LoD2.2 reconstructie is overgeslagen voor deze feature (en ook LoD1.1 als `lod11_replace==false`). Dit kan bijvoorbeeld gebeuren wanneer er geen punten gevonden zijn.
 
 *Datatype*: categorisch
 
@@ -265,7 +265,7 @@ Reconstructiemethode van het gebouwmodel.
 
 ## `reconstruction_skipped`
 
-Geeft aan of de volledige LoD1.2/LoD1.3/LoD2.2 reconstructie is overgeslagen voor deze feature (en ook LoD1.2 als lod11_replace==false).
+Geeft aan of de volledige LoD1.2/LoD1.3/LoD2.2 reconstructie is overgeslagen voor deze feature (en ook LoD1.1 als lod11_replace==false).
 
 *Datatype*: categorisch
 

@@ -411,24 +411,24 @@
   },
   "reconstruction_skipped": {
     "en": {
-      "description": "Indicates whether full LoD1.2/LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.2 if lod11_replace==false).",
+      "description": "Indicates whether full LoD1.2/LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.1 if lod11_replace==false).",
       "type": "categorical",
       "unit": "yes/no"
     },
     "nl": {
-      "description": "Geeft aan of de volledige LoD1.2/LoD1.3/LoD2.2 reconstructie is overgeslagen voor deze feature (en ook LoD1.2 als lod11_replace==false).",
+      "description": "Geeft aan of de volledige LoD1.2/LoD1.3/LoD2.2 reconstructie is overgeslagen voor deze feature (en ook LoD1.1 als lod11_replace==false).",
       "type": "categorisch",
       "unit": "yes/no"
     }
   },
   "lod11_replace": {
     "en": {
-      "description": "Indicates whether the LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.2 reconstruction if `lod12_replace==false`). This can happen when there were points found for instance.",
+      "description": "Indicates whether the LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.1 reconstruction if `lod11_replace==false`). This can happen when there were no points found for the building.",
       "type": "categorical",
       "unit": "yes/no"
     },
     "nl": {
-      "description": "Geeft aan of de LoD1.3/LoD2.2 reconstructie is overgeslagen voor deze feature (en ook LoD1.2 als lod12_replace==false). Dit kan bijvoorbeeld gebeuren wanneer er geen punten gevonden zijn.",
+      "description": "Geeft aan of de LoD1.3/LoD2.2 reconstructie is overgeslagen voor deze feature (en ook LoD1.1 als `lod11_replace==false`). Dit kan bijvoorbeeld gebeuren wanneer er geen punten gevonden zijn.",
       "type": "categorisch",
       "unit": "yes/no"
     }

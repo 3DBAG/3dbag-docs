@@ -168,7 +168,7 @@ ID of a building.
 
 ## `kas_warenhuis`
 
-The building is greenhouse or warehouse (according to Top10NL).
+The building is greenhouse or warehouse (according to TOP10NL).
 
 *Data type*: categorical
 
@@ -176,8 +176,8 @@ The building is greenhouse or warehouse (according to Top10NL).
 
 
 ## `lod11_replace`
-<!-- Shouldn't it be "This can happen when there were NO points found for instance."? -->
-Indicates whether the LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.2 reconstruction if `lod12_replace==false`). This can happen when there were points found for instance.
+
+Indicates whether the LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.1 reconstruction if `lod11_replace==false`). This can happen when there were no points found for the building.
 
 *Data type*: categorical
 
@@ -247,7 +247,7 @@ Source of the point cloud.
 
 ## `pw_datum`
 
-Acquisition date of the point cloud. In case of the AHN3, this is an assumed acquisition date, which is computed as 1st of December in the year *before* the officially reported acquisition year (inwijnjaar) of a particular AHN3 tile.
+Acquisition date of the point cloud. In case of the AHN3, this is an assumed acquisition date, which is computed as 1st of December in the year *before* the officially reported acquisition year (inwinjaar) of a particular AHN3 tile.
 
 *Data type*: date
 
@@ -264,8 +264,8 @@ Reconstruction method of the building model.
 
 
 ## `reconstruction_skipped`
-<!-- shouldn't it be LoD1.1 when lod11_replace==false? -->
-Indicates whether full LoD1.2/LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.2 if lod11_replace==false).
+
+Indicates whether full LoD1.2/LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.1 if lod11_replace==false).
 
 *Data type*: categorical
 
