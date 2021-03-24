@@ -2,7 +2,7 @@
 
 De OBJ-bestanden van de 3D BAG bevatten alleen de 3D geometrieën en [elke 3D laag](../schema/layers.md#data-layers) is opgeslagen in een apart bestand. Ze zijn gecomprimeerd in een ZIP-bestand per tegel. De object-coördinaten zijn in het [Amersfoort / RD New + NAP height](http://epsg.io/7415) geodetisch coördinatensysteem.
 
-### Blender
+## Blender
 
 <figure>
   <img src="../../../images_common/blender.jpg" />

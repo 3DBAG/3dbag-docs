@@ -6,7 +6,7 @@ De drie leidende principes van het formaat zijn compactheid, eenvoud en makkelij
 
 De CityJSON-bestanden van de 3D BAG bevatten alle [3D lagen](../../schema/layers/#data-layers) (LoD1.2, LoD1.3, LoD2.2), maar alleen de attributen die betrekking hebben op het gehele gebouw.
 
-### ninja en azul
+## ninja en azul
 
 [ninja](http://ninja.cityjson.org) is een webapplicatie voor het visualiseren èn bewerken van CityJSON-bestanden.
 
@@ -18,7 +18,7 @@ Voor macOS is er [azul](https://github.com/tudelft3d/azul), een 3D viewer voor v
 </figure>
 
 
-### QGIS CityJSON Loader plugin
+## QGIS CityJSON Loader plugin
 
 De [CityJSON Loader plugin](https://github.com/cityjson/cityjson-qgis-plugin) voor QGIS 3 maakt het mogelijk om CityJSON-bestanden in te laden in QGIS, inclusief 3D visualisering. Je kunt de 3D visualisatie openen door naar `View` -> `New 3D Map View` te gaan. Voor versies van QGIS 3 ouder dan 3.2 is er daarvoor echter [een extra stap nodig](https://github.com/cityjson/cityjson-qgis-plugin#3d-view-in-qgis-30).
 
@@ -27,7 +27,7 @@ De [CityJSON Loader plugin](https://github.com/cityjson/cityjson-qgis-plugin) vo
   <figcaption>Een 3D BAG tegel geopend in QGIS, met de 3D Map View links en de attributen rechts.</figcaption>
 </figure>
 
-### cjio
+## cjio
 
 [cjio](https://github.com/cityjson/cjio) is een command-line-interface voor het verwerken van CityJSON-bestanden. Je kunt er bijvoorbeeld data mee valideren, bestanden opdelen of samenvoegen en converteren naar andere formaten.
 

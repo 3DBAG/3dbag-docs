@@ -2,7 +2,7 @@
 
 Het 3D BAG PostgreSQL backup-bestand heeft [alle attributen](../schema/attributes.md) en [alle lagen](../schema/layers.md#data-layers) die de 3D BAG heeft. Het bestand is gecreëerd met `pg_dump`, met de opties `--no-owner --no-privileges --format=directory`.
 
-### De dump inladen
+## De dump inladen
 
 Met het volgende commando kun je de dump inladen. Pas in ieder geval de laatste twee regels aan (lees  [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) voor meer informatie):
 

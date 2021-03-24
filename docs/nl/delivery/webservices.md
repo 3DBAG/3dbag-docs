@@ -2,7 +2,7 @@ De webservices geven de mogelijkheid om in de vorm van een URL exact te specific
 
 Van de 3D BAG bieden we zowel de [2D lagen](../schema/layers.md#data-layers) aan, als de tegelset die we gebruiken voor het verspreiden van de data in de verschillende formaten.
 
-### WFS
+## WFS
 
 [Web Feature Service (WFS)](https://www.ogc.org/standards/wfs) is een OGC-standaard die beschrijft hoe geografische vectordata opgevraagd, gecreëerd en bewerkt kan worden via internet.
 
@@ -11,7 +11,7 @@ Van de 3D BAG bieden we zowel de [2D lagen](../schema/layers.md#data-layers) aan
   <figcaption>LoD1.3 2D laag van de WFS gevisualiseerd in QGIS, met de BRT Achtergrondkaart van PDOK op de achtergrond.</figcaption>
 </figure>
 
-### WMS
+## WMS
 
 Ook [Web Map Service (WMS)](https://www.ogc.org/standards/wms) is een OGC-standaard, maar dan om kaarten als afbeelding op te vragen.
 
@@ -20,7 +20,7 @@ Ook [Web Map Service (WMS)](https://www.ogc.org/standards/wms) is een OGC-standa
   <figcaption>LoD1.3 2D laag van de WMS gevisualiseerd in QGIS, met de BRT Achtergrondkaart van PDOK op de achtergrond.</figcaption>
 </figure>
 
-### Webservices in QGIS
+## Webservices in QGIS
 
 [Hier](https://www.youtube.com/watch?v=dWTGOm3Emw4&list=PL4POqt8zsiXFJEEF88f6uAnfuOQSAoG6l) vind je een QGIS tutorial over webservices van een van onze 3D geoinformation groep collega's. Op 3:18 in de video laat hij specifiek zien hoe je de webservices van de vorige versie van de 3D BAG gebruikt. Het grootste verschil met de nieuwe 3D BAG is dat je nu kunt specificeren welke laag van de data je wilt gebruiken (de tileset of een van de LoDs).
 

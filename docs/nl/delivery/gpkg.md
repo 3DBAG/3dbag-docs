@@ -4,7 +4,7 @@
 
 De 3D BAG GeoPackage-bestanden bevatten [alle lagen](../../schema/layers/#data-layers).
 
-### GeoPackage in 3D in QGIS
+## GeoPackage in 3D in QGIS
 
 Wanneer je de data in QGIS importeert (door het bestand er naar toe te slepen of te gaan naar `Layer` -> `Add Layer` -> `Add Vector Layer...`) kun je kiezen uit de verschillende lagen die het bestand bevat. Om de data in 3D te zien (vanaf QGIS 3.0, maar afhankelijk van de exacte versie):
 
