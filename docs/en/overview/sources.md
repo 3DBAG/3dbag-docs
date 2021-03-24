@@ -18,7 +18,7 @@ For the 3D BAG we currently use the third version, AHN3. This version was collec
 
 One of the arguments against using the AHN for 3D reconstruction is that is deemed to be out dated by design, due to long mission times for acquiring the scans. However, the building stock changes in a relatively slow pace. This pace being faster in metropolitan regions and slower in remote areas of the country. Unfortunately, timestamps are not provided with the point data in the AHN3, but we can only compare the acquisition years for a region to the construction years of the buildings. From this we estimate that about 95% of the measured building heights are still valid (estimated for the 3D BAG generated in March 2021).
 
-Additionally, there is a variation in the point density between buildings. There can be gaps in the point cloud, caused by an occlusion through objects or water ponds on roofs. The number of available points, their distribution and accurate classification has a very significant impact on the quality of the reconstructed models.
+Additionally, there is a variation in the point density between buildings. There can be gaps in the point cloud, caused by an occlusion through objects, water ponds on roofs and scan angle. The number of available points, their distribution and accurate classification has a very significant impact on the quality of the reconstructed models. The quality attributes that we calculate for and assign to each model provide an indication of this quality.
 
 ### AHN4?
 
