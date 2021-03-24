@@ -14,7 +14,6 @@ These are the issues that we want to solve for the first full release of the 3D 
 + 2D and 3D variants of all LoDs. The 3D models are triangulated.
 + More accurate height calculation, due to our new reconstruction method.
 + Underground buildings and floating buildings are removed, underground parts are cut off from the models. This means that we modify the incoming BAG footprints by removing the underground parts.
-+ Buildings with an extremely noisy point cloud (eg. greenhouses) only have an extrusion as their 3D model, and they are not reconstructed in any of the three LoDs. Their BAG footprint is not modified either. Thus, these models are very similar to those in the previous 3D BAG version.
 + Integrated validation of the 3D models with val3dity.
 + OBJ and CityJSON data formats.
 + A completely re-worked documentation.
@@ -34,4 +33,6 @@ These are the issues that we want to solve for the first full release of the 3D 
 
 #### Known issues
 
-+ issue
++ Some buildings have a 'spike': a large deviation in the building geometry due to one vertex with an erroneous coordinate (3D models only).
++ Not all buildings are geometrically valid (eg. missing face). Note that this should be evident from the val3dity_codes attribute (3D models only).
++ Missing tiles: 42, 2178, 10, 3647, 309, 1389, 20, 736, 6, 8, 52, 50, 53, 57, 51.
