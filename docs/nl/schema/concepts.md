@@ -36,7 +36,7 @@ Voor 3D GIS moeten deze geometrische primitieven en de bijbehorende regels uitge
 
 Voor de 3D BAG is de meest relevante primitief de [Solid](https://val3dity.readthedocs.io/en/latest/definitions/#solid), aangezien we gebouwmodellen als zodanig beschouwen. Dit onderscheid is belangrijk omdat er andere (strictere) regels voor Solids gelden, ten opzichte van andere 3D primitieven.
 
-!!! NB "3D primitieven en dataformaten"
+!!! note "3D primitieven en dataformaten"
     Niet ieder dataformaat ondersteunt de bovengenoemde 3D primitieven. Dat is eigenlijk zo voor al onze exportformaten, behalve CityJSON. Daarom gebruiken we in deze andere formaten de geometrietypes die het meest gelijkwaardig zijn aan Solids. De PostgreSQL backup is hierbij een bijzonder geval, omdat PostGIS technisch gezien Solids kan opslaan, maar alleen met de [SFCGAL-extensie](http://www.sfcgal.org/). Om het inladen van de PostgreSQL backup zo makkelijk mogelijk te maken, slaan we de 3D geometrieën op als `MultiPolygonZ`.
 
 ## Valide 3D geometrieën
