@@ -264,7 +264,7 @@ Reconstruction method of the building model.
 
 
 ## `reconstruction_skipped`
-
+<!-- shouldn't it be LoD1.1 when lod11_replace==false? -->
 Indicates whether full LoD1.2/LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.2 if lod11_replace==false).
 
 *Data type*: categorical
