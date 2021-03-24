@@ -1,6 +1,6 @@
-The [3D geoinformation research group](https://3d.bk.tudelft.nl/) is part of the [Delft University of Technology](https://www.tudelft.nl/), and is affiliated with [AMS, the Amsterdam Institute for Advanced Metropolitan Solutions](https://www.ams-institute.org/). It focuses on the technologies underpinning geographical information systems (GIS), and aims at designing, developing, and implementing better systems to model 3D cities, buildings, and landscapes. These systems help in environmental modelling, urban planning, crisis management, automated cartographic generalisation, information modelling, modelling of the interior of buildings, etc. It is a multidisciplinary group, consisting of computer scientists, geomatics engineers, and geographers.
+De [3D geoinformation onderzoeksgroep](https://3d.bk.tudelft.nl/) is onderdeel van de [Technische Universiteit Delft](https://www.tudelft.nl/), en is verwant aan [AMS, the Amsterdam Institute for Advanced Metropolitan Solutions](https://www.ams-institute.org/). Het focust op de technologie achter geografische informatiesystemen (GIS), en heeft als doel het designen, ontwikkelen en implementeren van betere system voor het modelleren van 3D steden, gebouwen en landschappen. Deze systemen helpen bij het modelleren van het milieu, ruimtelijke orderning, crisismanagement, geautomatiseerde cartografische generalisatie, informatiemodellering, het modelleren van het interieur van gebouw, enzovoort. Het is een multidisciplinaire groep, gevormd door informatici, geomatica-ingenieurs en geografen.
 
-Creators of the 3D BAG (in alphabetical order):
+De makers van de 3D BAG (op alfabetische volgorde) zijn:
 
 + Balázs Dukai
 + Jordi van Liempt
