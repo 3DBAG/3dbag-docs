@@ -57,7 +57,7 @@ nav:
     - 'General Concepts': 'schema/concepts.md'
     - 'Data Layers': 'schema/layers.md'
     - 'Data Attributes': 'schema/attributes.md'
-  - 'Data Delivery':
+  - 'Data Formats':
       - 'Webservices': 'delivery/webservices.md'
       - 'GeoPackage': 'delivery/gpkg.md'
       - 'CityJSON': 'delivery/cityjson.md'

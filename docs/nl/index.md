@@ -6,7 +6,7 @@ Op deze pagina vind je algemene informatie over de 3D BAG en hoe deze is ontwikk
 
 - [Databronnen](overview/sources.md) beschrijft welke (delen van) andere datasets gebruikt zijn om de 3D BAG te ontwikkelen.
 - [Schema](schema/concepts.md) geeft gedetailleerde informatie over de structuur van de 3D BAG.
-- [Datalevering](delivery/webservices.md) geeft uitleg over de formaten waarin de 3D BAG beschikbaar is en hoe deze gebruikt kunnen worden.
+- [Dataformaten](delivery/webservices.md) geeft uitleg over de formaten waarin de 3D BAG beschikbaar is en hoe deze gebruikt kunnen worden.
 - [Gebruiksvoorwaarden](copyright.md) legt uit aan welke voorwaarden gebruikers van de 3D BAG moeten voldoen.
 - [Contact](contact.md) geeft aan waar je vragen kunt stellen en hoe je ons kan contacteren voor andere opmerkingen.
 - En in de [Viewer](https://3dbag.nl) kun je de 3D BAG zien vanuit je browser!

@@ -6,7 +6,7 @@ On this page you will find information on what is the 3D BAG and how it is creat
 
 - [Data Sources](overview/sources.md) describes the data sets that are used as input for the 3D BAG.
 - [Schema](schema/concepts.md) describes the structure of the 3D BAG in detail.
-- [Data Delivery](delivery/webservices.md) describes the different ways we deliver the 3D BAG.
+- [Data Formats](delivery/webservices.md) describes the different ways we deliver the 3D BAG.
 - [Terms of Use](copyright.md) explains the conditions that apply when using the 3D BAG in your application.
 - [Contact](contact.md) shows where you can ask questions or how can you contact us.
 - And with the [Viewer](https://3dbag.nl) you can view the 3D BAG in your browser!
