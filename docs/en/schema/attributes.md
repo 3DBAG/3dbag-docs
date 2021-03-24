@@ -176,7 +176,7 @@ The building is greenhouse or warehouse (according to Top10NL).
 
 
 ## `lod11_replace`
-
+<!-- Shouldn't it be "This can happen when there were NO points found for instance."? -->
 Indicates whether the LoD1.3/LoD2.2 reconstruction was skipped for this feature (and also LoD1.2 reconstruction if `lod12_replace==false`). This can happen when there were points found for instance.
 
 *Data type*: categorical
