@@ -2,10 +2,10 @@
 
 ## Level of Detail (LoD)
 
-All spatial models are abstractions of reality. Some are closer to the real thing, while others are less so. In 3D GIS, the Level of Detail (LoD) of a 3D model describes the amount of detail that is captured in the model. <!-- A high LoD can still be a bad approximation of reality -->
+All spatial models are abstractions of reality. Some are closer to the real thing, while others are less so. In 3D GIS, the Level of Detail (LoD) of a 3D model describes the amount of detail that is captured in the model, although a high LoD can still be an inaccurate approximation of reality.
 For instance, consider a very simple building with four corners and a gabled roof. A very rough approximation of this building would be a cube. While on the other end, we could have individual surfaces in the model that follow the shape of the building exactly, each of them labelled with additional information like surface type, material etc.
 
-Higher LoDs (LoD2 and above) can label the surfaces of the model based on their function in the real object. <!-- this is not a hard requirement -->
+Higher LoDs (LoD2 and above) can label the surfaces of the model based on their function in the real object.
 These labels are called *semantics*, and accordingly we call the labelled surfaces **semantic surfaces**. For instance in case of building models, we can identify a *ground surface*, *wall surface*, *roof surface* etc.
 
 In the 3D BAG, we use the so called [*improved LoD specification*](http://doi.org/10.1016/j.compenvurbsys.2016.04.005), as it is displayed in the figure below.
@@ -41,7 +41,7 @@ For the 3D BAG the most relevant primitive is the [Solid](https://val3dity.readt
 
 Having valid geometries is important for using the data in various applications. Standards help to define a common set of rules to which both data producers and consumers can adhere to, when working with data. [val3dity](https://val3dity.readthedocs.io/en/latest/) is a software that validates 3D primitives according to the international standard ISO19107.
 
-We integrated val3dity into our process, and so we validate each 3D model after it is reconstructed. However, the building models are validated independently as they go through the reconstruction process. Therefore we cannot detect errors in the interaction of multiple models (error codes above 500).
+We integrated val3dity into our process, and so we validate each 3D model after it is reconstructed. However, the building models are validated independently as they go through the reconstruction process. Therefore, we cannot detect errors in the interaction of multiple models (error codes above 500).
 
 !!! note "val3dity_codes"
     The attribute [`val3dity_codes`](attributes.md#val3dity_codes) stores the error codes from val3dity (if any) for a model.
