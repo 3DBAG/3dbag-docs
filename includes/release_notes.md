@@ -1,10 +1,3 @@
-## Unreleased (First full release)
-These are the issues that we want to solve for the first full release of the 3D BAG.
-
-+ issue
-+ issue
-
-
 ## 21.03.1 (2021.03.26) – beta
 
 #### Added
