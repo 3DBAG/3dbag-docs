@@ -26,7 +26,7 @@ The 3D BAG is also a place for experiments. It is a medium for testing ideas as 
 - **Underground and overlapping buildings and building parts removed**.
     The completely underground and overlapping buildings (eg one building "floating" above another) are excluded from the reconstruction. Buildings with parts under the terrain have their underground parts cut off.
 - **Fall back to a simple model for problematic input**.
-    Buildings with glass roofs, especially greenhouses, have an extremely noisy point cloud in the AHN. For these buildings, that usually have a very simple shape, we fall back to a simplified 3D model in order to generate usable models.
+    Buildings with glass roofs, especially greenhouses, have an inconsistent point cloud in the AHN. For these buildings, that usually have a very simple shape anyways, we fall back to a simplified 3D model in order to generate usable models.
 - **Quality control integrated**.
     We run our 3D models through [val3dity](https://github.com/tudelft3d/val3dity), so that you don't need to validate the 3D data yourself.
 - **Available in several formats**.
