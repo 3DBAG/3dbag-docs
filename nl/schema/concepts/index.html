@@ -504,6 +504,13 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#bepalen-van-de-dakhoogtes" class="md-nav__link">
+    Bepalen van de dakhoogtes
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -737,6 +744,13 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#bepalen-van-de-dakhoogtes" class="md-nav__link">
+    Bepalen van de dakhoogtes
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -791,6 +805,16 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
 <figure>
   <img src="https://val3dity.readthedocs.io/en/latest/_images/errorcodes.png" />
   <figcaption>val3dity foutcodes. Zie <a href="https://val3dity.readthedocs.io/en/latest/errors/">de volledige omschrijving van iedere code</a> in de documentatie van val3dity.</figcaption>
+</figure>
+
+<h2 id="bepalen-van-de-dakhoogtes">Bepalen van de dakhoogtes<a class="headerlink" href="#bepalen-van-de-dakhoogtes" title="Permanent link">&para;</a></h2>
+<p>De dakhoogtes (<a href="../attributes/#h_dak_50p"><code>h_dak_*</code></a>) worden berekend op basis van de punten die worden gedetcteerd voor elk dak. <a href="../attributes/#h_dak_50p"><code>h_dak_50p</code></a> is bijvoorbeeld berekend als de mediaan van deze punten. De figuur hieronder laat zien welke dak punten er worden gedetecteerd.</p>
+<p>Voor de lagen <a href="../layers/#lod13_2d"><code>lod13_2d</code></a> en <a href="../layers/#lod22_2d"><code>lod22_2d</code></a> worden de dakhoogtes berekend voor de punten per dakvlak. Voor de laag <a href="../layers/#lod12_2d"><code>lod12_2d</code></a> worden de dakhoogtes berekend op basis van alle dak punten van het betreffende pand die zich boven het maaiveld bevinden.</p>
+<figure>
+  <a href="../../../images_common/roof_points.png">
+    <img src="../../../images_common/roof_points.png" />
+  </a>
+  <figcaption>Illustratie van de gedetecteerde dak punten (rood) en muur punten (grijs). </figcaption>
 </figure>
                 
               
