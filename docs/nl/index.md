@@ -26,7 +26,7 @@ Naast de 3D modellen bieden we ook 2D projecties van de dakvormen met bijgevoegd
 - **Ondergrondse en met elkaar overlappende panden/panddelen niet meegenomen**. 
 Zowel volledig ondergrondse als overlappende panden (wanneer een pand boven een ander zweeft) zijn niet meegenomen in de reconstructie. Van panden met delen onder het maaiveld zijn de ondergrondse delen afgesneden.
 - **Terugval op simpele modellen bij problematische invoer**.
-De punten van panden met glazen daken, voornamelijk kassen, zijn bijzonder chaotisch in het AHN. Voor deze panden die doorgaans een zeer simpele vorm hebben, vallen we terug op een versimpeld 3D model om alsnog bruikbare modellen te verkrijgen, ook op hogere detailniveaus.
+De punten van panden met glazen daken, voornamelijk kassen, zijn inconsistent in het AHN. Voor deze panden die doorgaans een zeer simpele vorm hebben, vallen we terug op een versimpeld 3D model om alsnog bruikbare modellen te verkrijgen, ook op hogere detailniveaus.
 - **Geïntegreerde kwaliteitscontrole**.  
 Tijdens het reconstructieproces worden alle 3D modellen gevalideerd met [val3dity](https://github.com/tudelft3d/val3dity) zodat je de 3D data niet zelf hoeft te valideren.
 - **Beschikbaar in verscheidene formaten**.  
