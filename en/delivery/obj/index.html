@@ -687,17 +687,34 @@ Welcome to the documentation of the new 3D BAG! See <a href="overview/release_no
 <p>The OBJ files for the 3D BAG contain the 3D geometries only and <a href="../../schema/layers/#data-layers">each 3D layer</a> is stored in a separate file. The three OBJ files are compressed into a single ZIP file per tile. The object coordinates are in the <a href="http://epsg.io/7415">Amersfoort / RD New + NAP height</a> coordinate reference system.</p>
 <h2 id="blender">Blender<a class="headerlink" href="#blender" title="Permanent link">&para;</a></h2>
 <figure>
-  <img src="../../../images_common/blender.jpg" />
+  <a href="../../../images_common/blender.png">
+    <img src="../../../images_common/blender.png" />
+  </a>
   <figcaption>A portion of the 3D BAG data opened in Blender.</figcaption>
 </figure>
 
 <p>OBJ files can be directly opened in Blender. Besides, there is also a <a href="https://github.com/cityjson/Up3date">plugin for importing CityJSON files</a> into Blender.</p>
 <p>The objects in the files are a real-world coordinate system. Therefore they have very large coordinates. When the file is imported into Blender, they are not centered around the origin (0, 0, 0) which causes the surfaces to flicker. Therefore, it is recommended to move the objects to the origin.</p>
-<p><img alt="Screenshot" src="../../../images_common/blender2.jpg" /></p>
+<figure>
+  <a href="../../../images_common/blender2.png">
+    <img src="../../../images_common/blender2.png" width="600" />
+  </a>
+</figure>
+
 <p>When importing the OBJ file, choose the option <code>Z Up</code>, so that the objects are correctly oriented. If you turn off the <code>Split by Object</code>, then all objects (the buildings) are imported as a single Blender object, which makes it easier to move the whole file content. After the import, you can focus the camera to the objects by selecting <code>Scene Collection</code> on the right of the screen, then pressing <code>.</code> on the numpad (the regular <code>.</code> on the keyboard does not work).</p>
-<p><img alt="Screenshot" src="../../../images_common/blender3.jpg" /></p>
+<figure>
+  <a href="../../../images_common/blender3.png">
+    <img src="../../../images_common/blender3.png" width="450" />
+  </a>
+</figure>
+
 <p>Then select the object (or all individual objects if split them on import) and press <code>Tab</code> to open the <em>Edit Mode</em>. Then click on the small arrow that is marked in the screenshot above.</p>
-<p><img alt="Screenshot" src="../../../images_common/blender4.jpg" /></p>
+<figure>
+  <a href="../../../images_common/blender4.png">
+    <img src="../../../images_common/blender4.png" width="300" />
+  </a>
+</figure>
+
 <p>Then change the X and Y values to <code>0</code>. Press <code>.</code> on the numpad again to re-focus the camera on the model.</p>
                 
               
