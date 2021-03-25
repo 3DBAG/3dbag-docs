@@ -30,7 +30,7 @@ De punten van panden met glazen daken, voornamelijk kassen, zijn bijzonder chaot
 - **Geïntegreerde kwaliteitscontrole**.  
 Tijdens het reconstructieproces worden alle 3D modellen gevalideerd met [val3dity](https://github.com/tudelft3d/val3dity) zodat je de 3D data niet zelf hoeft te valideren.
 - **Beschikbaar in verscheidene formaten**.  
-Zoals CityJSON, GeoPackage, Wavefront OBJ, PostgreSQL, WMS en WFS.
+CityJSON, GeoPackage, Wavefront OBJ, PostgreSQL, WMS en WFS.
 
 ## Belangrijke toepassingen
 
