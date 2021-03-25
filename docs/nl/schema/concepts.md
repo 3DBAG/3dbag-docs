@@ -53,4 +53,15 @@ We hebben val3dity in ons proces geïntegreerd, waarmee we ieder 3D model valide
   <figcaption>val3dity foutcodes. Zie <a href="https://val3dity.readthedocs.io/en/latest/errors/">de volledige omschrijving van iedere code</a> in de documentatie van val3dity.</figcaption>
 </figure>
 
+## Bepalen van de dakhoogtes
 
+De dakhoogtes ([`h_dak_*`](attributes.md#h_dak_50p)) worden berekend op basis van de punten die worden gedetcteerd voor elk dak. [`h_dak_50p`](attributes.md#h_dak_50p) is bijvoorbeeld berekend als de mediaan van deze punten. De figuur hieronder laat zien welke dak punten er worden gedetecteerd.
+
+Voor de lagen [`lod13_2d`](layers.md#lod13_2d) en [`lod22_2d`](layers.md#lod22_2d) worden de dakhoogtes berekend voor de punten per dakvlak. Voor de laag [`lod12_2d`](layers.md#lod12_2d) worden de dakhoogtes berekend op basis van alle dak punten van het betreffende pand die zich boven het maaiveld bevinden.
+
+<figure>
+  <a href="../../../images_common/roof_points.png">
+    <img src="../../../images_common/roof_points.png" />
+  </a>
+  <figcaption>Illustratie van de gedetecteerde dak punten (rood) en muur punten (grijs). </figcaption>
+</figure>
