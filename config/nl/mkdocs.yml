@@ -29,11 +29,11 @@ extra:
   alternate:
 
     - name: English
-      link: /en/
+      link: /3dbag-docs/en/
       lang: en
 
     - name: Nederlands
-      link: /nl/
+      link: /3dbag-docs/nl/
       lang: nl
   social:
     - icon: fontawesome/brands/twitter
