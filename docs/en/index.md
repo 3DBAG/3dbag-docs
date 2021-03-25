@@ -66,7 +66,7 @@ Similarly to the 3D Basisvoorziening, the LoD1.3 models in the 3D Geluid data we
 
 - One of the most common questions related to building heights is the exact number of floors in the building. However, answering this proves to be more complex than dividing the building height by an average floor height (eg 3 meters). Thus, we have [an ongoing MSc research](https://3d.bk.tudelft.nl/education/#theses) that is investigating this topic.
 - Addresses. At the moment we don't add the addresses from the BAG to the 3D BAG. We might add them in the future.
-<!-- Add something about orientation of roofplanes for solar panel potential analysis? --> 
+- Orientation of roof surfaces. It is already possible to query the orientation of roof surfaces in the viewer. We may store this information as attribute so that this information can be used in spatial analysis, such as for solar panel potential analysis.
 
 ## Funding
 
