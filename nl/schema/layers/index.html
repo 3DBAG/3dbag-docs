@@ -10,7 +10,7 @@
       
       
       
-        <meta name="author" content="3D geoinformation group">
+        <meta name="author" content="3D geoinformation research group">
       
       
       <link rel="icon" href="../../assets/images/logo.svg">
@@ -18,7 +18,7 @@
     
     
       
-        <title>Datalagen - 3D BAG</title>
+        <title>Datalagen - 3D BAG by tudelft3d</title>
       
     
     
@@ -89,7 +89,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="3D BAG" class="md-header__button md-logo" aria-label="3D BAG" data-md-component="logo">
+    <a href="../.." title="3D BAG by tudelft3d" class="md-header__button md-logo" aria-label="3D BAG by tudelft3d" data-md-component="logo">
       
   <span
     style="color: #333" class="logo-text"
@@ -113,7 +113,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            3D BAG
+            3D BAG by tudelft3d
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -302,7 +302,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="3D BAG" class="md-nav__button md-logo" aria-label="3D BAG" data-md-component="logo">
+    <a href="../.." title="3D BAG by tudelft3d" class="md-nav__button md-logo" aria-label="3D BAG by tudelft3d" data-md-component="logo">
       
   <span
     style="color: #333" class="logo-text"
@@ -319,7 +319,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
   >tudelft3d</a>
 
     </a>
-    3D BAG
+    3D BAG by tudelft3d
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -772,7 +772,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
                 
                 
                 <h1 id="datalagen">Datalagen<a class="headerlink" href="#datalagen" title="Permanent link">&para;</a></h1>
-<p><img alt="3dbag_layers" src="../../images/3d_bag_layers_nl.svg" width="100%" /></p>
+<p><img alt="3dbag_layers" src="../../images/3d_bag_layers_nl.png" width="100%" /></p>
 <p>De bovenstaande figuur laat het verband zien tussen een gebouw in het echt en hoe het is gemodelleerd en beschikbaar in de 3D BAG. De BAG modelleert gebouwen in 2D als de grootste omtrek, gezien vanaf boven. Dat komt neer op een enkele 2D polygon per gebouw, zoals de zwarte polygoon in de figuur. Om deze reden bevat het <strong>BAG-polygoon</strong> ook de delen van het gebouw die zich ondergronds bevinden.</p>
 <p>Om een nauwkeurig model van de <span style="color:#24a1c8ff"><strong>bovengrondse</strong></span> delen van een gebouw te maken, snijden we het <span style="color:#ff0000ff"><strong>ondergrondse</strong></span> deel van de BAG-polygoon eraf. We nemen alleen bovengrondse delen mee, aangezien we geen data hebben over de 3D omvang van ondergrondse delen.</p>
 <p>Voor de bovengrondse delen genereren we vervolgens de 3D modellen in LoD1.2, 1.3 en 2.2. We weten dat het bij sommige toepassingen makkelijker is om 2D polygonen in te lezen, en de informatie over de gebouwhoogte als attributen. Daarom bieden we ook een 2D versie aan voor iedere LoD. Bovendien kan de gebruiker hierdoor kiezen uit de verschillende referentiehoogtes die we berekenen per gebouw.</p>
@@ -784,7 +784,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
 <p>De 3D BAG heeft 6 geometrische representaties van een BAG-object (een <em>feature</em>). De 6 representaties zijn de 2D en 3D varianten van de LoD1.2, LoD1.3 en LoD2.2 modellen van de feature. Daarom hebben de BAG-modellen, die zijn opgeslagen in de <code>pand</code>-laag, een <em>feature ID</em> (<a href="../attributes/#fid"><code>fid</code></a>), terwijl hun geometrische representaties <em>geometry IDs</em> (<a href="../attributes/#gid"><code>gid</code></a>) hebben. Afhankelijk van de representatie kan een enkele feature meerdere geometrie-delen hebben.</p>
 <p>Sommige gebouwen hebben meerdere niet-verbonden bovengrondse delen, terwijl ze aan elkaar verbonden zijn door bijvoorbeeld een ondergrondse garage. In deze gevallen worden de bovengrondse delen opgedeeld in afzonderlijke modellen met dezelfde <code>fid</code>, en de <a href="../attributes/#pand_deel_id"><code>pand_deel_id</code></a> kan deze verschillende delen identificeren binnen dezelfde feature.</p>
 <p>De onderstaande figuur illustreert de relatie tussen de <strong>feature</strong> en de verschillende <span style="color:#24a1c8ff"><strong>bovengrondse</strong></span> geometrie-delen.</p>
-<p><img alt="3dbag_ref" src="../../../images_common/3d_bag_layers_reference.svg" width="100%" /></p>
+<p><img alt="3dbag_ref" src="../../../images_common/3d_bag_layers_reference.png" width="100%" /></p>
 <!-- start layers (DO NOT REMOVE THIS MARKER AND DO NOT EDIT THE TEXT BELOW. SEE README.) -->
 <h2 id="pand"><code>pand</code><a class="headerlink" href="#pand" title="Permanent link">&para;</a></h2>
 <p>Bevat de attributen en geometrie van het <code>Pand</code>-object van de BAG, plus de attributen van de 3D BAG die verband hebben met het gehele gebouw. Omvat uitsluitend de gebouwen die daadwerkelijk door de reconstructie gegaan zijn. Het attribuut <code>fid</code> is het unieke, numerieke ID van de objecten. Naast dat het de primaire <em>key</em> is, wordt <code>fid</code> ook gebruikt voor het samenvoegen van andere lagen met <code>pand</code>.</p>
@@ -854,7 +854,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="overview/relea
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2021 3D geoinformation group
+            Copyright &copy; 2021 3D geoinformation research group, TU Delft
           </div>
         
         Made with
