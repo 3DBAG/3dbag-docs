@@ -7,7 +7,9 @@ Van de 3D BAG bieden we zowel de [2D lagen](../schema/layers.md#data-layers) aan
 [Web Feature Service (WFS)](https://www.ogc.org/standards/wfs) is een OGC-standaard die beschrijft hoe geografische vectordata opgevraagd, gecreëerd en bewerkt kan worden via internet.
 
 <figure>
-  <img src="../../../images_common/wfs.png" />
+  <a href="../../../images_common/wfs.png">
+    <img src="../../../images_common/wfs.png" width="600" />
+  </a>
   <figcaption>LoD1.3 2D laag van de WFS gevisualiseerd in QGIS, met de BRT Achtergrondkaart van PDOK op de achtergrond.</figcaption>
 </figure>
 
@@ -16,7 +18,9 @@ Van de 3D BAG bieden we zowel de [2D lagen](../schema/layers.md#data-layers) aan
 Ook [Web Map Service (WMS)](https://www.ogc.org/standards/wms) is een OGC-standaard, maar dan om kaarten als afbeelding op te vragen.
 
 <figure>
-  <img src="../../../images_common/wms.png" />
+  <a href="../../../images_common/wms.png">
+    <img src="../../../images_common/wms.png" width="600" />
+  </a>
   <figcaption>LoD1.3 2D laag van de WMS gevisualiseerd in QGIS, met de BRT Achtergrondkaart van PDOK op de achtergrond.</figcaption>
 </figure>
 

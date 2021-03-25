@@ -13,9 +13,19 @@ The CityJSON files of the 3D BAG contain all the [3D layers](../../schema/layers
 On macOS [azul](https://github.com/tudelft3d/azul) can visualise several data formats, including CityJSON.
 
 <figure>
-  <img src="../../../images_common/ninja.jpg" />
+  <a href="../../../images_common/ninja.png">
+    <img src="../../../images_common/ninja.png" />
+  </a>
   <figcaption>A portion of the 3D BAG visualised in ninja.</figcaption>
 </figure>
+
+<figure>
+  <a href="../../../images_common/azul.png">
+    <img src="../../../images_common/azul.png" />
+  </a>
+  <figcaption>A portion of the 3D BAG visualised in azul.</figcaption>
+</figure>
+
 
 
 ## QGIS CityJSON Loader plugin
@@ -23,8 +33,10 @@ On macOS [azul](https://github.com/tudelft3d/azul) can visualise several data fo
 With the [CityJSON loader plugin](https://github.com/cityjson/cityjson-qgis-plugin) it is possible to load CityJSON files into QGIS 3, and view them in 3D. You can open the 3D viewer by selecting `View` -> `New 3D Map View`. For QGIS 3 versions older than 3.2, there is an [extra step necessary](https://github.com/cityjson/cityjson-qgis-plugin#3d-view-in-qgis-30).
 
 <figure>
-  <img src="../../../images_common/qgis.jpg" />
-  <figcaption>A portion of the 3D BAG visualised in QGIS, with the 3D Map View on the left and the attributes on the right.</figcaption>
+  <a href="../../../images_common/qgis.png">
+    <img src="../../../images_common/qgis.png" />
+  </a>
+  <figcaption>A portion of the 3D BAG visualised in QGIS, with the 3D Map View on the top and the features in 2D on the bottom.</figcaption>
 </figure>
 
 ## cjio

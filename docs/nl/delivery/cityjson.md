@@ -13,18 +13,28 @@ De CityJSON-bestanden van de 3D BAG bevatten alle [3D lagen](../../schema/layers
 Voor macOS is er [azul](https://github.com/tudelft3d/azul), een 3D viewer voor verscheidene formaten waaronder CityJSON.
 
 <figure>
-  <img src="../../../images_common/ninja.jpg" />
+  <a href="../../../images_common/ninja.png">
+    <img src="../../../images_common/ninja.png" />
+  </a>
   <figcaption>Een 3D BAG tegel gevisualiseerd met ninja.</figcaption>
 </figure>
 
+<figure>
+  <a href="../../../images_common/azul.png">
+    <img src="../../../images_common/azul.png" />
+  </a>
+  <figcaption>Een 3D BAG tegel gevisualiseerd met azul.</figcaption>
+</figure>
 
 ## QGIS CityJSON Loader plugin
 
 De [CityJSON Loader plugin](https://github.com/cityjson/cityjson-qgis-plugin) voor QGIS 3 maakt het mogelijk om CityJSON-bestanden in te laden in QGIS, inclusief 3D visualisering. Je kunt de 3D visualisatie openen door naar `View` -> `New 3D Map View` te gaan. Voor versies van QGIS 3 ouder dan 3.2 is er daarvoor echter [een extra stap nodig](https://github.com/cityjson/cityjson-qgis-plugin#3d-view-in-qgis-30).
 
 <figure>
-  <img src="../../../images_common/qgis.jpg" />
-  <figcaption>Een 3D BAG tegel geopend in QGIS, met de 3D Map View links en de attributen rechts.</figcaption>
+  <a href="../../../images_common/qgis.png">
+    <img src="../../../images_common/qgis.png" />
+  </a>
+  <figcaption>Een 3D BAG tegel geopend in QGIS, met de 3D Map View boven en de features in 2D onder.</figcaption>
 </figure>
 
 ## cjio
