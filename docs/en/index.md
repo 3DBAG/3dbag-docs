@@ -30,7 +30,7 @@ The 3D BAG is also a place for experiments. It is a medium for testing ideas as 
 - **Quality control integrated**.
     We run our 3D models through [val3dity](https://github.com/tudelft3d/val3dity), so that you don't need to validate the 3D data yourself.
 - **Available in several formats**.
-    Such as CityJSON, GeoPackage, Wavefront OBJ, PostgreSQL, WMS, WFS.
+    CityJSON, GeoPackage, Wavefront OBJ, PostgreSQL, WMS, WFS.
 
 
 ## Common applications
