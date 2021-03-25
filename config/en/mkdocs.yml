@@ -5,7 +5,8 @@ docs_dir: '../../docs/en'
 site_dir: '../../generated/en'
 #repo_url: https://github.com/tudelft3d/3dbag-docs
 copyright: Copyright &copy; 2021 3D geoinformation group
-
+extra_css:
+  - stylesheets/extra.css
 
 theme:
   language: en

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+.md-header .logo-text {
+  font-family: Barlow,sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.md-header__title {
+  font-family: Barlow,sans-serif;
+}
+
+.md-header__button.md-logo {
+  padding-right: 0.1rem;
+}
