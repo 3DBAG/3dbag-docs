@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
-.md-header .logo-text {
+.md-header .logo-text, .md-sidebar .logo-text {
   font-family: Barlow,sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
@@ -12,4 +12,17 @@
 
 .md-header__button.md-logo {
   padding-right: 0.1rem;
+}
+
+.logo3d {
+  margin-left:0.4em;
+}
+
+@media only screen and (max-width: 76.1875em) {
+  .md-header .logo-text, .md-sidebar .logo-text, .md-sidebar .logo3d {
+    display: none;
+  }
+  .logo3d {
+    margin-left: 1em;
+  }
 }
