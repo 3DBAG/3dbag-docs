@@ -1,6 +1,6 @@
 # Data Layers
 
-![3dbag_layers](../images/3d_bag_layers_en.svg){ width=100% }
+![3dbag_layers](../images/3d_bag_layers_en.png){ width=100% }
 
 The diagram above shows the relation between a building in the real world and how is it modeled in the 3D BAG.
 The BAG models buildings with their largest extent as viewed from above. In practice this means a single 2D polygon per building, as it is displayed by the black polygon in the figure. Therefore, the **BAG polygon** may also include parts of the building that are below terrain level.
@@ -20,7 +20,7 @@ Some buildings have multiple disjoint part above the terrain, while they are con
 
 The figure below illustrates the relation between the **feature** and the various geometry parts <span style="color:#24a1c8ff">**above terrain**</span>.
 
-![3dbag_ref](../../../images_common/3d_bag_layers_reference.svg){ width=100% }
+![3dbag_ref](../../../images_common/3d_bag_layers_reference.png){ width=100% }
 
 <!-- start layers (DO NOT REMOVE THIS MARKER AND DO NOT EDIT THE TEXT BELOW. SEE README.) -->
 ## `pand`

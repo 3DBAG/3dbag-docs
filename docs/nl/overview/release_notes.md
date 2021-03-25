@@ -1,5 +1,1 @@
-# Release Notes
-
-## 21.03.1
-
-TODO
+--8<-- "includes/release_notes.md"
