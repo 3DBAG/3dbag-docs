@@ -504,6 +504,13 @@ Welcome to the documentation of the new 3D BAG! See <a href="https://docs.3dbag.
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#calculating-the-roof-heights" class="md-nav__link">
+    Calculating the roof heights
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -737,6 +744,13 @@ Welcome to the documentation of the new 3D BAG! See <a href="https://docs.3dbag.
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#calculating-the-roof-heights" class="md-nav__link">
+    Calculating the roof heights
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -790,6 +804,16 @@ These labels are called <em>semantics</em>, and accordingly we call the labelled
 <figure>
   <img src="https://val3dity.readthedocs.io/en/latest/_images/errorcodes.png" />
   <figcaption>val3dity error codes. See <a href="https://val3dity.readthedocs.io/en/latest/errors/">the full description of each code</a> in the val3dity documentation.</figcaption>
+</figure>
+
+<h2 id="calculating-the-roof-heights">Calculating the roof heights<a class="headerlink" href="#calculating-the-roof-heights" title="Permanent link">&para;</a></h2>
+<p>The roof heights (<a href="../attributes/#h_dak_50p"><code>h_dak_*</code></a>) are computed from the points that are detected for the roof planes. For instance <a href="../attributes/#h_dak_50p"><code>h_dak_50p</code></a> means the median height of the roof points. The figure below illustrates the detected roof points on a building.</p>
+<p>For the layers <a href="layers/#lod13_2d"><code>lod13_2d</code></a> and <a href="layers/#lod22_2d"><code>lod22_2d</code></a>, the roof heights are computed from the points per roof part. For the layer <a href="layers/#lod12_2d"><code>lod12_2d</code></a> the roof heights are computed from all the roof points of the building that is above the terrain.</p>
+<figure>
+  <a href="../../../images_common/roof_points.png">
+    <img src="../../../images_common/roof_points.png" />
+  </a>
+  <figcaption>Illustration of the detected roof points (red) and wall points (grey).</figcaption>
 </figure>
                 
               
