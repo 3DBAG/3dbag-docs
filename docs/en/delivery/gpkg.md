@@ -1,4 +1,4 @@
-[GeoPackage](https://www.geopackage.org/) is an open geodata format, based on [SQLite](https://www.sqlite.org/index.html). It supports vector features, tile matrix sets, attributes and also extensions. The format can be used for storing certain types of 3D geometries. It is widely adopted an can be used in QGIS, ArcGIS and FME too.
+[GeoPackage](https://www.geopackage.org/) is an open geodata format, based on [SQLite](https://www.sqlite.org/index.html). It supports vector features, tile matrix sets, attributes and also extensions. The format can be used for storing certain types of 3D geometry. It is widely adopted an can be used in QGIS, ArcGIS and FME too.
 
 The 3D BAG GeoPackage files contain [all the layers](../../schema/layers/#data-layers).
 
@@ -11,11 +11,15 @@ When opening a 3D BAG file in QGIS (by dragging the file or going to `Layer` -> 
 2. Go to `View` -> `3D Map View` to open the 3D viewer.
 
 <figure>
-  <img src="../../../images_common/gpkg.jpg" />
+  <a href="../../../images_common/gpkg.png">
+    <img src="../../../images_common/gpkg.png" width="400" />
+  </a>
   <figcaption>The tab in the Layer Properties with the settings for the 3D Map View.</figcaption>
 </figure>
 
 <figure>
-  <img src="../../../images_common/gpkg2.jpg" />
-  <figcaption>A portion of the 3D BAG data in GeoPackage format. On the top is the 3D Map View, in the bottom the attributes, and in the background the 2D features.</figcaption>
+  <a href="../../../images_common/gpkg2.png">
+    <img src="../../../images_common/gpkg2.png" />
+  </a>
+  <figcaption>A portion of the 3D BAG data in GeoPackage format. On the top is the 3D Map View, in the left the attributes, and in the bottom the 2D features.</figcaption>
 </figure>

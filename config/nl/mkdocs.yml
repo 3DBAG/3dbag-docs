@@ -5,7 +5,8 @@ docs_dir: '../../docs/nl'
 site_dir: '../../generated/nl'
 #repo_url: https://github.com/tudelft3d/3dbag-docs
 copyright: Copyright &copy; 2021 3D geoinformation research group, TU Delft
-
+extra_css:
+  - stylesheets/extra.css
 
 theme:
   language: nl
@@ -61,7 +62,7 @@ nav:
     - 'Algemene concepten': 'schema/concepts.md'
     - 'Datalagen': 'schema/layers.md'
     - 'Data-attributen': 'schema/attributes.md'
-  - 'Datalevering':
+  - 'Dataformaten':
       - 'Webservices': 'delivery/webservices.md'
       - 'GeoPackage': 'delivery/gpkg.md'
       - 'CityJSON': 'delivery/cityjson.md'

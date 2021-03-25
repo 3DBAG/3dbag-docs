@@ -1,10 +1,10 @@
-[PostgreSQL](https://www.postgresql.org/) is een open source systeem voor object-relationele databases. Met toevoeging van de [PostGIS](https://postgis.net/) extensie is er ondersteuning voor geografische objecten. Het is geschikt om big geodata mee te verwerken. Om deze reden bieden wij de volledige 3D BAG data aan als PostgreSQL dump.
+[PostgreSQL](https://www.postgresql.org/) is een open source systeem voor object-relationele databases. Met toevoeging van de [PostGIS](https://postgis.net/) extensie is er ondersteuning voor geografische objecten. PostGIS is geschikt om enorme hoeveelheden geodata te verwerken. Om deze reden bieden wij de volledige 3D BAG data aan als één PostgreSQL dump.
 
 Het 3D BAG PostgreSQL backup-bestand heeft [alle attributen](../schema/attributes.md) en [alle lagen](../schema/layers.md#data-layers) die de 3D BAG heeft. Het bestand is gecreëerd met `pg_dump`, met de opties `--no-owner --no-privileges --format=directory`.
 
-### De dump inladen
+## De dump inladen
 
-Met het volgende commando kan je de dump inladen. Pas in ieder geval de laatste twee regels aan (lees  [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) voor meer informatie):
+Met het volgende commando kun je de dump inladen. Pas in ieder geval de laatste twee regels aan (lees  [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) voor meer informatie):
 
 ```
 pg_restore \
