@@ -8,7 +8,7 @@ We horen graag wat je dan ook te vertellen hebt over de 3D BAG. Je kunt ons feed
 
 ![report_issue](images/report_issue.png){ align=left }
 
-Mocht je problemen met specifieke modellen willen rapporteren, kun je dat doen door op het model te klikken in de [3D viewer](https://3dbag.nl/#/en/viewer) en vervolgens op de rode *Rapporteer een probleem* knop te drukken in de pop-up.
+Mocht je problemen met specifieke modellen willen rapporteren, kun je dat doen door op het model te klikken in de [3D viewer](https://3dbag.nl/en/viewer) en vervolgens op de rode *Rapporteer een probleem* knop te drukken in de pop-up.
 
 ## Contact
 

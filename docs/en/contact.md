@@ -8,7 +8,7 @@ We are very happy to hear whatever you have to say about the 3D BAG. You can giv
 
 ![report_issue](images/report_issue.png){ align=left }
 
-If you want to report issues with specific models, you can do so by clicking on the model in the [3D viewer](https://3dbag.nl/#/en/viewer), and then clicking on the red *Report a problem* button in the Building Information viewer.
+If you want to report issues with specific models, you can do so by clicking on the model in the [3D viewer](https://3dbag.nl/en/viewer), and then clicking on the red *Report a problem* button in the Building Information viewer.
 
 ## Contact
 
