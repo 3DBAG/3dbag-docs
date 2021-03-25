@@ -51,3 +51,15 @@ We integrated val3dity into our process, and so we validate each 3D model after 
   <figcaption>val3dity error codes. See <a href="https://val3dity.readthedocs.io/en/latest/errors/">the full description of each code</a> in the val3dity documentation.</figcaption>
 </figure>
 
+## Calculating the roof heights
+
+The roof heights ([`h_dak_*`](attributes.md#h_dak_50p)) are computed from the points that are detected for the roof planes. For instance [`h_dak_50p`](attributes.md#h_dak_50p) means the median height of the roof points. The figure below illustrates the detected roof points on a building.
+
+For the layers [`lod13_2d`](layers/#lod13_2d) and [`lod22_2d`](layers/#lod22_2d), the roof heights are computed from the points per roof part. For the layer [`lod12_2d`](layers/#lod12_2d) the roof heights are computed from all the roof points of the building that is above the terrain.
+
+<figure>
+  <a href="../../../images_common/roof_points.png">
+    <img src="../../../images_common/roof_points.png" />
+  </a>
+  <figcaption>Illustration of the detected roof points (red) and wall points (grey).</figcaption>
+</figure>
