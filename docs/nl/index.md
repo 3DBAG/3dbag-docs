@@ -70,6 +70,7 @@ Naast gebouwmodellen, bevat de 3D geluidsdata twee aanvullende lagen, zowel voor
 
 - Een van de meest gewilde informatie gerelateerd aan pandhoogten is het exacte aantal verdiepingen in een pand. De bepaling hiervan blijkt ingewikkelder te zijn dan het standaard opdelen van de pandhoogte door een gemiddelde verdiepingshoogte (bijvoorbeeld 3 meter). We hebben momenteel dan ook een [een lopend MSc-onderzoek](https://3d.bk.tudelft.nl/education/#theses) over dit onderwerp.
 - Adressen. Op dit moment voegen we de adressen uit de BAG niet toe aan de 3D BAG. Mogelijk zullen we dit in de toekomst wel doen.
+- Orientatie van dakvlakken. In de viewer is het al mogelijk om de orientatie per dakvlak op te vragen. In de toekomst zullen we dit mogelijk als attribuut opslaan zodat deze informatie gebruikt kan worden in analyses, bijvoorbeeld bij het bepalen van de potentie van zonnepanelen.
 
 ## Financiering
 
