@@ -4,7 +4,7 @@ If you have questions or need help about the data, go to [https://geoforum.nl/](
 
 ## Feedback
 
-We are very happy to hear whatever you have to say about the 3D BAG. You can give your feedback via [this form](https://docs.google.com/forms/d/e/1FAIpQLSe2XLCYNmoFVHrgt_uRXeLLwfzDK7gS2kE7mGH8rnk6ltE0LQ/viewform?).
+We are very happy to hear whatever you have to say about the 3D BAG. You can give your feedback via [this form](https://forms.gle/NZg83heXM75pAmfVA).
 
 ![report_issue](images/report_issue.png){ align=left }
 
