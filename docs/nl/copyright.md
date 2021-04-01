@@ -12,7 +12,7 @@ De 3D BAG is open data. Dit geldt ook voor alle downloadbare databestanden en da
 
 *Let op dat sommige inhoud van de documentatie hergebruikt is uit andere teksten. De bron van deze inhoud is expliciet aangegeven, en het is belangrijk om je te houden aan diens respectievelijke licentie wanneer je deze gebruikt.*
 
-### Hoe de eer te geven aan de 3D BAG
+### Hoe credits te geven aan de 3D BAG
 
 We vereisen dat je de regel “© 3D BAG by tudelft3d” gebruikt bij je toepassing.
 
