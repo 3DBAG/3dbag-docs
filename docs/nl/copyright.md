@@ -25,3 +25,5 @@ Als je de 3D BAG data integreert in een interactieve elektronische kaart/visuali
 ## Software
 
 De software en componenten die we hebben ontwikkeld voor het maken en aanbieden van de 3D BAG zijn onafhankelijk van de 3D BAG data en documentatie gelicentieerd.
+
+Voor onze viewer maken we gebruik van [3DTilesRendererJS](https://github.com/NASA-AMMOS/3DTilesRendererJS) ([licentie](https://github.com/NASA-AMMOS/3DTilesRendererJS/blob/master/LICENSE)) door NASA AMMOS en [pg2b3dm](https://github.com/Geodan/pg2b3dm/) ([licentie](https://github.com/Geodan/pg2b3dm/blob/master/LICENSE)) door Geodan.
