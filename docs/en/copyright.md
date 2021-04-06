@@ -25,3 +25,5 @@ If you integrate the 3D BAG data in a browsable electronic map, the credit shoul
 ## Software
 
 The software and components that we created for making and serving the 3D BAG are licensed independently of the 3D BAG data and documentation.
+
+Our viewer relies on [3DTilesRendererJS](https://github.com/NASA-AMMOS/3DTilesRendererJS) ([license](https://github.com/NASA-AMMOS/3DTilesRendererJS/blob/master/LICENSE)) by NASA AMMOS and [pg2b3dm](https://github.com/Geodan/pg2b3dm/) ([license](https://github.com/Geodan/pg2b3dm/blob/master/LICENSE)) by Geodan.
