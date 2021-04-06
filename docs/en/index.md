@@ -71,3 +71,5 @@ Similarly to the 3D Basisvoorziening, the LoD1.3 models in the 3D Geluid data we
 ## Funding
 
 ![erc_logo](../images_common/erc_logo_small.png){ align=left } *This project has received funding from the European Research Council (ERC) under the European Unions Horizon2020 Research & Innovation Programme (grant agreement no. 677312 UMnD: Urban modelling in higher dimensions).*
+
+The technology behind the 3D BAG service was developed by the [3D Geoinformation research group](https://3d.bk.tudelft.nl/), Department of Urbanism at the Delft University of Technology. This has been done in various research projects. Funding has been received from the European Commission (ERC), the Netherlands Organization for Scientific Research (NWO), and the Amsterdam Institute of Advanced Metropolitan Solutions (AMS). The algorithms have been further improved in collaborations with partners such as RIVM, Rijkswaterstaat and Kadaster.

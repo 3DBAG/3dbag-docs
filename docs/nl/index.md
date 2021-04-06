@@ -78,3 +78,5 @@ Naast gebouwmodellen, bevat de 3D geluidsdata twee aanvullende lagen, zowel voor
 
 *Dit project heeft financiering ontvangen van de Europese Commissie (ERC) onder het European Unions Horizon2020 Research & Innovation Programme (grant agreement no. 677312 UMnD: Urban modelling in higher dimensions)*
 
+De techniek achter de 3D BAG is ontwikkeld door de [3D Geoinformation research group](https://3d.bk.tudelft.nl/), Afdeling Urbanism, Delft University of Technology. Dit is onder andere gedaan binnen verschillende onderzoeksprojecten. Hiervoor hebben is financiering ontvangen van de European Commission (ERC), de  Nederlandse Organisatie voor Wetenschappelijk Onderzoek (NWO) en het Amsterdam Institute of Advanced Metropolitan Solutions (AMS).  De algoritmes zijn verder verbeterd in samenwerkingen met partners zoals RIVM, Rijkswaterstaat en Kadaster.
+
