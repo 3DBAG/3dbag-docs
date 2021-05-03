@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://docs.3dbag.nl/nl/schema/layers/">
       
       <link rel="icon" href="../../assets/images/logo.svg">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.33e2939f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e35208c4.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
@@ -136,20 +136,20 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
       <div class="md-header__option">
         <div class="md-select">
           
-          <span class="md-header__button md-icon">
+          <button class="md-header__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
-          </span>
+          </button>
           <div class="md-select__inner">
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="/en/" class="md-select__link">
+                  <a href="/en/" hreflang="en" class="md-select__link">
                     English
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="/nl/" class="md-select__link">
+                  <a href="/nl/" hreflang="nl" class="md-select__link">
                     Nederlands
                   </a>
                 </li>
@@ -472,6 +472,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+      
         
       
       
@@ -488,6 +489,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
 <nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
   
   
+  
     
   
   
@@ -496,6 +498,26 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
       Inhoudsopgave
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#berekening-van-hoogtes" class="md-nav__link">
+    Berekening van hoogtes
+  </a>
+  
+    <nav class="md-nav" aria-label="Berekening van hoogtes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hoogtes-in-de-2d-vs-3d-lagen" class="md-nav__link">
+    Hoogtes in de 2D vs 3D lagen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#pand" class="md-nav__link">
@@ -737,6 +759,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
 <nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
   
   
+  
     
   
   
@@ -745,6 +768,26 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
       Inhoudsopgave
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#berekening-van-hoogtes" class="md-nav__link">
+    Berekening van hoogtes
+  </a>
+  
+    <nav class="md-nav" aria-label="Berekening van hoogtes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hoogtes-in-de-2d-vs-3d-lagen" class="md-nav__link">
+    Hoogtes in de 2D vs 3D lagen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#pand" class="md-nav__link">
@@ -822,6 +865,24 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
 <p>Sommige gebouwen hebben meerdere niet-verbonden bovengrondse delen, terwijl ze aan elkaar verbonden zijn door bijvoorbeeld een ondergrondse garage. In deze gevallen worden de bovengrondse delen opgedeeld in afzonderlijke modellen met dezelfde <code>fid</code>, en de <a href="../attributes/#pand_deel_id"><code>pand_deel_id</code></a> kan deze verschillende delen identificeren binnen dezelfde feature.</p>
 <p>De onderstaande figuur illustreert de relatie tussen de <strong>feature</strong> en de verschillende <span style="color:#24a1c8ff"><strong>bovengrondse</strong></span> geometrie-delen.</p>
 <p><img alt="3dbag_ref" src="../../../images_common/3d_bag_layers_reference.png" width="100%" /></p>
+<h2 id="berekening-van-hoogtes">Berekening van hoogtes<a class="headerlink" href="#berekening-van-hoogtes" title="Permanent link">&para;</a></h2>
+<p>Elke LoD van een gebouw in de 3D BAG heeft een maaiveld hoogte (<code>h_maaiveld</code>) en een of meerdere dag hoogtes (<code>h_dak_*</code>). Alle hoogtes zijn gegeven in EPSG:7415.</p>
+<p>De maaiveld hoogte is bepaald as het 5e hoogte percentiel van alle AHN punten binnen een straal van 4 meter rondom het BAG polygon van het gebouw.</p>
+<p>De dak hoogtes (<a href="../attributes/#h_dak_50p"><code>h_dak_*</code></a>) zijn berekend uit de AHN punten waaruit dakvlakken zijn getecteerd. Per dakvlak berekenen we altijd het 0e (minimum), 50e (mediaan), 70e, en 100e (maximum)  percentiel. <a href="../attributes/#h_dak_50p"><code>h_dak_50p</code></a> is bijvoorbeeld berekend als de mediaan van deze punten. De figuur hieronder laat zien welke dak punten er worden gedetecteerd. Merk op dat gevel punten dus niet meegenomen worden in deze berekeningen.</p>
+<figure>
+  <a href="../../../images_common/roof_points.png">
+    <img src="../../../images_common/roof_points.png" />
+  </a>
+  <figcaption>Illustratie van de gedetecteerde dak punten (rood) en muur punten (grijs).</figcaption>
+</figure>
+
+<h3 id="hoogtes-in-de-2d-vs-3d-lagen">Hoogtes in de 2D vs 3D lagen<a class="headerlink" href="#hoogtes-in-de-2d-vs-3d-lagen" title="Permanent link">&para;</a></h3>
+<p>Voor de 2D lagen zijn de hoogtes altijd gegeven als attribuut per gemodelleerd dakdeel zoals hierboven beschreven.</p>
+<p>Voor de 3D lagen zijn de hoogtes niet gegeven als attributen omdat ze al expliciet zijn gemodelleerd in de 3D geometrie van het model. Voor de LoD1.2 en LoD1.3 lagen (waar ieder dakdeel op een constante hoogte is gemodelleerd) is het 70e percentiel gebruikt voor de extrusie.  In de LoD2.2 3D (<code>lod22_3d</code>) laag zijn de daken direkt met de dakvlakken gemodelleerd zoals die in de AHN puntenwolk gedetecteerd zijn.</p>
+<div class="admonition note">
+<p class="admonition-title">Hoogtes klikken in de 3D webviewer</p>
+<p>Als je op een gebouw in onze 3D webviewer klikt, zal er een links onder in het scherm een hoogte getoond worden. Dit is de hoogte gemeten vanaf het maaiveld rondom het gebouw, oftewel <code>h_maaiveld</code> is hier al vanaf getrokken.</p>
+</div>
 <!-- start layers (DO NOT REMOVE THIS MARKER AND DO NOT EDIT THE TEXT BELOW. SEE README.) -->
 <h2 id="pand"><code>pand</code><a class="headerlink" href="#pand" title="Permanent link">&para;</a></h2>
 <p>Bevat de attributen en geometrie van het <code>Pand</code>-object van de BAG, plus de attributen van de 3D BAG die verband hebben met het gehele gebouw. Omvat uitsluitend de gebouwen die daadwerkelijk door de reconstructie gegaan zijn. Het attribuut <code>fid</code> is het unieke, numerieke ID van de objecten. Naast dat het de primaire <em>key</em> is, wordt <code>fid</code> ook gebruikt voor het samenvoegen van andere lagen met <code>pand</code>.</p>
@@ -935,7 +996,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant"], "translations": {"clipboard.copy": "Kopi\u00ebren naar klembord", "clipboard.copied": "Gekopieerd naar klembord", "search.config.lang": "nl", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Zoeken", "search.result.placeholder": "Typ om te beginnen met zoeken", "search.result.none": "Geen overeenkomende documenten", "search.result.one": "1 overeenkomende document", "search.result.other": "# overeenkomende documenten", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d892486b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
       
     
   </body>

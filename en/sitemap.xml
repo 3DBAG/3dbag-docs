@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://docs.3dbag.nl/en/</loc>
-     <lastmod>2021-04-06</lastmod>
+     <lastmod>2021-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.3dbag.nl/en/overview/sources/</loc>
-     <lastmod>2021-04-06</lastmod>
+     <lastmod>2021-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.3dbag.nl/en/overview/group/</loc>
-     <lastmod>2021-04-06</lastmod>
+     <lastmod>2021-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.3dbag.nl/en/overview/release_notes/</loc>
-     <lastmod>2021-04-06</lastmod>
+     <lastmod>2021-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.3dbag.nl/en/schema/concepts/</loc>
-     <lastmod>2021-04-06</lastmod>
+     <lastmod>2021-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.3dbag.nl/en/schema/layers/</loc>
-     <lastmod>2021-04-06</lastmod>
+     <lastmod>2021-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.3dbag.nl/en/schema/attributes/</loc>
-     <lastmod>2021-04-06</lastmod>
+     <lastmod>2021-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.3dbag.nl/en/delivery/webservices/</loc>
-     <lastmod>2021-04-06</lastmod>
+     <lastmod>2021-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.3dbag.nl/en/delivery/gpkg/</loc>
-     <lastmod>2021-04-06</lastmod>
+     <lastmod>2021-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.3dbag.nl/en/delivery/cityjson/</loc>
-     <lastmod>2021-04-06</lastmod>
+     <lastmod>2021-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.3dbag.nl/en/delivery/postgresql/</loc>
-     <lastmod>2021-04-06</lastmod>
+     <lastmod>2021-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.3dbag.nl/en/delivery/obj/</loc>
-     <lastmod>2021-04-06</lastmod>
+     <lastmod>2021-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.3dbag.nl/en/copyright/</loc>
-     <lastmod>2021-04-06</lastmod>
+     <lastmod>2021-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.3dbag.nl/en/contact/</loc>
-     <lastmod>2021-04-06</lastmod>
+     <lastmod>2021-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

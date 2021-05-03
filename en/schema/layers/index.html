@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://docs.3dbag.nl/en/schema/layers/">
       
       <link rel="icon" href="../../assets/images/logo.svg">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.33e2939f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e35208c4.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
@@ -136,20 +136,20 @@ Welcome to the documentation of the new 3D BAG! See <a href="https://docs.3dbag.
       <div class="md-header__option">
         <div class="md-select">
           
-          <span class="md-header__button md-icon">
+          <button class="md-header__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
-          </span>
+          </button>
           <div class="md-select__inner">
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="/en/" class="md-select__link">
+                  <a href="/en/" hreflang="en" class="md-select__link">
                     English
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="/nl/" class="md-select__link">
+                  <a href="/nl/" hreflang="nl" class="md-select__link">
                     Nederlands
                   </a>
                 </li>
@@ -472,6 +472,7 @@ Welcome to the documentation of the new 3D BAG! See <a href="https://docs.3dbag.
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+      
         
       
       
@@ -488,6 +489,7 @@ Welcome to the documentation of the new 3D BAG! See <a href="https://docs.3dbag.
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
     
   
   
@@ -496,6 +498,26 @@ Welcome to the documentation of the new 3D BAG! See <a href="https://docs.3dbag.
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#calculation-of-height-values" class="md-nav__link">
+    Calculation of height values
+  </a>
+  
+    <nav class="md-nav" aria-label="Calculation of height values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#heights-in-2d-vs-3d-layers" class="md-nav__link">
+    Heights in 2D vs 3D layers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#pand" class="md-nav__link">
@@ -737,6 +759,7 @@ Welcome to the documentation of the new 3D BAG! See <a href="https://docs.3dbag.
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
     
   
   
@@ -745,6 +768,26 @@ Welcome to the documentation of the new 3D BAG! See <a href="https://docs.3dbag.
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#calculation-of-height-values" class="md-nav__link">
+    Calculation of height values
+  </a>
+  
+    <nav class="md-nav" aria-label="Calculation of height values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#heights-in-2d-vs-3d-layers" class="md-nav__link">
+    Heights in 2D vs 3D layers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#pand" class="md-nav__link">
@@ -823,6 +866,24 @@ The BAG models buildings with their largest extent as viewed from above. In prac
 <p>Some buildings have multiple disjoint part above the terrain, while they are connected with an underground garage for instance. In such cases, the above terrain parts are split into separate models with the same <code>fid</code>, and the <a href="../attributes/#pand_deel_id"><code>pand_deel_id</code></a> can identify these parts within the same feature.</p>
 <p>The figure below illustrates the relation between the <strong>feature</strong> and the various geometry parts <span style="color:#24a1c8ff"><strong>above terrain</strong></span>.</p>
 <p><img alt="3dbag_ref" src="../../../images_common/3d_bag_layers_reference.png" width="100%" /></p>
+<h2 id="calculation-of-height-values">Calculation of height values<a class="headerlink" href="#calculation-of-height-values" title="Permanent link">&para;</a></h2>
+<p>Each LoD of a building in 3D BAG has one ground height (<code>h_maaiveld</code>) and one or more roof heights (<code>h_dak_*</code>). All heights are given in EPSG:7415.</p>
+<p>The ground height is determined as the 5th elevation percentile of all the AHN ground points that were found in a 4 meter radius around the BAG polygon of a building.</p>
+<p>The roof heights (<a href="../attributes/#h_dak_50p"><code>h_dak_*</code></a>) are computed from the AHN points that that were detected to be part of a roof plane. Per roofpart we always compute the 0th (minimum height), 50th (median height), 70th, and 100th (maximum)  percentiles. For instance <a href="../attributes/#h_dak_50p"><code>h_dak_50p</code></a> means the median height of the roof points. The figure below illustrates the detected roof points on a building. Notice that facade points are thus excluded from this computation.</p>
+<figure>
+  <a href="../../../images_common/roof_points.png">
+    <img src="../../../images_common/roof_points.png" />
+  </a>
+  <figcaption>Illustration of the detected roof points (red) and wall points (grey).</figcaption>
+</figure>
+
+<h3 id="heights-in-2d-vs-3d-layers">Heights in 2D vs 3D layers<a class="headerlink" href="#heights-in-2d-vs-3d-layers" title="Permanent link">&para;</a></h3>
+<p>For the 2D layers the heights are the statistcal aggregates as explained above and given as an attribute for each modelled roofpart.</p>
+<p>For the 3D layers the heights are not given as attributes since they are explicitly modelled in the 3D geometry of the model. For the LoD1.2 and LoD1.3 layers (where each roofpart is modelled at a single height) the 70th percentile roof heights are used in the extrusion. In the LoD2.2 3D (<code>lod22_3d</code>) layer the roofs are directly modelled with the roof planes that were detected in the AHN point cloud.</p>
+<div class="admonition note">
+<p class="admonition-title">Height picking in the 3D webviewer</p>
+<p>If you click on a building in our 3D webviewer, you'll notice a height value shown in the bottom left corner of the screen. This is the height of the building at the clicked location as measured from the base of the building, ie. <code>h_maaiveld</code> is already subtracted from this.</p>
+</div>
 <!-- start layers (DO NOT REMOVE THIS MARKER AND DO NOT EDIT THE TEXT BELOW. SEE README.) -->
 <h2 id="pand"><code>pand</code><a class="headerlink" href="#pand" title="Permanent link">&para;</a></h2>
 <p>Stores the attributes and geometry of the <code>Pand</code> object of the BAG, plus the attributes of the 3D BAG that relate to the whole building. Contains only those buildings that went into the reconstruction. The attribute <a href="../attributes/#fid"><code>fid</code></a> is the unique, numeric ID of the objects. Besides being the primary key, <code>fid</code> is also used for joining the other layers to <code>pand</code>.</p>
@@ -936,7 +997,7 @@ The BAG models buildings with their largest extent as viewed from above. In prac
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d892486b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
       
     
   </body>
