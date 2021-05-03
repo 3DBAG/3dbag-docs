@@ -22,6 +22,30 @@ The figure below illustrates the relation between the **feature** and the variou
 
 ![3dbag_ref](../../../images_common/3d_bag_layers_reference.png){ width=100% }
 
+
+## Calculation of height values
+
+Each LoD of a building in 3D BAG has one ground height (`h_maaiveld`) and one or more roof heights (`h_dak_*`). All heights are given in EPSG:7415.
+
+The ground height is determined as the 5th elevation percentile of all the AHN ground points that were found in a 4 meter radius around the BAG polygon of a building.
+
+The roof heights ([`h_dak_*`](attributes.md#h_dak_50p)) are computed from the AHN points that that were detected to be part of a roof plane. Per roofpart we always compute the 0th (minimum height), 50th (median height), 70th, and 100th (maximum)  percentiles. For instance [`h_dak_50p`](attributes.md#h_dak_50p) means the median height of the roof points. The figure below illustrates the detected roof points on a building. Notice that facade points are thus excluded from this computation.
+
+<figure>
+  <a href="../../../images_common/roof_points.png">
+    <img src="../../../images_common/roof_points.png" />
+  </a>
+  <figcaption>Illustration of the detected roof points (red) and wall points (grey).</figcaption>
+</figure>
+
+### Heights in 2D vs 3D layers
+For the 2D layers the heights are the statistcal aggregates as explained above and given as an attribute for each modelled roofpart.
+
+For the 3D layers the heights are not given as attributes since they are explicitly modelled in the 3D geometry of the model. For the LoD1.2 and LoD1.3 layers (where each roofpart is modelled at a single height) the 70th percentile roof heights are used in the extrusion. In the LoD2.2 3D (`lod22_3d`) layer the roofs are directly modelled with the roof planes that were detected in the AHN point cloud.
+
+!!! note "Height picking in the 3D webviewer"
+    If you click on a building in our 3D webviewer, you'll notice a height value shown in the bottom left corner of the screen. This is the height of the building at the clicked location as measured from the base of the building, ie. `h_maaiveld` is already subtracted from this.
+
 <!-- start layers (DO NOT REMOVE THIS MARKER AND DO NOT EDIT THE TEXT BELOW. SEE README.) -->
 ## `pand`
 

@@ -21,6 +21,29 @@ De onderstaande figuur illustreert de relatie tussen de **feature** en de versch
 
 ![3dbag_ref](../../../images_common/3d_bag_layers_reference.png){ width=100% }
 
+## Berekening van hoogtes
+
+Elke LoD van een gebouw in de 3D BAG heeft een maaiveld hoogte (`h_maaiveld`) en een of meerdere dag hoogtes (`h_dak_*`). Alle hoogtes zijn gegeven in EPSG:7415.
+
+De maaiveld hoogte is bepaald as het 5e hoogte percentiel van alle AHN punten binnen een straal van 4 meter rondom het BAG polygon van het gebouw.
+
+De dak hoogtes ([`h_dak_*`](attributes.md#h_dak_50p)) zijn berekend uit de AHN punten waaruit dakvlakken zijn getecteerd. Per dakvlak berekenen we altijd het 0e (minimum), 50e (mediaan), 70e, en 100e (maximum)  percentiel. [`h_dak_50p`](attributes.md#h_dak_50p) is bijvoorbeeld berekend als de mediaan van deze punten. De figuur hieronder laat zien welke dak punten er worden gedetecteerd. Merk op dat gevel punten dus niet meegenomen worden in deze berekeningen.
+
+<figure>
+  <a href="../../../images_common/roof_points.png">
+    <img src="../../../images_common/roof_points.png" />
+  </a>
+  <figcaption>Illustratie van de gedetecteerde dak punten (rood) en muur punten (grijs).</figcaption>
+</figure>
+
+### Hoogtes in de 2D vs 3D lagen
+Voor de 2D lagen zijn de hoogtes altijd gegeven als attribuut per gemodelleerd dakdeel zoals hierboven beschreven.
+
+Voor de 3D lagen zijn de hoogtes niet gegeven als attributen omdat ze al expliciet zijn gemodelleerd in de 3D geometrie van het model. Voor de LoD1.2 en LoD1.3 lagen (waar ieder dakdeel op een constante hoogte is gemodelleerd) is het 70e percentiel gebruikt voor de extrusie.  In de LoD2.2 3D (`lod22_3d`) laag zijn de daken direkt met de dakvlakken gemodelleerd zoals die in de AHN puntenwolk gedetecteerd zijn.
+
+!!! note "Hoogtes klikken in de 3D webviewer"
+    Als je op een gebouw in onze 3D webviewer klikt, zal er een links onder in het scherm een hoogte getoond worden. Dit is de hoogte gemeten vanaf het maaiveld rondom het gebouw, oftewel `h_maaiveld` is hier al vanaf getrokken.
+
 <!-- start layers (DO NOT REMOVE THIS MARKER AND DO NOT EDIT THE TEXT BELOW. SEE README.) -->
 ## `pand`
 
