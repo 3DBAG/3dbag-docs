@@ -1,3 +1,44 @@
+
+## 21.09.1 (2021.09.XX) – beta
+
+#### Added
+
++ The building part ID (`pand_deel_id`) to the 3D layers. Previously it was only part of the 2D layers.
+
+#### Changed / Fixed
+
++ 3D geometries are **not triangulated** anymore in the CityJSON, GeoPackage, PostgreSQL formats. The OBJ format is triangulated.
++ The object ID in the OBJ files are the BAG ID (`identificatie`), instead of an integer sequence.
++ Attribute name changes:
+
+| From                    | To                     |
+|-------------------------|------------------------|
+| _lod11_replace          | lod11_replace          |
+| _semantics_values       | semantics_values       |
+| _tile_id                | tile_id                |
+| _reconstruction_skipped | reconstruction_skipped |
+| _t_run                  | q_t_run                |
+| _roofplane_cnt          | q_roofplane_cnt        |
+| _data_area              | q_data_area            |
+| _nodata_area            | q_nodata_area          |
+| _data_coverage          | q_data_coverage        |
+| _roof_pt_cnt            | q_roof_pt_cnt          |
+| _wall_pt_cnt            | q_wall_pt_cnt          |
+| _unsegmented_pt_cnt     | q_unsegmented_pt_cnt   |
+| _pc2m_error_hist        | q_pc2m_error_hist      |
+| _m2pc_error_hist        | q_m2pc_error_hist      |
+| _m2pc_error_max         | q_m2pc_error_max       |
+| _rmse                   | q_rmse                 |
+
++ The roofpart ID (`dd_id`) starts with 0. Previously it started with 1.
++ GPKG format: preserve the feature ID (`fid`) in the `pand` layer so it is possible to join the other layers on `fid`.
++ Fixed the duplicate / cloned objects in the output.
+
+#### Removed
+
+#### Known issues
+
+
 ## 21.03.1 (2021.03.26) – beta
 
 #### Added
