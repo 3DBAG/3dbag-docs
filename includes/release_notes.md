@@ -4,10 +4,19 @@
 #### Added
 
 + The building part ID (`pand_deel_id`) to the 3D layers. Previously it was only part of the 2D layers.
++ A new layer (`ondergrond`) with parts of the building polygons that were cut off during the reconstruction, because they were detected as the ground.
 
 #### Changed / Fixed
 
-+ 3D geometries are **not triangulated** anymore in the CityJSON, GeoPackage, PostgreSQL formats. The OBJ format is triangulated.
++ Update of the source data sets (BAG, BGT, Top10NL) to the version available on 2021-09-07.
++ The CityJSON files have changed
+  + The semantic surface `WallSurface` is split to `+WallSurface_outer` and `+WallSurface_inner`
+  + Surfaces are no longer triangulated.
++ Improvements in the reconstruction algorithm.
+  + Added new triangulation-based snapping node. The goal of this node is to remove (near) duplicate vertices in the 2D roof partition without introducing topological problems. This should fix problems with e.g. spikes (due vertices with invalid coordinates) and missing faces in the final 3D models.
+  + Added a nearest neighbor interpolation for no-data pixels in the heightfield that is used during optimisation. This interpolation picks the lowest value in the neighborhood (with radius of 10 cm at the moment) of the nodata pixel of interest. This should reduce the occurence of erroneous thin vertical 'screens' in building models.
+  + Several other bugfixes.
++ 3D geometries are **not triangulated** anymore in the CityJSON, GeoPackage, PostgreSQL formats. The OBJ format remains. triangulated.
 + The object ID in the OBJ files are the BAG ID (`identificatie`), instead of an integer sequence.
 + Attribute name changes:
 
