@@ -1,0 +1,1 @@
+--8<-- "includes/release_notes.md"
