@@ -9,14 +9,13 @@
 #### Changed / Fixed
 
 + Update of the source data sets (BAG, BGT, Top10NL) to the version available on 2021-09-07.
-+ The CityJSON files have changed
-  + The semantic surface `WallSurface` is split to `+WallSurface_outer` and `+WallSurface_inner`
-  + Surfaces are no longer triangulated.
++ The CityJSON exporter was rewritten
+  + The semantic surfaces of type `WallSurface` now have an additional boolean attribute `on_footprint` which indicates if a WallSurface is on a footprint edge or not.
 + Improvements in the reconstruction algorithm.
-  + Added new triangulation-based snapping node. The goal of this node is to remove (near) duplicate vertices in the 2D roof partition without introducing topological problems. This should fix problems with e.g. spikes (due vertices with invalid coordinates) and missing faces in the final 3D models.
-  + Added a nearest neighbor interpolation for no-data pixels in the heightfield that is used during optimisation. This interpolation picks the lowest value in the neighborhood (with radius of 10 cm at the moment) of the nodata pixel of interest. This should reduce the occurence of erroneous thin vertical 'screens' in building models.
-  + Several other bugfixes.
-+ 3D geometries are **not triangulated** anymore in the CityJSON, GeoPackage, PostgreSQL formats. The OBJ format remains. triangulated.
+  + Added new triangulation-based snapping node. The goal of this node is to remove (near) duplicate vertices in the 2D roof partition without introducing topological problems. This fixes problems with e.g. spikes (due vertices with invalid coordinates) and missing faces in the final 3D models. With this improvement we have >98% valid geometries, up from 89% in the previous version. We checked this with [val3dity](https://github.com/tudelft3d/val3dity).
+  + Added a nearest neighbor interpolation for no-data pixels in the heightfield that is used during optimisation. This interpolation picks the lowest value in the neighborhood (with radius of 10 cm at the moment) of the nodata pixel of interest. This should reduce the occurence of erroneous thin vertical 'screens' in building models (several still remain however).
+  + Several other bugfixes improvements.
++ 3D geometries are **not triangulated** anymore in the CityJSON, GeoPackage, PostgreSQL formats. The OBJ format remains triangulated.
 + The object ID in the OBJ files are the BAG ID (`identificatie`), instead of an integer sequence.
 + Attribute name changes:
 
@@ -40,13 +39,15 @@
 | _rmse                   | q_rmse                 |
 
 + The roofpart ID (`dd_id`) starts with 0. Previously it started with 1.
++ The value `could not detect` of the `dak_type` attribute has been changed to `no planes`.
 + GPKG format: preserve the feature ID (`fid`) in the `pand` layer so it is possible to join the other layers on `fid`.
 + Fixed the duplicate / cloned objects in the output.
 
 #### Removed
 
 #### Known issues
-
++ Artificial vertical 'screen' still occur in some building models.
++ Missing tiles (in all formats): ...
 
 ## 21.03.1 (2021.03.26) – beta
 
