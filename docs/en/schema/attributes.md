@@ -37,7 +37,7 @@ Roof type of the building.
 | `multiple horizontal` | Roof with multiple, only horizontal surfaces. |
 | `single horizontal` | Roof with a single horizontal surface. |
 | `no points` | No point was found for the building. |
-| `could not detect` | Could not detect a roof surface, even though points were found. |
+| `no planes` | Could not detect a roof surface, even though points were found. |
 
 ## `dd_id`
 
