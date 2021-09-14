@@ -37,7 +37,7 @@ Daktype van het pand.
 | `multiple horizontal` | Dak met meerdere, uitsluitend horizontale oppervlakken. |
 | `single horizontal` | Dak met een enkel horizontaal oppervlak. |
 | `no points` | Er was geen punt gevonden voor het gebouw. |
-| `could not detect` | Kon geen dakoppervlak detecteren, ondanks dat er punten gevonden waren. |
+| `no planes` | Kon geen dakoppervlak detecteren, ondanks dat er punten gevonden waren. |
 
 ## `dd_id`
 
