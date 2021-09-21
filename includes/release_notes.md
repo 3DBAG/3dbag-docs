@@ -57,7 +57,7 @@ For this second release we focused primarily on improving the data quality and t
 + 1.75% of the buildings is geometrically invalid, consult the `val3dity_codes` attribute to find out which ones.
 + Missing tiles (in all formats): 10, 41, 42, 117, 143, 228, 301, 381, 776, 1485, 1876, 2178, 2333, 2436, 2511, 2662, 2713, 5158, 5186, 5228, 6813, 7364
 
-## 21.03.1 (2021.03.26) – beta
+## 21.03.1 – beta
 
 *Release date: 26 March 2021*
 
