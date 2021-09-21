@@ -1,4 +1,4 @@
-Below you can find a list of notable articles, posts, tweets and videos about 3D BAG. Please [let us know](../contact.md) if you think something is missing!
+Below you can find a list of notable articles, posts, tweets and videos about 3D BAG. Please [send us a mail](../contact.md) if you think something is missing!
 
 ## Applications of 3D BAG
 + 3D printing
