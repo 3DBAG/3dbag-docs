@@ -51,6 +51,7 @@ For this second release we focused primarily on improving the data quality and t
 + The value `could not detect` of the `dak_type` attribute has been changed to `no planes`.
 + GPKG format: preserve the feature ID (`fid`) in the `pand` layer so it is possible to join the other layers on `fid`.
 + Fixed the duplicate / cloned objects in the output.
++ Improve 3D tiles export and rendering in the Viewer
 
 #### Known issues
 + Artificial vertical 'screens' still occur in some building models.
