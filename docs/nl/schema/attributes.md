@@ -1,15 +1,6 @@
 # Data Attributen
 
 
-## `_semantics_values`
-
-Pand-oppervlaksemantiek. Dit is een array van integers, waarbij een integer verwijst naar een oppervlaktype (0: `GroundSurface`, 1: `RoofSurface`, 2: `OuterWallSurface`, 3: `InnerWallSurface`). Als een oppervlak geen semantische waarde heeft, wordt NULL gebruikt. De lengte van de array staat dus gelijk aan het aantal oppervlakken, en de volgorde van waarden in de array correspondeert met de volgorde van de oppervlakken.
-
-*Datatype*: lijst
-
-*Eenheid*: -
-
-
 ## `begingeldigheid`
 
 De datum waarop een versie van een BAG-object geldig is in de werkelijkheid conform de ingangsdatum in het brondocument. Dit tijdstip wordt vastgelegd in de beginGeldigheid. Als er geen expliciete ingangsdatum van geldigheid is opgenomen, wordt de datum van het brondocument overgenomen.
@@ -31,13 +22,13 @@ Daktype van het pand.
 
 *Waarden*:
 
-| Waarden | Omchrijving |
+| Waarden | Omschrijving |
 | :----- | :----------- |
 | `slanted` | Dat met ten minste één schuin oppervlak. |
 | `multiple horizontal` | Dak met meerdere, uitsluitend horizontale oppervlakken. |
 | `single horizontal` | Dak met een enkel horizontaal oppervlak. |
 | `no points` | Er was geen punt gevonden voor het gebouw. |
-| `no planes` | Kon geen dakoppervlak detecteren, ondanks dat er punten gevonden waren. |
+| `could not detect` | Kon geen dakoppervlak detecteren, ondanks dat er punten gevonden waren. |
 
 ## `dd_id`
 
@@ -194,7 +185,7 @@ Ondergronds-classificatie van het pand of panddeel.
 
 *Waarden*:
 
-| Waarden | Omchrijving |
+| Waarden | Omschrijving |
 | :----- | :----------- |
 | `floating` | Pand of panddeel zweeft boven andere objecten. |
 | `above ground` | Pand of panddeel is volledig bovengronds. |
@@ -230,7 +221,7 @@ Geeft aan of de puntenwolk actueel is ten opzichte van de leeftijd van het pand.
 
 *Waarden*:
 
-| Waarden | Omchrijving |
+| Waarden | Omschrijving |
 | :----- | :----------- |
 | `yes` | De puntenwolk is ingewonnen na de constructiedatum van het pand. |
 | `no` | De puntenwolk is ingewonnen voor de constructiedatum van het pand. |
@@ -272,6 +263,15 @@ Geeft aan of de volledige LoD1.2/LoD1.3/LoD2.2 reconstructie is overgeslagen voo
 *Eenheid*: yes/no
 
 
+## `semantics_values`
+
+Pand-oppervlaksemantiek. Dit is een array van integers, waarbij een integer verwijst naar een oppervlaktype (0: `GroundSurface`, 1: `RoofSurface`, 2: `OuterWallSurface`, 3: `InnerWallSurface`). Als een oppervlak geen semantische waarde heeft, wordt NULL gebruikt. De lengte van de array staat dus gelijk aan het aantal oppervlakken, en de volgorde van waarden in de array correspondeert met de volgorde van de oppervlakken.
+
+*Datatype*: lijst
+
+*Eenheid*: -
+
+
 ## `status`
 
 De fase van de levenscyclus van een pand, waarin het betreffende pand zich bevindt.
@@ -284,7 +284,7 @@ De fase van de levenscyclus van een pand, waarin het betreffende pand zich bevin
 
 *Waarden*:
 
-| Waarden | Omchrijving |
+| Waarden | Omschrijving |
 | :----- | :----------- |
 | `Bouwvergunning verleend` |  |
 | `Niet gerealiseerd pand` |  |

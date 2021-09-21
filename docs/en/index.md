@@ -1,4 +1,4 @@
-# General summary
+# Overview
 
 Welcome to the documentation of the 3D BAG by the 3D geoinformation group! This is the first open 3D building data set that is generated fully automatically and covers a whole country on this level of detail.
 
