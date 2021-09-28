@@ -57,8 +57,9 @@ For this second release we focused primarily on improving the data quality and t
 + Artificial vertical 'screens' still occur in some building models.
 + 1.75% of the buildings is geometrically invalid, consult the `val3dity_codes` attribute to find out which ones.
 + Missing tiles for download (in all formats): 10, 41, 42, 117, 143, 228, 301, 381, 776, 1485, 1876, 2178, 2333, 2436, 2511, 2662, 2713, 5158, 5186, 5228, 6813, 7364. In the 3D viewer some additional tiles may be missing.
-+ Self intersection on buildings that have a roofplane detected that extends below `h_maaiveld`.
++ Self-intersection on buildings that have a roofplane detected that extends below `h_maaiveld`.
 + Possibly incaccurate building geometry for buildings with glass roofs.
++ Intersecting 3D geometries in case the input BAG footprints overlap.
 
 ## 21.03.1 – beta
 
