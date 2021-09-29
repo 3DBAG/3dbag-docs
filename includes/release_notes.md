@@ -22,8 +22,8 @@ Thank you for using 3D BAG!
 + 3D geometries are **not triangulated** anymore in the CityJSON, GeoPackage, PostgreSQL formats. The OBJ format remains triangulated.
 + The CityJSON exporter was rewritten
     - The semantic surfaces of type `WallSurface` now have an additional boolean attribute `on_footprint` which indicates if a WallSurface is on a footprint edge or not.
-    - The original BAG footprint is now include for each object
-    - CityObject ID's are now the BAG identificatie
+    - The original BAG footprint is now included for each object
+    - CityObject ID's are now based on the BAG `identificatie` attribute
 + Improvements in the reconstruction algorithm
     + Added new triangulation-based snapping node. The goal of this node is to remove (near) duplicate vertices in the 2D roof partition without introducing topological problems. This fixes problems with e.g. spikes (due vertices with invalid coordinates) and missing faces in the final 3D models. With this improvement we have >98% valid geometries, up from 89% in the previous version. We checked this with [val3dity](https://github.com/tudelft3d/val3dity).
     + Added a nearest neighbor interpolation for no-data pixels in the heightfield that is used during optimisation. This interpolation picks the lowest value in the neighborhood (with radius of 10 cm at the moment) of the nodata pixel of interest. This should reduce the occurence of erroneous thin vertical 'screens' in building models (several still remain however).
@@ -64,6 +64,7 @@ Thank you for using 3D BAG!
 + Self-intersection on buildings that have a roofplane detected that extends below `h_maaiveld`.
 + Possibly incaccurate building geometry for buildings with glass roofs.
 + Intersecting 3D geometries in case the input BAG footprints overlap.
++ Possible duplicate vertices in CityJSON files.
 
 ## 21.03.1 – beta
 
