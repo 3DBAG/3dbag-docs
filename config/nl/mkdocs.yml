@@ -66,7 +66,7 @@ nav:
     - 'Over ons': 'overview/group.md'
     - 'In de media': 'overview/media.md'
     - 'Release-opmerkingen': 'overview/release_notes.md'
-  - Data:
+  - Data Schema:
     - 'Algemene concepten': 'schema/concepts.md'
     - 'Datalagen': 'schema/layers.md'
     - 'Data-attributen': 'schema/attributes.md'

@@ -1,11 +1,15 @@
 
 ## 21.09.8 – beta
 
-*Release date: 22 September 2021*
+*Release date: 29 September 2021*
 
 This is the second public beta release of the renewed 3D BAG. Before addressing what has changed with this release we would like to take a moment to thank everyone that has been downloading and using the first release. It's very exciting to see how people from various discipplines found ways to apply 3D BAG for their use cases! (also see our new [In the media](media.md) page). A special thanks also to everyone that filled out our feedback forms or gave us feedback in other ways. This is much appreciated!
 
-For this second release we focused primarily on improving the data quality and the way the data is disseminated. The overall geometric validity of the 3D models has risen to 98.25% (up from ~89% in the previous release). Another highlight is that the 3D outputs are no longer triangulated, as requested by several users. Alltogether this should make it easier to use our models in other software. These and more changes are described below in more detail. Thanks for using 3D BAG!
+For this second release we focused primarily on improving the data quality and the way the data is disseminated. The overall geometric validity of the 3D models has risen to 98.25% (up from ~89% in the previous release). Another highlight is that the 3D outputs are no longer triangulated, as requested by several users. Alltogether this should make it easier to use our models in other software. These and more changes are described below in more detail. 
+
+This 3D BAG release contains 9 692 978 buildings. This is 7.72% less buildings than available in the BAG dataset, mostly due to outdated or otherwise insufficient input data. We hope to do a release based on the updated AHN4 soon, but this release is still based on AHN3.
+
+Thank you for using 3D BAG!
 
 #### Added
 
