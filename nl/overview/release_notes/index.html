@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://docs.3dbag.nl/nl/overview/release_notes/">
       
       <link rel="icon" href="../../assets/images/logo.svg">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.0">
     
     
       
@@ -24,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.e35208c4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8b42a75e.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
         
           
           
@@ -50,6 +50,8 @@
     
     
       
+
+
     
     
   </head>
@@ -71,26 +73,18 @@
     <div data-md-component="skip">
       
         
-        <a href="#21031-20210326-beta" class="md-skip">
+        <a href="#21098-beta" class="md-skip">
           Ga naar inhoud
         </a>
       
     </div>
     <div data-md-component="announce">
       
-        <aside class="md-announce">
-          <div class="md-announce__inner md-grid md-typeset">
-            
-
-Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3dbag.nl/nl/overview/release_notes" style="text-decoration: underline; color: white;">wat er nieuw is.</a>
-
-
-          </div>
-        </aside>
-      
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="3D BAG" class="md-header__button md-logo" aria-label="3D BAG" data-md-component="logo">
       
@@ -136,7 +130,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
       <div class="md-header__option">
         <div class="md-select">
           
-          <button class="md-header__button md-icon">
+          <button class="md-header__button md-icon" aria-label="Select language">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
           </button>
           <div class="md-select__inner">
@@ -168,14 +162,18 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Zoeken" placeholder="Zoeken" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Zoeken" placeholder="Zoeken" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -192,6 +190,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
@@ -199,6 +198,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
       
         
           
+            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
@@ -215,7 +215,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
   
     <li class="md-tabs__item">
       <a href="../.." class="md-tabs__link md-tabs__link--active">
-        Overzicht
+        Introductie
       </a>
     </li>
   
@@ -231,7 +231,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
   
     <li class="md-tabs__item">
       <a href="../../schema/concepts/" class="md-tabs__link">
-        Schema
+        Dataschema
       </a>
     </li>
   
@@ -304,6 +304,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     </ul>
   </div>
 </nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -361,30 +362,37 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
       
-      <label class="md-nav__link" for="__nav_1">
-        Overzicht
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Overzicht" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Introductie
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Introductie" data-md-level="1">
         <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
-          Overzicht
+          Introductie
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        Algemeen
+        Overzicht
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -395,8 +403,10 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -407,8 +417,24 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../media/" class="md-nav__link">
+        In de media
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
     
@@ -442,8 +468,15 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#21031-20210326-beta" class="md-nav__link">
-    21.03.1 (2021.03.26) – beta
+  <a href="#21098-beta" class="md-nav__link">
+    21.09.8 – beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21031-beta" class="md-nav__link">
+    21.03.1 – beta
   </a>
   
 </li>
@@ -455,6 +488,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -475,18 +509,23 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
-      <label class="md-nav__link" for="__nav_2">
-        Schema
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Schema" data-md-level="1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Dataschema
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Dataschema" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          Schema
+          Dataschema
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -497,8 +536,10 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -509,8 +550,10 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -521,6 +564,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -541,10 +585,14 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
-      <label class="md-nav__link" for="__nav_3">
-        Dataformaten
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Dataformaten
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Dataformaten" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
@@ -553,6 +601,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
@@ -563,8 +612,10 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -575,8 +626,10 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -587,8 +640,10 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -599,8 +654,10 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     </li>
   
 
+            
           
             
+              
   
   
   
@@ -611,6 +668,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -702,8 +760,15 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#21031-20210326-beta" class="md-nav__link">
-    21.03.1 (2021.03.26) – beta
+  <a href="#21098-beta" class="md-nav__link">
+    21.09.8 – beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21031-beta" class="md-nav__link">
+    21.03.1 – beta
   </a>
   
 </li>
@@ -723,8 +788,134 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
                 
                   <h1>Release-opmerkingen</h1>
                 
-                <h2 id="21031-20210326-beta">21.03.1 (2021.03.26) – beta<a class="headerlink" href="#21031-20210326-beta" title="Permanent link">&para;</a></h2>
+                <h2 id="21098-beta">21.09.8 – beta<a class="headerlink" href="#21098-beta" title="Permanent link">&para;</a></h2>
+<p><em>Release date: 29 September 2021</em></p>
+<p>This is the second public beta release of the renewed 3D BAG. Before addressing what has changed with this release we would like to take a moment to thank everyone that has been downloading and using the first release. It's very exciting to see how people from various discipplines found ways to apply 3D BAG for their use cases! (also see our new <a href="../media/">In the media</a> page). A special thanks also to everyone that filled out our feedback forms or gave us feedback in other ways. This is much appreciated!</p>
+<p>For this second release we focused primarily on improving the data quality and the way the data is disseminated. The overall geometric validity of the 3D models has risen to 98.25% (up from ~89% in the previous release). Another highlight is that the 3D outputs are no longer triangulated, as requested by several users. Alltogether this should make it easier to use our models in other software. These and more changes are described below in more detail. </p>
+<p>This 3D BAG release contains 9 692 978 buildings. This is 7.72% less buildings than available in the BAG dataset, mostly due to outdated or otherwise insufficient input data. We hope to do a release based on the updated AHN4 soon, but this release is still based on AHN3.</p>
+<p>Thank you for using 3D BAG!</p>
 <h4 id="added">Added<a class="headerlink" href="#added" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The building part ID (<code>pand_deel_id</code>) to the 3D layers. Previously it was only part of the 2D layers.</li>
+<li>A new layer (<code>ondergrond</code>) with parts of the building polygons that were cut off during the reconstruction, because they were detected as the ground.</li>
+</ul>
+<h4 id="changed-fixed">Changed / Fixed<a class="headerlink" href="#changed-fixed" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Update of the source data sets (BAG, BGT, Top10NL) to the version available on 2021-09-07.</li>
+<li>3D geometries are <strong>not triangulated</strong> anymore in the CityJSON, GeoPackage, PostgreSQL formats. The OBJ format remains triangulated.</li>
+<li>The CityJSON exporter was rewritten<ul>
+<li>The semantic surfaces of type <code>WallSurface</code> now have an additional boolean attribute <code>on_footprint</code> which indicates if a WallSurface is on a footprint edge or not.</li>
+<li>The original BAG footprint is now included for each object</li>
+<li>CityObject ID's are now based on the BAG <code>identificatie</code> attribute</li>
+</ul>
+</li>
+<li>
+<p>Improvements in the reconstruction algorithm</p>
+<ul>
+<li>Added new triangulation-based snapping node. The goal of this node is to remove (near) duplicate vertices in the 2D roof partition without introducing topological problems. This fixes problems with e.g. spikes (due vertices with invalid coordinates) and missing faces in the final 3D models. With this improvement we have &gt;98% valid geometries, up from 89% in the previous version. We checked this with <a href="https://github.com/tudelft3d/val3dity">val3dity</a>.</li>
+<li>Added a nearest neighbor interpolation for no-data pixels in the heightfield that is used during optimisation. This interpolation picks the lowest value in the neighborhood (with radius of 10 cm at the moment) of the nodata pixel of interest. This should reduce the occurence of erroneous thin vertical 'screens' in building models (several still remain however).</li>
+<li>Several other smaller bugfixes and improvements.</li>
+</ul>
+</li>
+<li>
+<p>The object ID in the OBJ files is now the BAG ID (<code>identificatie</code>) instead of an integer sequence.</p>
+</li>
+<li>Attribute name changes:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>From</th>
+<th>To</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>_lod11_replace</td>
+<td>lod11_replace</td>
+</tr>
+<tr>
+<td>_semantics_values</td>
+<td>semantics_values</td>
+</tr>
+<tr>
+<td>_tile_id</td>
+<td>tile_id</td>
+</tr>
+<tr>
+<td>_reconstruction_skipped</td>
+<td>reconstruction_skipped</td>
+</tr>
+<tr>
+<td>_t_run</td>
+<td>q_t_run</td>
+</tr>
+<tr>
+<td>_roofplane_cnt</td>
+<td>q_roofplane_cnt</td>
+</tr>
+<tr>
+<td>_data_area</td>
+<td>q_data_area</td>
+</tr>
+<tr>
+<td>_nodata_area</td>
+<td>q_nodata_area</td>
+</tr>
+<tr>
+<td>_data_coverage</td>
+<td>q_data_coverage</td>
+</tr>
+<tr>
+<td>_roof_pt_cnt</td>
+<td>q_roof_pt_cnt</td>
+</tr>
+<tr>
+<td>_wall_pt_cnt</td>
+<td>q_wall_pt_cnt</td>
+</tr>
+<tr>
+<td>_unsegmented_pt_cnt</td>
+<td>q_unsegmented_pt_cnt</td>
+</tr>
+<tr>
+<td>_pc2m_error_hist</td>
+<td>q_pc2m_error_hist</td>
+</tr>
+<tr>
+<td>_m2pc_error_hist</td>
+<td>q_m2pc_error_hist</td>
+</tr>
+<tr>
+<td>_m2pc_error_max</td>
+<td>q_m2pc_error_max</td>
+</tr>
+<tr>
+<td>_rmse</td>
+<td>q_rmse</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The roofpart ID (<code>dd_id</code>) starts with 0. Previously it started with 1.</li>
+<li>The value <code>could not detect</code> of the <code>dak_type</code> attribute has been changed to <code>no planes</code>.</li>
+<li>GPKG format: preserve the feature ID (<code>fid</code>) in the <code>pand</code> layer so it is possible to join the other layers on <code>fid</code>.</li>
+<li>Fixed the duplicate / cloned objects in the output.</li>
+<li>Improve 3D tiles export and rendering in the Viewer</li>
+</ul>
+<h4 id="known-issues">Known issues<a class="headerlink" href="#known-issues" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Artificial vertical 'screens' still occur in some building models.</li>
+<li>1.75% of the buildings is geometrically invalid, consult the <code>val3dity_codes</code> attribute to find out which ones.</li>
+<li>Missing tiles for download (in all formats): 10, 41, 42, 117, 143, 228, 301, 381, 776, 1485, 1876, 2178, 2333, 2436, 2511, 2662, 2713, 5158, 5186, 5228, 6813, 7364. In the 3D viewer some additional tiles may be missing.</li>
+<li>Self-intersection on buildings that have a roofplane detected that extends below <code>h_maaiveld</code>.</li>
+<li>Possibly incaccurate building geometry for buildings with glass roofs.</li>
+<li>Intersecting 3D geometries in case the input BAG footprints overlap.</li>
+<li>Possible duplicate vertices in CityJSON files.</li>
+</ul>
+<h2 id="21031-beta">21.03.1 – beta<a class="headerlink" href="#21031-beta" title="Permanent link">&para;</a></h2>
+<p><em>Release date: 26 March 2021</em></p>
+<h4 id="added_1">Added<a class="headerlink" href="#added_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>A brand new 3D viewer.</li>
 <li>Multiple LoDs, LoD1.2, LoD1.3, LoD2.2.</li>
@@ -748,7 +939,7 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
 <ul>
 <li>CSV data format.</li>
 </ul>
-<h4 id="known-issues">Known issues<a class="headerlink" href="#known-issues" title="Permanent link">&para;</a></h4>
+<h4 id="known-issues_1">Known issues<a class="headerlink" href="#known-issues_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Some buildings have a 'spike': a large deviation in the building geometry due to one vertex with an erroneous coordinate (3D models only).</li>
 <li>Not all buildings are geometrically valid (eg. missing face). Note that this should be evident from the val3dity_codes attribute (3D models only).</li>
@@ -772,7 +963,8 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../group/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../media/" class="md-footer__link md-footer__link--prev" aria-label="Vorige: In de media" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -781,13 +973,14 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
               <span class="md-footer__direction">
                 Vorige
               </span>
-              Over ons
+              In de media
             </div>
           </div>
         </a>
       
       
-        <a href="../../schema/concepts/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="../../schema/concepts/" class="md-footer__link md-footer__link--next" aria-label="Volgende: Algemene concepten" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -811,10 +1004,12 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
             <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://3dbag.nl">Copyright &copy; 2021 - 3D BAG</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3d.bk.tudelft.nl/">3D geoinformation research group</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
           </div>
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
         
       </div>
       
@@ -848,10 +1043,10 @@ Welkom bij de documentatie van de vernieuwde 3D BAG! Zie <a href="https://docs.3
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant"], "translations": {"clipboard.copy": "Kopi\u00ebren naar klembord", "clipboard.copied": "Gekopieerd naar klembord", "search.config.lang": "nl", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Zoeken", "search.result.placeholder": "Typ om te beginnen met zoeken", "search.result.none": "Geen overeenkomende documenten", "search.result.one": "1 overeenkomende document", "search.result.other": "# overeenkomende documenten", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant"], "translations": {"clipboard.copy": "Kopi\u00ebren naar klembord", "clipboard.copied": "Gekopieerd naar klembord", "search.config.lang": "nl", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Zoeken", "search.result.placeholder": "Typ om te beginnen met zoeken", "search.result.none": "Geen overeenkomende documenten", "search.result.one": "1 overeenkomende document", "search.result.other": "# overeenkomende documenten", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.f8263e09.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      <script src="../../assets/javascripts/bundle.4fc53ad4.min.js"></script>
       
     
   </body>
