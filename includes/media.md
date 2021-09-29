@@ -19,6 +19,7 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
 + [Signum](https://www.linkedin.com/feed/update/urn:li:activity:6782275683839176704?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6782275683839176704%29)
 + [SpotInfo](https://www.spotinfo.nl/wp/panden-plus/)
 + [ROM3D](https://www.linkedin.com/posts/rom3d_3dbag-win3d-lod2-activity-6788411703710244864-T7F0)
++ [Shintō Labs](https://www.shintolabs.nl/blog/stedelijke-digital-twins-wat-kan-je-tweelingzus-dat-jij-niet-kan/)
 
 ## Tools and tutorials on 3D BAG
 + [GIS2BIM tool for Dynamo by Maarten Vroegindeweij](https://www.linkedin.com/posts/maarten-vroegindeweij-652ab418a_bag3d-3dbag-gis2bim-activity-6784220680817790976-RGO2)
