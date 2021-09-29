@@ -16,6 +16,6 @@ Op de [GitHub repository](https://github.com/tudelft3d/3dbag-viewer/) van de vie
 
 Dank aan NASA AMMOS voor [3DTilesRendererJS](https://github.com/NASA-AMMOS/3DTilesRendererJS), wat gebruikt wordt om de gebouwen te visualiseren, en aan Geodan voor [pg2b3dm](https://github.com/Geodan/pg2b3dm/), gebruikt voor het exporteren van onze data naar 3D Tiles.
 
-## Contact
+## Mail
 
 Voor overige opmerkingen kun je ons ook direct bereiken op <a href="mailto:info@3dbag.nl">info@3dbag.nl</a>.
