@@ -9,6 +9,7 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
 + [Flood simulation by Maxim Knepfle](https://www.tygron.com/en/2021/05/20/hyper-resolution-flooding-of-the-bommelerwaard/)
 + [Old Cadastral boundaries in project Virtueel Hoogeveen by Andy Benjamins](https://www.linkedin.com/posts/andy-benjamins-03687339_historische-kadastrale-grenzen-in-3d-voor-activity-6840583942861656064-1wUJ)
 + [Shadow analysis in Revit by Ekko Nap](https://www.linkedin.com/feed/update/urn:li:activity:6787762181770407936?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6787762181770407936%29)
++ [Energy transition for the built environment by VNG](https://dego.vng.nl/)
 
 ## Public adoption of 3D BAG in other platforms
 + [Amsterdam 3D](https://3d.amsterdam.nl/web/index.html)
