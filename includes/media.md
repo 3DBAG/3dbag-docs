@@ -34,6 +34,7 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
 
 
 ## 3D BAG in the news
++ [3D BAG wins the 2021 Geospatial World Excellence Award in the Content Platform category](https://twitter.com/tudelft3d/status/1451224341258059789?s=20)
 + [Reddit](https://www.reddit.com/r/thenetherlands/comments/mgcjuf/3d_modellen_voor_alle_10_miljoen_gebouwen_in/)
 + [Tweakers.net](https://tweakers.net/nieuws/180004/een-kaart-met-body-alle-gebouwen-in-nederland-in-3d.html)
 + [Geo-Info](https://3d.bk.tudelft.nl/rypeters/pdfs/21_geoinfo_3dbag.pdf)
