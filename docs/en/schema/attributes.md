@@ -1,15 +1,6 @@
 # Data Attributes
 
 
-## `_semantics_values`
-
-Building surface semantics. This is an array of integers, where an integer refers to a surface type (0: `GroundSurface`, 1: `RoofSurface`, 2: `OuterWallSurface`, 3: `InnerWallSurface`). If a surface does not have a semantic value, NULL is used instead. Thus the length of the array equals the number of surfaces, and the order of values in the array corresponds to the order of surfaces.
-
-*Data type*: list
-
-*Unit*: -
-
-
 ## `begingeldigheid`
 
 Relates to the building registration history and version.
@@ -270,6 +261,15 @@ Indicates whether full LoD1.2/LoD1.3/LoD2.2 reconstruction was skipped for this 
 *Data type*: categorical
 
 *Unit*: yes/no
+
+
+## `semantics_values`
+
+Building surface semantics. This is an array of integers, where an integer refers to a surface type (0: `GroundSurface`, 1: `RoofSurface`, 2: `OuterWallSurface`, 3: `InnerWallSurface`). If a surface does not have a semantic value, NULL is used instead. Thus the length of the array equals the number of surfaces, and the order of values in the array corresponds to the order of surfaces.
+
+*Data type*: list
+
+*Unit*: -
 
 
 ## `status`

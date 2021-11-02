@@ -1,4 +1,12 @@
 {
+  "ondergrond": {
+    "en": {
+      "description": "The underground parts of a BAG polygon that were removed during the reconstruction from the LoD1.2, LoD1.3 and LoD2.2 models."
+    },
+    "nl": {
+      "description": "De ondergrondse delen van een BAG-polygoon die zijn verwijderd tijdens de reconstructie van de LoD1.2-, LoD1.3- en LoD2.2-modellen."
+    }
+  },
   "pand": {
     "en": {
       "description": "Stores the attributes and geometry of the `Pand` object of the BAG, plus the attributes of the 3D BAG that relate to the whole building. Contains only those buildings that went into the reconstruction. The attribute [`fid`](attributes.md#fid) is the unique, numeric ID of the objects. Besides being the primary key, `fid` is also used for joining the other layers to `pand`."

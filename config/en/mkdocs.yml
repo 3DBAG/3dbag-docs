@@ -60,12 +60,13 @@ markdown_extensions:
       base_path: "."
 
 nav:
-  - Overview:
-    - 'Summary': index.md
+  - Introduction:
+    - 'Overview': index.md
     - 'Data Sources': overview/sources.md
     - 'About Us': 'overview/group.md'
+    - 'In the media': 'overview/media.md'
     - 'Release Notes': 'overview/release_notes.md'
-  - Schema:
+  - Data Schema:
     - 'General Concepts': 'schema/concepts.md'
     - 'Data Layers': 'schema/layers.md'
     - 'Data Attributes': 'schema/attributes.md'
