@@ -15,6 +15,8 @@ Op deze pagina vind je algemene informatie over de 3D BAG en hoe deze is ontwikk
 
 De 3D BAG is een up-to-date landsdekkende dataset met 3D gebouwmodellen van Nederland. De 3D BAG is open data. Het bevat 3D modellen op verscheidene detailniveaus welke zijn gegenereerd door de combinatie van twee open datasets: de pand-gegevens uit de [BAG](overview/sources.md#BAG) en de hoogtegegevens uit de [AHN](overview/sources.md#AHN). De 3D BAG wordt regelmatig geüpdatet met de meest recente openlijk beschikbare pand- en hoogtegegevens.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u84ZyD2ie48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 De 3D BAG is eveneens een plek voor experimenten. We gebruiken de data zelf ook om nieuwe ideeën te testen in onderzoek en onderwijs binnen de 3D geoinformation onderzoeksgroep. Gebaseerd op ervaringen met de data verbeteren we constant onze methoden, en door onze eigen service te ontwikkelen en in beheer te houden, behouden we de volledige controle over het gehele proces van invoerdata, voorbewerking en reconstructie tot querying en het gebruik van de gereconstrueerde 3D data voor stedelijke toepassingen.
 
 ## Belangrijkste kenmerken
