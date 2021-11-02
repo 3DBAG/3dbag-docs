@@ -13,6 +13,7 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
     + [VNG](https://dego.vng.nl/)
     + [Tomahawk](https://www.linkedin.com/posts/bartroossien_demo-aanvragen-tomahawk-activity-6851876822813163520-WQcO)
 + [BIM integration by IRP](https://www.linkedin.com/posts/jolahaye_3dbag-bimkeeper-irp-ugcPost-6852182959009726464-SdVJ)
++ [Revit integration by Enveo](https://enveo.io/nieuws/release-notes/versie-2-0/)
 
 ## Public adoption of 3D BAG in other platforms
 + [Amsterdam 3D](https://3d.amsterdam.nl/web/index.html)
