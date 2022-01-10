@@ -1,6 +1,6 @@
 De webservices geven de mogelijkheid om in de vorm van een URL exact te specificeren welke 3D BAG gebouwen je wilt downloaden. Alle belangrijke GIS-software heeft ondersteuning voor deze services.
 
-Van de 3D BAG bieden we zowel de [2D lagen](../schema/layers.md#data-layers) aan, als de tegelset die we gebruiken voor het verspreiden van de data in de verschillende formaten.
+Van de 3D BAG bieden we zowel de [2D lagen](../schema/layers.md#data-layers) aan, als de tegelset die we gebruiken voor het verspreiden van de data in de verschillende formaten. De links naar de webservices staan op de 3D BAG [Downloads](https://3dbag.nl/nl/download) pagina.
 
 ## WFS
 
