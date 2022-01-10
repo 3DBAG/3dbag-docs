@@ -1,6 +1,6 @@
 Webservices make it possible to specify via an URL exactly which models to download from the 3D BAG. All major GIS software supports these services.
 
-From the 3D BAG we serve the [2D layers](../schema/layers.md#data-layers) and the tile set that we use for distributing the data in various formats.
+From the 3D BAG we serve the [2D layers](../schema/layers.md#data-layers) and the tile set that we use for distributing the data in various formats. You can find the respective links in the [Downloads](https://3dbag.nl/en/download) page.
 
 ## WFS
 
