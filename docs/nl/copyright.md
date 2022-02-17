@@ -12,7 +12,7 @@ De 3D BAG is open data. Dit geldt ook voor alle downloadbare databestanden en da
 
 *Let op dat sommige inhoud van de documentatie hergebruikt is uit andere teksten. De bron van deze inhoud is expliciet aangegeven, en het is belangrijk om je te houden aan diens respectievelijke licentie wanneer je deze gebruikt.*
 
-### Hoe credits te geven aan de 3D BAG
+### Hoe credits te geven aan de 3D BAG data
 
 We vereisen dat je de regel “© 3D BAG by tudelft3d” gebruikt bij je toepassing.
 
@@ -21,6 +21,21 @@ In digitale media moet je eveneens een link naar [deze copyright-pagina](https:/
 De naam *tudelft3d* is een korte alias van de volledige naam van onze groep, *3D geoinformation research group*. We gebruiken *tudelft3d* vaak bij onze communicatie.
 
 Als je de 3D BAG data integreert in een interactieve elektronische kaart/visualisatie, moet je de genoemde tekstregel plaatsen in de rechteronderhoek van de kaart.
+
+### Citeren van 3DBAG
+
+Er is een [preprint](https://arxiv.org/abs/2201.01191) beschikbaar voor een publicatie in het maart 2022 uitgave van [*Journal of Photogrammetric Engineering & Remote Sensing*](https://www.asprs.org/asprs-publications/pers).
+
+```
+@misc{peters2021automated,
+      title={Automated 3D reconstruction of LoD2 and LoD1 models for all 10 million buildings of the Netherlands}, 
+      author={Ravi Peters and Balázs Dukai and Stelios Vitalis and Jordi van Liempt and Jantien Stoter},
+      year={2021},
+      eprint={2201.01191},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
 
 ## Software
 
