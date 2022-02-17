@@ -14,10 +14,12 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
     + [Tomahawk](https://www.linkedin.com/posts/bartroossien_demo-aanvragen-tomahawk-activity-6851876822813163520-WQcO)
 + [BIM integration by IRP](https://www.linkedin.com/posts/jolahaye_3dbag-bimkeeper-irp-ugcPost-6852182959009726464-SdVJ)
 + [Revit integration by Enveo](https://enveo.io/nieuws/release-notes/versie-2-0/)
++ [Subdivision of 3DBAG into indoor entities by Coders CO.](https://www.linkedin.com/posts/coders-co-_pdf2gis-3dbag-cityjson-activity-6889168061253922817-Ck0Q)
 
 ## Public adoption of 3D BAG in other platforms
 + [Amsterdam 3D](https://3d.amsterdam.nl/web/index.html)
 + [Utrecht 3D](https://3d.utrecht.nl/)
++ [Zwolle](https://www.youtube.com/watch?v=7jLEX_LBXxw)
 + ESRI
     - [Dordrecht by Niels van der Vaart](https://www.linkedin.com/feed/update/urn:li:activity:6781234372499656704/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6781234372499656704%29)
     + [Amersfoort by Maarten Welmers](https://www.linkedin.com/feed/update/urn:li:activity:6783394542914715648/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A6783394542914715648%29)
@@ -35,6 +37,7 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
 
 
 ## 3D BAG in the news
++ [3DBAG gets ERC funding](https://www.delta.tudelft.nl/twee-erc-commercialisatiebeurzen-voor-delft#)
 + [3D BAG wins the 2021 Geospatial World Excellence Award in the Content Platform category](https://3d.bk.tudelft.nl/news/2021/11/02/3dbag-GWF-content-platform-prize.html)
 + [Reddit](https://www.reddit.com/r/thenetherlands/comments/mgcjuf/3d_modellen_voor_alle_10_miljoen_gebouwen_in/)
 + [Tweakers.net](https://tweakers.net/nieuws/180004/een-kaart-met-body-alle-gebouwen-in-nederland-in-3d.html)
