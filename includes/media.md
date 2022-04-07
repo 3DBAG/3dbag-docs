@@ -44,3 +44,6 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
 + [Geo-Info](https://3d.bk.tudelft.nl/rypeters/pdfs/21_geoinfo_3dbag.pdf)
 + [BK nieuws](https://www.tudelft.nl/2021/bk/alle-10-miljoen-gebouwen-in-nederland-ontsloten-in-3d)
 + [LinkedIn announcement by Jantien Stoter](https://www.linkedin.com/posts/jantien-stoter-7721346_3dbag-activity-6782213871764684800-fVR9)
+
+# Publications using 3DBAG
++ [Automatic Building Age Prediction from Street View Images](https://ieeexplore.ieee.org/document/9660554)
