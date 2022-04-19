@@ -29,6 +29,7 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
 + [Shintō Labs](https://www.shintolabs.nl/blog/stedelijke-digital-twins-wat-kan-je-tweelingzus-dat-jij-niet-kan/)
 
 ## Tools and tutorials on 3D BAG
++ [Blender Hoogtedata Addon](https://gitlab.com/thomaskole/blender-hoogtedata-addon)
 + [GIS2BIM tool for Dynamo by Maarten Vroegindeweij](https://www.linkedin.com/posts/maarten-vroegindeweij-652ab418a_bag3d-3dbag-gis2bim-activity-6784220680817790976-RGO2)
 + [Infraworks video tutorial by Richard de Nier](https://www.linkedin.com/posts/richarddenier_3d-bag-viewer-activity-6783767736385384448-ZZEF)
 + [3D BAG in Revit video by BFAS](https://www.linkedin.com/feed/update/urn:li:activity:6822857615140241408/)
