@@ -2,77 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.3dbag.nl/nl/</loc>
-         <lastmod>2022-04-19</lastmod>
+         <lastmod>2022-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.3dbag.nl/nl/contact/</loc>
-         <lastmod>2022-04-19</lastmod>
+         <lastmod>2022-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.3dbag.nl/nl/copyright/</loc>
-         <lastmod>2022-04-19</lastmod>
+         <lastmod>2022-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.3dbag.nl/nl/delivery/cityjson/</loc>
-         <lastmod>2022-04-19</lastmod>
+         <lastmod>2022-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.3dbag.nl/nl/delivery/gpkg/</loc>
-         <lastmod>2022-04-19</lastmod>
+         <lastmod>2022-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.3dbag.nl/nl/delivery/obj/</loc>
-         <lastmod>2022-04-19</lastmod>
+         <lastmod>2022-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.3dbag.nl/nl/delivery/postgresql/</loc>
-         <lastmod>2022-04-19</lastmod>
+         <lastmod>2022-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.3dbag.nl/nl/delivery/webservices/</loc>
-         <lastmod>2022-04-19</lastmod>
+         <lastmod>2022-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.3dbag.nl/nl/overview/group/</loc>
-         <lastmod>2022-04-19</lastmod>
+         <lastmod>2022-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.3dbag.nl/nl/overview/media/</loc>
-         <lastmod>2022-04-19</lastmod>
+         <lastmod>2022-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.3dbag.nl/nl/overview/release_notes/</loc>
-         <lastmod>2022-04-19</lastmod>
+         <lastmod>2022-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.3dbag.nl/nl/overview/sources/</loc>
-         <lastmod>2022-04-19</lastmod>
+         <lastmod>2022-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.3dbag.nl/nl/schema/attributes/</loc>
-         <lastmod>2022-04-19</lastmod>
+         <lastmod>2022-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.3dbag.nl/nl/schema/concepts/</loc>
-         <lastmod>2022-04-19</lastmod>
+         <lastmod>2022-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.3dbag.nl/nl/schema/layers/</loc>
-         <lastmod>2022-04-19</lastmod>
+         <lastmod>2022-06-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
