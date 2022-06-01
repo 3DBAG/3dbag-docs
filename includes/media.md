@@ -35,6 +35,7 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
 + [3D BAG in Revit video by BFAS](https://www.linkedin.com/feed/update/urn:li:activity:6822857615140241408/)
 + [3D BAG in AutoCAD article + video by RODEMA](https://www.autocad-cursus.info/cad-downloads/3d-bag-data-inlezen-in-autocad)
 + [3D BAG CityJSON to IFC article + video by Hans Lammerts](https://blueai.nl/wp-content/uploads/2021/05/3D-BAG.pdf)
++ [How-to: 3D BAG TU Delft naar ArcGIS](https://esri-nederland-content-esrinl-content.hub.arcgis.com/apps/how-to-3d-bag-tu-delft-naar-arcgis)
 
 
 ## 3D BAG in the news
