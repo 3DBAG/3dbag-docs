@@ -24,16 +24,21 @@ Als je de 3D BAG data integreert in een interactieve elektronische kaart/visuali
 
 ### Citeren van 3DBAG
 
-Er is een [preprint](https://arxiv.org/abs/2201.01191) beschikbaar voor een publicatie in het maart 2022 uitgave van [*Journal of Photogrammetric Engineering & Remote Sensing*](https://www.asprs.org/asprs-publications/pers).
+Verwijs naar het artikel [Automated 3D Reconstruction of LoD2 and LoD1 Models for All 10 Million Buildings of the Netherlands](https://doi.org/10.14358/PERS.21-00032R2).
 
 ```
-@misc{peters2021automated,
+@misc{peters2022,
       title={Automated 3D reconstruction of LoD2 and LoD1 models for all 10 million buildings of the Netherlands}, 
-      author={Ravi Peters and Balázs Dukai and Stelios Vitalis and Jordi van Liempt and Jantien Stoter},
-      year={2021},
-      eprint={2201.01191},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      author = "Ravi Peters and Bal{\'a}zs Dukai and Stelios Vitalis and {van Liempt}, Jordi and Jantien Stoter",
+      year = "2022",
+      doi = "10.14358/PERS.21-00032R2",
+      language = "English",
+      volume = "88",
+      pages = "165--170",
+      journal = "Photogrammetric Engineering and Remote Sensing",
+      issn = "0099-1112",
+      publisher = "American Society for Photogrammetry and Remote Sensing",
+      number = "3",
 }
 ```
 
