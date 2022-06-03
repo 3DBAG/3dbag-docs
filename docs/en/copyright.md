@@ -24,16 +24,21 @@ If you integrate the 3D BAG data in a browsable electronic map, the credit shoul
 
 ### How to cite 3D BAG
 
-We have a [preprint](https://arxiv.org/abs/2201.01191) available for an article that is to be published in the March 2022 issue of the [*Journal of Photogrammetric Engineering & Remote Sensing*](https://www.asprs.org/asprs-publications/pers).
+Refer to the the article [Automated 3D Reconstruction of LoD2 and LoD1 Models for All 10 Million Buildings of the Netherlands](https://doi.org/10.14358/PERS.21-00032R2).
 
 ```
-@misc{peters2021automated,
+@misc{peters2022,
       title={Automated 3D reconstruction of LoD2 and LoD1 models for all 10 million buildings of the Netherlands}, 
-      author={Ravi Peters and Balázs Dukai and Stelios Vitalis and Jordi van Liempt and Jantien Stoter},
-      year={2021},
-      eprint={2201.01191},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      author = "Ravi Peters and Bal{\'a}zs Dukai and Stelios Vitalis and {van Liempt}, Jordi and Jantien Stoter",
+      year = "2022",
+      doi = "10.14358/PERS.21-00032R2",
+      language = "English",
+      volume = "88",
+      pages = "165--170",
+      journal = "Photogrammetric Engineering and Remote Sensing",
+      issn = "0099-1112",
+      publisher = "American Society for Photogrammetry and Remote Sensing",
+      number = "3",
 }
 ```
 
