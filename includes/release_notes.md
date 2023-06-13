@@ -1,4 +1,78 @@
 
+## 23.06.X – beta
+
+*Release date: X juni 2023*
+
+This is the third public beta release of the 3D BAG. 
+
+AHN4
+
++ Revamped reconstruction pipeline
+
+3dgi
+
+Thank you for using 3D BAG!
+
+#### Added
+
++ The building part ID (`pand_deel_id`) to the 3D layers. Previously it was only part of the 2D layers.
++ Improvements in the reconstruction algorithm
+    + added procedure for automatic selection of the best pointcloud (AHN3 or 4) on a per building basis. This is based on 
+    + building volumes are now calculated and outputted
+
+#### Changed / Fixed
+
++ Update of the source vector data sets (BAG, BGT, Top10NL) to the version available on 2021-09-07.
++ Update of the source point cloud data sets. Now AHN3 and AHN4 are used.
+
++ Improvements in the reconstruction algorithm
+    + new procedure for overlap detection between buildings. In this procedure it is guaranteed that points on areas of overlap are only assigned to one of the overlapping buildings.
++ The layer `ondergrond` was removed.
++ Attribute changes:
+
+| v21.09                          |v2023.06 (release) |
+|---------------------------------|------------------------|
+| gid                             |- |
+| fid                             |- |
+| pand_deel_id                    |b3_pand_deel_id |
+| dd_id                           |b3_dd_id |
+|                                 |tijdstipregistratie |
+|                                 |eindregistratie |
+| h_maaiveld                      |b3_h_maaiveld |
+| dak_type                        |b3_dak_type |
+| pw_datum                        |b3_pw_datum |
+| pw_actueel                      |- |
+| pw_bron                         |b3_pw_bron |
+| reconstructie_methode           |- |
+| versie_methode                  |- |
+| kas_warenhuis                   |b3_kas_warenhuis |
+| ondergronds_type                |- |
+| reconstruction_skipped          |b3_reconstructie_onvolledig |
+| lod11_replace                   |- |
+| h_dak_min                       |b3_h_dak_min |
+| h_dak_50p                       |b3_h_dak_50p |
+| h_dak_70p                       |b3_h_dak_70p |
+| h_dak_max                       |b3_h_dak_max |
+| val3dity_codes_lod12            |b3_val3dity_lod12 |
+| val3dity_codes_lod13            |b3_val3dity_lod13 |
+| val3dity_codes_lod22            |b3_val3dity_lod22 |
+| semantics_values                | - |
+| rmse_lod12                      |b3_rmse_lod12 |
+| rmse_lod13                      |b3_rmse_lod13 |
+| rmse_lod22                      |b3_rmse_lod22 |
+| rn                              |- |
+|                                 |b3_mutatie_ahn3_ahn4 |
+|                                 |b3_nodata_fractie_ahn3 |
+|                                 |b3_nodata_fractie_ahn4 |
+|                                 |b3_nodata_radius_ahn3 |
+|                                 |b3_nodata_radius_ahn4 |
+|                                 |b3_pw_selectie_reden |
+|                                 |b3_puntdichtheid_ahn3 |
+|                                 |b3_puntdichtheid_ahn4 |
+|                                 |b3_volume_lod12 |
+|                                 |b3_volume_lod13 |
+|                                 |b3_volume_lod22 |
+
 ## 21.09.8 – beta
 
 *Release date: 29 September 2021*
