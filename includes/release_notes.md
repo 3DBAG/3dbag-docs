@@ -1,3 +1,7 @@
+## Unreleased
+
+#### Changed / Fixed
++ The triangulated tables are removed from the PostgreSQL dump
 
 ## 23.06.X – beta
 
