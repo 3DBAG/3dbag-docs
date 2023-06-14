@@ -15,6 +15,8 @@ AHN4
 
 3dgi
 
+nr of buildings, validity percentage
+
 Thank you for using 3D BAG!
 
 #### Added
@@ -80,6 +82,10 @@ Thank you for using 3D BAG!
 |                                 |b3_volume_lod22 |
 
 #### Known issues
++ BAG date/time attributes in GPKG output are of the string type
++ missing tiles/buildings??
++ for some buildings pw_bron is missing
++ some buildings some date/time related bag attributes may be missing
 
 
 ## 21.09.8 – beta

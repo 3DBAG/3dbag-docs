@@ -16,6 +16,7 @@ theme:
   name: material
   favicon: assets/images/logo.svg
   logo: assets/images/logo.svg
+  logo2: assets/images/logo-3dgi.svg
   font:
     text: Inter
     code: Roboto Mono
