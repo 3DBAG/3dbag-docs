@@ -1,4 +1,4 @@
-## 23.06.X – beta
+## 2023.06.16 – beta
 
 *Release date: X juni 2023*
 
@@ -28,6 +28,7 @@ Thank you for using 3D BAG!
 + Update of the source point cloud data sets. Now AHN3 and AHN4 are used.
 + New tiling scheme for downloads
 + New file naming
++ 3D BAG version number is now a full date instead of a mix between date and minor version number.
 + All 3D BAG specific attributes are now preceded by the `b3_` prefix.
 + Postgres database dump was replaced by one big gpkg file.
 + Improvements in the reconstruction algorithm
