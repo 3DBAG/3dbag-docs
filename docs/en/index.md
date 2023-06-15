@@ -1,6 +1,6 @@
 # Overview
 
-Welcome to the documentation of the 3D BAG by the 3D geoinformation group! This is the first open 3D building data set that is generated fully automatically and covers a whole country on this level of detail.
+Welcome to the documentation of the 3D BAG! This is the first open 3D building data set that is generated fully automatically and covers a whole country on this level of detail.
 
 On this page you will find information on what is the 3D BAG and how it is created, a few of the possible use cases and how does the 3D BAG relate to similar data sets in the Netherlands.
 
@@ -30,7 +30,7 @@ The 3D BAG is also a place for experiments. It is a medium for testing ideas as 
 - **Quality control integrated**.
     We run our 3D models through [val3dity](https://github.com/tudelft3d/val3dity), so that you don't need to validate the 3D data yourself.
 - **Available in several formats**.
-    CityJSON, GeoPackage, Wavefront OBJ, PostgreSQL, WMS, WFS.
+    CityJSON, GeoPackage, Wavefront OBJ, WMS, WFS.
 
 
 ## Common applications

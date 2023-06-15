@@ -28,6 +28,7 @@ Thank you for using 3D BAG!
 + Update of the source point cloud data sets. Now AHN3 and AHN4 are used.
 + New tiling scheme for downloads
 + New file naming
++ All 3D BAG specific attributes are now preceded by the `b3_` prefix.
 + Postgres database dump was replaced by one big gpkg file.
 + Improvements in the reconstruction algorithm
     + new procedure for overlap detection between buildings. In this procedure it is guaranteed that points on areas of overlap are only assigned to one of the overlapping buildings.

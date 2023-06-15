@@ -1,6 +1,6 @@
 # Algemeen overzicht
 
-Welkom bij de documentatie van de 3D BAG door de 3D geoinformation groep! De 3D BAG is de eerste open dataset met 3D gebouwmodellen op dit detailniveau die volledig automatisch is gegenereerd.
+Welkom bij de documentatie van de 3D BAG! De 3D BAG is de eerste open dataset met 3D gebouwmodellen op dit detailniveau die volledig automatisch is gegenereerd.
 
 Op deze pagina vind je algemene informatie over de 3D BAG en hoe deze is ontwikkeld, een aantal praktische toepassingen waarvoor de data gebruikt kan worden en hoe de 3D BAG in relatie staat tot andere Nederlandse datasets.
 
@@ -30,7 +30,7 @@ De punten van panden met glazen daken, voornamelijk kassen, zijn inconsistent in
 - **Geïntegreerde kwaliteitscontrole**.  
 Tijdens het reconstructieproces worden alle 3D modellen gevalideerd met [val3dity](https://github.com/tudelft3d/val3dity) zodat je de 3D data niet zelf hoeft te valideren.
 - **Beschikbaar in verscheidene formaten**.  
-CityJSON, GeoPackage, Wavefront OBJ, PostgreSQL, WMS en WFS.
+CityJSON, GeoPackage, Wavefront OBJ, WMS en WFS.
 
 ## Belangrijke toepassingen
 
