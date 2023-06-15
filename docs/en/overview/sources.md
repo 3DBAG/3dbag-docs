@@ -14,15 +14,11 @@ As source for the 3D BAG we always use the most recent [BAG 2.0](https://www.kad
 
 The [National Height Model](https://www.ahn.nl) of the Netherlands (AHN) is the openly available elevation data set of the Netherlands. This is acquired through airborne laser scanning (LiDAR), with an average point density of 8 points per square meter for the current version.
 
-For the 3D BAG we currently use the third version, AHN3. This version was collected in stages, between 2014 and 2019. [Here](https://www.ahn.nl/historie) you can find the collection dates for each region in the Netherlands.
+For the 3D BAG we use a smart combination of AHN3 and AHN4. AHN4 was acaquired between 2014 and 2019, and AHN4 between 2020 and 2022. [Here](https://www.ahn.nl/historie) you can find the collection dates for each region in the Netherlands. Be aware that if a building was very recently constructed or changed, it can happen that this building does not exist or is no longer correct in the the 3D BAG.
 
-One of the arguments against using the AHN for 3D reconstruction is that is deemed to be out dated by design, due to long mission times for acquiring the scans. However, the building stock changes in a relatively slow pace. This pace being faster in metropolitan regions and slower in remote areas of the country. Unfortunately, timestamps are not provided with the point data in the AHN3, but we can only compare the acquisition years for a region to the construction years of the buildings. From this we estimate that about 95% of the measured building heights are still valid (estimated for the 3D BAG generated in March 2021).
+For the latest version of the 3D BAG we use both AHN3 and AHN4. This is to guarantee the best possible 3D reconstruction for each building. If a building has no mutation since the acquisition of AHN3, we pick the pointcloud with the best point coverage. This reduces the odds that a building contains small errors due to large no data gaps in the point cloud.
 
-Additionally, there is a variation in the point density between buildings. There can be gaps in the point cloud, caused by an occlusion through objects, water ponds on roofs and scan angle. The number of available points, their distribution and accurate classification has a very significant impact on the quality of the reconstructed models. The quality attributes that we calculate for and assign to each model provide an indication of this quality.
-
-### AHN4?
-
-At the moment of writing the new [AHN4](https://www.ahn.nl/ahn-4) will soon become available for a part of the country. While the AHN3 was acquired in 5 years, the AHN4 must be done in 3 years. The new AHN will have a different, improved quality, compared to the AHN3, and we expect that this will have a visible impact on the 3D BAG as well. As soon as the first region is available, we will integrate it into our process.
+There can always be some variation in the point density between buildings and even within one building. There can be no data gaps in the point cloud, caused by an occlusion through objects, water ponds on roofs and scan angle. The number of available points, their distribution and accurate classification has a very significant impact on the quality of the reconstructed models. The quality attributes that we calculate for and assign to each model provide an indication of this quality.
 
 ## BGT
 
@@ -34,4 +30,4 @@ For the 3D BAG, the BGT is used for detecting the buildings that overlap with ot
 
 The TOP10NL is part of the [TOPNL data sets](https://www.kadaster.nl/zakelijk/producten/geo-informatie/topnl), which belong to the [Topographic Register](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/brt) of the Netherlands. The TOP10NL can be used at various scales, ranging from 1:5,000 to 1:25,000. It models several object types, including buildings and their function. The TOPNL data can be used as data source, as well as base maps in visualisations.
 
-From the TOP10NL we only use the buildings in order to identify the greenhouses and large warehouses among the BAG objects. Due to their glass roof, greenhouses are problematic for our reconstruction algorithm. Therefore we only model them with a simplified shape.
+From the TOP10NL we only use the buildings in order to identify the greenhouses and large warehouses among the BAG objects. Due to their glass roof, greenhouses are problematic for our reconstruction algorithm. Therefore we only model these with a simplified shape.
