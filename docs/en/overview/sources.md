@@ -20,12 +20,6 @@ For the latest version of the 3D BAG we use both AHN3 and AHN4. This is to guara
 
 There can always be some variation in the point density between buildings and even within one building. There can be no data gaps in the point cloud, caused by an occlusion through objects, water ponds on roofs and scan angle. The number of available points, their distribution and accurate classification has a very significant impact on the quality of the reconstructed models. The quality attributes that we calculate for and assign to each model provide an indication of this quality.
 
-## BGT
-
-The [Large Scale Topographic Map](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bgt) of the Netherlands contains many object types besides buildings, such as roads, water ways, railways, and it forms a complete coverage of the country. The responsible source providers are organisations that have a task to maintain public space, such as the provinces, municipalities and water boards, each in their own administration.
-
-For the 3D BAG, the BGT is used for detecting the buildings that overlap with other objects, such as roads and other buildings. Such overlapping buildings are marked and excluded from the reconstruction process.
-
 ## TOP10NL
 
 The TOP10NL is part of the [TOPNL data sets](https://www.kadaster.nl/zakelijk/producten/geo-informatie/topnl), which belong to the [Topographic Register](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/brt) of the Netherlands. The TOP10NL can be used at various scales, ranging from 1:5,000 to 1:25,000. It models several object types, including buildings and their function. The TOPNL data can be used as data source, as well as base maps in visualisations.

@@ -20,12 +20,6 @@ Voor de laatste versie van de 3D BAG gebruiken we zowel AHN3 als AHN4. Zo kunnen
 
 Dit neemt niet weg dat de puntendichtheid van het AHN tuseen verschillende panden maar ook binnen een pand-polygoon kan varieren. Gaten in de puntenwolk kunnen worden veroorzaakt door bijvoorbeeld occlusie, water/ramen op de daken of de scanhoek bij inwinning. De classificatie van de punten in grond- en gebouwpunten in het AHN is ook niet altijd correct. Het aantal beschikbare punten en de verdeling ervan over het dakvlak heeft een grote invloed op de nauwkeurigheid van de reconstructie. De kwaliteitsattributen bij de gebouwen geven hier een indicatie van.
 
-## BGT
-
-De [Basisregistratie Grootschalige Topografie (BGT)](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bgt) is een nationale dataset die naast panden ook onder andere wegen, water, spoorlijnen en groen omvat. De bronhouders zijn organisaties met een publieke taak voor het beheer van de openbare ruimte zoals provincies, gemeenten en waterschappen.
-
-De BGT wordt gebruikt in de 3D BAG om panden te detecteren die overlappen met een ander object; een ander pand (uit de BAG), weg of water. Hierdoor gebruiken we alleen wegdeel en waterdeel uit de BGT. Deze panden kunnen dan in de BAG aangemerkt worden als overlappend, voordat de 3D BAG wordt geproduceerd.
-
 ## TOP10NL
 
 TOP10NL is onderdeel van de [TOPNL-bestanden](https://www.kadaster.nl/zakelijk/producten/geo-informatie/topnl). Deze behoren tot de [Basisregistratie Topografie (BRT)](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/brt). Ditzijn eveneens landsdekkende datasets, die gebruikt kunnen worden als gegevensbron en als ondergrond voor visualisatie. De TOP10NL kan gebruikt worden op schaalniveaus tussen 1:5.000 tot en met 1:25.000. Het bevat onder andere wegdelen, gebouwen en terreinen.

@@ -1,18 +1,7 @@
 # Data Attributen
 
 
-## `begingeldigheid`
-
-De datum waarop een versie van een BAG-object geldig is in de werkelijkheid conform de ingangsdatum in het brondocument. Dit tijdstip wordt vastgelegd in de beginGeldigheid. Als er geen expliciete ingangsdatum van geldigheid is opgenomen, wordt de datum van het brondocument overgenomen.
-
-*Datatype*: datum
-
-*Eenheid*: `YYYY-MM-DD`
-
-*Bron*: BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
-
-
-## `dak_type`
+## `b3_dak_type`
 
 Daktype van het pand.
 
@@ -30,13 +19,276 @@ Daktype van het pand.
 | `no points` | Er was geen punt gevonden voor het gebouw. |
 | `could not detect` | Kon geen dakoppervlak detecteren, ondanks dat er punten gevonden waren. |
 
-## `dd_id`
+## `b3_dd_id`
 
 Dakdeel ID.
 
 *Datatype*: nominaal getal
 
 *Eenheid*: -
+
+
+## `b3_h_dak_50p`
+
+Medianhoogte op dakdeel gebaseerd op het gereconstrueerde 3D-model in LoD2.2. Gegeven als hoogte boven zeeniveau (NAP).
+
+*Datatype*: reëel getal
+
+*Eenheid*: meter
+
+
+## `b3_h_dak_70p`
+
+De 70e percentielhoogte op dakdeel gebaseerd op het gereconstrueerde 3D-model in LoD2.2. Gegeven als hoogte boven zeeniveau (NAP).
+
+*Datatype*: reëel getal
+
+*Eenheid*: meter
+
+
+## `b3_h_dak_max`
+
+Maximumhoogte op dakdeel gebaseerd op het gereconstrueerde 3D-model in LoD2.2. Gegeven als hoogte boven zeeniveau (NAP). Eenheid: meter.
+
+*Datatype*: reëel getal
+
+*Eenheid*: meter
+
+
+## `b3_h_dak_min`
+
+Minimumhoogte op dakdeel gebaseerd op het gereconstrueerde 3D-model in LoD2.2. Gegeven als hoogte boven zeeniveau (NAP).
+
+*Datatype*: reëel getal
+
+*Eenheid*: meter
+
+
+## `b3_h_maaiveld`
+
+Elevatie boven zeeniveau (NAP) op het maaiveldniveau van het pand. Berekend als het 5e percentiel van de maaiveldpunten gevonden binnen een radius van 4 meter van het pand.
+
+*Datatype*: reëel getal
+
+*Eenheid*: meter
+
+
+## `b3_kas_warenhuis`
+
+Het gebouw is een kas of een warenhuis volgens de TOP10NL of heeft een oppervlakte van meer dan 70000 vierkante meter.
+
+*Datatype*: categorisch
+
+*Eenheid*: yes/no
+
+
+## `b3_mutatie_ahn3_ahn4`
+
+`true` als er een significante verandering is gedetecteerd in het pand tussen de AHN3 en AHN4 puntenwolken.
+
+*Datatype*: categorisch
+
+*Eenheid*: yes/no
+
+
+## `b3_nodata_fractie_ahn3`
+
+Fractie van het BAG polygon met onvoldoende AHN3 punten dekking. Alleen punten geclassificeerd als gebouw of grond worden gebruikt.
+
+*Datatype*: reëel getal
+
+*Eenheid*: -
+
+
+## `b3_nodata_fractie_ahn4`
+
+Fractie van het BAG polygon met onvoldoende AHN4 punten dekking. Alleen punten geclassificeerd als gebouw of grond worden gebruikt.
+
+*Datatype*: reëel getal
+
+*Eenheid*: -
+
+
+## `b3_nodata_radius_ahn3`
+
+Straal van de grootste cirkel die binnen het BAG polygoon valt en geen AHN3 punten bevat. Alleen punten geclassificeerd als gebouw of grond worden gebruikt.
+
+*Datatype*: reëel getal
+
+*Eenheid*: meter
+
+
+## `b3_nodata_radius_ahn4`
+
+Straal van de grootste cirkel die binnen het BAG polygoon valt en geen AHN4 punten bevat. Alleen punten geclassificeerd als gebouw of grond worden gebruikt.
+
+*Datatype*: reëel getal
+
+*Eenheid*: meter
+
+
+## `b3_pand_deel_id`
+
+Panddeel ID. Een pand kan meerdere delen hebben wanneer het is opgedeeld vanwege ondergrondse delen.
+
+*Datatype*: nominaal getal
+
+*Eenheid*: -
+
+
+## `b3_puntdichtheid_ahn3`
+
+Puntdichtheid van de AHN3-puntenwolk voor het pand. Alleen punten geclassificeerd als gebouw of grond worden in beschouwing genomen.
+
+*Datatype*: nominaal getal
+
+*Eenheid*: punten per vierkante meter
+
+
+## `b3_puntdichtheid_ahn4`
+
+Puntdichtheid van de AHN4-puntenwolk voor het pand. Alleen punten geclassificeerd als gebouw of grond worden in beschouwing genomen. Eenheid: punten per vierkante meter.
+
+*Datatype*: nominaal getal
+
+*Eenheid*: punten per vierkante meter
+
+
+## `b3_pw_bron`
+
+Bron van de puntenwolk, bijv. AHN3 of AHN4.
+
+*Datatype*: tekst
+
+*Eenheid*: -
+
+
+## `b3_pw_datum`
+
+Inwinjaar van de bron puntenwolk. Dit is bepaald door naar de GPS tijd van de AHN punten voor dit pand. Indien een goede GPS tijd niet beschikbaar is, wordt de file creation date van het puntenwolk bestand gebruikt.
+
+*Datatype*: datum
+
+*Eenheid*: `YYYY`
+
+
+## `b3_pw_selectie_reden`
+
+Geeft achtergrond informatie met betrekking tot de puntenwolk selectie (zie `pw_bron` attribuut).
+
+*Datatype*: categorisch
+
+*Eenheid*: -
+
+*Waarden*:
+
+| Waarden | Omschrijving |
+| :----- | :----------- |
+| ``PREFERRED_AND_LATEST`` | De geselecteerde puntenwolk heeft een goede puntdekking en er is geen recentere puntenwolk met voldoende puntdekking beschikbaar. |
+| ``PREFERRED_NOT_LATEST`` | De geselecteerde puntenwolk heeft een goede point puntdekking en er is een recentere puntenwolk met voldoende puntdekking beschikbaar. De nieuwere puntewolk is echter niet geselecteerd omdat er geen mutatie is gedecteerd. |
+| ``LATEST_WITH_MUTATION`` | De geselecteerde puntenwolk heeft een goede puntdekking en er is een mutatie ten opzichte van een oudere puntenwolk gedetecteerd. |
+| ``_HIGHEST_YET_INSUFFICIENT_COVERAGE`` | De geselecteerde puntenwolk heeft hoogste puntdekking van alle kandidaat puntenwolken, maar de puntdekking is alsnog mogelijk niet voldoende. Dit gebouw vertoont mogelijk reconstructie fouten. |
+| ``_LATEST_BUT_OUTDATED`` | De geselecteerde puntenwolk is de meerst recente, maar is mogelijk alsnog te oud voor dit pand. Dit kan gebeurt als het oorspronkelijk bouwjaar gelijk aan of jonger is dan het inwin jaar van de puntenwolk. |
+
+## `b3_reconstructie_onvolledig`
+
+Geeft aan of de volledige LoD1.2/LoD1.3/LoD2.2 reconstructie is overgeslagen voor het pand.
+
+*Datatype*: None
+
+*Eenheid*: None
+
+
+## `b3_rmse_lod12`
+
+Root Mean Square Error van de 3D afstanden tussen de puntenwolk en het LoD1.2 model. Eenheid: meter.
+
+*Datatype*: reëel getal
+
+*Eenheid*: meter
+
+
+## `b3_rmse_lod13`
+
+Root Mean Square Error van de 3D afstanden tussen de puntenwolk en het LoD1.3 model. Eenheid: meter.
+
+*Datatype*: reëel getal
+
+*Eenheid*: meter
+
+
+## `b3_rmse_lod22`
+
+Root Mean Square Error van de 3D afstanden tussen de puntenwolk en het LoD2.2 model. Eenheid: meter.
+
+*Datatype*: reëel getal
+
+*Eenheid*: meter
+
+
+## `b3_val3dity_lod12`
+
+[Val3dity foutcodes](https://val3dity.readthedocs.io/en/latest/errors) voor het LoD1.2 3D model. Lege lijst betekent valide geometry.
+
+*Datatype*: lijst
+
+*Eenheid*: -
+
+
+## `b3_val3dity_lod13`
+
+[Val3dity foutcodes](https://val3dity.readthedocs.io/en/latest/errors) voor het LoD1.3 3D model. Lege lijst betekent valide geometry.
+
+*Datatype*: lijst
+
+*Eenheid*: -
+
+
+## `b3_val3dity_lod22`
+
+[Val3dity foutcodes](https://val3dity.readthedocs.io/en/latest/errors) voor het LoD2.2 3D model. Lege lijst betekent valide geometry.
+
+*Datatype*: lijst
+
+*Eenheid*: -
+
+
+## `b3_volume_lod12`
+
+Volume van het LoD1.2-model. Eenheid: kubieke meter.
+
+*Datatype*: reëel getal
+
+*Eenheid*: kubieke meter
+
+
+## `b3_volume_lod13`
+
+Volume van het LoD1.3-model. Eenheid: kubieke meter.
+
+*Datatype*: reëel getal
+
+*Eenheid*: kubieke meter
+
+
+## `b3_volume_lod22`
+
+Volume van het LoD2.2-model. Eenheid: kubieke meter.
+
+*Datatype*: reëel getal
+
+*Eenheid*: kubieke meter
+
+
+## `begingeldigheid`
+
+De datum waarop een versie van een BAG-object geldig is in de werkelijkheid conform de ingangsdatum in het brondocument. Dit tijdstip wordt vastgelegd in de beginGeldigheid. Als er geen expliciete ingangsdatum van geldigheid is opgenomen, wordt de datum van het brondocument overgenomen.
+
+*Datatype*: datum
+
+*Eenheid*: `YYYY-MM-DD`
+
+*Bron*: BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
 
 ## `documentdatum`
@@ -72,13 +324,15 @@ De datum waarop de periode van geldigheid van een versie van een BAG-object eind
 *Bron*: BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
 
-## `fid`
+## `eindregistratie`
 
-Numeriek ID van een pand (feature).
+Houdt verband met de geschiedenis van de pandregistratie en de versie.
 
-*Datatype*: nominaal getal
+*Datatype*: datum-tijd
 
-*Eenheid*: -
+*Eenheid*: `YYYY-MM-DDThh:mm:ss.sss`
+
+*Bron*: BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
 
 ## `geconstateerd`
@@ -92,63 +346,9 @@ Een aanduiding waarmee kan worden aangegeven dat een pand in de registratie is o
 *Bron*: BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
 
-## `gid`
-
-Geometrie ID.
-
-*Datatype*: nominaal getal
-
-*Eenheid*: -
-
-
-## `h_dak_50p`
-
-Elevatie boven zeeniveau (NAP) op dakniveau. Berekend als de mediaan van alle hoogtepunten op het corresponderende dakdeel.
-
-*Datatype*: reëel getal
-
-*Eenheid*: meter
-
-
-## `h_dak_70p`
-
-Elevatie boven zeeniveau (NAP) op dakniveau. Berekend als het 70e percentiel van alle hoogtepunten op het corresponderende dakdeel.
-
-*Datatype*: reëel getal
-
-*Eenheid*: meter
-
-
-## `h_dak_max`
-
-Elevatie boven zeeniveau (NAP) op dakniveau. Berekend als het maximum van alle hoogtepunten op het corresponderende dakdeel.
-
-*Datatype*: reëel getal
-
-*Eenheid*: meter
-
-
-## `h_dak_min`
-
-Elevatie boven zeeniveau (NAP) op dakniveau. Berekend als het minimum van alle hoogtepunten op het corresponderende dakdeel.
-
-*Datatype*: reëel getal
-
-*Eenheid*: meter
-
-
-## `h_maaiveld`
-
-Elevatie boven zeeniveau (NAP) op het maaiveldniveau van het pand. Berekend als het 5e percentiel van de maaiveldpunten gevonden binnen een radius van 4 meter van het pand.
-
-*Datatype*: reëel getal
-
-*Eenheid*: meter
-
-
 ## `identificatie`
 
-BAG: De unieke aanduiding van een pand.
+De unieke BAG aanduiding van een pand.
 
 *Datatype*: tekst
 
@@ -157,119 +357,13 @@ BAG: De unieke aanduiding van een pand.
 *Bron*: BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
 
-## `kas_warenhuis`
-
-Het gebouw is een kas of een magazijn (volgens de TOP10NL).
-
-*Datatype*: categorisch
-
-*Eenheid*: yes/no
-
-
-## `lod11_replace`
-
-Geeft aan of de LoD1.3/LoD2.2 reconstructie is overgeslagen voor deze feature (en ook LoD1.1 als `lod11_replace==false`). Dit kan bijvoorbeeld gebeuren wanneer er geen punten gevonden zijn.
-
-*Datatype*: categorisch
-
-*Eenheid*: yes/no
-
-
-## `ondergronds_type`
-
-Ondergronds-classificatie van het pand of panddeel.
-
-*Datatype*: categorisch
-
-*Eenheid*: -
-
-*Waarden*:
-
-| Waarden | Omschrijving |
-| :----- | :----------- |
-| `floating` | Pand of panddeel zweeft boven andere objecten. |
-| `above ground` | Pand of panddeel is volledig bovengronds. |
-| `underground` | Pand of panddeel is volledig ondergronds. |
-
-## `oorspronkelijk_bouwjaar`
+## `oorspronkelijkbouwjaar`
 
 De aanduiding van het jaar waarin een pand oorspronkelijk als bouwkundig gereed is of zal worden opgeleverd.
 
 *Datatype*: datum
 
 *Eenheid*: `YYYY`
-
-*Bron*: BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
-
-
-## `pand_deel_id`
-
-Panddeel ID. Een pand kan meerdere delen hebben wanneer het is opgedeeld vanwege ondergrondse delen.
-
-*Datatype*: nominaal getal
-
-*Eenheid*: -
-
-
-## `pw_actueel`
-
-Geeft aan of de puntenwolk actueel is ten opzichte van de leeftijd van het pand.
-
-*Datatype*: categorisch
-
-*Eenheid*: -
-
-*Waarden*:
-
-| Waarden | Omschrijving |
-| :----- | :----------- |
-| `yes` | De puntenwolk is ingewonnen na de constructiedatum van het pand. |
-| `no` | De puntenwolk is ingewonnen voor de constructiedatum van het pand. |
-| `uncertain` | De puntenwolk is ingewonnen in hetzelfde jaar als de constructiedatum van het pand. |
-
-## `pw_bron`
-
-Bron van de puntenwolk.
-
-*Datatype*: tekst
-
-*Eenheid*: -
-
-
-## `pw_datum`
-
-Inwinningsdatum van de puntenwolk. In het geval van de AHN3 is dit een veronderstelde inwinningsdatum, welke bepaald is als 1 december van het jaar *voor* het officieel gerapporteerde inwinjaar van een specifieke AHN3-tegel.
-
-*Datatype*: datum
-
-*Eenheid*: `YYYY-MM-DD`
-
-
-## `reconstructie_methode`
-
-Reconstructiemethode van het gebouwmodel.
-
-*Datatype*: tekst
-
-*Eenheid*: -
-
-
-## `reconstruction_skipped`
-
-Geeft aan of de volledige LoD1.2/LoD1.3/LoD2.2 reconstructie is overgeslagen voor deze feature (en ook LoD1.1 als lod11_replace==false).
-
-*Datatype*: categorisch
-
-*Eenheid*: yes/no
-
-
-## `semantics_values`
-
-Pand-oppervlaksemantiek. Dit is een array van integers, waarbij een integer verwijst naar een oppervlaktype (0: `GroundSurface`, 1: `RoofSurface`, 2: `OuterWallSurface`, 3: `InnerWallSurface`). Als een oppervlak geen semantische waarde heeft, wordt NULL gebruikt. De lengte van de array staat dus gelijk aan het aantal oppervlakken, en de volgorde van waarden in de array correspondeert met de volgorde van de oppervlakken.
-
-*Datatype*: lijst
-
-*Eenheid*: -
 
 
 ## `status`
@@ -282,20 +376,6 @@ De fase van de levenscyclus van een pand, waarin het betreffende pand zich bevin
 
 *Bron*: BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
-*Waarden*:
-
-| Waarden | Omschrijving |
-| :----- | :----------- |
-| `Bouwvergunning verleend` |  |
-| `Niet gerealiseerd pand` |  |
-| `Bouw gestart` |  |
-| `Pand in gebruik (niet ingemeten)` |  |
-| `Pand in gebruik` |  |
-| `Verbouwing pand` |  |
-| `Sloopvergunning verleend` |  |
-| `Pand gesloopt` |  |
-| `Pand buiten gebruik` |  |
-| `Pand ten onrechte opgevoerd` |  |
 
 ## `tijdstipeindregistratielv`
 
@@ -341,6 +421,17 @@ Houdt verband met de geschiedenis van de pandregistratie en de versie.
 *Bron*: BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
 
+## `tijdstipregistratie`
+
+Houdt verband met de geschiedenis van de pandregistratie en de versie.
+
+*Datatype*: datum-tijd
+
+*Eenheid*: `YYYY-MM-DDThh:mm:ss.sss`
+
+*Bron*: BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
+
+
 ## `tijdstipregistratielv`
 
 Dit is het tijdstip waarop een versie van een BAG-object is opgenomen in de registratie van de landelijke voorziening. De gegevens komen daarmee beschikbaar voor afnemers.
@@ -350,24 +441,6 @@ Dit is het tijdstip waarop een versie van een BAG-object is opgenomen in de regi
 *Eenheid*: `YYYY-MM-DDThh:mm:ss.sss`
 
 *Bron*: BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
-
-
-## `val3dity_codes`
-
-[Val3dity foutcodes](https://val3dity.readthedocs.io/en/latest/errors) voor het 3D model. `Null` betekent valide geometry.
-
-*Datatype*: lijst
-
-*Eenheid*: -
-
-
-## `versie_methode`
-
-Versie van de reconstructiemethode voor panden.
-
-*Datatype*: tekst
-
-*Eenheid*: -
 
 
 ## `voorkomenidentificatie`
