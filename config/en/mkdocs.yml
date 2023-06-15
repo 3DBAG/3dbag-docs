@@ -75,7 +75,6 @@ nav:
       - 'Webservices': 'delivery/webservices.md'
       - 'GeoPackage': 'delivery/gpkg.md'
       - 'CityJSON': 'delivery/cityjson.md'
-      - 'PostgreSQL': 'delivery/postgresql.md'
       - 'Wavefront OBJ': 'delivery/obj.md'
   - 'Copyright': 'copyright.md'
   - Contact: contact.md
