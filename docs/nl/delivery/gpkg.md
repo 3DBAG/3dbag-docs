@@ -2,7 +2,7 @@
 
 [GeoPackage](https://www.geopackage.org) is een open bestandsformaat dat conventies beschrijft hoe data opgeslagen kunnen worden in een [SQLite](https://www.sqlite.org/index.html) database. Het ondersteunt vector features, tile matrix sets, attributen en er is ruimte voor extensies. Het formaat ondersteunt 3D-geometrieën, en kan geopend worden met bijvoorbeeld QGIS, ArcGIS of FME.
 
-De 3D BAG GeoPackage-bestanden bevatten [alle lagen](../../schema/layers/#data-layers).
+Wie bieden een apart 3D BAG GeoPackage-bestand aan voor iedere tegel. En daarnaast is er een groot GeoPackage bestand beschikbaar waar de complete 3D BAG in zie. Alle GeoPackage bestanden bevatten [alle lagen](../../schema/layers/#data-layers).
 
 ## GeoPackage in 3D in QGIS
 
