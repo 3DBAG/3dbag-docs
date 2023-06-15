@@ -1,8 +1,3 @@
-## Unreleased
-
-#### Changed / Fixed
-+ The triangulated tables are removed from the PostgreSQL dump
-
 ## 23.06.X – beta
 
 *Release date: X juni 2023*
@@ -11,7 +6,7 @@ This is the third public beta release of the 3D BAG.
 
 AHN4
 
-+ Revamped reconstruction pipeline
++ Revamped reconstruction pipeline, deployed on new server.
 
 3dgi
 
@@ -23,8 +18,9 @@ Thank you for using 3D BAG!
 
 + The building part ID (`pand_deel_id`) to the 3D layers. Previously it was only part of the 2D layers.
 + Improvements in the reconstruction algorithm
-    + added procedure for automatic selection of the best pointcloud (AHN3 or 4) on a per building basis. This is based on 
+    + added procedure for automatic selection of the pointcloud (AHN3 or 4) best suited for reconstruction on a per building basis.
     + building volumes are now calculated and outputted
++ When opening the 3D BAG viewer you are brought to a random landmark
 
 #### Changed / Fixed
 
@@ -35,6 +31,8 @@ Thank you for using 3D BAG!
 + Postgres database dump was replaced by one big gpkg file.
 + Improvements in the reconstruction algorithm
     + new procedure for overlap detection between buildings. In this procedure it is guaranteed that points on areas of overlap are only assigned to one of the overlapping buildings.
+    + fine tuning of snapping thresholds to achieve better geomtric validity
+    + various small improvements
 + The layer `ondergrond` was removed.
 + Attribute changes:
 
@@ -44,8 +42,8 @@ Thank you for using 3D BAG!
 | fid                             |- |
 | pand_deel_id                    |b3_pand_deel_id |
 | dd_id                           |b3_dd_id |
-|                                 |tijdstipregistratie |
-|                                 |eindregistratie |
+| -                               |tijdstipregistratie |
+| -                               |eindregistratie |
 | h_maaiveld                      |b3_h_maaiveld |
 | dak_type                        |b3_dak_type |
 | pw_datum                        |b3_pw_datum |
@@ -69,23 +67,23 @@ Thank you for using 3D BAG!
 | rmse_lod13                      |b3_rmse_lod13 |
 | rmse_lod22                      |b3_rmse_lod22 |
 | rn                              |- |
-|                                 |b3_mutatie_ahn3_ahn4 |
-|                                 |b3_nodata_fractie_ahn3 |
-|                                 |b3_nodata_fractie_ahn4 |
-|                                 |b3_nodata_radius_ahn3 |
-|                                 |b3_nodata_radius_ahn4 |
-|                                 |b3_pw_selectie_reden |
-|                                 |b3_puntdichtheid_ahn3 |
-|                                 |b3_puntdichtheid_ahn4 |
-|                                 |b3_volume_lod12 |
-|                                 |b3_volume_lod13 |
-|                                 |b3_volume_lod22 |
+| -                               |b3_mutatie_ahn3_ahn4 |
+| -                               |b3_nodata_fractie_ahn3 |
+| -                               |b3_nodata_fractie_ahn4 |
+| -                               |b3_nodata_radius_ahn3 |
+| -                               |b3_nodata_radius_ahn4 |
+| -                               |b3_pw_selectie_reden |
+| -                               |b3_puntdichtheid_ahn3 |
+| -                               |b3_puntdichtheid_ahn4 |
+| -                               |b3_volume_lod12 |
+| -                               |b3_volume_lod13 |
+| -                               |b3_volume_lod22 |
 
 #### Known issues
 + BAG date/time attributes in GPKG output are of the string type
 + missing tiles/buildings??
-+ for some buildings pw_bron is missing
-+ some buildings some date/time related bag attributes may be missing
++ for some buildings pw_bron is missing??
++ some buildings some date/time related bag attributes may be missing??
 
 
 ## 21.09.8 – beta
