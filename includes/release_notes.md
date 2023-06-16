@@ -8,6 +8,8 @@ AHN4
 
 + Revamped reconstruction pipeline, deployed on new server.
 
++ several viewer improvements
+
 3dgi
 
 nr of buildings, validity percentage
@@ -23,10 +25,11 @@ Thank you for using 3D BAG!
 + When opening the 3D BAG viewer you are brought to a random landmark
 + A metadata file is now available on the download page
 + You can now view all attributes directly in the viewer
++ Clicking on the attribute name in the viewer attribute table now brings you to the corresponding section in the documentation
 
 #### Changed / Fixed
 
-+ Update of the source vector data sets (BAG, Top10NL) to the version available on 2021-09-07.
++ Update of the source vector data sets (BAG, Top10NL) to the version available on 2023-06-05 (TOP10NL) and 2023-06-08 (BAG).
 + Update of the source point cloud data sets. Now AHN3 and AHN4 are used.
 + New tiling scheme for downloads
 + New file naming
