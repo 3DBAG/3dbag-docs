@@ -21,6 +21,8 @@ Thank you for using 3D BAG!
     + added procedure for automatic selection of the pointcloud (AHN3 or 4) best suited for reconstruction on a per building basis.
     + building volumes are now calculated and outputted
 + When opening the 3D BAG viewer you are brought to a random landmark
++ A metadata file is now available on the download page
++ You can now view all attributes directly in the viewer
 
 #### Changed / Fixed
 
@@ -36,6 +38,7 @@ Thank you for using 3D BAG!
     + fine tuning of snapping thresholds to achieve better geomtric validity
     + various small improvements
 + The layer `ondergrond` was removed.
++ Changed WFS/WMS endpoint from BAG3D_ to BAG3D
 + Attribute changes:
 
 | v21.09                          |v2023.06 (release) |
