@@ -35,7 +35,7 @@ Thank you for using 3D BAG!
 + New file naming
 + 3D BAG version number is now a full date instead of a mix between date and minor version number.
 + All 3D BAG specific attributes are now preceded by the `b3_` prefix.
-+ Postgres database dump was replaced by one big gpkg file.
++ The postgres database dump was replaced by one big gpkg file zipped into a [seek-optimized ZIP (SOZip)](https://gdal.org/programs/sozip.html#sozip) file.
 + Improvements in the reconstruction algorithm
     + new procedure for overlap detection between buildings. In this procedure it is guaranteed that points on areas of overlap are only assigned to one of the overlapping buildings.
     + fine tuning of snapping thresholds to achieve better geomtric validity
@@ -90,9 +90,7 @@ Thank you for using 3D BAG!
 #### Known issues
 + BAG date/time attributes in GPKG output are of the string type
 + missing tiles/buildings??
-+ b3_pw_bron is missing for gpkg output
-+ b3_pw_datum is always set to 2014 for AHN3 and 2020 for AHN4, instead of AHN metadata values.
-+ some buildings some date/time related bag attributes may be missing??
++ b3_pw_datum is always set to 2014 for AHN3 and 2020 for AHN4, instead of AHN metadata values??
 
 
 ## 21.09.8 – beta
