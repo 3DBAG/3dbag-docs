@@ -9,14 +9,14 @@ In order to create an accurate model of the <span style="color:#24a1c8ff">**abov
 
 From the parts above terrain we then generate the 3D models in LoD1.2, 1.3 and 2.2. We realise that for some applications it is more suitable to read 2D polygons, and the building height information from attributes. Therefore, we also provide a 2D counterpart in each LoD.
 
-!!! note "lod11_replace"
-    In case of greenhouses and large warehouses we do not cut off any parts of the BAG model, but take the polygon as is, and only generate an LoD1.1 model. Thus, such buildings only have an LoD1.1 model and are marked with the attribute value `lod11_replace = true`.
+!!! note "b3_kas_warenhuis"
+    In case of greenhouses and large warehouses we do not cut off any parts of the BAG model and take the polygon as is, and only generate an LoD1.1 blockmodel. Thus, such buildings only have an LoD1.1 model and are marked with the attribute value [`b3_kas_warenhuis`](attributes.md#b3_kas_warenhuis)` = true`.
 
-In case of the 2D models, the polygons represent the 2D projection of the roof planes of the 3D model. For LoD1.2 and LoD1.3, the 3D model can be fully reconstructed from the 2D model, by taking the 2D polygons and extruding each to one of their [`h_dak_*`](attributes.md#h_dak_50p) height values from their heights at surface level which is stored in [h_maaiveld](attributes.md#h_maaiveld). However, this is not true for the LoD2.2 models, since here we have slanted roof planes, which cannot be represented by a 2D polygon and a single height value.
+In case of the 2D models, the polygons represent the 2D projection of the roof planes of the 3D model. For LoD1.2 and LoD1.3, the 3D model can be fully reconstructed from the 2D model, by taking the 2D polygons and extruding each to one of their [`b3_h_dak_*`](attributes.md#b3_h_dak_50p) height values from their heights at surface level which is stored in [b3_h_maaiveld](attributes.md#b3_h_maaiveld). However, this is not true for the LoD2.2 models, since here we have slanted roof planes, which cannot be represented by a 2D polygon and a single height value.
 
-The 3D BAG has 6 geometric representations of a BAG object (a *feature*). The 6 representations are the 2D and 3D variants of the LoD1.2, LoD1.3 and LoD2.2 models of the feature. Therefore, the BAG models, which are stored on the `pand` layer, have a *feature ID* ([`fid`](attributes.md#fid)), while their geometric representations have *geometry IDs* ([`gid`](attributes.md#gid)). Depending on the representation, a single feature can have multiple geometry parts.
+The 3D BAG has 6 geometric representations of a BAG object (a *feature*). The 6 representations are the 2D and 3D variants of the LoD1.2, LoD1.3 and LoD2.2 models of the feature. Depending on the representation, a single feature can have multiple geometry parts.
 
-Some buildings have multiple disjoint part above the terrain, while they are connected with an underground garage for instance. In such cases, the above terrain parts are split into separate models with the same `fid`, and the [`pand_deel_id`](attributes.md#pand_deel_id) can identify these parts within the same feature.
+Some buildings have multiple disjoint part above the terrain, while they are connected with an underground garage for instance. In such cases, the [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id) can identify these parts within the same feature.
 
 The figure below illustrates the relation between the **feature** and the various geometry parts <span style="color:#24a1c8ff">**above terrain**</span>.
 
