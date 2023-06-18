@@ -21,13 +21,15 @@ Thank you for using 3D BAG! As always our feedback forms are available and we wi
 #### Added
 
 + The building part ID (`pand_deel_id`) to the 3D layers. Previously it was only part of the 2D layers.
-+ Improvements in the reconstruction algorithm
-    + added procedure for automatic selection of the pointcloud (AHN3 or 4) best suited for reconstruction on a per building basis.
++ Reconstruction algorithm
+    + added procedure for automatic selection of pointcloud (AHN3 or 4) best suited for reconstruction on a per building basis.
     + building volumes are now calculated and outputted
-+ When opening the 3D BAG viewer you are brought to a random landmark
+    + changed the method for calculating the height attributes on roofparts
 + A metadata file is now available on the download page
-+ You can now view all attributes directly in the viewer
-+ Clicking on the attribute name in the viewer attribute table now brings you to the corresponding section in the documentation
++ 3DBAG viewer
+    + When opening the 3D BAG viewer you are brought to a random landmark
+    + You can now view all attributes directly in the viewer
+    + Clicking on the attribute name in the viewer attribute table now brings you to the corresponding section in the documentation
 + various quality attributes relating to the 'smart' point cloud selection algorithm
 
 #### Changed / Fixed
