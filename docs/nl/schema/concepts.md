@@ -45,8 +45,8 @@ De validiteit van geometrieën is belangrijk voor het gebruik van de data in toe
 
 We hebben val3dity in ons proces geïntegreerd, waarmee we ieder 3D model valideren na reconstructie. De gebouwmodellen worden echter individueel gevalideerd tijdens het reconstructieproces, waardoor we geen fouten kunnen detecteren in de interactie tussen verschillende modellen (foutcodes boven de 500).
 
-!!! NB "val3dity_codes"
-    Het attribuut [`val3dity_codes`](attributes.md#val3dity_codes) geeft de foutcode van een model aan als deze invalide is.
+!!! NB "b3_val3dity_lod12", "b3_val3dity_lod13", "b3_val3dity_lod22"
+    De attributen die beginnen met [`b3_val3dity_`](attributes.md#b3_val3dity_lod12) geven de val3dity foutcodes van een model aan als die er zijn.
 
 <figure>
   <img src="https://val3dity.readthedocs.io/en/latest/_images/errorcodes.png" />

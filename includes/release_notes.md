@@ -90,7 +90,8 @@ Thank you for using 3D BAG!
 #### Known issues
 + BAG date/time attributes in GPKG output are of the string type
 + missing tiles/buildings??
-+ for some buildings pw_bron is missing??
++ b3_pw_bron is missing for gpkg output
++ b3_pw_datum is always set to 2014 for AHN3 and 2020 for AHN4, instead of AHN metadata values.
 + some buildings some date/time related bag attributes may be missing??
 
 

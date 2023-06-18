@@ -43,8 +43,8 @@ Having valid geometries is important for using the data in various applications.
 
 We integrated val3dity into our process, and so we validate each 3D model after it is reconstructed. However, the building models are validated independently as they go through the reconstruction process. Therefore, we cannot detect errors in the interaction of multiple models (error codes above 500).
 
-!!! note "val3dity_codes"
-    The attribute [`val3dity_codes`](attributes.md#val3dity_codes) stores the error codes from val3dity (if any) for a model.
+!!! note "b3_val3dity_lod12", "b3_val3dity_lod13", "b3_val3dity_lod22"
+    The attributes starting with [`b3_val3dity_`](attributes.md##b3_val3dity_lod12) store the error codes from val3dity (if any) for a model.
 
 <figure>
   <img src="https://val3dity.readthedocs.io/en/latest/_images/errorcodes.png" />
