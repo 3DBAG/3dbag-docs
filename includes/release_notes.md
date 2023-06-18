@@ -2,19 +2,21 @@
 
 *Release date: X juni 2023*
 
-This is the third public beta release of the 3D BAG. 
+This is the third public beta release of the 3D BAG. It's been a while since the second release. As it turns out it costs quite some work to properly maintain and update 3DBAG next to our busy day jobs. Fortunately we are able to receive funding from the ERC to further develop 3DBAG, and this release is one of the first results of that. We are very happy to see that so many people found a use for 3DBAG to help them with their companies, research or hobby projects. And we remain committed to keep maintaining 3DBAG into the future, ofcourse as an open dataset. 
 
-AHN4
+The biggest change is that 3DBAG now uses the AHN4 pointcloud which was acquired between 2020 and 2022. This means the buildings are much more up-to-date, compared to the previous release which was based solely on AHN3 (acquired starting from 2014). For this new release we use a 'smart' combination of AHN3 and AHN4. We did not opt for a simple 'drop-in' replacement of AHN3 by AHN4 because of some  quality issues with AHN4 for a small, yet significant fraction of the buildings. The 'smart' combination entails that our algorithms automatically select the 'best' available point cloud on a per building basis. This decision is based primarily on point coverage, ie. how well the roof surface of a building is covered with AHN points and --most importantly-- if there are any big gaps. Naturally, AHN3 is only considered when a building has not changed compared to the AHN4 data. AHN3 is used for ~8-9% of the buildings, the rest all uses AHN4.
 
-+ Revamped reconstruction pipeline, deployed on new server.
+There are also some changes to the BAG viewer and the download page. Most notably the viewer now brings you to an interesting landmark that is randomly picked when you load the website, and all 3DBAG attributes are now visible in the viewer. The download page now also offers a metadata file about the dataset as a whole (including lineage) and the PostgreSQL dump was replaced by one big GPKG file (something that several people have asked about).
 
-+ several viewer improvements
+And last, but not least: behind the scenes a lot of work has been done to improve and recreate big parts of our automatic building reconstruction pipeline. This will make it easier to create new 3DBAG releases in the future. We will continue to work on this to streamline our internal processes even further.
 
 3dgi
 
-nr of buildings, validity percentage
+nr of buildings, validity percentage, runtime of 3dbag excluding software development hours
 
-Thank you for using 3D BAG!
+Thank you for using 3D BAG! As always our feedback forms are available and we will read all the mails sent to info@3dbag.nl.
+
+-- The 3DBAG Team
 
 #### Added
 
@@ -26,6 +28,7 @@ Thank you for using 3D BAG!
 + A metadata file is now available on the download page
 + You can now view all attributes directly in the viewer
 + Clicking on the attribute name in the viewer attribute table now brings you to the corresponding section in the documentation
++ various quality attributes relating to the 'smart' point cloud selection algorithm
 
 #### Changed / Fixed
 
