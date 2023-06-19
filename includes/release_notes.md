@@ -1,6 +1,6 @@
-## 2023.06.16 – beta
+## 2023.06.XX – beta
 
-*Release date: X juni 2023*
+*Release date: XX juni 2023*
 
 This is the third public beta release of the 3D BAG. It's been a while since the second release. As it turns out it costs quite some work to properly maintain and update 3D BAG next to our busy day jobs. Fortunately we are able to receive funding from the ERC to further develop 3D BAG, and this release is one of the first results of that. We are very happy to see that so many people found a use for 3D BAG to help them with their companies, research or hobby projects. And we remain committed to keep maintaining 3D BAG into the future, ofcourse as an open dataset. 
 
@@ -12,7 +12,7 @@ There are also some changes to the BAG viewer and the download page. Most notabl
 
 And last, but not least: behind the scenes a lot of work has been done to improve and recreate big parts of our automatic building reconstruction pipeline. This will make it easier to create new 3D BAG releases in the future. We will continue to work on this in the background and streamline our internal processes even further.
 
-nr of buildings, validity percentage, runtime of 3d bag excluding software development hours
+TODO: stats, nr of buildings, validity percentage
 
 Thank you for using 3D BAG! As always our feedback forms are available and are reading all the emails that we receive at info@3dbag.nl.
 
@@ -32,6 +32,7 @@ Thank you for using 3D BAG! As always our feedback forms are available and are r
     + Clicking on the attribute name in the viewer attribute table now brings you to the corresponding section in the documentation
 + various quality attributes relating to the 'smart' point cloud selection algorithm
 + add 3DGI attribution
++ Created a twitter account https://twitter.com/3D_BAG. Follow this to be notified about 3D BAG updates and other announcements.
 
 #### Changed / Fixed
 
@@ -95,9 +96,7 @@ Thank you for using 3D BAG! As always our feedback forms are available and are r
 
 #### Known issues
 + BAG date/time attributes in GPKG output are of the string type
-+ missing tiles: `7/736/480`
-+ b3_pw_datum is always set to 2014 for AHN3 and 2020 for AHN4, instead of AHN metadata values??
-
++ missing tiles: `9/1000/1068`, `9/536/404` ???
 
 ## 21.09.8 – beta
 
