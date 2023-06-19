@@ -32,7 +32,7 @@ Thank you for using 3D BAG! As always our feedback forms are available and are r
     + Clicking on the attribute name in the viewer attribute table now brings you to the corresponding section in the documentation
 + various quality attributes relating to the 'smart' point cloud selection algorithm
 + add 3DGI attribution
-+ Created a twitter account https://twitter.com/3D_BAG. Follow this to be notified about 3D BAG updates and other announcements.
++ Created a [3D BAG twitter account](https://twitter.com/3D_BAG). Follow this to be notified about 3D BAG updates and other announcements.
 
 #### Changed / Fixed
 
