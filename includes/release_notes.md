@@ -25,7 +25,7 @@ Thank you for using the 3D BAG! As always our [feedback forms](https://forms.gle
     + added procedure for automatic selection of pointcloud (AHN3 or 4) best suited for reconstruction on a per building basis.
     + building volumes are now calculated and outputted
     + changed the method for calculating the height attributes on roofparts
-+ A metadata file is now available on the download page. The metadata contains information about the current release, including the versions of the source data sets and the versions of the software that were used for producing the release.
++ A metadata file is now available on the download page. The metadata contains information about the current release, including the versions of the source data sets and the versions of the software that were used for producing the release. The metadata file unifies some of the attributes other information that were previously scattered across different formats.
 + 3D BAG viewer
     + When opening the 3D BAG viewer you are brought to a random landmark
     + You can now view all attributes directly in the viewer
