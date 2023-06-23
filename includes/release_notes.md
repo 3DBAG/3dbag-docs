@@ -96,8 +96,7 @@ Thank you for using the 3D BAG! As always our [feedback forms](https://forms.gle
 
 #### Known issues
 + BAG date/time attributes in GPKG output are of the string type
-+ missing tiles: `9/1000/1068`, `9/536/404` ???
-+ issues with tiles `8/720/344`, `7/1008/656`
++ Missing tiles: `7/1008/656`, `8/720/344`, `9/1000/1068`
 
 ## 21.09.8 – beta
 
