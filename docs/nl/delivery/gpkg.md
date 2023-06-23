@@ -4,6 +4,15 @@
 
 Wie bieden een apart 3D BAG GeoPackage-bestand aan voor iedere tegel. En daarnaast is er een groot GeoPackage bestand beschikbaar waar de complete 3D BAG in zie. Alle GeoPackage bestanden bevatten [alle lagen](../../schema/layers/#data-layers).
 
+Bij het werken met gecomprimeerde GeoPackage bestanden is het niet strikt noodzakelijk om ze uit te pakken.
+GDAL ondersteunt [virtuele bestandssystemen](https://gdal.org/user/virtual_file_systems.html#vsizip-zip-archives), waardoor de inhoud van de gecomprimeerde .gpkg kan worden benaderd zonder het bestand eerst uit te pakken.
+Het GeoPackage dat de volledige 3D BAG bevat is gecomprimeerd als een [Seek-Optimized ZIP (SOZip)](https://gdal.org/user/virtual_file_systems.html#sozip-seek-optimized-zip) bestand.
+[GDAL (vanaf versie 3.7)](https://gdal.org/user/virtual_file_systems.html#sozip-seek-optimized-zip) ondersteunt het seek-optimized profiel voor .zip-bestanden, wat een verbeterde prestatie oplevert.
+
+Een voorbeeld GDAL-commando voor toegang tot het ongecomprimeerde Nederlandse GeoPackage:
+
+`ogrinfo -so -al /vsizip/nl_3dbag.gpkg.zip`
+
 ## GeoPackage in 3D in QGIS
 
 Wanneer je de data in QGIS importeert (door het bestand er naar toe te slepen of te gaan naar `Layer` -> `Add Layer` -> `Add Vector Layer...`) kun je kiezen uit de verschillende lagen die het bestand bevat. Om de data in 3D te zien (vanaf QGIS 3.0, maar afhankelijk van de exacte versie):
