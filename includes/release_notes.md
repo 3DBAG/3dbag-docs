@@ -1,18 +1,18 @@
-## 2023.06.XX – beta
+## 2023.06.22 – beta
 
-*Release date: XX juni 2023*
+*Release date: 22 juni 2023*
 
 This is the third public beta release of the 3D BAG. It's been a while since the second release. As it turns out it costs quite some work to properly maintain and update 3D BAG next to our busy day jobs. Fortunately we are able to receive funding from the ERC to further develop the 3D BAG, and this release is one of the first results of that. We are very happy to see that so many people found a use for 3D BAG to help them with their companies, research or hobby projects. And we remain committed to keep maintaining 3D BAG into the future, ofcourse as an open dataset. 
 
 [The team behind 3D BAG](group.md) has changed in the sense that some people have moved on to other jobs, some people are working on 3D BAG with a different affiliation ([3DGI](https://3dgi.xyz), a spinoff of the [tudelft3d](https://3d.bk.tudelft.nl/) research group) and we also have welcomed a [new member](http://3d.bk.tudelft.nl/gstavropoulou).
 
-The biggest technical change is that the 3D BAG now uses the AHN4 pointcloud which was acquired between 2020 and 2022. This means that the building models are much more up-to-date, compared to the previous release which was based solely on AHN3 (acquired starting from 2014). For this new release we use a 'smart' combination of AHN3 and AHN4. We did not opt for a simple 'drop-in' replacement of AHN3 by AHN4 because of the quality issues that we discovered in AHN4. These issues affect a small, yet significant fraction of the buildings. The 'smart' combination entails that our algorithms automatically selects the 'best' available point cloud on a per building basis. The selection is based primarily on point coverage, ie. how well the roof surface of a building is covered with AHN points and *most importantly* if there are any big gaps. Naturally, AHN3 is only considered when a building has not changed compared to the AHN4 data. AHN3 is used for ~8-9% of the buildings, the rest all uses AHN4.
+The biggest technical change is that the 3D BAG now uses the AHN4 pointcloud which was acquired between 2020 and 2022. This means that the building models are much more up-to-date, compared to the previous release which was based solely on AHN3 (acquired starting from 2014). For this new release we use a 'smart' combination of AHN3 and AHN4. We did not opt for a simple 'drop-in' replacement of AHN3 by AHN4 because of the quality issues that we discovered in AHN4. These issues affect a small, yet significant fraction of the buildings. The 'smart' combination entails that our algorithms automatically selects the 'best' available point cloud on a per building basis. The selection is based primarily on point coverage, ie. how well the roof surface of a building is covered with AHN points and *most importantly* if there are any big gaps. Naturally, AHN3 is only considered when a building has not changed compared to the AHN4 data. AHN3 is used for ~8.5% of the buildings, the rest all uses AHN4.
 
 There are also some changes to the BAG viewer and the download page. Most notably, the viewer now brings you to an interesting landmark that is randomly picked when you load the website, and all 3D BAG attributes are now visible in the viewer. The download page now also offers a metadata file about the dataset as a whole (including lineage) and the PostgreSQL dump was replaced by one big GPKG file (something that several people have asked for).
 
-And last, but not least: behind the scenes *a lot of work* has been done to completely recreate our automatic building reconstruction pipeline. This helps us to reliably produce new 3D BAG releases from now on. We will continue to work on our pipeline in the background and streamline our internal processes even further.
+And last, but not least: behind the scenes *a lot of work* has been done to completely recreate our automatic building reconstruction pipeline. This helps us to reliably produce new 3D BAG releases from now on. A tangible benefit to the 3DBAG users is that we now have much fewer missing buildings compared to the previous releases. We will continue to work on our pipeline in the background and streamline our internal processes even further.
 
-TODO: stats, nr of buildings, validity percentage
+This release contains a record numbner of 10 383 384 builings. The overal geometric val3dity is also at a record at 99.15% (up from 98.25% in the previous release, counted on the LoD2.2 geometries).
 
 Thank you for using the 3D BAG! As always our [feedback forms](https://forms.gle/NZg83heXM75pAmfVA) are available and we are reading all the emails that we receive at info@3dbag.nl.
 
@@ -22,7 +22,7 @@ Thank you for using the 3D BAG! As always our [feedback forms](https://forms.gle
 
 + The building part ID (`pand_deel_id`) to the 3D layers. Previously it was only part of the 2D layers.
 + Reconstruction algorithm
-    + added procedure for automatic selection of pointcloud (AHN3 or 4) best suited for reconstruction on a per building basis.
+    + added procedure for automatic selection of pointcloud (AHN3 or 4) best suited for reconstruction on a per building basis
     + building volumes are now calculated and outputted
     + changed the method for calculating the height attributes on roofparts
 + A metadata file is now available on the download page. The metadata contains information about the current release, including the versions of the source data sets and the versions of the software that were used for producing the release. The metadata file unifies some of the attributes other information that were previously scattered across different formats.
@@ -36,18 +36,20 @@ Thank you for using the 3D BAG! As always our [feedback forms](https://forms.gle
 
 #### Changed / Fixed
 
-+ Update of the source vector data sets (BAG, Top10NL) to the version available on 2023-06-05 (TOP10NL) and 2023-06-08 (BAG).
-+ Update of the source point cloud data sets. Now AHN3 and AHN4 are used.
++ Update of the source vector data sets (BAG, Top10NL) to the version available on 2023-06-05 (TOP10NL) and 2023-06-08 (BAG)
++ Update of the source point cloud data sets. Now AHN3 and AHN4 are used
++ Significantly fewer missing buildings, due to revamped processing pipeline
++ Improved geometric validity. Now 99.15% of buildings are geometrically valid
 + New tiling scheme for downloads
 + New file naming
-+ 3D BAG version number is now a full date instead of a mix between date and minor version number.
-+ All 3D BAG specific attributes are now preceded by the `b3_` prefix.
-+ The postgres database dump was replaced by one big gpkg file zipped into a [seek-optimized ZIP (SOZip)](https://gdal.org/programs/sozip.html#sozip) file.
++ 3D BAG version number is now a full date instead of a mix between date and minor version number
++ All 3D BAG specific attributes are now preceded by the `b3_` prefix
++ The postgres database dump was replaced by one big gpkg file zipped into a [seek-optimized ZIP (SOZip)](https://gdal.org/programs/sozip.html#sozip) file
 + Improvements in the reconstruction algorithm
     + new procedure for overlap detection between buildings. In this procedure it is guaranteed that points on areas of overlap are only assigned to one of the overlapping buildings.
     + fine tuning of snapping thresholds to achieve better geomtric validity
     + various small improvements
-+ The layer `ondergrond` was removed.
++ The layer `ondergrond` was removed
 + Changed WFS/WMS namespace from `BAG3D_v2` to `BAG3D`
 + Attribute changes:
 
