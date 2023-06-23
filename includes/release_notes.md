@@ -12,7 +12,7 @@ There are also some changes to the BAG viewer and the download page. Most notabl
 
 And last, but not least: behind the scenes *a lot of work* has been done to completely recreate our automatic building reconstruction pipeline. This helps us to reliably produce new 3D BAG releases from now on. A tangible benefit to the 3DBAG users is that we now have much fewer missing buildings compared to the previous releases. We will continue to work on our pipeline in the background and streamline our internal processes even further.
 
-This release contains a record numbner of 10 383 384 builings. The overal geometric val3dity is also at a record at 99.15% (up from 98.25% in the previous release, counted on the LoD2.2 geometries).
+This release contains a record number of 10 383 384 builings. The overall geometric val3dity is also at a record at 99.15% (up from 98.25% in the previous release, counted on the LoD2.2 geometries).
 
 Thank you for using the 3D BAG! As always our [feedback forms](https://forms.gle/NZg83heXM75pAmfVA) are available and we are reading all the emails that we receive at info@3dbag.nl.
 
