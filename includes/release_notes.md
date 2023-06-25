@@ -2,7 +2,7 @@
 
 *Release date: 22 juni 2023*
 
-This is the third public beta release of the 3D BAG. It's been a while since the second release. As it turns out it costs quite some work to properly maintain and update 3D BAG next to our busy day jobs. Fortunately we are able to receive funding from the ERC to further develop the 3D BAG, and this release is one of the first results of that. We are very happy to see that so many people found a use for 3D BAG to help them with their companies, research or hobby projects. And we remain committed to keep maintaining 3D BAG into the future, ofcourse as an open dataset. 
+This is the third public beta release of the 3D BAG. It's been a while since the second release. As it turns out it costs quite some work to properly maintain and update 3D BAG next to our busy day jobs. Fortunately we are able to receive funding from the ERC to further develop the 3D BAG, and this release is one of the first results of that. We are very happy to see that so many people found a use for 3D BAG to help them with their business, research or hobby projects. And we remain committed to keep maintaining 3D BAG into the future, ofcourse as an open dataset. 
 
 [The team behind 3D BAG](group.md) has changed in the sense that some people have moved on to other jobs, some people are working on 3D BAG with a different affiliation ([3DGI](https://3dgi.xyz), a spinoff of the [tudelft3d](https://3d.bk.tudelft.nl/) research group) and we also have welcomed a [new member](http://3d.bk.tudelft.nl/gstavropoulou).
 
