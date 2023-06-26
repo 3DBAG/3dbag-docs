@@ -30,6 +30,7 @@ Thank you for using the 3D BAG! As always our [feedback forms](https://forms.gle
     + When opening the 3D BAG viewer you are brought to a random landmark
     + You can now view all attributes directly in the viewer
     + Clicking on the attribute name in the viewer attribute table now brings you to the corresponding section in the documentation
+    + Update basemap to Luchfoto Actueel
 + various quality attributes relating to the 'smart' point cloud selection algorithm
 + add 3DGI attribution
 + Created a [3D BAG twitter account](https://twitter.com/3D_BAG). Follow this to be notified about 3D BAG updates and other announcements.
