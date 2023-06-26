@@ -34,6 +34,9 @@ Thank you for using the 3D BAG! As always our [feedback forms](https://forms.gle
 + various quality attributes relating to the 'smart' point cloud selection algorithm
 + add 3DGI attribution
 + Created a [3D BAG twitter account](https://twitter.com/3D_BAG). Follow this to be notified about 3D BAG updates and other announcements.
++ SHA-256 hashes for the downloadable files (included on the `tiles` WMS/WFS layer).
++ Download link for each format (included on the `tiles` WMS/WFS layer).
++ Extended testing of all data formats (included on the `tiles` WMS/WFS layer).
 
 #### Changed / Fixed
 
