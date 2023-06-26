@@ -14,8 +14,14 @@
       
         <link rel="canonical" href="https://docs.3dbag.nl/nl/schema/attributes/">
       
+      
+        <link rel="prev" href="../layers/">
+      
+      
+        <link rel="next" href="../../delivery/webservices/">
+      
       <link rel="icon" href="../../assets/images/logo.svg">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.0">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
     
     
       
@@ -23,17 +29,13 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.fd896c8a.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
-        
-          
-          
-          <meta name="theme-color" content="#ffffff">
-        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
+
     
     
     
@@ -48,10 +50,11 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -62,7 +65,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="light-blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="light-blue">
   
     
     
@@ -104,6 +107,19 @@
     href="https://3d.bk.tudelft.nl"
     style="color: #333;" class="logo-text"
   >tudelft3d</a>
+  <span
+    class="logo-text"
+    style="color:#ccc; font-weight:300; margin-left: 0.3em;"
+  > + </span>
+  <img 
+    class="logo3d"
+    width="28"
+    height="28" 
+    src="../../assets/images/logo-3dgi.svg" alt="logo"> 
+  <a
+    href="https://3dgi.xyz"
+    style="color: #333;" class="logo-text"
+  >3DGI</a>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,26 +127,16 @@
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            3D BAG
-          </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              Data-attributen
-            
-          </span>
-        </div>
       </div>
     </div>
+    
+      
     
     
       <div class="md-header__option">
         <div class="md-select">
           
-          <button class="md-header__button md-icon" aria-label="Select language">
+          <button class="md-header__button md-icon" aria-label="Selecteer taal">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
           </button>
           <div class="md-select__inner">
@@ -141,13 +147,13 @@
                     English
                   </a>
                 </li>
-                
+              
                 <li class="md-select__item">
                   <a href="/nl/" hreflang="nl" class="md-select__link">
                     Nederlands
                   </a>
                 </li>
-                
+              
             </ul>
           </div>
         </div>
@@ -166,9 +172,9 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="Zoeken">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Leegmaken" aria-label="Leegmaken" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -178,9 +184,9 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            Zoeken initialiseren
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -199,7 +205,7 @@
           
             
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
+  <div class="md-grid">
     <ul class="md-tabs__list">
       
         
@@ -319,7 +325,7 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigatie" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="3D BAG" class="md-nav__button md-logo" aria-label="3D BAG" data-md-component="logo">
       
@@ -339,6 +345,19 @@
     href="https://3d.bk.tudelft.nl"
     style="color: #333;" class="logo-text"
   >tudelft3d</a>
+  <span
+    class="logo-text"
+    style="color:#ccc; font-weight:300; margin-left: 0.3em;"
+  > + </span>
+  <img 
+    class="logo3d"
+    width="28"
+    height="28" 
+    src="../../assets/images/logo-3dgi.svg" alt="logo"> 
+  <a
+    href="https://3dgi.xyz"
+    style="color: #333;" class="logo-text"
+  >3DGI</a>
 
     </a>
     3D BAG
@@ -357,17 +376,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_1">
+        <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
           Introductie
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Introductie" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
           Introductie
@@ -463,17 +483,18 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
       
-      
-        <label class="md-nav__link" for="__nav_2">
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
           Dataschema
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Dataschema" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Dataschema
@@ -517,7 +538,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
@@ -548,22 +569,211 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#b3_dak_type" class="md-nav__link">
+    b3_dak_type
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_dd_id" class="md-nav__link">
+    b3_dd_id
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_h_dak_50p" class="md-nav__link">
+    b3_h_dak_50p
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_h_dak_70p" class="md-nav__link">
+    b3_h_dak_70p
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_h_dak_max" class="md-nav__link">
+    b3_h_dak_max
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_h_dak_min" class="md-nav__link">
+    b3_h_dak_min
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_h_maaiveld" class="md-nav__link">
+    b3_h_maaiveld
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_kas_warenhuis" class="md-nav__link">
+    b3_kas_warenhuis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_mutatie_ahn3_ahn4" class="md-nav__link">
+    b3_mutatie_ahn3_ahn4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_nodata_fractie_ahn3" class="md-nav__link">
+    b3_nodata_fractie_ahn3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_nodata_fractie_ahn4" class="md-nav__link">
+    b3_nodata_fractie_ahn4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_nodata_radius_ahn3" class="md-nav__link">
+    b3_nodata_radius_ahn3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_nodata_radius_ahn4" class="md-nav__link">
+    b3_nodata_radius_ahn4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_pand_deel_id" class="md-nav__link">
+    b3_pand_deel_id
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_puntdichtheid_ahn3" class="md-nav__link">
+    b3_puntdichtheid_ahn3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_puntdichtheid_ahn4" class="md-nav__link">
+    b3_puntdichtheid_ahn4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_pw_bron" class="md-nav__link">
+    b3_pw_bron
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_pw_datum" class="md-nav__link">
+    b3_pw_datum
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_pw_selectie_reden" class="md-nav__link">
+    b3_pw_selectie_reden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_reconstructie_onvolledig" class="md-nav__link">
+    b3_reconstructie_onvolledig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_rmse_lod12" class="md-nav__link">
+    b3_rmse_lod12
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_rmse_lod13" class="md-nav__link">
+    b3_rmse_lod13
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_rmse_lod22" class="md-nav__link">
+    b3_rmse_lod22
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_val3dity_lod12" class="md-nav__link">
+    b3_val3dity_lod12
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_val3dity_lod13" class="md-nav__link">
+    b3_val3dity_lod13
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_val3dity_lod22" class="md-nav__link">
+    b3_val3dity_lod22
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_volume_lod12" class="md-nav__link">
+    b3_volume_lod12
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_volume_lod13" class="md-nav__link">
+    b3_volume_lod13
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_volume_lod22" class="md-nav__link">
+    b3_volume_lod22
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#begingeldigheid" class="md-nav__link">
     begingeldigheid
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dak_type" class="md-nav__link">
-    dak_type
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dd_id" class="md-nav__link">
-    dd_id
   </a>
   
 </li>
@@ -590,8 +800,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#fid" class="md-nav__link">
-    fid
+  <a href="#eindregistratie" class="md-nav__link">
+    eindregistratie
   </a>
   
 </li>
@@ -604,48 +814,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gid" class="md-nav__link">
-    gid
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h_dak_50p" class="md-nav__link">
-    h_dak_50p
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h_dak_70p" class="md-nav__link">
-    h_dak_70p
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h_dak_max" class="md-nav__link">
-    h_dak_max
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h_dak_min" class="md-nav__link">
-    h_dak_min
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h_maaiveld" class="md-nav__link">
-    h_maaiveld
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#identificatie" class="md-nav__link">
     identificatie
   </a>
@@ -653,78 +821,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kas_warenhuis" class="md-nav__link">
-    kas_warenhuis
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lod11_replace" class="md-nav__link">
-    lod11_replace
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ondergronds_type" class="md-nav__link">
-    ondergronds_type
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#oorspronkelijk_bouwjaar" class="md-nav__link">
-    oorspronkelijk_bouwjaar
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pand_deel_id" class="md-nav__link">
-    pand_deel_id
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pw_actueel" class="md-nav__link">
-    pw_actueel
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pw_bron" class="md-nav__link">
-    pw_bron
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pw_datum" class="md-nav__link">
-    pw_datum
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reconstructie_methode" class="md-nav__link">
-    reconstructie_methode
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reconstruction_skipped" class="md-nav__link">
-    reconstruction_skipped
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#semantics_values" class="md-nav__link">
-    semantics_values
+  <a href="#oorspronkelijkbouwjaar" class="md-nav__link">
+    oorspronkelijkbouwjaar
   </a>
   
 </li>
@@ -765,22 +863,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#tijdstipregistratie" class="md-nav__link">
+    tijdstipregistratie
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tijdstipregistratielv" class="md-nav__link">
     tijdstipregistratielv
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#val3dity_codes" class="md-nav__link">
-    val3dity_codes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#versie_methode" class="md-nav__link">
-    versie_methode
   </a>
   
 </li>
@@ -818,17 +909,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_3">
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
           Dataformaten
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Dataformaten" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Dataformaten
@@ -871,20 +963,6 @@
     <li class="md-nav__item">
       <a href="../../delivery/cityjson/" class="md-nav__link">
         CityJSON
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../delivery/postgresql/" class="md-nav__link">
-        PostgreSQL
       </a>
     </li>
   
@@ -998,22 +1076,211 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#b3_dak_type" class="md-nav__link">
+    b3_dak_type
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_dd_id" class="md-nav__link">
+    b3_dd_id
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_h_dak_50p" class="md-nav__link">
+    b3_h_dak_50p
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_h_dak_70p" class="md-nav__link">
+    b3_h_dak_70p
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_h_dak_max" class="md-nav__link">
+    b3_h_dak_max
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_h_dak_min" class="md-nav__link">
+    b3_h_dak_min
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_h_maaiveld" class="md-nav__link">
+    b3_h_maaiveld
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_kas_warenhuis" class="md-nav__link">
+    b3_kas_warenhuis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_mutatie_ahn3_ahn4" class="md-nav__link">
+    b3_mutatie_ahn3_ahn4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_nodata_fractie_ahn3" class="md-nav__link">
+    b3_nodata_fractie_ahn3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_nodata_fractie_ahn4" class="md-nav__link">
+    b3_nodata_fractie_ahn4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_nodata_radius_ahn3" class="md-nav__link">
+    b3_nodata_radius_ahn3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_nodata_radius_ahn4" class="md-nav__link">
+    b3_nodata_radius_ahn4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_pand_deel_id" class="md-nav__link">
+    b3_pand_deel_id
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_puntdichtheid_ahn3" class="md-nav__link">
+    b3_puntdichtheid_ahn3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_puntdichtheid_ahn4" class="md-nav__link">
+    b3_puntdichtheid_ahn4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_pw_bron" class="md-nav__link">
+    b3_pw_bron
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_pw_datum" class="md-nav__link">
+    b3_pw_datum
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_pw_selectie_reden" class="md-nav__link">
+    b3_pw_selectie_reden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_reconstructie_onvolledig" class="md-nav__link">
+    b3_reconstructie_onvolledig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_rmse_lod12" class="md-nav__link">
+    b3_rmse_lod12
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_rmse_lod13" class="md-nav__link">
+    b3_rmse_lod13
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_rmse_lod22" class="md-nav__link">
+    b3_rmse_lod22
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_val3dity_lod12" class="md-nav__link">
+    b3_val3dity_lod12
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_val3dity_lod13" class="md-nav__link">
+    b3_val3dity_lod13
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_val3dity_lod22" class="md-nav__link">
+    b3_val3dity_lod22
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_volume_lod12" class="md-nav__link">
+    b3_volume_lod12
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_volume_lod13" class="md-nav__link">
+    b3_volume_lod13
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b3_volume_lod22" class="md-nav__link">
+    b3_volume_lod22
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#begingeldigheid" class="md-nav__link">
     begingeldigheid
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dak_type" class="md-nav__link">
-    dak_type
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dd_id" class="md-nav__link">
-    dd_id
   </a>
   
 </li>
@@ -1040,8 +1307,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#fid" class="md-nav__link">
-    fid
+  <a href="#eindregistratie" class="md-nav__link">
+    eindregistratie
   </a>
   
 </li>
@@ -1054,48 +1321,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gid" class="md-nav__link">
-    gid
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h_dak_50p" class="md-nav__link">
-    h_dak_50p
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h_dak_70p" class="md-nav__link">
-    h_dak_70p
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h_dak_max" class="md-nav__link">
-    h_dak_max
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h_dak_min" class="md-nav__link">
-    h_dak_min
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h_maaiveld" class="md-nav__link">
-    h_maaiveld
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#identificatie" class="md-nav__link">
     identificatie
   </a>
@@ -1103,78 +1328,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kas_warenhuis" class="md-nav__link">
-    kas_warenhuis
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lod11_replace" class="md-nav__link">
-    lod11_replace
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ondergronds_type" class="md-nav__link">
-    ondergronds_type
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#oorspronkelijk_bouwjaar" class="md-nav__link">
-    oorspronkelijk_bouwjaar
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pand_deel_id" class="md-nav__link">
-    pand_deel_id
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pw_actueel" class="md-nav__link">
-    pw_actueel
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pw_bron" class="md-nav__link">
-    pw_bron
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pw_datum" class="md-nav__link">
-    pw_datum
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reconstructie_methode" class="md-nav__link">
-    reconstructie_methode
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reconstruction_skipped" class="md-nav__link">
-    reconstruction_skipped
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#semantics_values" class="md-nav__link">
-    semantics_values
+  <a href="#oorspronkelijkbouwjaar" class="md-nav__link">
+    oorspronkelijkbouwjaar
   </a>
   
 </li>
@@ -1215,22 +1370,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#tijdstipregistratie" class="md-nav__link">
+    tijdstipregistratie
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tijdstipregistratielv" class="md-nav__link">
     tijdstipregistratielv
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#val3dity_codes" class="md-nav__link">
-    val3dity_codes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#versie_methode" class="md-nav__link">
-    versie_methode
   </a>
   
 </li>
@@ -1250,19 +1398,15 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
 <h1 id="data-attributen">Data Attributen<a class="headerlink" href="#data-attributen" title="Permanent link">&para;</a></h1>
-<h2 id="begingeldigheid"><code>begingeldigheid</code><a class="headerlink" href="#begingeldigheid" title="Permanent link">&para;</a></h2>
-<p>De datum waarop een versie van een BAG-object geldig is in de werkelijkheid conform de ingangsdatum in het brondocument. Dit tijdstip wordt vastgelegd in de beginGeldigheid. Als er geen expliciete ingangsdatum van geldigheid is opgenomen, wordt de datum van het brondocument overgenomen.</p>
-<p><em>Datatype</em>: datum</p>
-<p><em>Eenheid</em>: <code>YYYY-MM-DD</code></p>
-<p><em>Bron</em>: BAG. Zie <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
-<h2 id="dak_type"><code>dak_type</code><a class="headerlink" href="#dak_type" title="Permanent link">&para;</a></h2>
+<h2 id="b3_dak_type"><code>b3_dak_type</code><a class="headerlink" href="#b3_dak_type" title="Permanent link">&para;</a></h2>
 <p>Daktype van het pand.</p>
 <p><em>Datatype</em>: categorisch</p>
 <p><em>Eenheid</em>: -</p>
@@ -1297,10 +1441,154 @@
 </tr>
 </tbody>
 </table>
-<h2 id="dd_id"><code>dd_id</code><a class="headerlink" href="#dd_id" title="Permanent link">&para;</a></h2>
+<h2 id="b3_dd_id"><code>b3_dd_id</code><a class="headerlink" href="#b3_dd_id" title="Permanent link">&para;</a></h2>
 <p>Dakdeel ID.</p>
 <p><em>Datatype</em>: nominaal getal</p>
 <p><em>Eenheid</em>: -</p>
+<h2 id="b3_h_dak_50p"><code>b3_h_dak_50p</code><a class="headerlink" href="#b3_h_dak_50p" title="Permanent link">&para;</a></h2>
+<p>Medianhoogte op dakdeel gebaseerd op het gereconstrueerde 3D-model in LoD2.2. Gegeven als hoogte boven zeeniveau (NAP).</p>
+<p><em>Datatype</em>: reëel getal</p>
+<p><em>Eenheid</em>: meter</p>
+<h2 id="b3_h_dak_70p"><code>b3_h_dak_70p</code><a class="headerlink" href="#b3_h_dak_70p" title="Permanent link">&para;</a></h2>
+<p>De 70e percentielhoogte op dakdeel gebaseerd op het gereconstrueerde 3D-model in LoD2.2. Gegeven als hoogte boven zeeniveau (NAP).</p>
+<p><em>Datatype</em>: reëel getal</p>
+<p><em>Eenheid</em>: meter</p>
+<h2 id="b3_h_dak_max"><code>b3_h_dak_max</code><a class="headerlink" href="#b3_h_dak_max" title="Permanent link">&para;</a></h2>
+<p>Maximumhoogte op dakdeel gebaseerd op het gereconstrueerde 3D-model in LoD2.2. Gegeven als hoogte boven zeeniveau (NAP). Eenheid: meter.</p>
+<p><em>Datatype</em>: reëel getal</p>
+<p><em>Eenheid</em>: meter</p>
+<h2 id="b3_h_dak_min"><code>b3_h_dak_min</code><a class="headerlink" href="#b3_h_dak_min" title="Permanent link">&para;</a></h2>
+<p>Minimumhoogte op dakdeel gebaseerd op het gereconstrueerde 3D-model in LoD2.2. Gegeven als hoogte boven zeeniveau (NAP).</p>
+<p><em>Datatype</em>: reëel getal</p>
+<p><em>Eenheid</em>: meter</p>
+<h2 id="b3_h_maaiveld"><code>b3_h_maaiveld</code><a class="headerlink" href="#b3_h_maaiveld" title="Permanent link">&para;</a></h2>
+<p>Elevatie boven zeeniveau (NAP) op het maaiveldniveau van het pand. Berekend als het 5e percentiel van de maaiveldpunten gevonden binnen een radius van 4 meter van het pand.</p>
+<p><em>Datatype</em>: reëel getal</p>
+<p><em>Eenheid</em>: meter</p>
+<h2 id="b3_kas_warenhuis"><code>b3_kas_warenhuis</code><a class="headerlink" href="#b3_kas_warenhuis" title="Permanent link">&para;</a></h2>
+<p>Het gebouw is een kas of een warenhuis volgens de TOP10NL of heeft een oppervlakte van meer dan 70000 vierkante meter.</p>
+<p><em>Datatype</em>: categorisch</p>
+<p><em>Eenheid</em>: yes/no</p>
+<h2 id="b3_mutatie_ahn3_ahn4"><code>b3_mutatie_ahn3_ahn4</code><a class="headerlink" href="#b3_mutatie_ahn3_ahn4" title="Permanent link">&para;</a></h2>
+<p><code>true</code> als er een significante verandering is gedetecteerd in het pand tussen de AHN3 en AHN4 puntenwolken.</p>
+<p><em>Datatype</em>: categorisch</p>
+<p><em>Eenheid</em>: yes/no</p>
+<h2 id="b3_nodata_fractie_ahn3"><code>b3_nodata_fractie_ahn3</code><a class="headerlink" href="#b3_nodata_fractie_ahn3" title="Permanent link">&para;</a></h2>
+<p>Fractie van het BAG polygon met onvoldoende AHN3 punten dekking. Alleen punten geclassificeerd als gebouw of grond worden gebruikt.</p>
+<p><em>Datatype</em>: reëel getal</p>
+<p><em>Eenheid</em>: -</p>
+<h2 id="b3_nodata_fractie_ahn4"><code>b3_nodata_fractie_ahn4</code><a class="headerlink" href="#b3_nodata_fractie_ahn4" title="Permanent link">&para;</a></h2>
+<p>Fractie van het BAG polygon met onvoldoende AHN4 punten dekking. Alleen punten geclassificeerd als gebouw of grond worden gebruikt.</p>
+<p><em>Datatype</em>: reëel getal</p>
+<p><em>Eenheid</em>: -</p>
+<h2 id="b3_nodata_radius_ahn3"><code>b3_nodata_radius_ahn3</code><a class="headerlink" href="#b3_nodata_radius_ahn3" title="Permanent link">&para;</a></h2>
+<p>Straal van de grootste cirkel die binnen het BAG polygoon valt en geen AHN3 punten bevat. Alleen punten geclassificeerd als gebouw of grond worden gebruikt.</p>
+<p><em>Datatype</em>: reëel getal</p>
+<p><em>Eenheid</em>: meter</p>
+<h2 id="b3_nodata_radius_ahn4"><code>b3_nodata_radius_ahn4</code><a class="headerlink" href="#b3_nodata_radius_ahn4" title="Permanent link">&para;</a></h2>
+<p>Straal van de grootste cirkel die binnen het BAG polygoon valt en geen AHN4 punten bevat. Alleen punten geclassificeerd als gebouw of grond worden gebruikt.</p>
+<p><em>Datatype</em>: reëel getal</p>
+<p><em>Eenheid</em>: meter</p>
+<h2 id="b3_pand_deel_id"><code>b3_pand_deel_id</code><a class="headerlink" href="#b3_pand_deel_id" title="Permanent link">&para;</a></h2>
+<p>Panddeel ID. Een pand kan meerdere delen hebben wanneer het is opgedeeld vanwege ondergrondse delen.</p>
+<p><em>Datatype</em>: nominaal getal</p>
+<p><em>Eenheid</em>: -</p>
+<h2 id="b3_puntdichtheid_ahn3"><code>b3_puntdichtheid_ahn3</code><a class="headerlink" href="#b3_puntdichtheid_ahn3" title="Permanent link">&para;</a></h2>
+<p>Puntdichtheid van de AHN3-puntenwolk voor het pand. Alleen punten geclassificeerd als gebouw of grond worden in beschouwing genomen.</p>
+<p><em>Datatype</em>: nominaal getal</p>
+<p><em>Eenheid</em>: punten per vierkante meter</p>
+<h2 id="b3_puntdichtheid_ahn4"><code>b3_puntdichtheid_ahn4</code><a class="headerlink" href="#b3_puntdichtheid_ahn4" title="Permanent link">&para;</a></h2>
+<p>Puntdichtheid van de AHN4-puntenwolk voor het pand. Alleen punten geclassificeerd als gebouw of grond worden in beschouwing genomen. Eenheid: punten per vierkante meter.</p>
+<p><em>Datatype</em>: nominaal getal</p>
+<p><em>Eenheid</em>: punten per vierkante meter</p>
+<h2 id="b3_pw_bron"><code>b3_pw_bron</code><a class="headerlink" href="#b3_pw_bron" title="Permanent link">&para;</a></h2>
+<p>Bron van de puntenwolk, bijv. AHN3 of AHN4.</p>
+<p><em>Datatype</em>: tekst</p>
+<p><em>Eenheid</em>: -</p>
+<h2 id="b3_pw_datum"><code>b3_pw_datum</code><a class="headerlink" href="#b3_pw_datum" title="Permanent link">&para;</a></h2>
+<p>Inwinjaar van de bron puntenwolk. Dit is bepaald door naar de GPS tijd van de AHN punten voor dit pand. Indien een goede GPS tijd niet beschikbaar is, wordt de file creation date van het puntenwolk bestand gebruikt.</p>
+<p><em>Datatype</em>: datum</p>
+<p><em>Eenheid</em>: <code>YYYY</code></p>
+<h2 id="b3_pw_selectie_reden"><code>b3_pw_selectie_reden</code><a class="headerlink" href="#b3_pw_selectie_reden" title="Permanent link">&para;</a></h2>
+<p>Geeft achtergrond informatie met betrekking tot de puntenwolk selectie (zie <code>pw_bron</code> attribuut).</p>
+<p><em>Datatype</em>: categorisch</p>
+<p><em>Eenheid</em>: -</p>
+<p><em>Waarden</em>:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Waarden</th>
+<th align="left">Omschrijving</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>PREFERRED_AND_LATEST</code></td>
+<td align="left">De geselecteerde puntenwolk heeft een goede puntdekking en er is geen recentere puntenwolk met voldoende puntdekking beschikbaar.</td>
+</tr>
+<tr>
+<td align="left"><code>PREFERRED_NOT_LATEST</code></td>
+<td align="left">De geselecteerde puntenwolk heeft een goede point puntdekking en er is een recentere puntenwolk met voldoende puntdekking beschikbaar. De nieuwere puntewolk is echter niet geselecteerd omdat er geen mutatie is gedecteerd.</td>
+</tr>
+<tr>
+<td align="left"><code>LATEST_WITH_MUTATION</code></td>
+<td align="left">De geselecteerde puntenwolk heeft een goede puntdekking en er is een mutatie ten opzichte van een oudere puntenwolk gedetecteerd.</td>
+</tr>
+<tr>
+<td align="left"><code>_HIGHEST_YET_INSUFFICIENT_COVERAGE</code></td>
+<td align="left">De geselecteerde puntenwolk heeft hoogste puntdekking van alle kandidaat puntenwolken, maar de puntdekking is alsnog mogelijk niet voldoende. Dit gebouw vertoont mogelijk reconstructie fouten.</td>
+</tr>
+<tr>
+<td align="left"><code>_LATEST_BUT_OUTDATED</code></td>
+<td align="left">De geselecteerde puntenwolk is de meerst recente, maar is mogelijk alsnog te oud voor dit pand. Dit kan gebeurt als het oorspronkelijk bouwjaar gelijk aan of jonger is dan het inwin jaar van de puntenwolk.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="b3_reconstructie_onvolledig"><code>b3_reconstructie_onvolledig</code><a class="headerlink" href="#b3_reconstructie_onvolledig" title="Permanent link">&para;</a></h2>
+<p>Geeft aan of de volledige LoD1.2/LoD1.3/LoD2.2 reconstructie is overgeslagen voor het pand.</p>
+<p><em>Datatype</em>: None</p>
+<p><em>Eenheid</em>: None</p>
+<h2 id="b3_rmse_lod12"><code>b3_rmse_lod12</code><a class="headerlink" href="#b3_rmse_lod12" title="Permanent link">&para;</a></h2>
+<p>Root Mean Square Error van de 3D afstanden tussen de puntenwolk en het LoD1.2 model. Eenheid: meter.</p>
+<p><em>Datatype</em>: reëel getal</p>
+<p><em>Eenheid</em>: meter</p>
+<h2 id="b3_rmse_lod13"><code>b3_rmse_lod13</code><a class="headerlink" href="#b3_rmse_lod13" title="Permanent link">&para;</a></h2>
+<p>Root Mean Square Error van de 3D afstanden tussen de puntenwolk en het LoD1.3 model. Eenheid: meter.</p>
+<p><em>Datatype</em>: reëel getal</p>
+<p><em>Eenheid</em>: meter</p>
+<h2 id="b3_rmse_lod22"><code>b3_rmse_lod22</code><a class="headerlink" href="#b3_rmse_lod22" title="Permanent link">&para;</a></h2>
+<p>Root Mean Square Error van de 3D afstanden tussen de puntenwolk en het LoD2.2 model. Eenheid: meter.</p>
+<p><em>Datatype</em>: reëel getal</p>
+<p><em>Eenheid</em>: meter</p>
+<h2 id="b3_val3dity_lod12"><code>b3_val3dity_lod12</code><a class="headerlink" href="#b3_val3dity_lod12" title="Permanent link">&para;</a></h2>
+<p><a href="https://val3dity.readthedocs.io/en/latest/errors">Val3dity foutcodes</a> voor het LoD1.2 3D model. Lege lijst betekent valide geometry.</p>
+<p><em>Datatype</em>: lijst</p>
+<p><em>Eenheid</em>: -</p>
+<h2 id="b3_val3dity_lod13"><code>b3_val3dity_lod13</code><a class="headerlink" href="#b3_val3dity_lod13" title="Permanent link">&para;</a></h2>
+<p><a href="https://val3dity.readthedocs.io/en/latest/errors">Val3dity foutcodes</a> voor het LoD1.3 3D model. Lege lijst betekent valide geometry.</p>
+<p><em>Datatype</em>: lijst</p>
+<p><em>Eenheid</em>: -</p>
+<h2 id="b3_val3dity_lod22"><code>b3_val3dity_lod22</code><a class="headerlink" href="#b3_val3dity_lod22" title="Permanent link">&para;</a></h2>
+<p><a href="https://val3dity.readthedocs.io/en/latest/errors">Val3dity foutcodes</a> voor het LoD2.2 3D model. Lege lijst betekent valide geometry.</p>
+<p><em>Datatype</em>: lijst</p>
+<p><em>Eenheid</em>: -</p>
+<h2 id="b3_volume_lod12"><code>b3_volume_lod12</code><a class="headerlink" href="#b3_volume_lod12" title="Permanent link">&para;</a></h2>
+<p>Volume van het LoD1.2-model. Eenheid: kubieke meter.</p>
+<p><em>Datatype</em>: reëel getal</p>
+<p><em>Eenheid</em>: kubieke meter</p>
+<h2 id="b3_volume_lod13"><code>b3_volume_lod13</code><a class="headerlink" href="#b3_volume_lod13" title="Permanent link">&para;</a></h2>
+<p>Volume van het LoD1.3-model. Eenheid: kubieke meter.</p>
+<p><em>Datatype</em>: reëel getal</p>
+<p><em>Eenheid</em>: kubieke meter</p>
+<h2 id="b3_volume_lod22"><code>b3_volume_lod22</code><a class="headerlink" href="#b3_volume_lod22" title="Permanent link">&para;</a></h2>
+<p>Volume van het LoD2.2-model. Eenheid: kubieke meter.</p>
+<p><em>Datatype</em>: reëel getal</p>
+<p><em>Eenheid</em>: kubieke meter</p>
+<h2 id="begingeldigheid"><code>begingeldigheid</code><a class="headerlink" href="#begingeldigheid" title="Permanent link">&para;</a></h2>
+<p>De datum waarop een versie van een BAG-object geldig is in de werkelijkheid conform de ingangsdatum in het brondocument. Dit tijdstip wordt vastgelegd in de beginGeldigheid. Als er geen expliciete ingangsdatum van geldigheid is opgenomen, wordt de datum van het brondocument overgenomen.</p>
+<p><em>Datatype</em>: datum</p>
+<p><em>Eenheid</em>: <code>YYYY-MM-DD</code></p>
+<p><em>Bron</em>: BAG. Zie <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
 <h2 id="documentdatum"><code>documentdatum</code><a class="headerlink" href="#documentdatum" title="Permanent link">&para;</a></h2>
 <p>De datum waarop het brondocument is vastgesteld, op basis waarvan een opname, mutatie of een verwijdering van gegevens ten aanzien van een pand heeft plaatsgevonden.</p>
 <p><em>Datatype</em>: datum</p>
@@ -1316,191 +1604,30 @@
 <p><em>Datatype</em>: datum</p>
 <p><em>Eenheid</em>: <code>YYYY-MM-DD</code></p>
 <p><em>Bron</em>: BAG. Zie <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
-<h2 id="fid"><code>fid</code><a class="headerlink" href="#fid" title="Permanent link">&para;</a></h2>
-<p>Numeriek ID van een pand (feature).</p>
-<p><em>Datatype</em>: nominaal getal</p>
-<p><em>Eenheid</em>: -</p>
+<h2 id="eindregistratie"><code>eindregistratie</code><a class="headerlink" href="#eindregistratie" title="Permanent link">&para;</a></h2>
+<p>Houdt verband met de geschiedenis van de pandregistratie en de versie.</p>
+<p><em>Datatype</em>: datum-tijd</p>
+<p><em>Eenheid</em>: <code>YYYY-MM-DDThh:mm:ss.sss</code></p>
+<p><em>Bron</em>: BAG. Zie <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
 <h2 id="geconstateerd"><code>geconstateerd</code><a class="headerlink" href="#geconstateerd" title="Permanent link">&para;</a></h2>
 <p>Een aanduiding waarmee kan worden aangegeven dat een pand in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname.</p>
 <p><em>Datatype</em>: categorisch</p>
 <p><em>Eenheid</em>: yes/no</p>
 <p><em>Bron</em>: BAG. Zie <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
-<h2 id="gid"><code>gid</code><a class="headerlink" href="#gid" title="Permanent link">&para;</a></h2>
-<p>Geometrie ID.</p>
-<p><em>Datatype</em>: nominaal getal</p>
-<p><em>Eenheid</em>: -</p>
-<h2 id="h_dak_50p"><code>h_dak_50p</code><a class="headerlink" href="#h_dak_50p" title="Permanent link">&para;</a></h2>
-<p>Elevatie boven zeeniveau (NAP) op dakniveau. Berekend als de mediaan van alle hoogtepunten op het corresponderende dakdeel.</p>
-<p><em>Datatype</em>: reëel getal</p>
-<p><em>Eenheid</em>: meter</p>
-<h2 id="h_dak_70p"><code>h_dak_70p</code><a class="headerlink" href="#h_dak_70p" title="Permanent link">&para;</a></h2>
-<p>Elevatie boven zeeniveau (NAP) op dakniveau. Berekend als het 70e percentiel van alle hoogtepunten op het corresponderende dakdeel.</p>
-<p><em>Datatype</em>: reëel getal</p>
-<p><em>Eenheid</em>: meter</p>
-<h2 id="h_dak_max"><code>h_dak_max</code><a class="headerlink" href="#h_dak_max" title="Permanent link">&para;</a></h2>
-<p>Elevatie boven zeeniveau (NAP) op dakniveau. Berekend als het maximum van alle hoogtepunten op het corresponderende dakdeel.</p>
-<p><em>Datatype</em>: reëel getal</p>
-<p><em>Eenheid</em>: meter</p>
-<h2 id="h_dak_min"><code>h_dak_min</code><a class="headerlink" href="#h_dak_min" title="Permanent link">&para;</a></h2>
-<p>Elevatie boven zeeniveau (NAP) op dakniveau. Berekend als het minimum van alle hoogtepunten op het corresponderende dakdeel.</p>
-<p><em>Datatype</em>: reëel getal</p>
-<p><em>Eenheid</em>: meter</p>
-<h2 id="h_maaiveld"><code>h_maaiveld</code><a class="headerlink" href="#h_maaiveld" title="Permanent link">&para;</a></h2>
-<p>Elevatie boven zeeniveau (NAP) op het maaiveldniveau van het pand. Berekend als het 5e percentiel van de maaiveldpunten gevonden binnen een radius van 4 meter van het pand.</p>
-<p><em>Datatype</em>: reëel getal</p>
-<p><em>Eenheid</em>: meter</p>
 <h2 id="identificatie"><code>identificatie</code><a class="headerlink" href="#identificatie" title="Permanent link">&para;</a></h2>
-<p>BAG: De unieke aanduiding van een pand.</p>
+<p>De unieke BAG aanduiding van een pand.</p>
 <p><em>Datatype</em>: tekst</p>
 <p><em>Eenheid</em>: -</p>
 <p><em>Bron</em>: BAG. Zie <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
-<h2 id="kas_warenhuis"><code>kas_warenhuis</code><a class="headerlink" href="#kas_warenhuis" title="Permanent link">&para;</a></h2>
-<p>Het gebouw is een kas of een magazijn (volgens de TOP10NL).</p>
-<p><em>Datatype</em>: categorisch</p>
-<p><em>Eenheid</em>: yes/no</p>
-<h2 id="lod11_replace"><code>lod11_replace</code><a class="headerlink" href="#lod11_replace" title="Permanent link">&para;</a></h2>
-<p>Geeft aan of de LoD1.3/LoD2.2 reconstructie is overgeslagen voor deze feature (en ook LoD1.1 als <code>lod11_replace==false</code>). Dit kan bijvoorbeeld gebeuren wanneer er geen punten gevonden zijn.</p>
-<p><em>Datatype</em>: categorisch</p>
-<p><em>Eenheid</em>: yes/no</p>
-<h2 id="ondergronds_type"><code>ondergronds_type</code><a class="headerlink" href="#ondergronds_type" title="Permanent link">&para;</a></h2>
-<p>Ondergronds-classificatie van het pand of panddeel.</p>
-<p><em>Datatype</em>: categorisch</p>
-<p><em>Eenheid</em>: -</p>
-<p><em>Waarden</em>:</p>
-<table>
-<thead>
-<tr>
-<th align="left">Waarden</th>
-<th align="left">Omschrijving</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>floating</code></td>
-<td align="left">Pand of panddeel zweeft boven andere objecten.</td>
-</tr>
-<tr>
-<td align="left"><code>above ground</code></td>
-<td align="left">Pand of panddeel is volledig bovengronds.</td>
-</tr>
-<tr>
-<td align="left"><code>underground</code></td>
-<td align="left">Pand of panddeel is volledig ondergronds.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="oorspronkelijk_bouwjaar"><code>oorspronkelijk_bouwjaar</code><a class="headerlink" href="#oorspronkelijk_bouwjaar" title="Permanent link">&para;</a></h2>
+<h2 id="oorspronkelijkbouwjaar"><code>oorspronkelijkbouwjaar</code><a class="headerlink" href="#oorspronkelijkbouwjaar" title="Permanent link">&para;</a></h2>
 <p>De aanduiding van het jaar waarin een pand oorspronkelijk als bouwkundig gereed is of zal worden opgeleverd.</p>
 <p><em>Datatype</em>: datum</p>
 <p><em>Eenheid</em>: <code>YYYY</code></p>
-<p><em>Bron</em>: BAG. Zie <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
-<h2 id="pand_deel_id"><code>pand_deel_id</code><a class="headerlink" href="#pand_deel_id" title="Permanent link">&para;</a></h2>
-<p>Panddeel ID. Een pand kan meerdere delen hebben wanneer het is opgedeeld vanwege ondergrondse delen.</p>
-<p><em>Datatype</em>: nominaal getal</p>
-<p><em>Eenheid</em>: -</p>
-<h2 id="pw_actueel"><code>pw_actueel</code><a class="headerlink" href="#pw_actueel" title="Permanent link">&para;</a></h2>
-<p>Geeft aan of de puntenwolk actueel is ten opzichte van de leeftijd van het pand.</p>
-<p><em>Datatype</em>: categorisch</p>
-<p><em>Eenheid</em>: -</p>
-<p><em>Waarden</em>:</p>
-<table>
-<thead>
-<tr>
-<th align="left">Waarden</th>
-<th align="left">Omschrijving</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>yes</code></td>
-<td align="left">De puntenwolk is ingewonnen na de constructiedatum van het pand.</td>
-</tr>
-<tr>
-<td align="left"><code>no</code></td>
-<td align="left">De puntenwolk is ingewonnen voor de constructiedatum van het pand.</td>
-</tr>
-<tr>
-<td align="left"><code>uncertain</code></td>
-<td align="left">De puntenwolk is ingewonnen in hetzelfde jaar als de constructiedatum van het pand.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="pw_bron"><code>pw_bron</code><a class="headerlink" href="#pw_bron" title="Permanent link">&para;</a></h2>
-<p>Bron van de puntenwolk.</p>
-<p><em>Datatype</em>: tekst</p>
-<p><em>Eenheid</em>: -</p>
-<h2 id="pw_datum"><code>pw_datum</code><a class="headerlink" href="#pw_datum" title="Permanent link">&para;</a></h2>
-<p>Inwinningsdatum van de puntenwolk. In het geval van de AHN3 is dit een veronderstelde inwinningsdatum, welke bepaald is als 1 december van het jaar <em>voor</em> het officieel gerapporteerde inwinjaar van een specifieke AHN3-tegel.</p>
-<p><em>Datatype</em>: datum</p>
-<p><em>Eenheid</em>: <code>YYYY-MM-DD</code></p>
-<h2 id="reconstructie_methode"><code>reconstructie_methode</code><a class="headerlink" href="#reconstructie_methode" title="Permanent link">&para;</a></h2>
-<p>Reconstructiemethode van het gebouwmodel.</p>
-<p><em>Datatype</em>: tekst</p>
-<p><em>Eenheid</em>: -</p>
-<h2 id="reconstruction_skipped"><code>reconstruction_skipped</code><a class="headerlink" href="#reconstruction_skipped" title="Permanent link">&para;</a></h2>
-<p>Geeft aan of de volledige LoD1.2/LoD1.3/LoD2.2 reconstructie is overgeslagen voor deze feature (en ook LoD1.1 als lod11_replace==false).</p>
-<p><em>Datatype</em>: categorisch</p>
-<p><em>Eenheid</em>: yes/no</p>
-<h2 id="semantics_values"><code>semantics_values</code><a class="headerlink" href="#semantics_values" title="Permanent link">&para;</a></h2>
-<p>Pand-oppervlaksemantiek. Dit is een array van integers, waarbij een integer verwijst naar een oppervlaktype (0: <code>GroundSurface</code>, 1: <code>RoofSurface</code>, 2: <code>OuterWallSurface</code>, 3: <code>InnerWallSurface</code>). Als een oppervlak geen semantische waarde heeft, wordt NULL gebruikt. De lengte van de array staat dus gelijk aan het aantal oppervlakken, en de volgorde van waarden in de array correspondeert met de volgorde van de oppervlakken.</p>
-<p><em>Datatype</em>: lijst</p>
-<p><em>Eenheid</em>: -</p>
 <h2 id="status"><code>status</code><a class="headerlink" href="#status" title="Permanent link">&para;</a></h2>
 <p>De fase van de levenscyclus van een pand, waarin het betreffende pand zich bevindt.</p>
 <p><em>Datatype</em>: categorisch</p>
 <p><em>Eenheid</em>: -</p>
 <p><em>Bron</em>: BAG. Zie <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
-<p><em>Waarden</em>:</p>
-<table>
-<thead>
-<tr>
-<th align="left">Waarden</th>
-<th align="left">Omschrijving</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>Bouwvergunning verleend</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>Niet gerealiseerd pand</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>Bouw gestart</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>Pand in gebruik (niet ingemeten)</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>Pand in gebruik</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>Verbouwing pand</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>Sloopvergunning verleend</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>Pand gesloopt</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>Pand buiten gebruik</code></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left"><code>Pand ten onrechte opgevoerd</code></td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
 <h2 id="tijdstipeindregistratielv"><code>tijdstipeindregistratielv</code><a class="headerlink" href="#tijdstipeindregistratielv" title="Permanent link">&para;</a></h2>
 <p>Houdt verband met de geschiedenis van de pandregistratie en de versie.</p>
 <p><em>Datatype</em>: datum-tijd</p>
@@ -1521,77 +1648,43 @@
 <p><em>Datatype</em>: datum-tijd</p>
 <p><em>Eenheid</em>: <code>YYYY-MM-DDThh:mm:ss.sss</code></p>
 <p><em>Bron</em>: BAG. Zie <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
+<h2 id="tijdstipregistratie"><code>tijdstipregistratie</code><a class="headerlink" href="#tijdstipregistratie" title="Permanent link">&para;</a></h2>
+<p>Houdt verband met de geschiedenis van de pandregistratie en de versie.</p>
+<p><em>Datatype</em>: datum-tijd</p>
+<p><em>Eenheid</em>: <code>YYYY-MM-DDThh:mm:ss.sss</code></p>
+<p><em>Bron</em>: BAG. Zie <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
 <h2 id="tijdstipregistratielv"><code>tijdstipregistratielv</code><a class="headerlink" href="#tijdstipregistratielv" title="Permanent link">&para;</a></h2>
 <p>Dit is het tijdstip waarop een versie van een BAG-object is opgenomen in de registratie van de landelijke voorziening. De gegevens komen daarmee beschikbaar voor afnemers.</p>
 <p><em>Datatype</em>: datum-tijd</p>
 <p><em>Eenheid</em>: <code>YYYY-MM-DDThh:mm:ss.sss</code></p>
 <p><em>Bron</em>: BAG. Zie <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
-<h2 id="val3dity_codes"><code>val3dity_codes</code><a class="headerlink" href="#val3dity_codes" title="Permanent link">&para;</a></h2>
-<p><a href="https://val3dity.readthedocs.io/en/latest/errors">Val3dity foutcodes</a> voor het 3D model. <code>Null</code> betekent valide geometry.</p>
-<p><em>Datatype</em>: lijst</p>
-<p><em>Eenheid</em>: -</p>
-<h2 id="versie_methode"><code>versie_methode</code><a class="headerlink" href="#versie_methode" title="Permanent link">&para;</a></h2>
-<p>Versie van de reconstructiemethode voor panden.</p>
-<p><em>Datatype</em>: tekst</p>
-<p><em>Eenheid</em>: -</p>
 <h2 id="voorkomenidentificatie"><code>voorkomenidentificatie</code><a class="headerlink" href="#voorkomenidentificatie" title="Permanent link">&para;</a></h2>
 <p>Houdt verband met de geschiedenis van de pandregistratie en de versie.</p>
 <p><em>Datatype</em>: ordinaal getal</p>
 <p><em>Eenheid</em>: -</p>
 <p><em>Bron</em>: BAG. Zie <a href="https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018">BAG Catalogus</a></p>
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
   
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../layers/" class="md-footer__link md-footer__link--prev" aria-label="Vorige: Datalagen" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Vorige
-              </span>
-              Datalagen
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../../delivery/webservices/" class="md-footer__link md-footer__link--next" aria-label="Volgende: Webservices" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Volgende
-              </span>
-              Webservices
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
-  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://3dbag.nl">Copyright &copy; 2021 - 3D BAG</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3d.bk.tudelft.nl/">3D geoinformation research group</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://3dbag.nl">Copyright &copy; 2023 - 3D BAG</a> door de <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3d.bk.tudelft.nl/">3D geoinformation onderzoeksgroep</a> en <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3dgi.xyz/">3DGI</a> is gelicentieerd onder <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
     </div>
   
   
@@ -1606,20 +1699,24 @@
   
     
     
+    
+    
       
       
     
-    <a href="https://twitter.com/tudelft3d" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    <a href="https://twitter.com/3D_BAG" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
     </a>
   
+    
+    
     
     
       
       
     
     <a href="https://github.com/tudelft3d" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
     </a>
   
 </div>
@@ -1632,10 +1729,11 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Gekopieerd naar klembord", "clipboard.copy": "Kopi\u00ebren naar klembord", "search.config.lang": "nl", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Zoeken", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "Geen overeenkomende documenten", "search.result.one": "1 overeenkomende document", "search.result.other": "# overeenkomende documenten", "search.result.placeholder": "Typ om te beginnen met zoeken", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Gekopieerd naar klembord", "clipboard.copy": "Kopi\u00ebren naar klembord", "search.result.more.one": "1 extra overeenkomst op deze pagina", "search.result.more.other": "# extra overeenkomsten op deze pagina", "search.result.none": "Geen overeenkomende documenten", "search.result.one": "1 overeenkomende document", "search.result.other": "# overeenkomende documenten", "search.result.placeholder": "Typ om te beginnen met zoeken", "search.result.term.missing": "Ontbreekt", "select.version": "Selecteer versie"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.0f659f14.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b425cdc4.min.js"></script>
       
     
   </body>

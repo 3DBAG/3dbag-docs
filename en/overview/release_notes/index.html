@@ -14,8 +14,14 @@
       
         <link rel="canonical" href="https://docs.3dbag.nl/en/overview/release_notes/">
       
+      
+        <link rel="prev" href="../media/">
+      
+      
+        <link rel="next" href="../../schema/concepts/">
+      
       <link rel="icon" href="../../assets/images/logo.svg">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.0">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
     
     
       
@@ -23,17 +29,13 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.fd896c8a.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
-        
-          
-          
-          <meta name="theme-color" content="#ffffff">
-        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
+
     
     
     
@@ -48,10 +50,11 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -62,7 +65,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="light-blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="light-blue">
   
     
     
@@ -72,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#21098-beta" class="md-skip">
+        <a href="#20230622-beta" class="md-skip">
           Skip to content
         </a>
       
@@ -104,6 +107,19 @@
     href="https://3d.bk.tudelft.nl"
     style="color: #333;" class="logo-text"
   >tudelft3d</a>
+  <span
+    class="logo-text"
+    style="color:#ccc; font-weight:300; margin-left: 0.3em;"
+  > + </span>
+  <img 
+    class="logo3d"
+    width="28"
+    height="28" 
+    src="../../assets/images/logo-3dgi.svg" alt="logo"> 
+  <a
+    href="https://3dgi.xyz"
+    style="color: #333;" class="logo-text"
+  >3DGI</a>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,20 +127,10 @@
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            3D BAG
-          </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              Release Notes
-            
-          </span>
-        </div>
       </div>
     </div>
+    
+      
     
     
       <div class="md-header__option">
@@ -141,13 +147,13 @@
                     English
                   </a>
                 </li>
-                
+              
                 <li class="md-select__item">
                   <a href="/nl/" hreflang="nl" class="md-select__link">
                     Nederlands
                   </a>
                 </li>
-                
+              
             </ul>
           </div>
         </div>
@@ -168,7 +174,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -180,7 +186,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -199,7 +205,7 @@
           
             
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
+  <div class="md-grid">
     <ul class="md-tabs__list">
       
         
@@ -339,6 +345,19 @@
     href="https://3d.bk.tudelft.nl"
     style="color: #333;" class="logo-text"
   >tudelft3d</a>
+  <span
+    class="logo-text"
+    style="color:#ccc; font-weight:300; margin-left: 0.3em;"
+  > + </span>
+  <img 
+    class="logo3d"
+    width="28"
+    height="28" 
+    src="../../assets/images/logo-3dgi.svg" alt="logo"> 
+  <a
+    href="https://3dgi.xyz"
+    style="color: #333;" class="logo-text"
+  >3DGI</a>
 
     </a>
     3D BAG
@@ -359,17 +378,18 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
       
       
       
-      
-        <label class="md-nav__link" for="__nav_1">
+        <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
           Introduction
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Introduction" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
           Introduction
@@ -441,7 +461,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
@@ -466,6 +486,13 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#20230622-beta" class="md-nav__link">
+    2023.06.22 – beta
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#21098-beta" class="md-nav__link">
@@ -507,17 +534,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_2">
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
           Data Schema
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Data Schema" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Data Schema
@@ -583,17 +611,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_3">
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
           Data Formats
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Data Formats" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Data Formats
@@ -636,20 +665,6 @@
     <li class="md-nav__item">
       <a href="../../delivery/cityjson/" class="md-nav__link">
         CityJSON
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../delivery/postgresql/" class="md-nav__link">
-        PostgreSQL
       </a>
     </li>
   
@@ -761,6 +776,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#20230622-beta" class="md-nav__link">
+    2023.06.22 – beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#21098-beta" class="md-nav__link">
     21.09.8 – beta
   </a>
@@ -782,26 +804,259 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
   <h1>Release Notes</h1>
 
+<h2 id="20230622-beta">2023.06.22 – beta<a class="headerlink" href="#20230622-beta" title="Permanent link">&para;</a></h2>
+<p><em>Release date: 22 juni 2023</em></p>
+<p>This is the third public beta release of the 3D BAG. It's been a while since the second release. As it turns out it costs quite some work to properly maintain and update 3D BAG next to our busy day jobs. Fortunately we were able to receive funding from the ERC to bring the 3D BAG to a level where it can be maintained and developed reliably. The current release is the first of three that is financed by the ERC budget, and it paves the way towards a stable, open 3D BAG service. We are very happy to see that so many people found a use for 3D BAG to help them with their business, research or hobby projects. And we remain committed to keep maintaining 3D BAG into the future, of course as an open dataset. </p>
+<p><a href="../group/">The team behind 3D BAG</a> has changed in the sense that some people have moved on to other jobs, some people are working on 3D BAG with a different affiliation (<a href="https://3dgi.xyz">3DGI</a>, a spinoff of the <a href="https://3d.bk.tudelft.nl/">tudelft3d</a> research group) and we also have welcomed a <a href="http://3d.bk.tudelft.nl/gstavropoulou">new member</a>. 
+As as result of the change in the team, and also in effort to secure a future for the 3D BAG, the main maintenance and development work was moved out from academia, from the 3D geoinformation research group to <a href="https://3dgi.xyz">3DGI</a>. </p>
+<p>The biggest technical change is that the 3D BAG now uses the AHN4 pointcloud which was acquired between 2020 and 2022. This means that the building models are much more up-to-date, compared to the previous release which was based solely on AHN3 (acquired starting from 2014). For this new release we use a 'smart' combination of AHN3 and AHN4. We did not opt for a simple 'drop-in' replacement of AHN3 by AHN4 because of the quality issues that we discovered in AHN4. These issues affect a small, yet significant fraction of the buildings. The 'smart' combination entails that our algorithms automatically selects the 'best' available point cloud on a per building basis. The selection is based primarily on point coverage, ie. how well the roof surface of a building is covered with AHN points and <em>most importantly</em> if there are any big gaps. Naturally, AHN3 is only considered when a building has not changed compared to the AHN4 data. AHN3 is used for ~8.5% of the buildings, the rest all uses AHN4.</p>
+<p>There are also some changes to the BAG viewer and the download page. Most notably, the viewer now brings you to an interesting landmark that is randomly picked when you load the website, and all 3D BAG attributes are now visible in the viewer. The download page now also offers a metadata file about the dataset as a whole (including lineage) and the PostgreSQL dump was replaced by one big GPKG file (something that several people have asked for).</p>
+<p>And last, but not least: behind the scenes <em>a lot of work</em> has been done to completely recreate our automatic building reconstruction pipeline. This helps us to reliably produce new 3D BAG releases from now on. A tangible benefit to the 3DBAG users is that we now have much fewer missing buildings compared to the previous releases. We will continue to work on our pipeline in the background and streamline our internal processes even further.</p>
+<p>This release contains a record number of 10 383 384 builings. The overall geometric val3dity is also at a record at 99.15% (up from 98.25% in the previous release, counted on the LoD2.2 geometries).</p>
+<p>Thank you for using the 3D BAG! As always our <a href="https://forms.gle/NZg83heXM75pAmfVA">feedback forms</a> are available and we are reading all the emails that we receive at info@3dbag.nl.</p>
+<p>-- The 3D BAG Team</p>
+<h4 id="added">Added<a class="headerlink" href="#added" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The building part ID (<code>pand_deel_id</code>) to the 3D layers. Previously it was only part of the 2D layers.</li>
+<li>Reconstruction algorithm<ul>
+<li>added procedure for automatic selection of pointcloud (AHN3 or 4) best suited for reconstruction on a per building basis</li>
+<li>building volumes are now calculated and outputted</li>
+<li>changed the method for calculating the height attributes on roofparts</li>
+</ul>
+</li>
+<li>A metadata file is now available on the download page. The metadata contains information about the current release, including the versions of the source data sets and the versions of the software that were used for producing the release. The metadata file unifies some of the information that were previously scattered across different formats.</li>
+<li>3D BAG viewer<ul>
+<li>When opening the 3D BAG viewer you are brought to a random landmark</li>
+<li>You can now view all attributes directly in the viewer</li>
+<li>Clicking on the attribute name in the viewer attribute table now brings you to the corresponding section in the documentation</li>
+<li>Update basemap to Luchfoto Actueel</li>
+</ul>
+</li>
+<li>Various quality attributes relating to the 'smart' point cloud selection algorithm.</li>
+<li>3DGI attribution</li>
+<li>Created a <a href="https://twitter.com/3D_BAG">3D BAG twitter account</a>. Follow this to be notified about 3D BAG updates and other announcements.</li>
+<li>SHA-256 hashes for the downloadable files (included on the <code>tiles</code> WMS/WFS layer).</li>
+<li>Download link for each format (included on the <code>tiles</code> WMS/WFS layer).</li>
+<li>Extended testing of all data formats (included on the <code>tiles</code> WMS/WFS layer).</li>
+</ul>
+<h4 id="changed-fixed">Changed / Fixed<a class="headerlink" href="#changed-fixed" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Update of the source vector data sets (BAG, Top10NL) to the version available on 2023-06-05 (TOP10NL) and 2023-06-08 (BAG).</li>
+<li>Update of the source point cloud data sets. Now AHN3 and AHN4 are used.</li>
+<li>Significantly fewer missing buildings, due to revamped processing pipeline.</li>
+<li>Improved geometric validity. Now 99.15% of buildings are geometrically valid.</li>
+<li>New tiling scheme for downloads.</li>
+<li>New file naming.</li>
+<li>3D BAG version number is now a full date instead of a mix between date and minor version number.</li>
+<li>All 3D BAG specific attributes are now preceded by the <code>b3_</code> prefix.</li>
+<li>The postgres database dump was replaced by one big gpkg file zipped into a <a href="https://gdal.org/programs/sozip.html#sozip">seek-optimized ZIP (SOZip)</a> file.</li>
+<li>Improvements in the reconstruction algorithm<ul>
+<li>new procedure for overlap detection between buildings. In this procedure it is guaranteed that points on areas of overlap are only assigned to one of the overlapping buildings.</li>
+<li>fine tuning of snapping thresholds to achieve better geomtric validity</li>
+<li>various small improvements</li>
+</ul>
+</li>
+<li>The layer <code>ondergrond</code> was removed.</li>
+<li>Changed WFS/WMS namespace from <code>BAG3D_v2</code> to <code>BAG3D</code>.</li>
+<li>Attribute changes:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>v21.09</th>
+<th>v2023.06 (release)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gid</td>
+<td>-</td>
+</tr>
+<tr>
+<td>fid</td>
+<td>-</td>
+</tr>
+<tr>
+<td>pand_deel_id</td>
+<td>b3_pand_deel_id</td>
+</tr>
+<tr>
+<td>dd_id</td>
+<td>b3_dd_id</td>
+</tr>
+<tr>
+<td>-</td>
+<td>tijdstipregistratie</td>
+</tr>
+<tr>
+<td>-</td>
+<td>eindregistratie</td>
+</tr>
+<tr>
+<td>h_maaiveld</td>
+<td>b3_h_maaiveld</td>
+</tr>
+<tr>
+<td>dak_type</td>
+<td>b3_dak_type</td>
+</tr>
+<tr>
+<td>pw_datum</td>
+<td>b3_pw_datum</td>
+</tr>
+<tr>
+<td>pw_actueel</td>
+<td>-</td>
+</tr>
+<tr>
+<td>pw_bron</td>
+<td>b3_pw_bron</td>
+</tr>
+<tr>
+<td>reconstructie_methode</td>
+<td>-</td>
+</tr>
+<tr>
+<td>versie_methode</td>
+<td>-</td>
+</tr>
+<tr>
+<td>kas_warenhuis</td>
+<td>b3_kas_warenhuis</td>
+</tr>
+<tr>
+<td>ondergronds_type</td>
+<td>-</td>
+</tr>
+<tr>
+<td>reconstruction_skipped</td>
+<td>b3_reconstructie_onvolledig</td>
+</tr>
+<tr>
+<td>lod11_replace</td>
+<td>-</td>
+</tr>
+<tr>
+<td>h_dak_min</td>
+<td>b3_h_dak_min</td>
+</tr>
+<tr>
+<td>h_dak_50p</td>
+<td>b3_h_dak_50p</td>
+</tr>
+<tr>
+<td>h_dak_70p</td>
+<td>b3_h_dak_70p</td>
+</tr>
+<tr>
+<td>h_dak_max</td>
+<td>b3_h_dak_max</td>
+</tr>
+<tr>
+<td>val3dity_codes_lod12</td>
+<td>b3_val3dity_lod12</td>
+</tr>
+<tr>
+<td>val3dity_codes_lod13</td>
+<td>b3_val3dity_lod13</td>
+</tr>
+<tr>
+<td>val3dity_codes_lod22</td>
+<td>b3_val3dity_lod22</td>
+</tr>
+<tr>
+<td>semantics_values</td>
+<td>-</td>
+</tr>
+<tr>
+<td>rmse_lod12</td>
+<td>b3_rmse_lod12</td>
+</tr>
+<tr>
+<td>rmse_lod13</td>
+<td>b3_rmse_lod13</td>
+</tr>
+<tr>
+<td>rmse_lod22</td>
+<td>b3_rmse_lod22</td>
+</tr>
+<tr>
+<td>rn</td>
+<td>-</td>
+</tr>
+<tr>
+<td>-</td>
+<td>b3_mutatie_ahn3_ahn4</td>
+</tr>
+<tr>
+<td>-</td>
+<td>b3_nodata_fractie_ahn3</td>
+</tr>
+<tr>
+<td>-</td>
+<td>b3_nodata_fractie_ahn4</td>
+</tr>
+<tr>
+<td>-</td>
+<td>b3_nodata_radius_ahn3</td>
+</tr>
+<tr>
+<td>-</td>
+<td>b3_nodata_radius_ahn4</td>
+</tr>
+<tr>
+<td>-</td>
+<td>b3_pw_selectie_reden</td>
+</tr>
+<tr>
+<td>-</td>
+<td>b3_puntdichtheid_ahn3</td>
+</tr>
+<tr>
+<td>-</td>
+<td>b3_puntdichtheid_ahn4</td>
+</tr>
+<tr>
+<td>-</td>
+<td>b3_volume_lod12</td>
+</tr>
+<tr>
+<td>-</td>
+<td>b3_volume_lod13</td>
+</tr>
+<tr>
+<td>-</td>
+<td>b3_volume_lod22</td>
+</tr>
+</tbody>
+</table>
+<h4 id="known-issues">Known issues<a class="headerlink" href="#known-issues" title="Permanent link">&para;</a></h4>
+<ul>
+<li>BAG date/time attributes in GPKG output are of the string type.</li>
+<li>Missing tiles (3): <code>7/1008/656</code>, <code>8/720/344</code>, <code>9/1000/1068</code>.</li>
+<li>Small number of 3D models have invalid geometry. This affects less than 1% of the models.</li>
+</ul>
 <h2 id="21098-beta">21.09.8 – beta<a class="headerlink" href="#21098-beta" title="Permanent link">&para;</a></h2>
 <p><em>Release date: 29 September 2021</em></p>
 <p>This is the second public beta release of the renewed 3D BAG. Before addressing what has changed with this release we would like to take a moment to thank everyone that has been downloading and using the first release. It's very exciting to see how people from various disciplines found ways to apply 3D BAG for their use cases! (also see our new <a href="../media/">In the media</a> page). A special thanks also to everyone that filled out our feedback forms or gave us feedback in other ways. This is much appreciated!</p>
 <p>For this second release we focused primarily on improving the data quality and the way the data is disseminated. The overall geometric validity of the 3D models has risen to 98.25% (up from ~89% in the previous release). Another highlight is that the 3D outputs are no longer triangulated, as requested by several users. Altogether this should make it easier to use our models in other software. These and more changes are described below in more detail. </p>
 <p>This 3D BAG release contains 9 692 978 buildings. This is 7.72% less buildings than available in the BAG dataset, mostly due to outdated or otherwise insufficient input data. We hope to do a release based on the updated AHN4 soon, but this release is still based on AHN3.</p>
 <p>Thank you for using 3D BAG!</p>
-<h4 id="added">Added<a class="headerlink" href="#added" title="Permanent link">&para;</a></h4>
+<h4 id="added_1">Added<a class="headerlink" href="#added_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>The building part ID (<code>pand_deel_id</code>) to the 3D layers. Previously it was only part of the 2D layers.</li>
 <li>A new layer (<code>ondergrond</code>) with parts of the building polygons that were cut off during the reconstruction, because they were detected as the ground.</li>
 </ul>
-<h4 id="changed-fixed">Changed / Fixed<a class="headerlink" href="#changed-fixed" title="Permanent link">&para;</a></h4>
+<h4 id="changed-fixed_1">Changed / Fixed<a class="headerlink" href="#changed-fixed_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Update of the source data sets (BAG, BGT, Top10NL) to the version available on 2021-09-07.</li>
 <li>3D geometries are <strong>not triangulated</strong> anymore in the CityJSON, GeoPackage, PostgreSQL formats. The OBJ format remains triangulated.</li>
@@ -905,7 +1160,7 @@
 <li>Fixed the duplicate / cloned objects in the output.</li>
 <li>Improve 3D tiles export and rendering in the Viewer</li>
 </ul>
-<h4 id="known-issues">Known issues<a class="headerlink" href="#known-issues" title="Permanent link">&para;</a></h4>
+<h4 id="known-issues_1">Known issues<a class="headerlink" href="#known-issues_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Artificial vertical 'screens' still occur in some building models.</li>
 <li>1.75% of the buildings is geometrically invalid, consult the <code>val3dity_codes</code> attribute to find out which ones.</li>
@@ -917,7 +1172,7 @@
 </ul>
 <h2 id="21031-beta">21.03.1 – beta<a class="headerlink" href="#21031-beta" title="Permanent link">&para;</a></h2>
 <p><em>Release date: 26 March 2021</em></p>
-<h4 id="added_1">Added<a class="headerlink" href="#added_1" title="Permanent link">&para;</a></h4>
+<h4 id="added_2">Added<a class="headerlink" href="#added_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>A brand new 3D viewer.</li>
 <li>Multiple LoDs, LoD1.2, LoD1.3, LoD2.2.</li>
@@ -941,65 +1196,34 @@
 <ul>
 <li>CSV data format.</li>
 </ul>
-<h4 id="known-issues_1">Known issues<a class="headerlink" href="#known-issues_1" title="Permanent link">&para;</a></h4>
+<h4 id="known-issues_2">Known issues<a class="headerlink" href="#known-issues_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Some buildings have a 'spike': a large deviation in the building geometry due to one vertex with an erroneous coordinate (3D models only).</li>
 <li>Not all buildings are geometrically valid (eg. missing face). Note that this should be evident from the val3dity_codes attribute (3D models only).</li>
 <li>Missing tiles (in all formats): 6, 8, 10, 20, 42, 50, 51, 52, 53, 57, 309, 736, 1389, 2178, 3647. On the top of the previous list, the following tiles are missing a CityJSON format: 19, 251, 298, 365, 381, 702, 1051, 1812, 2535, 2700, 2962, 2996, 3173, 3324, 3381, 3796, 4248, 4511, 4615, 4729, 5316, 5411, 6237, 6690, 6986, 7290, 7470, 7597, 8061.</li>
 </ul>
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
   
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../media/" class="md-footer__link md-footer__link--prev" aria-label="Previous: In the media" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              In the media
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../../schema/concepts/" class="md-footer__link md-footer__link--next" aria-label="Next: General Concepts" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              General Concepts
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
-  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://3dbag.nl">Copyright &copy; 2021 - 3D BAG</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3d.bk.tudelft.nl/">3D geoinformation research group</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://3dbag.nl">Copyright &copy; 2023 - 3D BAG</a> by the <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3d.bk.tudelft.nl/">3D geoinformation research group</a> and <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3dgi.xyz/">3DGI</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
     </div>
   
   
@@ -1014,20 +1238,24 @@
   
     
     
+    
+    
       
       
     
-    <a href="https://twitter.com/tudelft3d" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    <a href="https://twitter.com/3D_BAG" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
     </a>
   
+    
+    
     
     
       
       
     
     <a href="https://github.com/tudelft3d" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
     </a>
   
 </div>
@@ -1040,10 +1268,11 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.0f659f14.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b425cdc4.min.js"></script>
       
     
   </body>
