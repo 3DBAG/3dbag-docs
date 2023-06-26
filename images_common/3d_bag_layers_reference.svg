@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="145.3539mm"
    height="105.54346mm"
    viewBox="0 0 145.3539 105.54348"
    version="1.1"
    id="svg8"
-   inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
+   inkscape:version="1.2.2 (1:1.2.2+202305151915+b0a8486541)"
    sodipodi:docname="3d_bag_layers_reference.svg"
-   inkscape:export-filename="/home/balazs/Development/3dbag-docs/images_common/3d_bag_layers_reference.png"
+   inkscape:export-filename="3d_bag_layers_reference.png"
    inkscape:export-xdpi="300"
-   inkscape:export-ydpi="300">
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs2">
     <linearGradient
        id="linearGradient1136"
-       osb:paint="solid">
+       inkscape:swatch="solid">
       <stop
          style="stop-color:#000000;stop-opacity:1;"
          offset="0"
@@ -31,7 +30,7 @@
     </linearGradient>
     <linearGradient
        id="linearGradient1130"
-       osb:paint="solid">
+       inkscape:swatch="solid">
       <stop
          style="stop-color:#999999;stop-opacity:1;"
          offset="0"
@@ -39,8 +38,8 @@
     </linearGradient>
     <linearGradient
        id="linearGradient1124"
-       osb:paint="solid"
-       gradientTransform="translate(-20.385439,44.683117)">
+       gradientTransform="translate(-20.385439,44.683117)"
+       inkscape:swatch="solid">
       <stop
          style="stop-color:#ff0000;stop-opacity:1;"
          offset="0"
@@ -48,7 +47,7 @@
     </linearGradient>
     <linearGradient
        id="linearGradient1118"
-       osb:paint="solid">
+       inkscape:swatch="solid">
       <stop
          style="stop-color:#2d5fc1;stop-opacity:1;"
          offset="0"
@@ -56,7 +55,7 @@
     </linearGradient>
     <linearGradient
        id="linearGradient1112"
-       osb:paint="solid">
+       inkscape:swatch="solid">
       <stop
          style="stop-color:#b4dde6;stop-opacity:1;"
          offset="0"
@@ -64,8 +63,8 @@
     </linearGradient>
     <linearGradient
        id="linearGradient1106"
-       osb:paint="solid"
-       gradientTransform="matrix(0.26458333,0,0,0.26458333,-3.9084445,225.41878)">
+       gradientTransform="matrix(0.26458333,0,0,0.26458333,-3.9084445,225.41878)"
+       inkscape:swatch="solid">
       <stop
          style="stop-color:#24a1c8;stop-opacity:1;"
          offset="0"
@@ -164,16 +163,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.501298"
-     inkscape:cx="250.48209"
-     inkscape:cy="210.3949"
+     inkscape:zoom="1.8031272"
+     inkscape:cx="221.28222"
+     inkscape:cy="133.37938"
      inkscape:document-units="mm"
      inkscape:current-layer="layer5"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="2488"
      inkscape:window-height="1376"
-     inkscape:window-x="2632"
+     inkscape:window-x="72"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      showguides="false"
@@ -181,7 +180,10 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0">
+     fit-margin-bottom="0"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="axonomgrid"
        id="grid1028"
@@ -190,11 +192,13 @@
     <sodipodi:guide
        position="162.0638,128.21957"
        orientation="1,0"
-       id="guide973" />
+       id="guide973"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="3.8138426,110.38105"
        orientation="0,-1"
-       id="guide975" />
+       id="guide975"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -464,26 +468,26 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777214px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke-width:0.264583;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke-width:0.264583"
        x="63.540787"
        y="81.250908"
        id="text3770-3"><tspan
          sodipodi:role="line"
          id="tspan957"
          x="63.540787"
-         y="81.250908">gid = 1000</tspan><tspan
+         y="81.250908" /><tspan
          sodipodi:role="line"
          id="tspan959"
          x="63.540787"
-         y="85.660629">fid = 3000</tspan><tspan
+         y="85.660622">fid = 3000</tspan><tspan
          sodipodi:role="line"
          id="tspan961"
          x="63.540787"
-         y="90.070358">pand_deel_id = 0</tspan><tspan
+         y="90.070335">pand_deel_id = 0</tspan><tspan
          sodipodi:role="line"
          id="tspan963"
          x="63.540787"
-         y="94.48008">dd_id = 1</tspan></text>
+         y="94.480049">dd_id = 1</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke-width:0.264583"
@@ -493,7 +497,7 @@
          sodipodi:role="line"
          id="tspan992"
          x="77.209229"
-         y="100.38798">gid = 1004</tspan><tspan
+         y="100.38798" /><tspan
          sodipodi:role="line"
          id="tspan994"
          x="77.209229"
@@ -563,7 +567,7 @@
          sodipodi:role="line"
          id="tspan1172"
          x="84.834892"
-         y="95.829491">gid = 1007</tspan><tspan
+         y="95.829491" /><tspan
          sodipodi:role="line"
          id="tspan1174"
          x="84.834892"
@@ -588,22 +592,22 @@
          y="38.386505">fid = 3000</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777214px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583"
        x="125.35822"
-       y="31.632517"
+       y="27.399179"
        id="text3770-3-7"><tspan
          sodipodi:role="line"
          id="tspan1284"
          x="125.35822"
-         y="31.632517">gid = 2345</tspan><tspan
+         y="27.399179" /><tspan
          sodipodi:role="line"
          id="tspan1286"
          x="125.35822"
-         y="36.042229">fid = 3000</tspan><tspan
+         y="31.808891">fid = 3000</tspan><tspan
          sodipodi:role="line"
          id="tspan1288"
          x="125.35822"
-         y="40.451942">pand_deel_id = 1</tspan></text>
+         y="36.218605">pand_deel_id = 1</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 124.70766,28.999999 v 20"
@@ -613,22 +617,22 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;stroke-width:0.264583"
        x="106.30566"
-       y="16.632519"
+       y="12.399187"
        id="text3770-3-7-5"><tspan
          sodipodi:role="line"
          id="tspan1236-6"
          x="106.30566"
-         y="16.632519"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">gid = 2344</tspan><tspan
+         y="12.399187"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583" /><tspan
          sodipodi:role="line"
          id="tspan1238-0"
          x="106.30566"
-         y="21.042231"
+         y="16.808899"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">fid = 3000</tspan><tspan
          sodipodi:role="line"
          id="tspan1240-4"
          x="106.30566"
-         y="25.451944"
+         y="21.218611"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">pand_deel_id = 0</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
