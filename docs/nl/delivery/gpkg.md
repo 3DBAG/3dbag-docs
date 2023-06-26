@@ -4,9 +4,10 @@
 
 Wie bieden een apart 3D BAG GeoPackage-bestand aan voor iedere tegel. En daarnaast is er een groot GeoPackage bestand beschikbaar waar de complete 3D BAG in zie. Alle GeoPackage bestanden bevatten [alle lagen](../../schema/layers/#data-layers).
 
+### GeoPackage data dump bestand
 Bij het werken met gecomprimeerde GeoPackage bestanden is het niet strikt noodzakelijk om ze uit te pakken.
 GDAL ondersteunt [virtuele bestandssystemen](https://gdal.org/user/virtual_file_systems.html#vsizip-zip-archives), waardoor de inhoud van de gecomprimeerde .gpkg kan worden benaderd zonder het bestand eerst uit te pakken.
-Het GeoPackage dat de volledige 3D BAG bevat is gecomprimeerd als een [Seek-Optimized ZIP (SOZip)](https://gdal.org/user/virtual_file_systems.html#sozip-seek-optimized-zip) bestand.
+Het GeoPackage dat de volledige 3D BAG bevat (het data dump bestand) is gecomprimeerd als een [Seek-Optimized ZIP (SOZip)](https://gdal.org/user/virtual_file_systems.html#sozip-seek-optimized-zip) bestand.
 [GDAL (vanaf versie 3.7)](https://gdal.org/user/virtual_file_systems.html#sozip-seek-optimized-zip) ondersteunt het seek-optimized profiel voor .zip-bestanden, wat een verbeterde prestatie oplevert.
 
 Een voorbeeld GDAL-commando voor toegang tot het ongecomprimeerde Nederlandse GeoPackage:

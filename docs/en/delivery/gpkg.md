@@ -2,9 +2,10 @@
 
 We have 3D BAG GeoPackage files available separately for each tile, and we also offer one big file that contains the entire 3D BAG dataset. The GeoPackage files contain [all the layers](../../schema/layers/#data-layers).
 
+### GeoPackage data dump file
 When working with the compressed GeoPackage files, it is not strictly necessary to decompress them.
 GDAL supports [virtual file systems](https://gdal.org/user/virtual_file_systems.html#vsizip-zip-archives), which allows to access the contents of the compressed .gpkg without decompressing the file first.
-The GeoPackage that contains the entire 3D BAG has been compressed as a [Seek-Optimized ZIP (SOZip)](https://gdal.org/user/virtual_file_systems.html#sozip-seek-optimized-zip) file.
+The GeoPackage that contains the entire 3D BAG (the data dump file) has been compressed as a [Seek-Optimized ZIP (SOZip)](https://gdal.org/user/virtual_file_systems.html#sozip-seek-optimized-zip) file.
 [GDAL (from version 3.7)](https://gdal.org/user/virtual_file_systems.html#sozip-seek-optimized-zip) supports the seek-optimized profile for .zip files, giving an improved performance.
 
 An example GDAL command for accessing the uncompressed Netherlands GeoPackage:

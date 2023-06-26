@@ -6,6 +6,13 @@ From the 3D BAG we serve the [2D layers](../schema/layers.md#data-layers) and th
 
 The [Web Feature Service](https://www.ogc.org/standards/wfs) (WFS) is an Open Geospatial Consortium standard, and it describes how to query, create and modify geospatial data through the internet.
 
+Available layers:
+
+- lod12
+- lod13
+- lod22
+- tiles
+
 <figure>
   <a href="../../../images_common/wfs.png">
     <img src="../../../images_common/wfs.png" width="600" />
