@@ -62,12 +62,6 @@ Besides building models, the 3D Geluid data also contains two additional layers 
 
 Similarly to the 3D Basisvoorziening, the LoD1.3 models in the 3D Geluid data were generated with a previous, more stable version of the same algorithms that we use in the 3D BAG.
 
-## Future plans
-
-- One of the most common questions related to building heights is the exact number of floors in the building. However, answering this proves to be more complex than dividing the building height by an average floor height (eg 3 meters). Thus, we have [an ongoing MSc research](https://3d.bk.tudelft.nl/education/#theses) that is investigating this topic.
-- Addresses. At the moment we don't add the addresses from the BAG to the 3D BAG. We might add them in the future.
-- Orientation of roof surfaces. It is already possible to query the orientation of roof surfaces in the viewer. We may store this information as attribute so that this information can be used in spatial analysis, such as for solar panel potential analysis.
-
 ## Funding
 
 ![erc_logo](../images_common/erc_logo_small.png){ align=left } *This project has received funding from the European Research Council (ERC) under the European Unions Horizon2020 Research & Innovation Programme (grant agreement no. 677312 UMnD: Urban modelling in higher dimensions).*
