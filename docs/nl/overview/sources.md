@@ -14,24 +14,14 @@ Als inputdata voor de 3D BAG wordt altijd de meest recente [BAG 2.0](https://www
 
 Het [Actueel Hoogtebestand Nederland (AHN)](https://www.ahn.nl/>) is het openlijk beschikbare digitale hoogtemodel van Nederland. Vanuit de lucht worden door middel van LiDAR-metingen precieze en gedetailleerde hoogtegegevens ingewonnen, resulterend in een dataset met gemiddeld 8 punten per vierkante meter voor de huidige AHN versie (AHN3).
 
-Voor de 3D BAG wordt er gebruikt gemaakt van AHN3. De data is in verschillende jaren ingewonnen tussen 2014 en 2019, afhankelijk van het gebied. Informatie over het precieze inwinjaar van een specifiek gebied kun je [hier](https://www.ahn.nl/historie) vinden.
+Voor de 3D BAG wordt er gebruikt gemaakt van een slimme combinatie van AHN3 en AHN4. AHN3 is tussen 2014 en 2019 ingewonnen, en AHN4 tussen 2020 en 2022. Informatie over het precieze inwinjaar van een specifiek gebied kun je [hier](https://www.ahn.nl/historie) vinden. Let op dat indien een gebouw gebouwd of gewijzigd is na de inwindatum van de meeste recente AHN puntenwolk, het voor kan komen dat dit gebouw nog niet bestaat of niet meer klopt in de 3D BAG.
 
-De inwinperiode van het AHN is tamelijk lang. Dit kan leiden tot verouderde data wat problematisch kan zijn voor 3D reconstructie. Het gebouwenbestand verandert echter relatief langzaam, alhoewel in stedelijke gebieden sneller dan in landelijk gebied. Het AHN3 bevat helaas geen specifieke temporele gegevens. Het bevat namelijk alleen de datum waarop een specifieke tegel gemaakt is; niet de precieze inwindatum per punt. Om deze reden wordt er in de 3D BAG aangegeven welke panden mogelijk zijn veranderd in het jaar waarin de hoogtepunten zijn opgenomen en welke panden zeker verouderd zijn. We schatten dat ongeveer 95% van de panden nog valide zijn (voor de 3D BAG gegenereerd in maart 2021).
+Voor de laatste versie van de 3D BAG gebruiken we zowel AHN3 als AHN4. Zo kunnen we voor ieder BAG pand de best mogelijke 3D reconstructie realiseren. Als een pand sinds de inwinning van AHN3 niet gemuteerd is kiezen we de puntenwolk die de beste puntdekking biedt. Hiermee wordt de kans op foutjes in 3D reconstructie door grote delen zonder punten verminderd.
 
-Verder is er variatie in de puntendichtheid van het AHN per pand-polygoon. Gaten in de puntenwolk worden veroorzaakt door bijvoorbeeld occlusie, water/ramen op de daken of de scanhoek bij inwinning. De classificatie van de punten in grond- en gebouwpunten in het AHN is ook niet altijd correct. Het aantal beschikbare punten en de verdeling ervan over het dakvlak heeft een grote invloed op de nauwkeurigheid van de reconstructie. De kwaliteitsattributen bij de gebouwen geven hier een indicatie van.
-
-### AHN4?
-
-Op het moment van schrijven komt [het nieuwe AHN4](https://www.ahn.nl/ahn-4) binnenkort beschikbaar voor een deel van het land. Waar het AHN3 binnen een periode van 5 jaar is ingewonnen, moet de inwinning van AHN4 binnen 3 jaar gebeuren. Ook kan het zijn dat de kwaliteit ervan verandert wat (zeer waarschijnlijk positieve) impact zal hebben op de algoritmen van de 3D BAG. Het feit dat de nieuwe data up-to-date er zijn zorgt er in ieder geval voor dat we de 3D BAG kunnen verbeteren. Zodra de AHN4 beschikbaar is, zullen we dit zo snel mogelijk integreren in ons proces.
-
-## BGT
-
-De [Basisregistratie Grootschalige Topografie (BGT)](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bgt) is een nationale dataset die naast panden ook onder andere wegen, water, spoorlijnen en groen omvat. De bronhouders zijn organisaties met een publieke taak voor het beheer van de openbare ruimte zoals provincies, gemeenten en waterschappen.
-
-De BGT wordt gebruikt in de 3D BAG om panden te detecteren die overlappen met een ander object; een ander pand (uit de BAG), weg of water. Hierdoor gebruiken we alleen wegdeel en waterdeel uit de BGT. Deze panden kunnen dan in de BAG aangemerkt worden als overlappend, voordat de 3D BAG wordt geproduceerd.
+Dit neemt niet weg dat de puntendichtheid van het AHN tuseen verschillende panden maar ook binnen een pand-polygoon kan varieren. Gaten in de puntenwolk kunnen worden veroorzaakt door bijvoorbeeld occlusie, water/ramen op de daken of de scanhoek bij inwinning. De classificatie van de punten in grond- en gebouwpunten in het AHN is ook niet altijd correct. Het aantal beschikbare punten en de verdeling ervan over het dakvlak heeft een grote invloed op de nauwkeurigheid van de reconstructie. De kwaliteitsattributen bij de gebouwen geven hier een indicatie van.
 
 ## TOP10NL
 
 TOP10NL is onderdeel van de [TOPNL-bestanden](https://www.kadaster.nl/zakelijk/producten/geo-informatie/topnl). Deze behoren tot de [Basisregistratie Topografie (BRT)](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/brt). Ditzijn eveneens landsdekkende datasets, die gebruikt kunnen worden als gegevensbron en als ondergrond voor visualisatie. De TOP10NL kan gebruikt worden op schaalniveaus tussen 1:5.000 tot en met 1:25.000. Het bevat onder andere wegdelen, gebouwen en terreinen.
 
-Uit deze dataset worden uitsluitend de gebouwen gebruikt. Uit de classificatie hiervan kunnen we kassen en warenhuizen identificeren, wat problematische gevallen zijn bij de 3D reconstructie. Daarom modelleren we ze uitsluitend in versimpelde vorm.
+Uit deze dataset worden uitsluitend de gebouwen gebruikt. Uit de classificatie hiervan kunnen we kassen en warenhuizen identificeren, wat problematische gevallen zijn bij de 3D reconstructie. Daarom modelleren we die uitsluitend in versimpelde vorm.

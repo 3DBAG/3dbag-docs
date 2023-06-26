@@ -6,6 +6,13 @@ Van de 3D BAG bieden we zowel de [2D lagen](../schema/layers.md#data-layers) aan
 
 [Web Feature Service (WFS)](https://www.ogc.org/standards/wfs) is een OGC-standaard die beschrijft hoe geografische vectordata opgevraagd, gecreëerd en bewerkt kan worden via internet.
 
+Beschikbare lagen:
+
+- lod12
+- lod13
+- lod22
+- tiles
+
 <figure>
   <a href="../../../images_common/wfs.png">
     <img src="../../../images_common/wfs.png" width="600" />

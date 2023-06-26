@@ -1,3 +1,110 @@
+## 2023.06.22 – beta
+
+*Release date: 22 juni 2023*
+
+This is the third public beta release of the 3D BAG. It's been a while since the second release. As it turns out it costs quite some work to properly maintain and update 3D BAG next to our busy day jobs. Fortunately we were able to receive funding from the ERC to bring the 3D BAG to a level where it can be maintained and developed reliably. The current release is the first of three that is financed by the ERC budget, and it paves the way towards a stable, open 3D BAG service. We are very happy to see that so many people found a use for 3D BAG to help them with their business, research or hobby projects. And we remain committed to keep maintaining 3D BAG into the future, of course as an open dataset. 
+
+[The team behind 3D BAG](group.md) has changed in the sense that some people have moved on to other jobs, some people are working on 3D BAG with a different affiliation ([3DGI](https://3dgi.xyz), a spinoff of the [tudelft3d](https://3d.bk.tudelft.nl/) research group) and we also have welcomed a [new member](http://3d.bk.tudelft.nl/gstavropoulou). 
+As as result of the change in the team, and also in effort to secure a future for the 3D BAG, the main maintenance and development work was moved out from academia, from the 3D geoinformation research group to [3DGI](https://3dgi.xyz). 
+
+The biggest technical change is that the 3D BAG now uses the AHN4 pointcloud which was acquired between 2020 and 2022. This means that the building models are much more up-to-date, compared to the previous release which was based solely on AHN3 (acquired starting from 2014). For this new release we use a 'smart' combination of AHN3 and AHN4. We did not opt for a simple 'drop-in' replacement of AHN3 by AHN4 because of the quality issues that we discovered in AHN4. These issues affect a small, yet significant fraction of the buildings. The 'smart' combination entails that our algorithms automatically selects the 'best' available point cloud on a per building basis. The selection is based primarily on point coverage, ie. how well the roof surface of a building is covered with AHN points and *most importantly* if there are any big gaps. Naturally, AHN3 is only considered when a building has not changed compared to the AHN4 data. AHN3 is used for ~8.5% of the buildings, the rest all uses AHN4.
+
+There are also some changes to the BAG viewer and the download page. Most notably, the viewer now brings you to an interesting landmark that is randomly picked when you load the website, and all 3D BAG attributes are now visible in the viewer. The download page now also offers a metadata file about the dataset as a whole (including lineage) and the PostgreSQL dump was replaced by one big GPKG file (something that several people have asked for).
+
+And last, but not least: behind the scenes *a lot of work* has been done to completely recreate our automatic building reconstruction pipeline. This helps us to reliably produce new 3D BAG releases from now on. A tangible benefit to the 3DBAG users is that we now have much fewer missing buildings compared to the previous releases. We will continue to work on our pipeline in the background and streamline our internal processes even further.
+
+This release contains a record number of 10 383 384 builings. The overall geometric val3dity is also at a record at 99.15% (up from 98.25% in the previous release, counted on the LoD2.2 geometries).
+
+Thank you for using the 3D BAG! As always our [feedback forms](https://forms.gle/NZg83heXM75pAmfVA) are available and we are reading all the emails that we receive at info@3dbag.nl.
+
+-- The 3D BAG Team
+
+#### Added
+
++ The building part ID (`pand_deel_id`) to the 3D layers. Previously it was only part of the 2D layers.
++ Reconstruction algorithm
+    + added procedure for automatic selection of pointcloud (AHN3 or 4) best suited for reconstruction on a per building basis
+    + building volumes are now calculated and outputted
+    + changed the method for calculating the height attributes on roofparts
++ A metadata file is now available on the download page. The metadata contains information about the current release, including the versions of the source data sets and the versions of the software that were used for producing the release. The metadata file unifies some of the information that were previously scattered across different formats.
++ 3D BAG viewer
+    + When opening the 3D BAG viewer you are brought to a random landmark
+    + You can now view all attributes directly in the viewer
+    + Clicking on the attribute name in the viewer attribute table now brings you to the corresponding section in the documentation
+    + Update basemap to Luchfoto Actueel
++ Various quality attributes relating to the 'smart' point cloud selection algorithm.
++ 3DGI attribution
++ Created a [3D BAG twitter account](https://twitter.com/3D_BAG). Follow this to be notified about 3D BAG updates and other announcements.
++ SHA-256 hashes for the downloadable files (included on the `tiles` WMS/WFS layer).
++ Download link for each format (included on the `tiles` WMS/WFS layer).
++ Extended testing of all data formats (included on the `tiles` WMS/WFS layer).
+
+#### Changed / Fixed
+
++ Update of the source vector data sets (BAG, Top10NL) to the version available on 2023-06-05 (TOP10NL) and 2023-06-08 (BAG).
++ Update of the source point cloud data sets. Now AHN3 and AHN4 are used.
++ Significantly fewer missing buildings, due to revamped processing pipeline.
++ Improved geometric validity. Now 99.15% of buildings are geometrically valid.
++ New tiling scheme for downloads.
++ New file naming.
++ 3D BAG version number is now a full date instead of a mix between date and minor version number.
++ All 3D BAG specific attributes are now preceded by the `b3_` prefix.
++ The postgres database dump was replaced by one big gpkg file zipped into a [seek-optimized ZIP (SOZip)](https://gdal.org/programs/sozip.html#sozip) file.
++ Improvements in the reconstruction algorithm
+    + new procedure for overlap detection between buildings. In this procedure it is guaranteed that points on areas of overlap are only assigned to one of the overlapping buildings.
+    + fine tuning of snapping thresholds to achieve better geomtric validity
+    + various small improvements
++ The layer `ondergrond` was removed.
++ Changed WFS/WMS namespace from `BAG3D_v2` to `BAG3D`.
++ Attribute changes:
+
+| v21.09                          |v2023.06 (release) |
+|---------------------------------|------------------------|
+| gid                             |- |
+| fid                             |- |
+| pand_deel_id                    |b3_pand_deel_id |
+| dd_id                           |b3_dd_id |
+| -                               |tijdstipregistratie |
+| -                               |eindregistratie |
+| h_maaiveld                      |b3_h_maaiveld |
+| dak_type                        |b3_dak_type |
+| pw_datum                        |b3_pw_datum |
+| pw_actueel                      |- |
+| pw_bron                         |b3_pw_bron |
+| reconstructie_methode           |- |
+| versie_methode                  |- |
+| kas_warenhuis                   |b3_kas_warenhuis |
+| ondergronds_type                |- |
+| reconstruction_skipped          |b3_reconstructie_onvolledig |
+| lod11_replace                   |- |
+| h_dak_min                       |b3_h_dak_min |
+| h_dak_50p                       |b3_h_dak_50p |
+| h_dak_70p                       |b3_h_dak_70p |
+| h_dak_max                       |b3_h_dak_max |
+| val3dity_codes_lod12            |b3_val3dity_lod12 |
+| val3dity_codes_lod13            |b3_val3dity_lod13 |
+| val3dity_codes_lod22            |b3_val3dity_lod22 |
+| semantics_values                | - |
+| rmse_lod12                      |b3_rmse_lod12 |
+| rmse_lod13                      |b3_rmse_lod13 |
+| rmse_lod22                      |b3_rmse_lod22 |
+| rn                              |- |
+| -                               |b3_mutatie_ahn3_ahn4 |
+| -                               |b3_nodata_fractie_ahn3 |
+| -                               |b3_nodata_fractie_ahn4 |
+| -                               |b3_nodata_radius_ahn3 |
+| -                               |b3_nodata_radius_ahn4 |
+| -                               |b3_pw_selectie_reden |
+| -                               |b3_puntdichtheid_ahn3 |
+| -                               |b3_puntdichtheid_ahn4 |
+| -                               |b3_volume_lod12 |
+| -                               |b3_volume_lod13 |
+| -                               |b3_volume_lod22 |
+
+#### Known issues
++ BAG date/time attributes in GPKG output are of the string type.
++ Missing tiles (3): `7/1008/656`, `8/720/344`, `9/1000/1068`.
++ Small number of 3D models have invalid geometry. This affects less than 1% of the models.
 
 ## 21.09.8 – beta
 

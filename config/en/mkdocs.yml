@@ -6,7 +6,7 @@ docs_dir: '../../docs/en'
 site_dir: '../../generated/en'
 dev_url: 'http://127.0.0.1:8000'
 #repo_url: https://github.com/tudelft3d/3dbag-docs
-copyright: '<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://3dbag.nl">Copyright &copy; 2021 - 3D BAG</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3d.bk.tudelft.nl/">3D geoinformation research group</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>'
+copyright: '<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://3dbag.nl">Copyright &copy; 2023 - 3D BAG</a> by the <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3d.bk.tudelft.nl/">3D geoinformation research group</a> and <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3dgi.xyz/">3DGI</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>'
 extra_css:
   - stylesheets/extra.css
 
@@ -16,6 +16,7 @@ theme:
   name: material
   favicon: assets/images/logo.svg
   logo: assets/images/logo.svg
+  logo2: assets/images/logo-3dgi.svg
   font:
     text: Inter
     code: Roboto Mono
@@ -38,7 +39,7 @@ extra:
       lang: nl
   social:
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/tudelft3d
+      link: https://twitter.com/3D_BAG
     - icon: fontawesome/brands/github
       link: https://github.com/tudelft3d
 
@@ -74,7 +75,6 @@ nav:
       - 'Webservices': 'delivery/webservices.md'
       - 'GeoPackage': 'delivery/gpkg.md'
       - 'CityJSON': 'delivery/cityjson.md'
-      - 'PostgreSQL': 'delivery/postgresql.md'
       - 'Wavefront OBJ': 'delivery/obj.md'
   - 'Copyright': 'copyright.md'
   - Contact: contact.md
