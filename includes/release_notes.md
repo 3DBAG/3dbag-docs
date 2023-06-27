@@ -4,8 +4,7 @@
 
 This is the third public beta release of the 3D BAG. It's been a while since the second release. As it turns out it costs quite some work to properly maintain and update 3D BAG next to our busy day jobs. Fortunately we were able to receive funding from the ERC to bring the 3D BAG to a level where it can be maintained and developed reliably. The current release is the first of three that is financed by the ERC budget, and it paves the way towards a stable, open 3D BAG service. We are very happy to see that so many people found a use for 3D BAG to help them with their business, research or hobby projects. And we remain committed to keep maintaining 3D BAG into the future, of course as an open dataset. 
 
-[The team behind 3D BAG](group.md) has changed in the sense that some people have moved on to other jobs, some people are working on 3D BAG with a different affiliation ([3DGI](https://3dgi.xyz), a spinoff of the [tudelft3d](https://3d.bk.tudelft.nl/) research group) and we also have welcomed a [new member](http://3d.bk.tudelft.nl/gstavropoulou). 
-As as result of the change in the team, and also in effort to secure a future for the 3D BAG, the main maintenance and development work was moved out from academia, from the 3D geoinformation research group to [3DGI](https://3dgi.xyz). 
+[The team behind 3D BAG](group.md) has changed in the sense that some people have moved on to other jobs, others are working on 3D BAG with a different affiliation ([3DGI](https://3dgi.xyz), a spinoff of the [tudelft3d](https://3d.bk.tudelft.nl/) research group) and we also have welcomed a [new member](http://3d.bk.tudelft.nl/gstavropoulou).
 
 The biggest technical change is that the 3D BAG now uses the AHN4 pointcloud which was acquired between 2020 and 2022. This means that the building models are much more up-to-date, compared to the previous release which was based solely on AHN3 (acquired starting from 2014). For this new release we use a 'smart' combination of AHN3 and AHN4. We did not opt for a simple 'drop-in' replacement of AHN3 by AHN4 because of the quality issues that we discovered in AHN4. These issues affect a small, yet significant fraction of the buildings. The 'smart' combination entails that our algorithms automatically select the 'best' available point cloud on a per building basis. The selection is based primarily on point coverage, ie. how well the roof surface of a building is covered with AHN points and *most importantly* if there are any big gaps. Naturally, AHN3 is only considered when a building has not changed compared to the AHN4 data. AHN3 is used for ~8.5% of the buildings, the rest all uses AHN4.
 
@@ -103,7 +102,7 @@ Thank you for using the 3D BAG! As always our [feedback forms](https://forms.gle
 
 #### Known issues
 + BAG date/time attributes in GPKG output are of the string type.
-+ Missing tiles (3): `7/1008/656`, `8/720/344`, `9/1000/1068`.
++ Missing tiles from download page: `7/1008/656`, `8/720/344`, `9/1000/1068`. The 3D BAG viewer may have some additional tiles missing.
 + Small number of 3D models have invalid geometry. This affects less than 1% of the models.
 
 ## 21.09.8 – beta
