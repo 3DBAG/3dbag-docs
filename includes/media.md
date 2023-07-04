@@ -39,6 +39,7 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
 
 
 ## 3D BAG in the news
++ [Used in the interactive maps for the Dutch tv-programme Ruimteschip Aarde](https://kro-ncrv.nl/programmas/ruimteschip-aarde)
 + [3DBAG gets ERC funding](https://www.delta.tudelft.nl/twee-erc-commercialisatiebeurzen-voor-delft#)
 + [3D BAG wins the 2021 Geospatial World Excellence Award in the Content Platform category](https://3d.bk.tudelft.nl/news/2021/11/02/3dbag-GWF-content-platform-prize.html)
 + [Reddit](https://www.reddit.com/r/thenetherlands/comments/mgcjuf/3d_modellen_voor_alle_10_miljoen_gebouwen_in/)
@@ -46,7 +47,6 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
 + [Geo-Info](https://3d.bk.tudelft.nl/rypeters/pdfs/21_geoinfo_3dbag.pdf)
 + [BK nieuws](https://www.tudelft.nl/2021/bk/alle-10-miljoen-gebouwen-in-nederland-ontsloten-in-3d)
 + [LinkedIn announcement by Jantien Stoter](https://www.linkedin.com/posts/jantien-stoter-7721346_3dbag-activity-6782213871764684800-fVR9)
-+ [Used in the interactive maps for the Dutch tv-programme Ruimteschip Aarde](https://kro-ncrv.nl/programmas/ruimteschip-aarde)
 
 # Publications using 3DBAG
 + [Automatic Building Age Prediction from Street View Images](https://ieeexplore.ieee.org/document/9660554)
