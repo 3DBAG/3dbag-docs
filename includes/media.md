@@ -39,7 +39,7 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
 
 
 ## 3D BAG in the news
-+ [Used in the interactive maps for the Dutch tv-programme Ruimteschip Aarde](https://kro-ncrv.nl/programmas/ruimteschip-aarde)
++ [Used in the interactive maps for the Dutch tv-programme Ruimteschip Aarde](https://kro-ncrv.nl/programmas/ruimteschip-aarde/postcodetools-ruimteschip-aarde)
 + [3DBAG gets ERC funding](https://www.delta.tudelft.nl/twee-erc-commercialisatiebeurzen-voor-delft#)
 + [3D BAG wins the 2021 Geospatial World Excellence Award in the Content Platform category](https://3d.bk.tudelft.nl/news/2021/11/02/3dbag-GWF-content-platform-prize.html)
 + [Reddit](https://www.reddit.com/r/thenetherlands/comments/mgcjuf/3d_modellen_voor_alle_10_miljoen_gebouwen_in/)
