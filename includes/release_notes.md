@@ -18,6 +18,9 @@ Thank you for using the 3D BAG! As always our [feedback forms](https://forms.gle
 
 -- The 3D BAG Team
 
+#### Update 11-07-2023
+* Regenerated 3D tiles to fix a number of disply issues in the 3D BAG viewer, including incorrect placement of search result marker.
+
 #### Added
 
 + The building part ID (`pand_deel_id`) to the 3D layers. Previously it was only part of the 2D layers.
