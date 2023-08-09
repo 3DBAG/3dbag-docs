@@ -1,6 +1,15 @@
+## 2023.08.09 – beta
+
+*Release date: 9 August 2023*
+
+With this release we fix an error with the attributes `h_dak_min `, `h_dak_50p`, `h_dak_70p`, `h_dak_max` in the GPKG and WFS formats. In 3DBAG version 2023.06.22 the values of these attributes were off by 15 meters. This is fixed in this release.
+
+#### Changed / Fixed
++ Fix 15 meter offset in `h_dak_min `, `h_dak_50p`, `h_dak_70p`, `h_dak_max` attributes on roofparts in GPKG and WFS formats.
+
 ## 2023.06.22 – beta
 
-*Release date: 22 juni 2023*
+*Release date: 22 June 2023*
 
 This is the third public beta release of the 3D BAG. It's been a while since the second release. As it turns out it costs quite some work to properly maintain and update 3D BAG next to our busy day jobs. Fortunately we were able to receive funding from the ERC to bring the 3D BAG to a level where it can be maintained and developed reliably. The current release is the first of three that is financed by the ERC budget, and it paves the way towards a stable, open 3D BAG service. We are very happy to see that so many people found a use for 3D BAG to help them with their business, research or hobby projects. And we remain committed to keep maintaining 3D BAG into the future, of course as an open dataset. 
 
