@@ -21,7 +21,7 @@
         <link rel="next" href="../../schema/concepts/">
       
       <link rel="icon" href="../../assets/images/logo.svg">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#20230622-beta" class="md-skip">
+        <a href="#20230809-beta" class="md-skip">
           Skip to content
         </a>
       
@@ -488,6 +488,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#20230809-beta" class="md-nav__link">
+    2023.08.09 – beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#20230622-beta" class="md-nav__link">
     2023.06.22 – beta
   </a>
@@ -776,6 +783,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#20230809-beta" class="md-nav__link">
+    2023.08.09 – beta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#20230622-beta" class="md-nav__link">
     2023.06.22 – beta
   </a>
@@ -813,8 +827,15 @@
 
   <h1>Release Notes</h1>
 
+<h2 id="20230809-beta">2023.08.09 – beta<a class="headerlink" href="#20230809-beta" title="Permanent link">&para;</a></h2>
+<p><em>Release date: 9 August 2023</em></p>
+<p>With this release we fix an error with the attributes <code>h_dak_min</code>, <code>h_dak_50p</code>, <code>h_dak_70p</code>, <code>h_dak_max</code> in the GPKG and WFS formats. In 3DBAG version 2023.06.22 the values of these attributes were off by 15 meters. This is fixed in this release.</p>
+<h4 id="changed-fixed">Changed / Fixed<a class="headerlink" href="#changed-fixed" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Fix 15 meter offset in <code>h_dak_min</code>, <code>h_dak_50p</code>, <code>h_dak_70p</code>, <code>h_dak_max</code> attributes on roofparts in GPKG and WFS formats.</li>
+</ul>
 <h2 id="20230622-beta">2023.06.22 – beta<a class="headerlink" href="#20230622-beta" title="Permanent link">&para;</a></h2>
-<p><em>Release date: 22 juni 2023</em></p>
+<p><em>Release date: 22 June 2023</em></p>
 <p>This is the third public beta release of the 3D BAG. It's been a while since the second release. As it turns out it costs quite some work to properly maintain and update 3D BAG next to our busy day jobs. Fortunately we were able to receive funding from the ERC to bring the 3D BAG to a level where it can be maintained and developed reliably. The current release is the first of three that is financed by the ERC budget, and it paves the way towards a stable, open 3D BAG service. We are very happy to see that so many people found a use for 3D BAG to help them with their business, research or hobby projects. And we remain committed to keep maintaining 3D BAG into the future, of course as an open dataset. </p>
 <p><a href="../group/">The team behind 3D BAG</a> has changed in the sense that some people have moved on to other jobs, others are working on 3D BAG with a different affiliation (<a href="https://3dgi.xyz">3DGI</a>, a spinoff of the <a href="https://3d.bk.tudelft.nl/">tudelft3d</a> research group) and we also have welcomed a <a href="http://3d.bk.tudelft.nl/gstavropoulou">new member</a>.</p>
 <p>The biggest technical change is that the 3D BAG now uses the AHN4 pointcloud which was acquired between 2020 and 2022. This means that the building models are much more up-to-date, compared to the previous release which was based solely on AHN3 (acquired starting from 2014). For this new release we use a 'smart' combination of AHN3 and AHN4. We did not opt for a simple 'drop-in' replacement of AHN3 by AHN4 because of the quality issues that we discovered in AHN4. These issues affect a small, yet significant fraction of the buildings. The 'smart' combination entails that our algorithms automatically select the 'best' available point cloud on a per building basis. The selection is based primarily on point coverage, ie. how well the roof surface of a building is covered with AHN points and <em>most importantly</em> if there are any big gaps. Naturally, AHN3 is only considered when a building has not changed compared to the AHN4 data. AHN3 is used for ~8.5% of the buildings, the rest all uses AHN4.</p>
@@ -851,7 +872,7 @@
 <li>Download link for each format (included on the <code>tiles</code> WMS/WFS layer).</li>
 <li>Extended testing of all data formats (included on the <code>tiles</code> WMS/WFS layer).</li>
 </ul>
-<h4 id="changed-fixed">Changed / Fixed<a class="headerlink" href="#changed-fixed" title="Permanent link">&para;</a></h4>
+<h4 id="changed-fixed_1">Changed / Fixed<a class="headerlink" href="#changed-fixed_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Update of the source vector data sets (BAG, Top10NL) to the version available on 2023-06-05 (TOP10NL) and 2023-06-08 (BAG).</li>
 <li>Update of the source point cloud data sets. Now AHN3 and AHN4 are used.</li>
@@ -1062,7 +1083,7 @@
 <li>The building part ID (<code>pand_deel_id</code>) to the 3D layers. Previously it was only part of the 2D layers.</li>
 <li>A new layer (<code>ondergrond</code>) with parts of the building polygons that were cut off during the reconstruction, because they were detected as the ground.</li>
 </ul>
-<h4 id="changed-fixed_1">Changed / Fixed<a class="headerlink" href="#changed-fixed_1" title="Permanent link">&para;</a></h4>
+<h4 id="changed-fixed_2">Changed / Fixed<a class="headerlink" href="#changed-fixed_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Update of the source data sets (BAG, BGT, Top10NL) to the version available on 2021-09-07.</li>
 <li>3D geometries are <strong>not triangulated</strong> anymore in the CityJSON, GeoPackage, PostgreSQL formats. The OBJ format remains triangulated.</li>
