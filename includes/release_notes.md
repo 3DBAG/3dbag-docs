@@ -1,3 +1,9 @@
+## Unreleased
+
+#### Changed / Fixed
+
++ Fix duplicates in the GeoPackage dump.
+
 ## 2023.08.09 – beta
 
 *Release date: 9 August 2023*
