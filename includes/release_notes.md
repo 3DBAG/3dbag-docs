@@ -4,6 +4,10 @@
 
 + Fix duplicates in the GeoPackage dump.
 
+#### Added
+
++ `b3_bag_bag_overlap` attribute, which is the area (m2) of overlap between BAG polygons
+
 ## 2023.08.09 – beta
 
 *Release date: 9 August 2023*

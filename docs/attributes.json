@@ -596,5 +596,17 @@
       "type": "reëel getal",
       "unit": "kubieke meter"
     }
+  },
+  "b3_bag_bag_overlap": {
+    "en": {
+      "description": "The total overlap area of BAG polygon with other BAG polygons. Unit: square metre.",
+      "type": "real number",
+      "unit": "square metre"
+    },
+    "nl": {
+      "description": "Het totale overlapoppervlak van de BAG polygon met andere BAG polygonen. Eenheid: vierkante meter.",
+      "type": "reëel getal",
+      "unit": "vierkante meter"
+    }
   }
 }
