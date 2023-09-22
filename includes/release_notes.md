@@ -7,6 +7,12 @@
 #### Added
 
 + `b3_bag_bag_overlap` attribute, which is the area (m2) of overlap between BAG polygons
++ The following attributes were added in a project funded by the Rijksdienst voor Ondernemend Nederland (RVO). In this project, a method was developed and implemented to calculate the volume of each 3D BAG building, as well as the areas of the wall-, roof- and ground floor- surfaces of each building. For the walls, a distinction was made between surfaces that are in contact with the outside air (outer walls, `buitenmuur`) and those that are not (inner walls, `afscheidingsmuur`). This was the most challenging part of the project as it required the generation of the geometry of those parts of the walls that are shared with another 3D BAG building. It should be noted that the volumes refer only to those parts of the buildings that are above ground, as underground parts are filtered out in 3D BAG.
+  + `b3_opp_grond`
+  + `b3_opp_dak_plat`
+  + `b3_opp_dak_schuin`
+  + `b3_opp_afscheidingsmuur`
+  + `b3_opp_buitenmuur`
 
 ## 2023.08.09 – beta
 

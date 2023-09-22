@@ -608,5 +608,65 @@
       "type": "reëel getal",
       "unit": "vierkante meter"
     }
+  },
+  "b3_opp_grond": {
+    "en": {
+      "description": "Ground floor area. Unit: square metre.",
+      "type": "real number",
+      "unit": "square metre"
+    },
+    "nl": {
+      "description": "Oppervlakte begane grond. Eenheid: vierkante meter.",
+      "type": "reëel getal",
+      "unit": "vierkante meter"
+    }
+  },
+  "b3_opp_dak_plat": {
+    "en": {
+      "description": "Area of the flat parts of the roof. Unit: square metre.",
+      "type": "real number",
+      "unit": "square metre"
+    },
+    "nl": {
+      "description": "Oppervlakte van de platte delen van het dak. Eenheid: vierkante meter.",
+      "type": "reëel getal",
+      "unit": "vierkante meter"
+    }
+  },
+  "b3_opp_dak_schuin": {
+    "en": {
+      "description": "Area of the sloped parts of the roof. Unit: square metre.",
+      "type": "real number",
+      "unit": "square metre"
+    },
+    "nl": {
+      "description": "Oppervlakte van de schuine delen van het dak. Eenheid: vierkante meter.",
+      "type": "reëel getal",
+      "unit": "vierkante meter"
+    }
+  },
+  "b3_opp_afscheidingsmuur": {
+    "en": {
+      "description": "Area of the party walls. Unit: square metre.",
+      "type": "real number",
+      "unit": "square metre"
+    },
+    "nl": {
+      "description": "Oppervlakte van de afscheidingsmuuren. Eenheid: vierkante meter.",
+      "type": "reëel getal",
+      "unit": "vierkante meter"
+    }
+  },
+  "b3_opp_buitenmuur": {
+    "en": {
+      "description": "Area of the exterior walls. Unit: square metre.",
+      "type": "real number",
+      "unit": "square metre"
+    },
+    "nl": {
+      "description": "Oppervlakte van de buitenmuuren. Eenheid: vierkante meter.",
+      "type": "reëel getal",
+      "unit": "vierkante meter"
+    }
   }
 }
