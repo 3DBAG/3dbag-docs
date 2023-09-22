@@ -2,6 +2,7 @@
 
 #### Changed / Fixed
 
++ Updated source data. See the [Metadata for the details](https://3dbag.nl/en/download).
 + Fix duplicates in the GeoPackage dump.
 
 #### Added
