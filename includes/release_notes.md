@@ -1,12 +1,19 @@
 ## Unreleased
 
+Highlights:
+* party wall area
+* 
+
 #### Changed / Fixed
 
 + Updated source data. See the [Metadata for the details](https://3dbag.nl/en/download).
-+ Fix duplicates in the GeoPackage dump.
++ Fix [an error](https://geoforum.nl/t/discrepancies-between-3d-bag-version-21-09-8-and-the-ahn3-dataset/8513/4?u=ylannl) with `b3_mutatie_ahn3_ahn4` due to an issue with our AHN3 input tiles. This only affects a small number of buildings.
++ Improve visual appearance of buildings that originate from overlapping BAG polygons.
++ Fix duplicate objects in the GeoPackage dump.
 
 #### Added
 
++ **OGC API**
 + `b3_bag_bag_overlap` attribute, which is the area (m2) of overlap between BAG polygons
 + The following attributes were added in a project funded by the Rijksdienst voor Ondernemend Nederland (RVO). In this project, a method was developed and implemented to calculate the volume of each 3D BAG building, as well as the areas of the wall-, roof- and ground floor- surfaces of each building. For the walls, a distinction was made between surfaces that are in contact with the outside air (outer walls, `buitenmuur`) and those that are not (inner walls, `afscheidingsmuur`). This was the most challenging part of the project as it required the generation of the geometry of those parts of the walls that are shared with another 3D BAG building. It should be noted that the volumes refer only to those parts of the buildings that are above ground, as underground parts are filtered out in 3D BAG.
   + `b3_opp_grond`
