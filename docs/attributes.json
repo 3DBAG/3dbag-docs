@@ -645,14 +645,14 @@
       "unit": "vierkante meter"
     }
   },
-  "b3_opp_afscheidingsmuur": {
+  "b3_opp_scheidingsmuur": {
     "en": {
       "description": "Area of the party walls. Unit: square metre.",
       "type": "real number",
       "unit": "square metre"
     },
     "nl": {
-      "description": "Oppervlakte van de afscheidingsmuuren. Eenheid: vierkante meter.",
+      "description": "Oppervlakte van de scheidingsmuren. Eenheid: vierkante meter.",
       "type": "reëel getal",
       "unit": "vierkante meter"
     }

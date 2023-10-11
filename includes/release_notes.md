@@ -10,16 +10,17 @@ Highlights:
 + Fix [an error](https://geoforum.nl/t/discrepancies-between-3d-bag-version-21-09-8-and-the-ahn3-dataset/8513/4?u=ylannl) with `b3_mutatie_ahn3_ahn4` due to an issue with our AHN3 input tiles. This only affects a small number of buildings.
 + Improve visual appearance of buildings that originate from overlapping BAG polygons.
 + Fix duplicate objects in the GeoPackage dump.
++ Added semantic surface labels back into the GPKG files (`labels` attribute)
 
 #### Added
 
 + **OGC API**
 + `b3_bag_bag_overlap` attribute, which is the area (m2) of overlap between BAG polygons
-+ The following attributes were added in a project funded by the Rijksdienst voor Ondernemend Nederland (RVO). In this project, a method was developed and implemented to calculate the volume of each 3D BAG building, as well as the areas of the wall-, roof- and ground floor- surfaces of each building. For the walls, a distinction was made between surfaces that are in contact with the outside air (outer walls, `buitenmuur`) and those that are not (inner walls, `afscheidingsmuur`). This was the most challenging part of the project as it required the generation of the geometry of those parts of the walls that are shared with another 3D BAG building. It should be noted that the volumes refer only to those parts of the buildings that are above ground, as underground parts are filtered out in 3D BAG.
++ The following attributes were added in a project funded by the Rijksdienst voor Ondernemend Nederland (RVO). In this project, a method was developed and implemented to calculate the volume of each 3D BAG building, as well as the areas of the wall-, roof- and ground floor- surfaces of each building. For the walls, a distinction was made between surfaces that are in contact with the outside air (outer walls, `buitenmuur`) and those that are not (inner walls, `scheidingsmuur`). This was the most challenging part of the project as it required the generation of the geometry of those parts of the walls that are shared with another 3D BAG building. It should be noted that the volumes refer only to those parts of the buildings that are above ground, as underground parts are filtered out in 3D BAG.
   + `b3_opp_grond`
   + `b3_opp_dak_plat`
   + `b3_opp_dak_schuin`
-  + `b3_opp_afscheidingsmuur`
+  + `b3_opp_scheidingsmuur`
   + `b3_opp_buitenmuur`
 
 ## 2023.08.09 – beta
