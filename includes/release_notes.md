@@ -18,7 +18,7 @@ We also made a number of bug fixes. See below for the full details
 
 + New 3D API at `api.3dbag.nl` that returns [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) with 3D geometry. 
 + `b3_bag_bag_overlap` attribute, which is the area (m2) of overlap between BAG polygons
-+ The following attributes were added in a project funded by the Rijksdienst voor Ondernemend Nederland (RVO). In this project, a method was developed and implemented to calculate the volume of each 3D BAG building, as well as the areas of the wall-, roof- and ground floor- surfaces of each building. For the walls, a distinction was made between surfaces that are in contact with the outside air (outer walls, `buitenmuur`) and those that are not (party walls, `scheidingsmuur`). This was the most challenging part of the project as it required the generation of the geometry of those parts of the walls that are shared with another 3D BAG building. It should be noted that the areas refer only to those parts of the buildings that are above ground, as we have no elevation data for the underground parts.
++ The following attributes were added in a project funded by the Rijksdienst voor Ondernemend Nederland (RVO). In this project, a method was developed and implemented to calculate the volume of each 3DBAG building, as well as the areas of the wall-, roof- and ground floor- surfaces of each building. For the walls, a distinction was made between surfaces that are in contact with the outside air (outer walls, `buitenmuur`) and those that are not (party walls, `scheidingsmuur`). This was the most challenging part of the project as it required the generation of the geometry of those parts of the walls that are shared with another 3DBAG building. It should be noted that the areas refer only to those parts of the buildings that are above ground, as we have no elevation data for the underground parts.
   + `b3_opp_grond`
   + `b3_opp_dak_plat`
   + `b3_opp_dak_schuin`
@@ -38,24 +38,24 @@ With this release we fix an error with the attributes `h_dak_min `, `h_dak_50p`,
 
 *Release date: 22 June 2023*
 
-This is the third public beta release of the 3D BAG. It's been a while since the second release. As it turns out it costs quite some work to properly maintain and update 3D BAG next to our busy day jobs. Fortunately we were able to receive funding from the ERC to bring the 3D BAG to a level where it can be maintained and developed reliably. The current release is the first of three that is financed by the ERC budget, and it paves the way towards a stable, open 3D BAG service. We are very happy to see that so many people found a use for 3D BAG to help them with their business, research or hobby projects. And we remain committed to keep maintaining 3D BAG into the future, of course as an open dataset. 
+This is the third public beta release of the 3DBAG. It's been a while since the second release. As it turns out it costs quite some work to properly maintain and update 3DBAG next to our busy day jobs. Fortunately we were able to receive funding from the ERC to bring the 3DBAG to a level where it can be maintained and developed reliably. The current release is the first of three that is financed by the ERC budget, and it paves the way towards a stable, open 3DBAG service. We are very happy to see that so many people found a use for 3DBAG to help them with their business, research or hobby projects. And we remain committed to keep maintaining 3DBAG into the future, of course as an open dataset. 
 
-[The team behind 3D BAG](group.md) has changed in the sense that some people have moved on to other jobs, others are working on 3D BAG with a different affiliation ([3DGI](https://3dgi.xyz), a spinoff of the [tudelft3d](https://3d.bk.tudelft.nl/) research group) and we also have welcomed a [new member](http://3d.bk.tudelft.nl/gstavropoulou).
+[The team behind 3DBAG](group.md) has changed in the sense that some people have moved on to other jobs, others are working on 3DBAG with a different affiliation ([3DGI](https://3dgi.xyz), a spinoff of the [tudelft3d](https://3d.bk.tudelft.nl/) research group) and we also have welcomed a [new member](http://3d.bk.tudelft.nl/gstavropoulou).
 
-The biggest technical change is that the 3D BAG now uses the AHN4 pointcloud which was acquired between 2020 and 2022. This means that the building models are much more up-to-date, compared to the previous release which was based solely on AHN3 (acquired starting from 2014). For this new release we use a 'smart' combination of AHN3 and AHN4. We did not opt for a simple 'drop-in' replacement of AHN3 by AHN4 because of the quality issues that we discovered in AHN4. These issues affect a small, yet significant fraction of the buildings. The 'smart' combination entails that our algorithms automatically select the 'best' available point cloud on a per building basis. The selection is based primarily on point coverage, ie. how well the roof surface of a building is covered with AHN points and *most importantly* if there are any big gaps. Naturally, AHN3 is only considered when a building has not changed compared to the AHN4 data. AHN3 is used for ~8.5% of the buildings, the rest all uses AHN4.
+The biggest technical change is that the 3DBAG now uses the AHN4 pointcloud which was acquired between 2020 and 2022. This means that the building models are much more up-to-date, compared to the previous release which was based solely on AHN3 (acquired starting from 2014). For this new release we use a 'smart' combination of AHN3 and AHN4. We did not opt for a simple 'drop-in' replacement of AHN3 by AHN4 because of the quality issues that we discovered in AHN4. These issues affect a small, yet significant fraction of the buildings. The 'smart' combination entails that our algorithms automatically select the 'best' available point cloud on a per building basis. The selection is based primarily on point coverage, ie. how well the roof surface of a building is covered with AHN points and *most importantly* if there are any big gaps. Naturally, AHN3 is only considered when a building has not changed compared to the AHN4 data. AHN3 is used for ~8.5% of the buildings, the rest all uses AHN4.
 
-There are also some changes in the BAG viewer and the download page. Most notably, the viewer now brings you to an interesting landmark that is randomly picked when you load the website, and all 3D BAG attributes are now visible in the viewer. The download page now also offers a metadata file about the dataset as a whole (including lineage) and the PostgreSQL dump was replaced by one big GPKG file (something that several people have asked for).
+There are also some changes in the BAG viewer and the download page. Most notably, the viewer now brings you to an interesting landmark that is randomly picked when you load the website, and all 3DBAG attributes are now visible in the viewer. The download page now also offers a metadata file about the dataset as a whole (including lineage) and the PostgreSQL dump was replaced by one big GPKG file (something that several people have asked for).
 
-And last, but not least: behind the scenes *a lot of work* has been done to completely recreate our automatic building reconstruction pipeline. This helps us to reliably produce new 3D BAG releases from now on. A tangible benefit to the 3DBAG users is that we now have much fewer missing buildings compared to the previous releases. We will continue to work on our pipeline in the background and streamline our internal processes even further.
+And last, but not least: behind the scenes *a lot of work* has been done to completely recreate our automatic building reconstruction pipeline. This helps us to reliably produce new 3DBAG releases from now on. A tangible benefit to the 3DBAG users is that we now have much fewer missing buildings compared to the previous releases. We will continue to work on our pipeline in the background and streamline our internal processes even further.
 
 This release contains a record number of 10 383 384 builings. The overall geometric val3dity is also at a record at 99.15% (up from 98.25% in the previous release, counted on the LoD2.2 geometries).
 
-Thank you for using the 3D BAG! As always our [feedback forms](https://forms.gle/NZg83heXM75pAmfVA) are available and we are reading all the emails that we receive at info@3dbag.nl.
+Thank you for using the 3DBAG! As always our [feedback forms](https://forms.gle/NZg83heXM75pAmfVA) are available and we are reading all the emails that we receive at info@3dbag.nl.
 
--- The 3D BAG Team
+-- The 3DBAG Team
 
 #### Update 11-07-2023
-* Regenerated 3D tiles to fix a number of disply issues in the 3D BAG viewer, including incorrect placement of search result marker.
+* Regenerated 3D tiles to fix a number of disply issues in the 3DBAG viewer, including incorrect placement of search result marker.
 
 #### Added
 
@@ -65,14 +65,14 @@ Thank you for using the 3D BAG! As always our [feedback forms](https://forms.gle
     + building areas are now calculated and outputted
     + changed the method for calculating the height attributes on roofparts
 + A metadata file is now available on the download page. The metadata contains information about the current release, including the versions of the source data sets and the versions of the software that were used for producing the release. The metadata file unifies some of the information that were previously scattered across different formats.
-+ 3D BAG viewer
-    + When opening the 3D BAG viewer you are brought to a random landmark
++ 3DBAG viewer
+    + When opening the 3DBAG viewer you are brought to a random landmark
     + You can now view all attributes directly in the viewer
     + Clicking on the attribute name in the viewer attribute table now brings you to the corresponding section in the documentation
     + Update basemap to Luchfoto Actueel
 + Various quality attributes relating to the 'smart' point cloud selection algorithm.
 + 3DGI attribution
-+ Created a [3D BAG twitter account](https://twitter.com/3D_BAG). Follow this to be notified about 3D BAG updates and other announcements.
++ Created a [3DBAG twitter account](https://twitter.com/3D_BAG). Follow this to be notified about 3DBAG updates and other announcements.
 + SHA-256 hashes for the downloadable files (included on the `tiles` WMS/WFS layer).
 + Download link for each format (included on the `tiles` WMS/WFS layer).
 + Extended testing of all data formats (included on the `tiles` WMS/WFS layer).
@@ -85,8 +85,8 @@ Thank you for using the 3D BAG! As always our [feedback forms](https://forms.gle
 + Improved geometric validity. Now 99.15% of buildings are geometrically valid.
 + New tiling scheme for downloads.
 + New file naming.
-+ 3D BAG version number is now a full date instead of a mix between date and minor version number.
-+ All 3D BAG specific attributes are now preceded by the `b3_` prefix.
++ 3DBAG version number is now a full date instead of a mix between date and minor version number.
++ All 3DBAG specific attributes are now preceded by the `b3_` prefix.
 + The postgres database dump was replaced by one big gpkg file zipped into a [seek-optimized ZIP (SOZip)](https://gdal.org/programs/sozip.html#sozip) file.
 + Improvements in the reconstruction algorithm
     + new procedure for overlap detection between buildings. In this procedure it is guaranteed that points on areas of overlap are only assigned to one of the overlapping buildings.
@@ -141,20 +141,20 @@ Thank you for using the 3D BAG! As always our [feedback forms](https://forms.gle
 
 #### Known issues
 + BAG date/time attributes in GPKG output are of the string type.
-+ Missing tiles from download page: `7/1008/656`, `8/720/344`, `9/1000/1068`. The 3D BAG viewer may have some additional tiles missing.
++ Missing tiles from download page: `7/1008/656`, `8/720/344`, `9/1000/1068`. The 3DBAG viewer may have some additional tiles missing.
 + Small number of 3D models have invalid geometry. This affects less than 1% of the models.
 
 ## 21.09.8 – beta
 
 *Release date: 29 September 2021*
 
-This is the second public beta release of the renewed 3D BAG. Before addressing what has changed with this release we would like to take a moment to thank everyone that has been downloading and using the first release. It's very exciting to see how people from various disciplines found ways to apply 3D BAG for their use cases! (also see our new [In the media](media.md) page). A special thanks also to everyone that filled out our feedback forms or gave us feedback in other ways. This is much appreciated!
+This is the second public beta release of the renewed 3DBAG. Before addressing what has changed with this release we would like to take a moment to thank everyone that has been downloading and using the first release. It's very exciting to see how people from various disciplines found ways to apply 3DBAG for their use cases! (also see our new [In the media](media.md) page). A special thanks also to everyone that filled out our feedback forms or gave us feedback in other ways. This is much appreciated!
 
 For this second release we focused primarily on improving the data quality and the way the data is disseminated. The overall geometric validity of the 3D models has risen to 98.25% (up from ~89% in the previous release). Another highlight is that the 3D outputs are no longer triangulated, as requested by several users. Altogether this should make it easier to use our models in other software. These and more changes are described below in more detail. 
 
-This 3D BAG release contains 9 692 978 buildings. This is 7.72% less buildings than available in the BAG dataset, mostly due to outdated or otherwise insufficient input data. We hope to do a release based on the updated AHN4 soon, but this release is still based on AHN3.
+This 3DBAG release contains 9 692 978 buildings. This is 7.72% less buildings than available in the BAG dataset, mostly due to outdated or otherwise insufficient input data. We hope to do a release based on the updated AHN4 soon, but this release is still based on AHN3.
 
-Thank you for using 3D BAG!
+Thank you for using 3DBAG!
 
 #### Added
 

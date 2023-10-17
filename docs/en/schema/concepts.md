@@ -8,14 +8,14 @@ For instance, consider a very simple building with four corners and a gabled roo
 Higher LoDs (LoD2 and above) can label the surfaces of the model based on their function in the real object.
 These labels are called *semantics*, and accordingly we call the labelled surfaces **semantic surfaces**. For instance in case of building models, we can identify a *ground surface*, *wall surface*, *roof surface* etc.
 
-In the 3D BAG, we use the so called [*improved LoD specification*](http://doi.org/10.1016/j.compenvurbsys.2016.04.005), as it is displayed in the figure below.
+In the 3DBAG, we use the so called [*improved LoD specification*](http://doi.org/10.1016/j.compenvurbsys.2016.04.005), as it is displayed in the figure below.
 
 <figure>
   <img src="https://3d.bk.tudelft.nl/lod/lodtud.png" />
   <figcaption><b>An improved LOD specification for 3D building models.</b> Filip Biljecki, Hugo Ledoux, and Jantien Stoter. Computers, Environment and Urban Systems, 59: 25–37, 2016. <a href="http://doi.org/10.1016/j.compenvurbsys.2016.04.005">DOI</a></figcaption>
 </figure>
 
-For the 3D BAG the relevant LoDs are 1.2, 1.3, and 2.2. Note that apart from the amount of geometric detail, the key difference between LoD1 and LoD2 is the presence of *semantic surfaces*, to allow, for example, roof surfaces to be coloured red and wall surfaces to be coloured grey. Furthermore, the distinction between LoD1.2 and LoD1.3 is that LoD1.3 distinguishes between significant height differences within one building, while in case of LoD1.2 the whole model has a uniform height.
+For the 3DBAG the relevant LoDs are 1.2, 1.3, and 2.2. Note that apart from the amount of geometric detail, the key difference between LoD1 and LoD2 is the presence of *semantic surfaces*, to allow, for example, roof surfaces to be coloured red and wall surfaces to be coloured grey. Furthermore, the distinction between LoD1.2 and LoD1.3 is that LoD1.3 distinguishes between significant height differences within one building, while in case of LoD1.2 the whole model has a uniform height.
 
 <!-- difficulties of modelling buildings in diff lod-s -->
 
@@ -32,7 +32,7 @@ In 3D GIS, the geometric primitives and their rules need to be extended to the t
   <figcaption>3D primitives handled by val3dity. See: <b>Val3dity: validation of 3D GIS primitives according to the international standards.</b> Hugo Ledoux. Open Geospatial Data, Software and Standards 3 (1), 2018, pp. 1. <a href="http://dx.doi.org/10.1186/s40965-018-0043-x">DOI</a></figcaption>
 </figure>
 
-For the 3D BAG the most relevant primitive is the [Solid](https://val3dity.readthedocs.io/en/latest/definitions/#solid), as we treat the building models as Solids in our process. This distinction is important, because of the (stricter) rules that apply to Solids, compared to other 3D primitives.
+For the 3DBAG the most relevant primitive is the [Solid](https://val3dity.readthedocs.io/en/latest/definitions/#solid), as we treat the building models as Solids in our process. This distinction is important, because of the (stricter) rules that apply to Solids, compared to other 3D primitives.
 
 !!! note "3D primitives and data formats"
     Not every data format supports the 3D primitives mentioned above. In fact, this applies to all our export formats except CityJSON. Therefore, in such formats we use the geometry types that are the closest equivalent to Solids. The PostgreSQL backup is a bit of an outlier here, because technically PostGIS can store Solids, but only with the [SFCGAL extension](http://www.sfcgal.org/). In order to cause the least friction for restoring the PostgreSQL backup, we store the 3D geometries as `MultiPolygonZ`.

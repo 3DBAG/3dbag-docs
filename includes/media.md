@@ -1,6 +1,6 @@
 Below you can find a list of notable articles, posts, tweets and videos about 3D BAG. Please [send us a mail](../contact.md) if you think something is missing!
 
-## Applications of 3D BAG
+## Applications of 3DBAG
 + 3D printing
     + [CityScale](https://www.linkedin.com/posts/city-scale_tudelft-3dbag-activity-6786294253560594432-7opR)
     + [Heinze Havinga](https://twitter.com/HeinzeHavinga/status/1438798509340303364?s=20)
@@ -16,7 +16,7 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
 + [Revit integration by Enveo](https://enveo.io/nieuws/release-notes/versie-2-0/)
 + [Subdivision of 3DBAG into indoor entities by Coders CO.](https://www.linkedin.com/posts/coders-co-_pdf2gis-3dbag-cityjson-activity-6889168061253922817-Ck0Q)
 
-## Public adoption of 3D BAG in other platforms
+## Public adoption of 3DBAG in other platforms
 + [Amsterdam 3D](https://3d.amsterdam.nl/web/index.html)
 + [Utrecht 3D](https://3d.utrecht.nl/)
 + [Zwolle](https://www.youtube.com/watch?v=7jLEX_LBXxw)
@@ -28,7 +28,7 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
 + [ROM3D](https://www.linkedin.com/posts/rom3d_3dbag-win3d-lod2-activity-6788411703710244864-T7F0)
 + [Shintō Labs](https://www.shintolabs.nl/blog/stedelijke-digital-twins-wat-kan-je-tweelingzus-dat-jij-niet-kan/)
 
-## Tools and tutorials on 3D BAG
+## Tools and tutorials on 3DBAG
 + [Blender Hoogtedata Addon](https://gitlab.com/thomaskole/blender-hoogtedata-addon)
 + [GIS2BIM tool for Dynamo by Maarten Vroegindeweij](https://www.linkedin.com/posts/maarten-vroegindeweij-652ab418a_bag3d-3dbag-gis2bim-activity-6784220680817790976-RGO2)
 + [Infraworks video tutorial by Richard de Nier](https://www.linkedin.com/posts/richarddenier_3d-bag-viewer-activity-6783767736385384448-ZZEF)
@@ -38,7 +38,7 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
 + [How-to: 3D BAG TU Delft naar ArcGIS](https://esri-nederland-content-esrinl-content.hub.arcgis.com/apps/how-to-3d-bag-tu-delft-naar-arcgis)
 
 
-## 3D BAG in the news
+## 3DBAG in the news
 + [Used in the interactive maps for the Dutch tv-programme Ruimteschip Aarde](https://kro-ncrv.nl/programmas/ruimteschip-aarde/postcodetools-ruimteschip-aarde)
 + [3DBAG gets ERC funding](https://www.delta.tudelft.nl/twee-erc-commercialisatiebeurzen-voor-delft#)
 + [3D BAG wins the 2021 Geospatial World Excellence Award in the Content Platform category](https://3d.bk.tudelft.nl/news/2021/11/02/3dbag-GWF-content-platform-prize.html)

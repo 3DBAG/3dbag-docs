@@ -1,11 +1,11 @@
 [GeoPackage](https://www.geopackage.org/) is an open geodata format, based on [SQLite](https://www.sqlite.org/index.html). It supports vector features, tile matrix sets, attributes and also extensions. The format can be used for storing certain types of 3D geometry. It is widely adopted an can be used in QGIS, ArcGIS and FME too.
 
-We have 3D BAG GeoPackage files available separately for each tile, and we also offer one big file that contains the entire 3D BAG dataset. The GeoPackage files contain [all the layers](../../schema/layers/#data-layers).
+We have 3DBAG GeoPackage files available separately for each tile, and we also offer one big file that contains the entire 3DBAG dataset. The GeoPackage files contain [all the layers](../../schema/layers/#data-layers).
 
 ### GeoPackage data dump file
 When working with the compressed GeoPackage files, it is not strictly necessary to decompress them.
 GDAL supports [virtual file systems](https://gdal.org/user/virtual_file_systems.html#vsizip-zip-archives), which allows to access the contents of the compressed .gpkg without decompressing the file first.
-The GeoPackage that contains the entire 3D BAG (the data dump file) has been compressed as a [Seek-Optimized ZIP (SOZip)](https://gdal.org/user/virtual_file_systems.html#sozip-seek-optimized-zip) file.
+The GeoPackage that contains the entire 3DBAG (the data dump file) has been compressed as a [Seek-Optimized ZIP (SOZip)](https://gdal.org/user/virtual_file_systems.html#sozip-seek-optimized-zip) file.
 [GDAL (from version 3.7)](https://gdal.org/user/virtual_file_systems.html#sozip-seek-optimized-zip) supports the seek-optimized profile for .zip files, giving an improved performance.
 
 An example GDAL command for accessing the uncompressed Netherlands GeoPackage:
@@ -14,7 +14,7 @@ An example GDAL command for accessing the uncompressed Netherlands GeoPackage:
 
 ## GeoPackage in 3D in QGIS
 
-When opening a 3D BAG file in QGIS (by dragging the file or going to `Layer` -> `Add Layer` -> `Add Vector Layer...`), you can choose which layers to import. In QGIS 3 it is possible to view the 3D layers in the 3D viewer (exact steps may vary between versions):
+When opening a 3DBAG file in QGIS (by dragging the file or going to `Layer` -> `Add Layer` -> `Add Vector Layer...`), you can choose which layers to import. In QGIS 3 it is possible to view the 3D layers in the 3D viewer (exact steps may vary between versions):
 
 1. Adjust the `Layer Properties`. Go to the `3D View` tab and change `No Symbols` to `Single Symbol` and adjust the settings to your preference. In older QGIS 3 versions you will find the button `Enable 3D renderer` instead.
 
@@ -31,5 +31,5 @@ When opening a 3D BAG file in QGIS (by dragging the file or going to `Layer` -> 
   <a href="../../../images_common/gpkg2.png">
     <img src="../../../images_common/gpkg2.png" />
   </a>
-  <figcaption>A portion of the 3D BAG data in GeoPackage format. On the top is the 3D Map View, in the left the attributes, and in the bottom the 2D features.</figcaption>
+  <figcaption>A portion of the 3DBAG data in GeoPackage format. On the top is the 3D Map View, in the left the attributes, and in the bottom the 2D features.</figcaption>
 </figure>

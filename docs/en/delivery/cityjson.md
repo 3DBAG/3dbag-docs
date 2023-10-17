@@ -4,7 +4,7 @@ The CityJSON specification prescribes how to store the 3D geometry as well as th
 
 The three guiding principles for the format are compactness, simplicity and ease of use for software development. CityJSON has approximately a 6x smaller size than CityGML due to the JSON-encoding. Furthermore, there are already [several open software that work with CityJSON](https://www.cityjson.org/software/) files. We present a few of them below. Try them out!
 
-The CityJSON files of the 3D BAG contain all the [3D layers](../../schema/layers/#data-layers) (LoD1.2, LoD1.3, LoD2.2), but only the attributes that apply to the whole building.
+The CityJSON files of the 3DBAG contain all the [3D layers](../../schema/layers/#data-layers) (LoD1.2, LoD1.3, LoD2.2), but only the attributes that apply to the whole building.
 
 ## ninja and azul
 
@@ -16,14 +16,14 @@ On macOS [azul](https://github.com/tudelft3d/azul) can visualise several data fo
   <a href="../../../images_common/ninja.png">
     <img src="../../../images_common/ninja.png" />
   </a>
-  <figcaption>A portion of the 3D BAG visualised in ninja.</figcaption>
+  <figcaption>A portion of the 3DBAG visualised in ninja.</figcaption>
 </figure>
 
 <figure>
   <a href="../../../images_common/azul.png">
     <img src="../../../images_common/azul.png" />
   </a>
-  <figcaption>A portion of the 3D BAG visualised in azul.</figcaption>
+  <figcaption>A portion of the 3DBAG visualised in azul.</figcaption>
 </figure>
 
 
@@ -36,20 +36,20 @@ With the [CityJSON loader plugin](https://github.com/cityjson/cityjson-qgis-plug
   <a href="../../../images_common/qgis.png">
     <img src="../../../images_common/qgis.png" />
   </a>
-  <figcaption>A portion of the 3D BAG visualised in QGIS, with the 3D Map View on the top and the features in 2D on the bottom.</figcaption>
+  <figcaption>A portion of the 3DBAG visualised in QGIS, with the 3D Map View on the top and the features in 2D on the bottom.</figcaption>
 </figure>
 
 ## cjio
 
 [cjio](https://github.com/cityjson/cjio) is tool with a command-line-interface for working with CityJSON files. For instance, you can get information about the file contents, subset and merge files, convert them to other formats etc.
 
-List all the attributes (and more) in a 3D BAG file:
+List all the attributes (and more) in a 3DBAG file:
 
 ```shell
 cjio 3dbag_<version>_<tile ID>.json info --long
 ```
 
-Extract only the LoD2.2 from a 3D BAG file:
+Extract only the LoD2.2 from a 3DBAG file:
 
 ```shell
 cjio 3dbag_<version>_<tile ID>.json extract_lod 2 save out.json

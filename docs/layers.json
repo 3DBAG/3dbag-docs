@@ -9,10 +9,10 @@
   },
   "pand": {
     "en": {
-      "description": "Stores the attributes and geometry of the `Pand` object of the BAG, plus the attributes of the 3D BAG that relate to the whole building. Contains only those buildings that went into the reconstruction. The attribute [`fid`](attributes.md#fid) is the unique, numeric ID of the objects. Besides being the primary key, `fid` is also used for joining the other layers to `pand`."
+      "description": "Stores the attributes and geometry of the `Pand` object of the BAG, plus the attributes of the 3DBAG that relate to the whole building. Contains only those buildings that went into the reconstruction. The attribute [`fid`](attributes.md#fid) is the unique, numeric ID of the objects. Besides being the primary key, `fid` is also used for joining the other layers to `pand`."
     },
     "nl": {
-      "description": "Bevat de attributen en geometrie van het `Pand`-object van de BAG, plus de attributen van de 3D BAG die verband hebben met het gehele gebouw. Omvat uitsluitend de gebouwen die daadwerkelijk door de reconstructie gegaan zijn. Het attribuut `fid` is het unieke, numerieke ID van de objecten. Naast dat het de primaire *key* is, wordt `fid` ook gebruikt voor het samenvoegen van andere lagen met `pand`."
+      "description": "Bevat de attributen en geometrie van het `Pand`-object van de BAG, plus de attributen van de 3DBAG die verband hebben met het gehele gebouw. Omvat uitsluitend de gebouwen die daadwerkelijk door de reconstructie gegaan zijn. Het attribuut `fid` is het unieke, numerieke ID van de objecten. Naast dat het de primaire *key* is, wordt `fid` ook gebruikt voor het samenvoegen van andere lagen met `pand`."
     }
   },
   "lod12_3d": {

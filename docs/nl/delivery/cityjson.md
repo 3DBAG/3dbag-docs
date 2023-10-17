@@ -4,7 +4,7 @@ De specificaties van CityJSON beschrijven de manier van het opslaan van zowel de
 
 De drie leidende principes van het formaat zijn compactheid, eenvoud en makkelijk te gebruiken door ontwikkelaars. CityJSON is gemiddeld 6 maal zo compact als CityGML door de JSON-codering. Daarnaast zijn er door het eenvoudige formaat al [verscheidene tools](https://www.cityjson.org/software/) ontwikkeld voor het verwerken, bewerken en visualiseren van CityJSON-bestanden. Een aantal van die tools is hieronder uitgelicht. Probeer het uit!
 
-De CityJSON-bestanden van de 3D BAG bevatten alle [3D lagen](../../schema/layers/#data-layers) (LoD1.2, LoD1.3, LoD2.2), maar alleen de attributen die betrekking hebben op het gehele gebouw.
+De CityJSON-bestanden van de 3DBAG bevatten alle [3D lagen](../../schema/layers/#data-layers) (LoD1.2, LoD1.3, LoD2.2), maar alleen de attributen die betrekking hebben op het gehele gebouw.
 
 ## ninja en azul
 
@@ -16,14 +16,14 @@ Voor macOS is er [azul](https://github.com/tudelft3d/azul), een 3D viewer voor v
   <a href="../../../images_common/ninja.png">
     <img src="../../../images_common/ninja.png" />
   </a>
-  <figcaption>Een 3D BAG tegel gevisualiseerd met ninja.</figcaption>
+  <figcaption>Een 3DBAG tegel gevisualiseerd met ninja.</figcaption>
 </figure>
 
 <figure>
   <a href="../../../images_common/azul.png">
     <img src="../../../images_common/azul.png" />
   </a>
-  <figcaption>Een 3D BAG tegel gevisualiseerd met azul.</figcaption>
+  <figcaption>Een 3DBAG tegel gevisualiseerd met azul.</figcaption>
 </figure>
 
 ## QGIS CityJSON Loader plugin
@@ -34,17 +34,17 @@ De [CityJSON Loader plugin](https://github.com/cityjson/cityjson-qgis-plugin) vo
   <a href="../../../images_common/qgis.png">
     <img src="../../../images_common/qgis.png" />
   </a>
-  <figcaption>Een 3D BAG tegel geopend in QGIS, met de 3D Map View boven en de features in 2D onder.</figcaption>
+  <figcaption>Een 3DBAG tegel geopend in QGIS, met de 3D Map View boven en de features in 2D onder.</figcaption>
 </figure>
 
 ## cjio
 
 [cjio](https://github.com/cityjson/cjio) is een command-line-interface voor het verwerken van CityJSON-bestanden. Je kunt er bijvoorbeeld data mee valideren, bestanden opdelen of samenvoegen en converteren naar andere formaten.
 
-Om alle attributen (en meer) te zien in een 3D BAG bestand:
+Om alle attributen (en meer) te zien in een 3DBAG bestand:
 
 `cjio 3dbag_<version>_<tile ID>.json info --long`
 
-Om de LoD2.2 uit een 3D BAG bestand te halen en die op te slaan:
+Om de LoD2.2 uit een 3DBAG bestand te halen en die op te slaan:
 
 `cjio 3dbag_<version>_<tile ID>.json extract_lod 2 save out.json`

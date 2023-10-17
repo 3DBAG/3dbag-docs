@@ -8,14 +8,14 @@ Neem bijvoorbeeld een zeer simpel huis met vier hoeken en een puntdak. Een ruwe 
 
 Deze aanvullende labels heten ook wel *semantiek*, en derhalve noemen we gelabelde vlakken **semantische vlakken**. In het geval van gebouwmodellen spreken we bijvoorbeeld over een *grondoppervlak*, *muuroppervlak*, *dakoppervlak*, enzovoort.
 
-In de 3D BAG gebruiken we de zogenaamde [*verfijnde LoD-specificatie*](http://doi.org/10.1016/j.compenvurbsys.2016.04.005), welke in de onderstaande figuur getoond wordt.
+In de 3DBAG gebruiken we de zogenaamde [*verfijnde LoD-specificatie*](http://doi.org/10.1016/j.compenvurbsys.2016.04.005), welke in de onderstaande figuur getoond wordt.
 
 <figure>
   <img src="https://3d.bk.tudelft.nl/lod/lodtud.png" />
   <figcaption><b>An improved LOD specification for 3D building models.</b> Filip Biljecki, Hugo Ledoux, and Jantien Stoter. Computers, Environment and Urban Systems, 59: 25–37, 2016. <a href="http://doi.org/10.1016/j.compenvurbsys.2016.04.005">DOI</a></figcaption>
 </figure>
 
-Voor de 3D BAG reconstrueren we data op de volgende detailniveaus: 1.2, 1.3 en 2.2. Merk op dat behalve het verschil in de mate van geometrische details, een belangrijk verschil tussen LoD1 en LoD2 de aanwezigheid van *semantische oppervlakken* is. Deze informatie zorgt er bijvoorbeeld voor dat dak- en muuroppervlakken respectievelijk rood en grijs gevisualiseerd kunnen worden en dat hiermee analyses kunnen orden gedaan. Verder is het verschil tussen LoD1.2 en LoD1.3 dat laatstgenoemde onderscheid maakt tussen significante hoogteverschillen binnen een gebouw, terwijl het gebouw in LoD1.2 een uniforme hoogte heeft.
+Voor de 3DBAG reconstrueren we data op de volgende detailniveaus: 1.2, 1.3 en 2.2. Merk op dat behalve het verschil in de mate van geometrische details, een belangrijk verschil tussen LoD1 en LoD2 de aanwezigheid van *semantische oppervlakken* is. Deze informatie zorgt er bijvoorbeeld voor dat dak- en muuroppervlakken respectievelijk rood en grijs gevisualiseerd kunnen worden en dat hiermee analyses kunnen orden gedaan. Verder is het verschil tussen LoD1.2 en LoD1.3 dat laatstgenoemde onderscheid maakt tussen significante hoogteverschillen binnen een gebouw, terwijl het gebouw in LoD1.2 een uniforme hoogte heeft.
 
 <!-- difficulties of modelling buildings in diff lod-s -->
 
@@ -34,7 +34,7 @@ Voor 3D GIS moeten deze geometrische primitieven en de bijbehorende regels uitge
 
 <!-- I am unsure if there is a proper Dutch translation for Solid -->
 
-Voor de 3D BAG is de meest relevante primitief de [Solid](https://val3dity.readthedocs.io/en/latest/definitions/#solid), aangezien we gebouwmodellen als zodanig beschouwen. Dit onderscheid is belangrijk omdat er andere (strictere) regels voor Solids gelden, ten opzichte van andere 3D primitieven.
+Voor de 3DBAG is de meest relevante primitief de [Solid](https://val3dity.readthedocs.io/en/latest/definitions/#solid), aangezien we gebouwmodellen als zodanig beschouwen. Dit onderscheid is belangrijk omdat er andere (strictere) regels voor Solids gelden, ten opzichte van andere 3D primitieven.
 
 !!! note "3D primitieven en dataformaten"
     Niet ieder dataformaat ondersteunt de bovengenoemde 3D primitieven. Dat is eigenlijk zo voor al onze exportformaten, behalve CityJSON. Daarom gebruiken we in deze andere formaten de geometrietypes die het meest gelijkwaardig zijn aan Solids. De PostgreSQL backup is hierbij een bijzonder geval, omdat PostGIS technisch gezien Solids kan opslaan, maar alleen met de [SFCGAL-extensie](http://www.sfcgal.org/). Om het inladen van de PostgreSQL backup zo makkelijk mogelijk te maken, slaan we de 3D geometrieën op als `MultiPolygonZ`.

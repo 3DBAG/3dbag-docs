@@ -21,8 +21,8 @@
             <cc:attributionName>3D geoinformation research group</cc:attributionName>
             <dc:title>
                 <rdf:Alt>
-                  <rdf:li xml:lang='x-default'>3D BAG</rdf:li>
-                  <rdf:li xml:lang='en-US'>3D BAG</rdf:li>
+                  <rdf:li xml:lang='x-default'>3DBAG</rdf:li>
+                  <rdf:li xml:lang='en-US'>3DBAG</rdf:li>
                 </rdf:Alt>
             </dc:title>
         </rdf:Description>

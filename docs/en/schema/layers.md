@@ -2,7 +2,7 @@
 
 ![3dbag_layers](../images/3d_bag_layers_en.png){ width=100% }
 
-The diagram above shows the relation between a building in the real world and how is it modeled in the 3D BAG.
+The diagram above shows the relation between a building in the real world and how is it modeled in the 3DBAG.
 The BAG models buildings with their largest extent as viewed from above. In practice this means a single 2D polygon per building, as it is displayed by the black polygon in the figure. Therefore, the **BAG polygon** may also include parts of the building that are below terrain level.
 
 In order to create an accurate model of the <span style="color:#24a1c8ff">**above terrain**</span> parts of a building, we cut off the <span style="color:#ff0000ff">**below terrain**</span> parts from the BAG polygon. We only consider the parts above the terrain, because we do not have data on the 3D extent of the parts below the terrain.
@@ -14,7 +14,7 @@ From the parts above terrain we then generate the 3D models in LoD1.2, 1.3 and 2
 
 In case of the 2D models, the polygons represent the 2D projection of the roof planes of the 3D model. For LoD1.2 and LoD1.3, the 3D model can be fully reconstructed from the 2D model, by taking the 2D polygons and extruding each to one of their [`b3_h_dak_*`](attributes.md#b3_h_dak_50p) height values from their heights at surface level which is stored in [b3_h_maaiveld](attributes.md#b3_h_maaiveld). However, this is not true for the LoD2.2 models, since here we have slanted roof planes, which cannot be represented by a 2D polygon and a single height value.
 
-The 3D BAG has 6 geometric representations of a BAG object (a *feature*). The 6 representations are the 2D and 3D variants of the LoD1.2, LoD1.3 and LoD2.2 models of the feature. Depending on the representation, a single feature can have multiple geometry parts.
+The 3DBAG has 6 geometric representations of a BAG object (a *feature*). The 6 representations are the 2D and 3D variants of the LoD1.2, LoD1.3 and LoD2.2 models of the feature. Depending on the representation, a single feature can have multiple geometry parts.
 
 Some buildings have multiple disjoint part above the terrain, while they are connected with an underground garage for instance. In such cases, the [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id) can identify these parts within the same feature.
 
@@ -25,7 +25,7 @@ The figure below illustrates the relation between the **feature** and the variou
 
 ## Calculation of height values
 
-Each LoD of a building in 3D BAG has one ground height (`b3_h_maaiveld`) and one or more roof heights (`b3_h_dak_*`). All heights are given in RD/NAP (EPSG:7408, part of EPSG:7415).
+Each LoD of a building in 3DBAG has one ground height (`b3_h_maaiveld`) and one or more roof heights (`b3_h_dak_*`). All heights are given in RD/NAP (EPSG:7408, part of EPSG:7415).
 
 The ground height is determined as the 5th elevation percentile of all the AHN ground points that were found in a 4 meter radius around the BAG polygon of a building.
 
@@ -42,7 +42,7 @@ For the 3D layers the heights are not given as attributes since they are explici
 <!-- start layers (DO NOT REMOVE THIS MARKER AND DO NOT EDIT THE TEXT BELOW. SEE README.) -->
 ## `pand`
 
-Stores the attributes and geometry of the `Pand` object of the BAG, plus the attributes of the 3D BAG that relate to the whole building. Contains only those buildings that went through the reconstruction. The attribute [`fid`](attributes.md#fid) is the unique, numeric ID of the objects. Besides being the primary key, `fid` is also used for joining the other layers to `pand`.
+Stores the attributes and geometry of the `Pand` object of the BAG, plus the attributes of the 3DBAG that relate to the whole building. Contains only those buildings that went through the reconstruction. The attribute [`fid`](attributes.md#fid) is the unique, numeric ID of the objects. Besides being the primary key, `fid` is also used for joining the other layers to `pand`.
 
 
 ## `lod12_3d`

@@ -1,6 +1,6 @@
-[Wavefront OBJ](http://paulbourke.net/dataformats/obj/) is an open data format for 3D graphics. It does not contain any attributes or semantics, only the 3D geometry of the building models. This format is primarily suitable for importing the 3D BAG geometries into 3D graphics applications or 3D CAD applicatons (this might require additional format conversion).
+[Wavefront OBJ](http://paulbourke.net/dataformats/obj/) is an open data format for 3D graphics. It does not contain any attributes or semantics, only the 3D geometry of the building models. This format is primarily suitable for importing the 3DBAG geometries into 3D graphics applications or 3D CAD applicatons (this might require additional format conversion).
 
-The OBJ files for the 3D BAG contain the 3D geometries only and [each 3D layer](../schema/layers.md#data-layers) is stored in a separate file. The three OBJ files are compressed into a single ZIP file per tile. The object coordinates are in the [Amersfoort / RD New + NAP height](http://epsg.io/7415) coordinate reference system.
+The OBJ files for the 3DBAG contain the 3D geometries only and [each 3D layer](../schema/layers.md#data-layers) is stored in a separate file. The three OBJ files are compressed into a single ZIP file per tile. The object coordinates are in the [Amersfoort / RD New + NAP height](http://epsg.io/7415) coordinate reference system.
 
 ## Blender
 
@@ -8,7 +8,7 @@ The OBJ files for the 3D BAG contain the 3D geometries only and [each 3D layer](
   <a href="../../../images_common/blender.png">
     <img src="../../../images_common/blender.png" />
   </a>
-  <figcaption>A portion of the 3D BAG data opened in Blender.</figcaption>
+  <figcaption>A portion of the 3DBAG data opened in Blender.</figcaption>
 </figure>
 
 OBJ files can be directly opened in Blender. Besides, there is also a [plugin for importing CityJSON files](https://github.com/cityjson/Up3date) into Blender.

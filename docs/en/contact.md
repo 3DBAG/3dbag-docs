@@ -1,10 +1,10 @@
 ## Help
 
-If you have questions or need help about the data, go to [https://geoforum.nl/](https://geoforum.nl/). When posting questions on the forum, please use the tag `3D BAG`. Although the forum is mainly in Dutch, you are free to use English of course.
+If you have questions or need help about the data, go to [https://geoforum.nl/](https://geoforum.nl/). When posting questions on the forum, please use the tag `3DBAG`. Although the forum is mainly in Dutch, you are free to use English of course.
 
 ## Feedback
 
-We are very happy to hear whatever you have to say about the 3D BAG. You can give your feedback via [this form](https://docs.google.com/forms/d/e/1FAIpQLSe2XLCYNmoFVHrgt_uRXeLLwfzDK7gS2kE7mGH8rnk6ltE0LQ/viewform?).
+We are very happy to hear whatever you have to say about the 3DBAG. You can give your feedback via [this form](https://docs.google.com/forms/d/e/1FAIpQLSe2XLCYNmoFVHrgt_uRXeLLwfzDK7gS2kE7mGH8rnk6ltE0LQ/viewform?).
 
 ![report_issue](images/report_issue.png){ align=left }
 

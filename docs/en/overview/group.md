@@ -2,7 +2,7 @@ The [3D geoinformation research group](https://3d.bk.tudelft.nl/) is part of the
 
 [3DGI](https://3dgi.xyz/) is a spin-off of the research group and does consultancy and software development in the field of 3D geo-information.
 
-The 3D BAG is currently maintained by:
+The 3DBAG is currently maintained by:
 
 + Balázs Dukai (3DGI)
 + Ravi Peters (3DGI)

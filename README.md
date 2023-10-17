@@ -1,4 +1,4 @@
-# 3D BAG documentation
+# 3DBAG documentation
 
 ## Contributing
 

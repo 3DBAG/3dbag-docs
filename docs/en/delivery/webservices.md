@@ -1,6 +1,6 @@
-Webservices make it possible to specify via an URL exactly which models to download from the 3D BAG. All major GIS software supports these services.
+Webservices make it possible to specify via an URL exactly which models to download from the 3DBAG. All major GIS software supports these services.
 
-From the 3D BAG we serve the [2D layers](../schema/layers.md#data-layers) and the tile set that we use for distributing the data in various formats. You can find the webservice links on the 3D BAG [Downloads](https://3dbag.nl/en/download) page.
+From the 3DBAG we serve the [2D layers](../schema/layers.md#data-layers) and the tile set that we use for distributing the data in various formats. You can find the webservice links on the 3DBAG [Downloads](https://3dbag.nl/en/download) page.
 
 ## WFS
 
@@ -33,6 +33,6 @@ The [Web Map Service](https://www.ogc.org/standards/wms) is an Open Geospatial C
 
 ## Webservices in QGIS
 
-[Here](https://www.youtube.com/watch?v=dWTGOm3Emw4&list=PL4POqt8zsiXFJEEF88f6uAnfuOQSAoG6l) you find a tutorial on using webservices in QGIS, created by one of our colleagues of the 3D geoinformation research group. At `3:18` in the video you can see how to load the webservices of the previous 3D BAG version. The process is almost the same for the current 3D BAG version.
+[Here](https://www.youtube.com/watch?v=dWTGOm3Emw4&list=PL4POqt8zsiXFJEEF88f6uAnfuOQSAoG6l) you find a tutorial on using webservices in QGIS, created by one of our colleagues of the 3D geoinformation research group. At `3:18` in the video you can see how to load the webservices of the previous 3DBAG version. The process is almost the same for the current 3DBAG version.
 
 The video also refers to the [PDOK services plugin](https://plugins.qgis.org/plugins/pdokservicesplugin/), which is very handy for loading base layers.

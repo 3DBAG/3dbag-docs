@@ -2,14 +2,14 @@ De [3D geoinformation onderzoeksgroep](https://3d.bk.tudelft.nl/) is onderdeel v
 
 [3DGI](https://3dgi.xyz/) is een spin-off van de onderzoeksgroep en doet consultancy en software development op het gebied van 3D geo-informatie.
 
-De 3D BAG wordt momenteel onderhouden door:
+De 3DBAG wordt momenteel onderhouden door:
 
 + Balázs Dukai (3DGI)
 + Ravi Peters (3DGI)
 + Gina Stavropoulou (tudelft3d)
 + Jantien Stoter (tudelft3d)
 
-In het verleden hebben ook de voldende personen bijgedragen aan de totstandkoming van de 3D BAG:
+In het verleden hebben ook de voldende personen bijgedragen aan de totstandkoming van de 3DBAG:
 
 + Jordi van Liempt
 + Stelios Vitalis
