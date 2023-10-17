@@ -1,6 +1,15 @@
 # Data Attributen
 
 
+## `b3_bag_bag_overlap`
+
+Het oppervlakte van overlap van dit BAG polygon met andere BAG polygonen. Eenheid: vierkante meter.
+
+*Datatype*: reëel getal
+
+*Eenheid*: vierkante meter
+
+
 ## `b3_dak_type`
 
 Daktype van het pand.
@@ -125,6 +134,51 @@ Straal van de grootste cirkel die binnen het BAG polygoon valt en geen AHN4 punt
 *Datatype*: reëel getal
 
 *Eenheid*: meter
+
+
+## `b3_opp_buitenmuur`
+
+Totale oppervlakte van de buitenmuren. Eenheid: vierkante meter.
+
+*Datatype*: reëel getal
+
+*Eenheid*: vierkante meter
+
+
+## `b3_opp_dak_plat`
+
+Totale oppervlakte van de platte delen van het dak. Eenheid: vierkante meter.
+
+*Datatype*: reëel getal
+
+*Eenheid*: vierkante meter
+
+
+## `b3_opp_dak_schuin`
+
+Totale oppervlakte van de schuine delen van het dak. Eenheid: vierkante meter.
+
+*Datatype*: reëel getal
+
+*Eenheid*: vierkante meter
+
+
+## `b3_opp_grond`
+
+Totale oppervlakte begane grond. Eenheid: vierkante meter.
+
+*Datatype*: reëel getal
+
+*Eenheid*: vierkante meter
+
+
+## `b3_opp_scheidingsmuur`
+
+Totale oppervlakte van de woningscheidende muren. Eenheid: vierkante meter.
+
+*Datatype*: reëel getal
+
+*Eenheid*: vierkante meter
 
 
 ## `b3_pand_deel_id`

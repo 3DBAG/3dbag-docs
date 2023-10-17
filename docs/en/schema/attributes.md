@@ -1,6 +1,15 @@
 # Data Attributes
 
 
+## `b3_bag_bag_overlap`
+
+The total overlap area of BAG polygon with other BAG polygons. Unit: square metre.
+
+*Data type*: real number
+
+*Unit*: square metre
+
+
 ## `b3_dak_type`
 
 Roof type of the building.
@@ -125,6 +134,51 @@ Radius of the largest circle inside the BAG polygon without any AHN4 points. Onl
 *Data type*: real number
 
 *Unit*: metre
+
+
+## `b3_opp_buitenmuur`
+
+Total area of the exterior walls. Unit: square metre.
+
+*Data type*: real number
+
+*Unit*: square metre
+
+
+## `b3_opp_dak_plat`
+
+Total area of the flat parts of the roof. Unit: square metre.
+
+*Data type*: real number
+
+*Unit*: square metre
+
+
+## `b3_opp_dak_schuin`
+
+Total area of the sloped parts of the roof. Unit: square metre.
+
+*Data type*: real number
+
+*Unit*: square metre
+
+
+## `b3_opp_grond`
+
+Total ground floor area. Unit: square metre.
+
+*Data type*: real number
+
+*Unit*: square metre
+
+
+## `b3_opp_scheidingsmuur`
+
+Total area of the party walls. Unit: square metre.
+
+*Data type*: real number
+
+*Unit*: square metre
 
 
 ## `b3_pand_deel_id`

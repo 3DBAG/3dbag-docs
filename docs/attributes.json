@@ -604,67 +604,67 @@
       "unit": "square metre"
     },
     "nl": {
-      "description": "Het totale overlapoppervlak van de BAG polygon met andere BAG polygonen. Eenheid: vierkante meter.",
+      "description": "Het oppervlakte van overlap van dit BAG polygon met andere BAG polygonen. Eenheid: vierkante meter.",
       "type": "reëel getal",
       "unit": "vierkante meter"
     }
   },
   "b3_opp_grond": {
     "en": {
-      "description": "Ground floor area. Unit: square metre.",
+      "description": "Total ground floor area. Unit: square metre.",
       "type": "real number",
       "unit": "square metre"
     },
     "nl": {
-      "description": "Oppervlakte begane grond. Eenheid: vierkante meter.",
+      "description": "Totale oppervlakte begane grond. Eenheid: vierkante meter.",
       "type": "reëel getal",
       "unit": "vierkante meter"
     }
   },
   "b3_opp_dak_plat": {
     "en": {
-      "description": "Area of the flat parts of the roof. Unit: square metre.",
+      "description": "Total area of the flat parts of the roof. Unit: square metre.",
       "type": "real number",
       "unit": "square metre"
     },
     "nl": {
-      "description": "Oppervlakte van de platte delen van het dak. Eenheid: vierkante meter.",
+      "description": "Totale oppervlakte van de platte delen van het dak. Eenheid: vierkante meter.",
       "type": "reëel getal",
       "unit": "vierkante meter"
     }
   },
   "b3_opp_dak_schuin": {
     "en": {
-      "description": "Area of the sloped parts of the roof. Unit: square metre.",
+      "description": "Total area of the sloped parts of the roof. Unit: square metre.",
       "type": "real number",
       "unit": "square metre"
     },
     "nl": {
-      "description": "Oppervlakte van de schuine delen van het dak. Eenheid: vierkante meter.",
+      "description": "Totale oppervlakte van de schuine delen van het dak. Eenheid: vierkante meter.",
       "type": "reëel getal",
       "unit": "vierkante meter"
     }
   },
   "b3_opp_scheidingsmuur": {
     "en": {
-      "description": "Area of the party walls. Unit: square metre.",
+      "description": "Total area of the party walls. Unit: square metre.",
       "type": "real number",
       "unit": "square metre"
     },
     "nl": {
-      "description": "Oppervlakte van de scheidingsmuren. Eenheid: vierkante meter.",
+      "description": "Totale oppervlakte van de woningscheidende muren. Eenheid: vierkante meter.",
       "type": "reëel getal",
       "unit": "vierkante meter"
     }
   },
   "b3_opp_buitenmuur": {
     "en": {
-      "description": "Area of the exterior walls. Unit: square metre.",
+      "description": "Total area of the exterior walls. Unit: square metre.",
       "type": "real number",
       "unit": "square metre"
     },
     "nl": {
-      "description": "Oppervlakte van de buitenmuuren. Eenheid: vierkante meter.",
+      "description": "Totale oppervlakte van de buitenmuren. Eenheid: vierkante meter.",
       "type": "reëel getal",
       "unit": "vierkante meter"
     }
