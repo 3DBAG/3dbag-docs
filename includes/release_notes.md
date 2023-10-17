@@ -1,22 +1,24 @@
-## Unreleased
+## 2023.10.08 – beta
 
-Highlights:
-* party wall area
-* 
+*Release date: 18 October 2023*
+
+The most notable changes with this release are the addition of attributes with estimates for the area of various surfaces types (e.g. party wall, exterior wall, roof, floor), and the introduction of a new experimental 3D API at `api.3dbag.nl`. The new API returns the full 3D geometry as well as all the attributes in the [CityJSONFeatures format](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature). The WFS/WMS api's will remain available as well. 
+
+We also made a number of bug fixes. See below for the full details
 
 #### Changed / Fixed
 
-+ Updated source data. See the [Metadata for the details](https://3dbag.nl/en/download).
-+ Fix [an error](https://geoforum.nl/t/discrepancies-between-3d-bag-version-21-09-8-and-the-ahn3-dataset/8513/4?u=ylannl) with `b3_mutatie_ahn3_ahn4` due to an issue with our AHN3 input tiles. This only affects a small number of buildings.
++ Updated source data. See the [Metadata for the details](https://3dbag.nl/en/download#metadata).
++ Fix [an error](https://geoforum.nl/t/discrepancies-between-3d-bag-version-21-09-8-and-the-ahn3-dataset/8513/4?u=ylannl) with the `b3_mutatie_ahn3_ahn4` attribute due to an issue with our AHN3 input tiles. This only affects a small number of buildings.
 + Improve visual appearance of buildings that originate from overlapping BAG polygons.
-+ Fix duplicate objects in the GeoPackage dump.
++ Fix duplicate objects in the GPKG dump.
 + Added semantic surface labels back into the GPKG files (`labels` attribute)
 
 #### Added
 
-+ **OGC API**
++ New 3D API at `api.3dbag.nl` that returns [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) with 3D geometry. 
 + `b3_bag_bag_overlap` attribute, which is the area (m2) of overlap between BAG polygons
-+ The following attributes were added in a project funded by the Rijksdienst voor Ondernemend Nederland (RVO). In this project, a method was developed and implemented to calculate the volume of each 3D BAG building, as well as the areas of the wall-, roof- and ground floor- surfaces of each building. For the walls, a distinction was made between surfaces that are in contact with the outside air (outer walls, `buitenmuur`) and those that are not (inner walls, `scheidingsmuur`). This was the most challenging part of the project as it required the generation of the geometry of those parts of the walls that are shared with another 3D BAG building. It should be noted that the volumes refer only to those parts of the buildings that are above ground, as underground parts are filtered out in 3D BAG.
++ The following attributes were added in a project funded by the Rijksdienst voor Ondernemend Nederland (RVO). In this project, a method was developed and implemented to calculate the volume of each 3D BAG building, as well as the areas of the wall-, roof- and ground floor- surfaces of each building. For the walls, a distinction was made between surfaces that are in contact with the outside air (outer walls, `buitenmuur`) and those that are not (party walls, `scheidingsmuur`). This was the most challenging part of the project as it required the generation of the geometry of those parts of the walls that are shared with another 3D BAG building. It should be noted that the areas refer only to those parts of the buildings that are above ground, as we have no elevation data for the underground parts.
   + `b3_opp_grond`
   + `b3_opp_dak_plat`
   + `b3_opp_dak_schuin`
@@ -60,7 +62,7 @@ Thank you for using the 3D BAG! As always our [feedback forms](https://forms.gle
 + The building part ID (`pand_deel_id`) to the 3D layers. Previously it was only part of the 2D layers.
 + Reconstruction algorithm
     + added procedure for automatic selection of pointcloud (AHN3 or 4) best suited for reconstruction on a per building basis
-    + building volumes are now calculated and outputted
+    + building areas are now calculated and outputted
     + changed the method for calculating the height attributes on roofparts
 + A metadata file is now available on the download page. The metadata contains information about the current release, including the versions of the source data sets and the versions of the software that were used for producing the release. The metadata file unifies some of the information that were previously scattered across different formats.
 + 3D BAG viewer
