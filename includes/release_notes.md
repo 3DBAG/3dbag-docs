@@ -12,7 +12,7 @@ We also made a number of bug fixes. See below for the full details
 + Fix [an error](https://geoforum.nl/t/discrepancies-between-3d-bag-version-21-09-8-and-the-ahn3-dataset/8513/4?u=ylannl) with the `b3_mutatie_ahn3_ahn4` attribute due to an issue with our AHN3 input tiles. This only affects a small number of buildings.
 + Improve visual appearance of buildings that originate from overlapping BAG polygons.
 + Fix duplicate objects in the GPKG dump.
-+ Added semantic surface labels back into the GPKG files (`labels` attribute)
++ Added semantic surface labels back into the GPKG files (3D layers only) in the `labels` attribute. Previously this attribute was called `semantic_values`).
 
 #### Added
 
