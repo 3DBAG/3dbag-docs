@@ -63,5 +63,7 @@ with urllib.request.urlopen(myurl) as response:
                 my_file.write(json.dumps(f) + "\n")
 ```
 
+Optionally, after you have saved the `.city.jsonl` file you can use [cjio](https://github.com/cityjson/cjio) to convert it to `cityJSON`.
+
 This is a beta version and currently it is not OGC-compliant, but we aim for compliance in a later release. At the moment the only supported CRS is Amersfoort / RD New + NAP height (EPSG:7415).
 
