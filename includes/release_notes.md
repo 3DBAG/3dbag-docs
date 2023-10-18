@@ -2,9 +2,9 @@
 
 *Release date: 18 October 2023*
 
-The most notable changes with this release are the addition of attributes with estimates for the area of various surfaces types (e.g. party wall, exterior wall, roof, floor), and the introduction of a new experimental 3D API at `api.3dbag.nl`. The new API returns the full 3D geometry as well as all the attributes in the [CityJSONFeatures format](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature). The WFS/WMS api's will remain available as well. 
+The most notable changes with this release are the addition of attributes with estimates for the area of various surfaces types (e.g. party wall, exterior wall, roof, floor), and the introduction of a new experimental RESTful API at `api.3dbag.nl`. The new API returns the full 3D geometry as well as all the attributes in the [CityJSONFeatures format](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature). The WFS/WMS api's will remain available as well. 
 
-We also made a number of bug fixes. See below for the full details
+A number of bug fixes is also included in this release. See below for the full details.
 
 #### Changed / Fixed
 
@@ -16,7 +16,7 @@ We also made a number of bug fixes. See below for the full details
 
 #### Added
 
-+ New 3D API at `api.3dbag.nl` that returns [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) with 3D geometry. 
++ New 3D API at `api.3dbag.nl` that returns [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) with 3D geometry. This beta version of the API is currently not OGC-compliant, but we aim for compliance in a later release. 
 + `b3_bag_bag_overlap` attribute, which is the area (m2) of overlap between BAG polygons
 + The following attributes were added in a project funded by the Rijksdienst voor Ondernemend Nederland (RVO). In this project, a method was implemented to calculate the volume of each 3DBAG building, as well as the areas of the wall-, roof- and ground floor- surfaces of each building. For the walls, a distinction was made between surfaces that are in contact with the outside air (outer walls, `buitenmuur`) and those that are not (party walls, `scheidingsmuur`). This was the most challenging part of the project as it required the generation of the geometry of those parts of the walls that are shared with another 3DBAG building. These calculation are all based on the LoD2.2 geometries and it should be noted that the areas refer only to those parts of the buildings that are above ground, as we have no elevation data for the underground parts.
   + `b3_opp_grond`
