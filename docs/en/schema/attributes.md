@@ -411,6 +411,15 @@ ID of a building.
 *Source*: BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
 
+## `labels`
+
+Building surface semantics. Only available in the GPKG 3D layers. This is an array of integers, where an integer refers to a surface type (0: `GroundSurface`, 1: `RoofSurface`, 2: `OuterWallSurface`, 3: `InnerWallSurface`). If a surface does not have a semantic value, NULL is used instead. Thus the length of the array equals the number of 3D polygons in the geometry, and the order of values in the array corresponds to the order of polygons.
+
+*Data type*: list
+
+*Unit*: -
+
+
 ## `oorspronkelijkbouwjaar`
 
 Building construction year.

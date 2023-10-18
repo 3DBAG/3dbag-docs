@@ -12,7 +12,7 @@ A number of bug fixes is also included in this release. See below for the full d
 + Fix [an error](https://geoforum.nl/t/discrepancies-between-3d-bag-version-21-09-8-and-the-ahn3-dataset/8513/4?u=ylannl) with the `b3_mutatie_ahn3_ahn4` attribute due to an issue with our AHN3 input tiles. This only affects a small number of buildings.
 + Improve visual appearance of buildings that originate from overlapping BAG polygons.
 + Fix duplicate objects in the GPKG dump.
-+ Added semantic surface labels back into the GPKG files (`labels` attribute)
++ Added semantic surface labels back into the GPKG files (3D layers only) in the `labels` attribute. Previously this attribute was called `semantic_values`).
 
 #### Added
 
@@ -55,7 +55,7 @@ Thank you for using the 3DBAG! As always our [feedback forms](https://forms.gle/
 -- The 3DBAG Team
 
 #### Update 11-07-2023
-* Regenerated 3D tiles to fix a number of disply issues in the 3DBAG viewer, including incorrect placement of search result marker.
+* Regenerated 3D tiles to fix a number of display issues in the 3D BAG viewer, including incorrect placement of search result marker.
 
 #### Added
 
@@ -143,6 +143,9 @@ Thank you for using the 3DBAG! As always our [feedback forms](https://forms.gle/
 + BAG date/time attributes in GPKG output are of the string type.
 + Missing tiles from download page: `7/1008/656`, `8/720/344`, `9/1000/1068`. The 3DBAG viewer may have some additional tiles missing.
 + Small number of 3D models have invalid geometry. This affects less than 1% of the models.
++ Some attributes are missing from the WMS/WFS layers.
++ The GPKG data dump has a small number of duplicate features.
++ The GPKG files have incorrect height attributes (`b3_h_*`)
 
 ## 21.09.8 – beta
 

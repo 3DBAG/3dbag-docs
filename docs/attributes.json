@@ -668,5 +668,17 @@
       "type": "reëel getal",
       "unit": "vierkante meter"
     }
+  },
+  "labels": {
+    "en": {
+      "description": "Building surface semantics. Only available in the GPKG 3D layers. This is an array of integers, where an integer refers to a surface type (0: `GroundSurface`, 1: `RoofSurface`, 2: `OuterWallSurface`, 3: `InnerWallSurface`). If a surface does not have a semantic value, NULL is used instead. Thus the length of the array equals the number of 3D polygons in the geometry, and the order of values in the array corresponds to the order of polygons.",
+      "type": "list",
+      "unit": "-"
+    },
+    "nl": {
+      "description": "Pand-oppervlaksemantiek. Alleen beschikbaar in de GPKG 3D lagen. Dit is een array van integers, waarbij een integer verwijst naar een oppervlaktype (0: `GroundSurface`, 1: `RoofSurface`, 2: `OuterWallSurface`, 3: `InnerWallSurface`). Als een oppervlak geen semantische waarde heeft, wordt NULL gebruikt. De lengte van de array staat dus gelijk aan het aantal 3D polygonen van de geometrie, en de volgorde van waarden in de array correspondeert met de volgorde van de polygonen.",
+      "type": "lijst",
+      "unit": "-"
+    }
   }
 }
