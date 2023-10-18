@@ -25,6 +25,12 @@ A number of bug fixes is also included in this release. See below for the full d
   + `b3_opp_scheidingsmuur`
   + `b3_opp_buitenmuur`
 
+#### Known issues
++ BAG date/time attributes in GPKG output are of the string type.
++ The following tiles have incomplete data in the GPKG format (missing layers): `9/336/672`, `8/560/352`.
++ The following tiles are completely missing: `7/480/912`, `8/488/560`, `9/476/592`, `10/498/592`, `8/720/344`, `9/424/692`, `10/364/472`, `7/672/192`, `8/256/536`, `7/544/720`, `9/1000/1068`, `9/1000/1072`.
++ Small number of 3D models have invalid geometry. This affects less than 1% of the models.
+
 ## 2023.08.09 – beta
 
 *Release date: 9 August 2023*
