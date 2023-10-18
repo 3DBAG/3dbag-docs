@@ -45,9 +45,9 @@ The [Web Map Service](https://www.ogc.org/standards/wms) is an Open Geospatial C
 The video also refers to the [PDOK services plugin](https://plugins.qgis.org/plugins/pdokservicesplugin/), which is very handy for loading base layers.
 
 
-## Experimental 3DBAG API (3D)
+## 3DBAG API (3D)
 
-The base URL of this webservice is [api.3dbag.nl](https://api.3dbag.nl) and more information about the available endpoints can be found on its [embedded documentation page](https://api.3dbag.nl/api.html). The 3DBAG API can be used to retrieve a single building (using the BAG `identificatie` code) or all buildings within a certain bounding box with all the available attributes in the [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) format. 
+The base URL of the experimental 3DBAG API is [api.3dbag.nl](https://api.3dbag.nl) and more information about the available endpoints can be found on its [embedded documentation page](https://api.3dbag.nl/api.html). As opposed to the 2D webservices described above, the 3DBAG API returns 3D geometries. The 3DBAG API can be used to retrieve a single building (using the BAG `identificatie` code) or all buildings within a certain bounding box with all the available attributes in the [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) format. 
 
 Below a python snippet is given that shows how you could create a [`.city.jsonl` file](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) from a query to the 3DBAG API:
 

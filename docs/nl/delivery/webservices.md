@@ -43,9 +43,9 @@ Ook [Web Map Service (WMS)](https://www.ogc.org/standards/wms) is een OGC-standa
 
 In die video wordt eveneens de [PDOK services plugin](https://plugins.qgis.org/plugins/pdokservicesplugin/) geïntroduceerd, met handige webservices die kunnen fungeren als referentiekaart.
 
-## Experimentele 3DBAG API (3D)
+## 3DBAG API (3D)
 
-De 3DBAG API is beschikbaar via [api.3dbag.nl](https://api.3dbag.nl). Gedetailleerde informatie over de werking kan gevonden worden op de [ingebedde documentatie pagina](https://api.3dbag.nl/api.html). De 3DBAG API kan gebruikt worden om een enkel gebouw binnen te halen (op basis van de BAG `identificatie` code) of om alle gebouwen binnen een bounding box binnen te halen. De 3DBAG objecten worden teruggegeven in het [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) formaat.
+De experimentele 3DBAG API is beschikbaar via [api.3dbag.nl](https://api.3dbag.nl). Gedetailleerde informatie over de werking kan gevonden worden op de [ingebedde documentatie pagina](https://api.3dbag.nl/api.html). In tegenstelling tot de 2D webservices hierboven, wordt er 3D geometrie geleverd. De 3DBAG API kan gebruikt worden om een enkel gebouw binnen te halen (op basis van de BAG `identificatie` code) of om alle gebouwen binnen een bounding box binnen te halen. De 3DBAG objecten worden teruggegeven in het [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) formaat.
 
 Hieronder staat een korte python code die laat zijn hoe je een [`.city.jsonl` bestand](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) kan maken van een  verzoek aan de 3DBAG API:
 
