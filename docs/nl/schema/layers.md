@@ -38,9 +38,14 @@ Voor de 3D lagen zijn de hoogtes niet gegeven als attributen omdat ze al explici
     Als je op een gebouw in onze 3D webviewer klikt, zal er een links onder in het scherm een hoogte getoond worden. Dit is de hoogte gemeten vanaf het maaiveld rondom het gebouw, oftewel `b3_h_maaiveld` is hier al vanaf getrokken.
 
 <!-- start layers (DO NOT REMOVE THIS MARKER AND DO NOT EDIT THE TEXT BELOW. SEE README.) -->
+## `ondergrond`
+
+De ondergrondse delen van een BAG-polygoon die zijn verwijderd tijdens de reconstructie van de LoD1.2-, LoD1.3- en LoD2.2-modellen.
+
+
 ## `pand`
 
-Bevat de attributen en geometrie van het `Pand`-object van de BAG, plus de attributen van de 3DBAG die gelden voor het gehele gebouw. Omvat uitsluitend de gebouwen die daadwerkelijk door de reconstructie gegaan zijn. Het attribuut `fid` is het unieke, numerieke ID van de objecten. Naast dat het de primaire *key* is, wordt `fid` ook gebruikt voor het samenvoegen van andere lagen met `pand`.
+Bevat de attributen en geometrie van het `Pand`-object van de BAG, plus de attributen van de 3DBAG die verband hebben met het gehele gebouw. Omvat uitsluitend de gebouwen die daadwerkelijk door de reconstructie gegaan zijn. Het attribuut `fid` is het unieke, numerieke ID van de objecten. Naast dat het de primaire *key* is, wordt `fid` ook gebruikt voor het samenvoegen van andere lagen met `pand`.
 
 
 ## `lod12_3d`
@@ -50,7 +55,7 @@ Een 3D model van de bovengrondse gebouwdelen, gemodelleerd in LoD1.2. Kan sameng
 
 ## `lod12_2d`
 
-De 2D projectie van het LoD1.2 model. De hoogte van de gedetecteerde LoD1.2 dakoppervlakken zijn opgeslagen als hoogteattributen ([`b3_h_dak_*`](attributes.md#b3_h_dak_50p)). Alleen de bovengrondse delen van de BAG-polygoon zijn meegenomen. Kan samengevoegd worden met `pand` op `fid`.
+De 2D projectie van het LoD1.2 model. De elevatie van de gedetecteerde LoD1.2 dakoppervlakken zijn opgeslagen als hoogteattributen ([`h_dak_*`](attributes.md#h_dak_50p)). Alleen de bovengrondse delen van de BAG-voetafdruk zijn meegenomen. Kan samengevoegd worden met `pand` op `fid`.
 
 
 ## `lod13_3d`
@@ -60,7 +65,7 @@ Een 3D model van de bovengrondse gebouwdelen, gemodelleerd in LoD1.3. Kan sameng
 
 ## `lod13_2d`
 
-De 2D projectie van het LoD1.3 model. De hoogte van de gedetecteerde LoD1.3 dakoppervlakken zijn opgeslagen als hoogteattributen ([`b3_h_dak_*`](attributes.md#b3_h_dak_50p)). Alleen de bovengrondse delen van de BAG-polygoon zijn meegenomen. Kan samengevoegd worden met `pand` op `fid`.
+De 2D projectie van het LoD1.3 model. De elevatie van de gedetecteerde LoD1.3 dakoppervlakken zijn opgeslagen als hoogteattributen ([`h_dak_*`](attributes.md#h_dak_50p)). Alleen de bovengrondse delen van de BAG-voetafdruk zijn meegenomen. Kan samengevoegd worden met `pand` op `fid`.
 
 
 ## `lod22_3d`
@@ -70,6 +75,6 @@ Een 3D model van de bovengrondse gebouwdelen, gemodelleerd in LoD2.2. Kan sameng
 
 ## `lod22_2d`
 
-De 2D projectie van het LoD2.2 model. De hoogte van de gedetecteerde LoD2.2 dakoppervlakken zijn opgeslagen als hoogteattributen ([`b3_h_dak_*`](attributes.md#b3_h_dak_50p)). Alleen de bovengrondse delen van de BAG-polygoon zijn meegenomen. Kan samengevoegd worden met `pand` op `fid`.
+De 2D projectie van het LoD2.2 model. De elevatie van de gedetecteerde LoD2.2 dakoppervlakken zijn opgeslagen als hoogteattributen ([`h_dak_*`](attributes.md#h_dak_50p)). Alleen de bovengrondse delen van de BAG-voetafdruk zijn meegenomen. Kan samengevoegd worden met `pand` op `fid`.
 
 <!-- end layers (DO NOT REMOVE THIS MARKER) -->

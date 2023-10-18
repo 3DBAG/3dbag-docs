@@ -40,9 +40,14 @@ For the 3D layers the heights are not given as attributes since they are explici
     If you click on a building in our 3D webviewer, you'll notice a height value shown in the bottom left corner of the screen. This is the height of the building at the clicked location as measured from the base of the building, ie. `b3_h_maaiveld` is already subtracted from this.
 
 <!-- start layers (DO NOT REMOVE THIS MARKER AND DO NOT EDIT THE TEXT BELOW. SEE README.) -->
+## `ondergrond`
+
+The underground parts of a BAG polygon that were removed during the reconstruction from the LoD1.2, LoD1.3 and LoD2.2 models.
+
+
 ## `pand`
 
-Stores the attributes and geometry of the `Pand` object of the BAG, plus the attributes of the 3DBAG that relate to the whole building. Contains only those buildings that went through the reconstruction. The attribute [`fid`](attributes.md#fid) is the unique, numeric ID of the objects. Besides being the primary key, `fid` is also used for joining the other layers to `pand`.
+Stores the attributes and geometry of the `Pand` object of the BAG, plus the attributes of the 3DBAG that relate to the whole building. Contains only those buildings that went into the reconstruction. The attribute [`fid`](attributes.md#fid) is the unique, numeric ID of the objects. Besides being the primary key, `fid` is also used for joining the other layers to `pand`.
 
 
 ## `lod12_3d`
@@ -52,7 +57,7 @@ A 3D model of the building parts above the terrain, modelled in LoD1.2. Can join
 
 ## `lod12_2d`
 
-The 2D projection of the LoD1.2 model. The elevation of the detected LoD1.2 roof planes are stored as height attributes ([`b3_h_dak_*`](attributes.md#b3_h_dak_50p)). Only the above terrain parts of the BAG footprint are included. Can join to `pand` on `fid`.
+The 2D projection of the LoD1.2 model. The elevation of the detected LoD1.2 roof planes are stored as height attributes ([`h_dak_*`](attributes.md#h_dak_50p)). Only the above terrain parts of the BAG footprint are included. Can join to `pand` on `fid`.
 
 
 ## `lod13_3d`
@@ -62,7 +67,7 @@ A 3D model of the building parts above the terrain, modelled in LoD1.3. Can join
 
 ## `lod13_2d`
 
-The 2D projection of the LoD1.3 model. The elevation of the detected LoD1.3 roof planes are stored as height attributes ([`b3_h_dak_*`](attributes.md#b3_h_dak_50p)). Only the above terrain parts of the BAG footprint are included. Can join to `pand` on `fid`.
+The 2D projection of the LoD1.3 model. The elevation of the detected LoD1.3 roof planes are stored as height attributes ([`h_dak_*`](attributes.md#h_dak_50p)). Only the above terrain parts of the BAG footprint are included. Can join to `pand` on `fid`.
 
 
 ## `lod22_3d`
@@ -72,6 +77,6 @@ A 3D model of the building parts above the terrain, modelled in LoD2.2. Can join
 
 ## `lod22_2d`
 
-The 2D projection of the LoD2.2 model. The elevation of the detected LoD2.2 roof planes are stored as height attributes ([`b3_h_dak_*`](attributes.md#b3_h_dak_50p)). Note that the slanted roof planes of the 3D model cannot be reconstructed from these 2D polygons and height attributes. Only the above terrain parts of the BAG footprint are included. Can join to `pand` on `fid`.
+The 2D projection of the LoD2.2 model. The elevation of the detected LoD2.2 roof planes are stored as height attributes ([`h_dak_*`](attributes.md#h_dak_50p)). Note that the slanted roof planes of the 3D model cannot be reconstructed from these 2D polygons and height attributes. Only the above terrain parts of the BAG footprint are included. Can join to `pand` on `fid`.
 
 <!-- end layers (DO NOT REMOVE THIS MARKER) -->
