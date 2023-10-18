@@ -6,7 +6,10 @@ Additionally, an experimental version of a 3D API is available which can be used
 
 You can find the webservice links on the 3DBAG [Downloads](https://3dbag.nl/en/download) page.
 
-## WFS (2D)
+
+## 2D webservices
+
+### WFS (2D)
 
 The [Web Feature Service](https://www.ogc.org/standards/wfs) (WFS) is an Open Geospatial Consortium standard, and it describes how to query, create and modify geospatial data through the internet.
 
@@ -24,7 +27,7 @@ Available layers:
   <figcaption>LoD1.3 2D WFS layer visualised in QGIS, with the BRT Baselayer from PDOK in the background.</figcaption>
 </figure>
 
-## WMS (3D)
+### WMS (3D)
 
 The [Web Map Service](https://www.ogc.org/standards/wms) is an Open Geospatial Consortium standard to retrieve maps as images through the internet.
 
@@ -35,14 +38,14 @@ The [Web Map Service](https://www.ogc.org/standards/wms) is an Open Geospatial C
   <figcaption>LoD1.3 2D WMS layer visualised in QGIS, with the BRT Baselayer from PDOK in the background.</figcaption>
 </figure>
 
-## 2D webservices in QGIS
+### 2D webservices in QGIS
 
 [Here](https://www.youtube.com/watch?v=dWTGOm3Emw4&list=PL4POqt8zsiXFJEEF88f6uAnfuOQSAoG6l) you find a tutorial on using webservices in QGIS, created by one of our colleagues of the 3D geoinformation research group. At `3:18` in the video you can see how to load the webservices of the previous 3DBAG version. The process is almost the same for the current 3DBAG version.
 
 The video also refers to the [PDOK services plugin](https://plugins.qgis.org/plugins/pdokservicesplugin/), which is very handy for loading base layers.
 
 
-## Experimental 3DBAG API
+## Experimental 3DBAG API (3D)
 
 The base URL of this webservice is [api.3dbag.nl](https://api.3dbag.nl) and more information about the available endpoints can be found on its [embedded documentation page](https://api.3dbag.nl/api.html). The 3DBAG API can be used to retrieve a single building (using the BAG `identificatie` code) or all buildings within a certain bounding box with all the available attributes in the [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) format. 
 
