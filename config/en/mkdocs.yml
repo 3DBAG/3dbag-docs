@@ -72,7 +72,7 @@ nav:
     - 'Data Layers': 'schema/layers.md'
     - 'Data Attributes': 'schema/attributes.md'
   - 'Data Formats':
-      - 'Webservices & API': 'delivery/webservices.md'
+      - 'Webservices': 'delivery/webservices.md'
       - 'GeoPackage': 'delivery/gpkg.md'
       - 'CityJSON': 'delivery/cityjson.md'
       - 'Wavefront OBJ': 'delivery/obj.md'
