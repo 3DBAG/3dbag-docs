@@ -12,13 +12,13 @@ A number of bug fixes is also included in this release. See below for the full d
 + Fix [an error](https://geoforum.nl/t/discrepancies-between-3d-bag-version-21-09-8-and-the-ahn3-dataset/8513/4?u=ylannl) with the `b3_mutatie_ahn3_ahn4` attribute due to an issue with our AHN3 input tiles. This only affects a small number of buildings.
 + Improve visual appearance of buildings that originate from overlapping BAG polygons.
 + Fix duplicate objects in the GPKG dump.
-+ Added semantic surface labels back into the GPKG files (3D layers only) in the `labels` attribute. Previously this attribute was called `semantic_values`).
++ Added semantic surface labels back into the GPKG files (3D layers only) in the `labels` attribute. Previously this attribute was called `semantic_values`.
 
 #### Added
 
 + New 3D API at `api.3dbag.nl` that returns [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) with 3D geometry. This beta version of the API is currently not OGC-compliant, but we aim for compliance in a later release. 
 + `b3_bag_bag_overlap` attribute, which is the area (m2) of overlap between BAG polygons
-+ The following attributes were added in a project funded by the Rijksdienst voor Ondernemend Nederland (RVO). In this project, a method was implemented to calculate the volume of each 3DBAG building, as well as the areas of the wall-, roof- and ground floor- surfaces of each building. For the walls, a distinction was made between surfaces that are in contact with the outside air (outer walls, `buitenmuur`) and those that are not (party walls, `scheidingsmuur`). This was the most challenging part of the project as it required the generation of the geometry of those parts of the walls that are shared with another 3DBAG building. These calculation are all based on the LoD2.2 geometries and it should be noted that the areas refer only to those parts of the buildings that are above ground, as we have no elevation data for the underground parts.
++ The following attributes were added in a project funded by the Rijksdienst voor Ondernemend Nederland (RVO). In this project, a method was implemented to calculate the volume of each 3DBAG building, as well as the areas of the wall-, roof- and ground floor- surfaces of each building. For the walls, a distinction was made between surfaces that are in contact with the outside air (outer walls, `buitenmuur`) and those that are not (party walls, `scheidingsmuur`). This was the most challenging part of the project as it required the generation of the geometry of those parts of the walls that are shared with another 3DBAG building. These calculations are all based on the LoD2.2 geometries and it should be noted that the areas refer only to those parts of the buildings that are above ground, as we have no elevation data for the underground parts.
   + `b3_opp_grond`
   + `b3_opp_dak_plat`
   + `b3_opp_dak_schuin`
