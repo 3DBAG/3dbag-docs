@@ -13,6 +13,7 @@ A number of bug fixes is also included in this release. See below for the full d
 + Improve visual appearance of buildings that originate from overlapping BAG polygons.
 + Fix duplicate objects in the GPKG dump.
 + Added semantic surface labels back into the GPKG files (3D layers only) in the `labels` attribute. Previously this attribute was called `semantic_values`.
++ Removed old API endpoint `https://data.3dbag.nl/api/BAG3D_v2`
 
 #### Added
 
