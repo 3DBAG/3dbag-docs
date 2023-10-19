@@ -2,13 +2,13 @@
 
 *Release date: 18 October 2023*
 
-The most notable changes with this release are the addition of attributes with estimates for the area of various surfaces types (e.g. party wall, exterior wall, roof, floor), and the introduction of a new experimental RESTful API at `api.3dbag.nl`. The new API returns the full 3D geometry as well as all the attributes in the [CityJSONFeatures format](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature). The WFS/WMS api's will remain available as well. 
+The most notable changes with this release are the addition of attributes with estimates for the area of various surfaces types (e.g. party wall, exterior wall, roof, floor), and the introduction of a new experimental RESTful API at [`api.3dbag.nl`](https://api.3dbag.nl). The new API returns the full 3D geometry as well as all the attributes in the [CityJSONFeatures format](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature). The WFS/WMS api's will remain available as well. 
 
 A number of bug fixes is also included in this release. See below for the full details.
 
 #### Changed / Fixed
 
-+ Updated source data. See the [Metadata for the details](https://3dbag.nl/en/download#metadata).
++ Updated BAG source data. See the [Metadata for the details](https://3dbag.nl/en/download#metadata).
 + Fix [an error](https://geoforum.nl/t/discrepancies-between-3d-bag-version-21-09-8-and-the-ahn3-dataset/8513/4?u=ylannl) with the `b3_mutatie_ahn3_ahn4` attribute due to an issue with our AHN3 input tiles. This only affects a small number of buildings.
 + Improve visual appearance of buildings that originate from overlapping BAG polygons.
 + Fix duplicate objects in the GPKG dump.
@@ -16,7 +16,7 @@ A number of bug fixes is also included in this release. See below for the full d
 
 #### Added
 
-+ New 3D API at `api.3dbag.nl` that returns [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) with 3D geometry. This beta version of the API is currently not OGC-compliant, but we aim for compliance in a later release. 
++ New 3D API at [`api.3dbag.nl`](https://api.3dbag.nl) that returns [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) with 3D geometry. This beta version of the API is currently not OGC-compliant, but we aim for compliance in a later release. 
 + `b3_bag_bag_overlap` attribute, which is the area (m2) of overlap between BAG polygons
 + The following attributes were added in a project funded by the Rijksdienst voor Ondernemend Nederland (RVO). In this project, a method was implemented to calculate the volume of each 3DBAG building, as well as the areas of the wall-, roof- and ground floor- surfaces of each building. For the walls, a distinction was made between surfaces that are in contact with the outside air (outer walls, `buitenmuur`) and those that are not (party walls, `scheidingsmuur`). This was the most challenging part of the project as it required the generation of the geometry of those parts of the walls that are shared with another 3DBAG building. These calculations are all based on the LoD2.2 geometries and it should be noted that the areas refer only to those parts of the buildings that are above ground, as we have no elevation data for the underground parts.
   + `b3_opp_grond`

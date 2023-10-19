@@ -40,11 +40,6 @@ For the 3D layers the heights are not given as attributes since they are explici
     If you click on a building in our 3D webviewer, you'll notice a height value shown in the bottom left corner of the screen. This is the height of the building at the clicked location as measured from the base of the building, ie. `b3_h_maaiveld` is already subtracted from this.
 
 <!-- start layers (DO NOT REMOVE THIS MARKER AND DO NOT EDIT THE TEXT BELOW. SEE README.) -->
-## `ondergrond`
-
-The underground parts of a BAG polygon that were removed during the reconstruction from the LoD1.2, LoD1.3 and LoD2.2 models.
-
-
 ## `pand`
 
 Stores the attributes and geometry of the `Pand` object of the BAG, plus the attributes of the 3DBAG that relate to the whole building. Contains only those buildings that went into the reconstruction. The attribute [`fid`](attributes.md#fid) is the unique, numeric ID of the objects. Besides being the primary key, `fid` is also used for joining the other layers to `pand`.

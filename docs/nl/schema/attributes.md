@@ -174,7 +174,7 @@ Totale oppervlakte begane grond. Eenheid: vierkante meter.
 
 ## `b3_opp_scheidingsmuur`
 
-Totale oppervlakte van de woningscheidende muren. Eenheid: vierkante meter.
+Totale oppervlakte van de pandscheidende muren. Eenheid: vierkante meter.
 
 *Datatype*: reëel getal
 

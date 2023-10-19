@@ -652,7 +652,7 @@
       "unit": "square metre"
     },
     "nl": {
-      "description": "Totale oppervlakte van de woningscheidende muren. Eenheid: vierkante meter.",
+      "description": "Totale oppervlakte van de pandscheidende muren. Eenheid: vierkante meter.",
       "type": "reëel getal",
       "unit": "vierkante meter"
     }
