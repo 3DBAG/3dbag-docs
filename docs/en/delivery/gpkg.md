@@ -12,6 +12,10 @@ An example GDAL command for accessing the uncompressed Netherlands GeoPackage:
 
 `ogrinfo -so -al /vsizip/nl_3dbag.gpkg.zip`
 
+The compressed GeoPackage files can be imported directly to a PostgreSQL database using [GDAL](https://gdal.org) and more specifically the [ogr2ogr](https://gdal.org/programs/ogr2ogr.html) tool. Here is an example:
+
+`PG_USE_COPY=YES OGR_TRUNCATE=YES ogr2ogr -gt 65536 -lco SPATIAL_INDEX=NONE -f PostgreSQL PG:"dbname=<DATABASE> port=<PORT> host=<HOST> user=<USER> active_schema=<SCHEMA> password=<PASSWORD>" "/vsizip/3dbag_nl.gpkg.zip"`
+
 ## GeoPackage in 3D in QGIS
 
 When opening a 3DBAG file in QGIS (by dragging the file or going to `Layer` -> `Add Layer` -> `Add Vector Layer...`), you can choose which layers to import. In QGIS 3 it is possible to view the 3D layers in the 3D viewer (exact steps may vary between versions):
