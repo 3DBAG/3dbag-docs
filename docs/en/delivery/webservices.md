@@ -47,9 +47,9 @@ The video also refers to the [PDOK services plugin](https://plugins.qgis.org/plu
 
 ## 3DBAG API (3D)
 
-The base URL of the experimental 3DBAG API is [api.3dbag.nl](https://api.3dbag.nl) and more information about the available endpoints can be found on its [embedded documentation page](https://api.3dbag.nl/api.html). As opposed to the 2D webservices described above, the 3DBAG API returns 3D geometries. The 3DBAG API can be used to retrieve a single building (using the BAG `identificatie` code) or all buildings within a certain bounding box with all the available attributes in the [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) format. 
+The base URL of the experimental 3DBAG API is [api.3dbag.nl](https://api.3dbag.nl) and more information about the available endpoints can be found on its [embedded documentation page](https://api.3dbag.nl/api.html). As opposed to the 2D webservices described above, the 3DBAG API returns 3D geometries. It can be used to retrieve [a single building](https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1655100000500568) (using the BAG `identificatie` code) or [all buildings within a certain bounding box](https://api.3dbag.nl//collections/pand/items?bbox=75900.011,447000.034,76000.011,447200.034) with all the available attributes in [CityJSONFeature objects](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature).  
 
-Below a python snippet is given that shows how you could create a [`.city.jsonl` file](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) from a query to the 3DBAG API:
+The CityJSONFeature objects can be stored in a [CityJSONSeq](https://www.cityjson.org/cityjsonseq/) file with the suffix `city.jsonl`, using the python snippet below. However, for queries that return more than 10 buildings the results are paginated and you will need to write your own script to retrieve them.
 
 ```python
 import urllib.request
@@ -68,5 +68,11 @@ with urllib.request.urlopen(myurl) as response:
                 my_file.write(json.dumps(f) + "\n")
 ```
 
-The 3DBAG API is currently in an experimental beta state. It is currently not OGC-compliant, but we aim for ull compliance with the [OGC API Features specification](https://ogcapi.ogc.org/features/) in a later release. At the moment the only supported CRS is Amersfoort / RD New + NAP height (EPSG:7415).
+To convert from CityJSONSeq to CityJSON, you can use the tool [cjio](https://github.com/cityjson/cjio) as follows:
+
+```bash
+cat <path-to>output.city.jsonl | cjio stdin save <path-to>output.city.json
+```
+
+The 3DBAG API is currently in an experimental beta state. It is currently not OGC-compliant, but we aim for full compliance with the [OGC API Features specification](https://ogcapi.ogc.org/features/) in a later release. At the moment the only supported CRS is Amersfoort / RD New + NAP height (EPSG:7415).
 
