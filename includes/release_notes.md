@@ -1,3 +1,32 @@
+## 2024.02.28 – beta
+
+*Release date: 28 February 2024*
+
+The most notable change with this release is the addition of the `b3_bouwlagen` attribute that estimates the number of floors of a building. This is based on the [work of Ellie Roy](https://repository.tudelft.nl/islandora/object/uuid%3A6de4255c-ab2b-49c2-a282-ed779de092a1), which was adapted for and integrated into the 3DBAG generation pipeline.
+
+A number of bug fixes is also included in this release. See below for the full details.
+
+#### Changed / Fixed
++ Updated BAG source data. See the [Metadata for the details](https://3dbag.nl/en/download#metadata).
++ Fix polygons with duplicate vertices prior to triangulation, this reduces significantly the number missing faces for buildings in the OBJ output and in the 3D viewer.
++ Fix incorrect semantic labels for ground and roof surfaces in OBJ and GPKG outputs (`labels` attribute).
++ Update CityJSON outputs to CityJSON v2.0
++ Added the `PointOfContact` information, 3DBAG `version` and a link to the full metadata file in the metadata object of CityJSON outputs.
++ Old versions of 3DBAG are now more easily accessible
+
+#### Added
++ New attribute `b3_bouwlagen`
++ New attribute `b3_kwaliteitsindicator`
++ New attribute `b3_azimut` for LoD 2.2 roofparts in GPKG 2D layers
++ New attribute `b3_hellingshoek` for LoD 2.2 roofparts in GPKG 2D layers
++ From now on each 3DBAG release will come with a quality report
+
+#### Known issues
++ BAG date/time attributes in GPKG output are of the string type.
++ The following tiles have incomplete data in the GPKG format (missing layers): XX
++ The following tiles are completely missing: XX
++ A number of 3D models have invalid geometry. This affects less than 1% of the models.
+
 ## 2023.10.08 – beta
 
 *Release date: 18 October 2023*
