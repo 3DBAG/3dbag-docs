@@ -23,6 +23,7 @@ A number of bug fixes is also included in this release. See below for the full d
 
 #### Known issues
 + BAG date/time attributes in GPKG output are of the string type.
++ Attributes `b3_kwaliteitsindicator`, `b3_azimut`, `b3_hellingshoek` are currently missing from the CityJSON output
 + The following tiles have incomplete data in the GPKG format (missing layers): XX
 + The following tiles are completely missing: XX
 + A number of 3D models have invalid geometry. This affects less than 1% of the models.
