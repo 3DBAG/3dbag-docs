@@ -683,12 +683,12 @@
   },
   "b3_bouwlagen": {
     "en": {
-      "description": "",
+      "description": "A predicion of the number of floors in the building. Only predictions up of 5 floors are available.",
       "type": "nominal number",
       "unit": "-"
     },
     "nl": {
-      "description": "",
+      "description": "Een voorspelling van het aantal bouwlagen in het gebouw. Alleen voorspellingen van maximaal 5 bouwlagen zijn beschikbaar.",
       "type": "nominaal getal",
       "unit": "-"
     }
