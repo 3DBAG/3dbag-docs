@@ -2,7 +2,7 @@
 
 *Release date: 28 February 2024*
 
-The most notable change with this release is the addition of the `b3_bouwlagen` attribute that estimates the number of floors of a building. This is based on the [work of Ellie Roy](https://repository.tudelft.nl/islandora/object/uuid%3A6de4255c-ab2b-49c2-a282-ed779de092a1), which was adapted for and integrated into the 3DBAG generation pipeline. For now only predictions up to 5 floors are available due to the reduced accuracy of the prediction model for higher buildings. 
+The most notable change with this release is the addition of the `b3_bouwlagen` attribute that estimates the number of floors of a building. This is based on the [work of Ellie Roy](https://repository.tudelft.nl/islandora/object/uuid%3A6de4255c-ab2b-49c2-a282-ed779de092a1), which was adapted for and integrated into the 3DBAG generation pipeline. For now only predictions up to 5 floors are available due to the reduced accuracy of the prediction model for higher buildings. Furthermore, due to certain constraints in the building features, predictions for the number of floors are missing for some lower-height buildings but they will become available in a future release.
 
 A number of bug fixes is also included in this release. See below for the full details.
 
