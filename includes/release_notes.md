@@ -12,14 +12,15 @@ A number of bug fixes is also included in this release. See below for the full d
 + Fix incorrect semantic labels for ground and roof surfaces in OBJ and GPKG outputs (`labels` attribute).
 + Update CityJSON outputs to CityJSON v2.0
 + Added the `PointOfContact` information, 3DBAG `version` and a link to the full metadata file in the metadata object of CityJSON outputs.
-+ Old versions of 3DBAG are now more easily accessible
++ Added `processStep`-s to the lineage (see the metadata)
 
 #### Added
 + New attribute `b3_bouwlagen`
 + New attribute `b3_kwaliteitsindicator`
 + New attribute `b3_azimut` for LoD 2.2 roofparts in GPKG 2D layers
 + New attribute `b3_hellingshoek` for LoD 2.2 roofparts in GPKG 2D layers
-+ From now on each 3DBAG release will come with a quality report
++ Quality dashboard with detailed information about the release
++ Previous versions are available as GPKG dump on the Downloads page
 
 #### Known issues
 + BAG date/time attributes in GPKG output are of the string type.
