@@ -16,13 +16,13 @@ A number of bug fixes is also included in this release. See below for the full d
 + Changed the URL scheme for downloads
 
 #### Added
-+ New attribute `b3_bouwlagen`
-+ New attribute `b3_kwaliteitsindicator`
-+ New attribute `b3_azimut` for LoD 2.2 roofparts in GPKG 2D layers
-+ New attribute `b3_hellingshoek` for LoD 2.2 roofparts in GPKG 2D layers
-+ Make the tile index available as a FlatGeoBuf file. See download page
++ New attribute [`b3_bouwlagen`](https://docs.3dbag.nl/docs/en/schema/attributes/#b3_bouwlagen)
++ New attribute [`b3_kwaliteitsindicator`](https://docs.3dbag.nl/docs/en/schema/attributes/#b3_kwaliteitsindicator)
++ New attribute [`b3_azimut`](https://docs.3dbag.nl/docs/en/schema/attributes/#b3_azimut)
++ New attribute [`b3_hellingshoek`](https://docs.3dbag.nl/docs/en/schema/attributes/#b3_hellingshoek)
++ Make the tile index available as a FlatGeobuf file. See download page
 + Quality dashboard with an analysis of various quality aspects of the release
-+ Previous versions of 3DBAG are no also available on the Downloads page, starting from the version 2023.10.08
++ Previous versions of 3DBAG are now also available on the Downloads page, starting from version 2023.10.08
 
 #### Known issues
 + BAG date/time attributes in GPKG output are of the string type

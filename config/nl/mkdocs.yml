@@ -74,6 +74,7 @@ nav:
   - 'Dataformaten':
       - 'Webservices': 'delivery/webservices.md'
       - 'GeoPackage': 'delivery/gpkg.md'
+      - 'FlatGeobuf': 'delivery/fgb.md'
       - 'CityJSON': 'delivery/cityjson.md'
       - 'Wavefront OBJ': 'delivery/obj.md'
   - 'Gebruiksvoorwaarden': 'copyright.md'

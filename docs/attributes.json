@@ -683,50 +683,50 @@
   },
   "b3_bouwlagen": {
     "en": {
-      "description": "A predicion of the number of floors in the building. Only predictions up of 5 floors are available.",
+      "description": "An estimation of the number of floors in the building. Estimates are only are available for buildings with up to 5 estimated floors.",
       "type": "nominal number",
       "unit": "-"
     },
     "nl": {
-      "description": "Een voorspelling van het aantal bouwlagen in het gebouw. Alleen voorspellingen van maximaal 5 bouwlagen zijn beschikbaar.",
+      "description": "Een schatting van het aantal bouwlagen in het gebouw. Schattingen zijn alleen beschikbaar voor gebouwen met maximaal 5 geschatte bouwlagen.",
       "type": "nominaal getal",
       "unit": "-"
     }
   },
   "b3_kwaliteitsindicator": {
     "en": {
-      "description": "",
+      "description": "Indication of the reliability of the building reconstruction. Value `false` indicates that the reconstruction is possibly incorrect. `b3_kwaliteitsindicator = (b3_bag_bag_overlap == 0) AND (b3_val3dity_lod22 == []) AND ( (b3_pw_selectie_reden != _HIGHEST_YET_INSUFFICIENT_COVERAGE) AND (b3_pw_selectie_reden != _LATEST_BUT_OUTDATED) )`",
       "type": "categorical",
       "unit": "true/false"
     },
     "nl": {
-      "description": "",
+      "description": "Indicatie van de betrouwbaarheid van de gebouwreconstructie. Waarde `false` geeft aan dat de gebouwreconstructie mogelijk niet correct is. `b3_kwaliteitsindicator = (b3_bag_bag_overlap == 0) AND (b3_val3dity_lod22 == []) AND ( (b3_pw_selectie_reden != _HIGHEST_YET_INSUFFICIENT_COVERAGE) AND (b3_pw_selectie_reden != _LATEST_BUT_OUTDATED) )`",
       "type": "categorisch",
       "unit": "true/false"
     }
   },
   "b3_azimut": {
     "en": {
-      "description": " for LoD 2.2 roofparts in GPKG 2D layers.",
+      "description": "Azimuth of roofpart. Available for the LoD 2.2 roofparts in GPKG 2D layers.",
       "type": "real number",
-      "unit": "-"
+      "unit": "degrees"
     },
     "nl": {
-      "description": "",
+      "description": "Azimut van dakdeel. Beschikbaar voor de LoD 2.2 dakdelen in de GPKG 2D lagen.",
       "type": "reëel getal",
-      "unit": "-"
+      "unit": "graden"
     }
   },
   "b3_hellingshoek": {
     "en": {
-      "description": "for LoD 2.2 roofparts in GPKG 2D layers.",
+      "description": "Slope of roofpart. Available for the LoD 2.2 roofparts in GPKG 2D layers.",
       "type": "real number",
-      "unit": "-"
+      "unit": "degrees"
     },
     "nl": {
-      "description": "",
+      "description": "Hellingshoek van dakdeel. Beschikbaar voor de LoD 2.2 dakdelen in de GPKG 2D lagen",
       "type": "reëel getal",
-      "unit": "-"
+      "unit": "graden"
     }
   }
 }

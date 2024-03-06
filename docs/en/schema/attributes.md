@@ -1,6 +1,15 @@
 # Data Attributes
 
 
+## `b3_azimut`
+
+Azimuth of roofpart. Available for the LoD 2.2 roofparts in GPKG 2D layers.
+
+*Data type*: real number
+
+*Unit*: degrees
+
+
 ## `b3_bag_bag_overlap`
 
 The total overlap area of BAG polygon with other BAG polygons. Unit: square metre.
@@ -8,6 +17,15 @@ The total overlap area of BAG polygon with other BAG polygons. Unit: square metr
 *Data type*: real number
 
 *Unit*: square metre
+
+
+## `b3_bouwlagen`
+
+An estimation of the number of floors in the building. Estimates are only are available for buildings with up to 5 estimated floors.
+
+*Data type*: nominal number
+
+*Unit*: -
 
 
 ## `b3_dak_type`
@@ -82,13 +100,31 @@ Elevation above sea level (Amsterdam Ordnance Datum) at the ground level of the 
 *Unit*: metre
 
 
+## `b3_hellingshoek`
+
+Slope of roofpart. Available for the LoD 2.2 roofparts in GPKG 2D layers.
+
+*Data type*: real number
+
+*Unit*: degrees
+
+
 ## `b3_kas_warenhuis`
 
 The building is greenhouse or warehouse (according to TOP10NL) or has an area of over 70000 square meters.
 
 *Data type*: categorical
 
-*Unit*: yes/no
+*Unit*: true/false
+
+
+## `b3_kwaliteitsindicator`
+
+Indication of the reliability of the building reconstruction. Value `false` indicates that the reconstruction is possibly incorrect. `b3_kwaliteitsindicator = (b3_bag_bag_overlap == 0) AND (b3_val3dity_lod22 == []) AND ( (b3_pw_selectie_reden != _HIGHEST_YET_INSUFFICIENT_COVERAGE) AND (b3_pw_selectie_reden != _LATEST_BUT_OUTDATED) )`
+
+*Data type*: categorical
+
+*Unit*: true/false
 
 
 ## `b3_mutatie_ahn3_ahn4`
@@ -97,7 +133,7 @@ The building is greenhouse or warehouse (according to TOP10NL) or has an area of
 
 *Data type*: categorical
 
-*Unit*: yes/no
+*Unit*: true/false
 
 
 ## `b3_nodata_fractie_ahn3`
@@ -395,7 +431,7 @@ Indicates that the buildings has included in the BAG registration.
 
 *Data type*: categorical
 
-*Unit*: yes/no
+*Unit*: true/false
 
 *Source*: BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 

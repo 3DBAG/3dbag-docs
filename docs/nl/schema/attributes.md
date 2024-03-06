@@ -1,6 +1,15 @@
 # Data Attributen
 
 
+## `b3_azimut`
+
+Azimut van dakdeel. Beschikbaar voor de LoD 2.2 dakdelen in de GPKG 2D lagen.
+
+*Datatype*: reëel getal
+
+*Eenheid*: graden
+
+
 ## `b3_bag_bag_overlap`
 
 Het oppervlakte van overlap van dit BAG polygon met andere BAG polygonen. Eenheid: vierkante meter.
@@ -8,6 +17,15 @@ Het oppervlakte van overlap van dit BAG polygon met andere BAG polygonen. Eenhei
 *Datatype*: reëel getal
 
 *Eenheid*: vierkante meter
+
+
+## `b3_bouwlagen`
+
+Een schatting van het aantal bouwlagen in het gebouw. Schattingen zijn alleen beschikbaar voor gebouwen met maximaal 5 geschatte bouwlagen.
+
+*Datatype*: nominaal getal
+
+*Eenheid*: -
 
 
 ## `b3_dak_type`
@@ -82,13 +100,31 @@ Elevatie boven zeeniveau (NAP) op het maaiveldniveau van het pand. Berekend als 
 *Eenheid*: meter
 
 
+## `b3_hellingshoek`
+
+Hellingshoek van dakdeel. Beschikbaar voor de LoD 2.2 dakdelen in de GPKG 2D lagen
+
+*Datatype*: reëel getal
+
+*Eenheid*: graden
+
+
 ## `b3_kas_warenhuis`
 
 Het gebouw is een kas of een warenhuis volgens de TOP10NL of heeft een oppervlakte van meer dan 70000 vierkante meter.
 
 *Datatype*: categorisch
 
-*Eenheid*: yes/no
+*Eenheid*: true/false
+
+
+## `b3_kwaliteitsindicator`
+
+Indicatie van de betrouwbaarheid van de gebouwreconstructie. Waarde `false` geeft aan dat de gebouwreconstructie mogelijk niet correct is. `b3_kwaliteitsindicator = (b3_bag_bag_overlap == 0) AND (b3_val3dity_lod22 == []) AND ( (b3_pw_selectie_reden != _HIGHEST_YET_INSUFFICIENT_COVERAGE) AND (b3_pw_selectie_reden != _LATEST_BUT_OUTDATED) )`
+
+*Datatype*: categorisch
+
+*Eenheid*: true/false
 
 
 ## `b3_mutatie_ahn3_ahn4`
@@ -97,7 +133,7 @@ Het gebouw is een kas of een warenhuis volgens de TOP10NL of heeft een oppervlak
 
 *Datatype*: categorisch
 
-*Eenheid*: yes/no
+*Eenheid*: true/false
 
 
 ## `b3_nodata_fractie_ahn3`
@@ -395,7 +431,7 @@ Een aanduiding waarmee kan worden aangegeven dat een pand in de registratie is o
 
 *Datatype*: categorisch
 
-*Eenheid*: yes/no
+*Eenheid*: true/false
 
 *Bron*: BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)
 
