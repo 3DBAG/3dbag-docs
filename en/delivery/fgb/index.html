@@ -12,22 +12,28 @@
         <meta name="author" content="3D geoinformation research group">
       
       
+        <link rel="canonical" href="https://docs.3dbag.nl/en/delivery/fgb/">
       
       
+        <link rel="prev" href="../gpkg/">
       
-      <link rel="icon" href="/en/assets/images/logo.svg">
+      
+        <link rel="next" href="../cityjson/">
+      
+      
+      <link rel="icon" href="../../assets/images/logo.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
-        <title>3DBAG</title>
+        <title>FlatGeobuf - 3DBAG</title>
       
     
     
-      <link rel="stylesheet" href="/en/assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="/en/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="/en/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/en/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#qgis" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/en/." title="3DBAG" class="md-header__button md-logo" aria-label="3DBAG" data-md-component="logo">
+    <a href="../.." title="3DBAG" class="md-header__button md-logo" aria-label="3DBAG" data-md-component="logo">
       
   <span
     style="color: #333" class="logo-text"
@@ -94,7 +105,7 @@
     class="logo3d"
     width="28"
     height="28" 
-    src="/en/assets/images/logo.svg" alt="logo"> 
+    src="../../assets/images/logo.svg" alt="logo"> 
   <a
     href="https://3d.bk.tudelft.nl"
     style="color: #333;" class="logo-text"
@@ -107,7 +118,7 @@
     class="logo3d"
     width="28"
     height="28" 
-    src="/en/assets/images/logo-3dgi.svg" alt="logo"> 
+    src="../../assets/images/logo-3dgi.svg" alt="logo"> 
   <a
     href="https://3dgi.xyz"
     style="color: #333;" class="logo-text"
@@ -210,7 +221,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/en/." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
   Introduction
@@ -228,7 +239,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/en/schema/concepts/" class="md-tabs__link">
+        <a href="../../schema/concepts/" class="md-tabs__link">
           
   
   Data Schema
@@ -242,11 +253,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/en/delivery/webservices/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../webservices/" class="md-tabs__link">
           
   
   Data Formats
@@ -262,7 +275,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/en/copyright/" class="md-tabs__link">
+      <a href="../../copyright/" class="md-tabs__link">
         
   
     
@@ -279,7 +292,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/en/contact/" class="md-tabs__link">
+      <a href="../../contact/" class="md-tabs__link">
         
   
     
@@ -347,7 +360,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/en/." title="3DBAG" class="md-nav__button md-logo" aria-label="3DBAG" data-md-component="logo">
+    <a href="../.." title="3DBAG" class="md-nav__button md-logo" aria-label="3DBAG" data-md-component="logo">
       
   <span
     style="color: #333" class="logo-text"
@@ -360,7 +373,7 @@
     class="logo3d"
     width="28"
     height="28" 
-    src="/en/assets/images/logo.svg" alt="logo"> 
+    src="../../assets/images/logo.svg" alt="logo"> 
   <a
     href="https://3d.bk.tudelft.nl"
     style="color: #333;" class="logo-text"
@@ -373,7 +386,7 @@
     class="logo3d"
     width="28"
     height="28" 
-    src="/en/assets/images/logo-3dgi.svg" alt="logo"> 
+    src="../../assets/images/logo-3dgi.svg" alt="logo"> 
   <a
     href="https://3dgi.xyz"
     style="color: #333;" class="logo-text"
@@ -430,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -451,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/overview/sources/" class="md-nav__link">
+      <a href="../../overview/sources/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -472,7 +485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/overview/group/" class="md-nav__link">
+      <a href="../../overview/group/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -493,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/overview/media/" class="md-nav__link">
+      <a href="../../overview/media/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -514,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/overview/release_notes/" class="md-nav__link">
+      <a href="../../overview/release_notes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -580,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/schema/concepts/" class="md-nav__link">
+      <a href="../../schema/concepts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -601,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/schema/layers/" class="md-nav__link">
+      <a href="../../schema/layers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -622,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/schema/attributes/" class="md-nav__link">
+      <a href="../../schema/attributes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -647,23 +660,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -674,7 +692,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Data Formats
@@ -688,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/delivery/webservices/" class="md-nav__link">
+      <a href="../webservices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -709,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/delivery/gpkg/" class="md-nav__link">
+      <a href="../gpkg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -727,10 +745,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/en/delivery/fgb/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    FlatGeobuf
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -739,6 +775,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#qgis" class="md-nav__link">
+    <span class="md-ellipsis">
+      QGIS
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -751,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/delivery/cityjson/" class="md-nav__link">
+      <a href="../cityjson/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -772,7 +835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/delivery/obj/" class="md-nav__link">
+      <a href="../obj/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -800,7 +863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/copyright/" class="md-nav__link">
+      <a href="../../copyright/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -820,7 +883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/contact/" class="md-nav__link">
+      <a href="../../contact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -891,6 +954,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#qgis" class="md-nav__link">
+    <span class="md-ellipsis">
+      QGIS
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -901,8 +981,27 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  <h1>FlatGeobuf</h1>
+
+<p><a href="https://flatgeobuf.org/">FlatGeobuf</a> is a performant binary encoding for geographic data. We make the tile index for each 3DBAG release available in this format.</p>
+<h2 id="qgis">QGIS<a class="headerlink" href="#qgis" title="Permanent link">&para;</a></h2>
+<p>You can directly load the FlatGeobuf tile index with the URL that you find on the 3DBAG download page. No need to download the file. To to this go to <code>Layer &gt; Add layer &gt; Add Vector Layer</code>. Then select for <code>Source type</code> the option <code>HTTP(S),cloud,etc.</code>, paste the URL in the URI field and click the 'Add' button.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -966,10 +1065,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/en/", "features": ["navigation.tabs", "navigation.instant"], "search": "/en/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/en/assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
     
   </body>

@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/logo.svg">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#20231008-beta" class="md-skip">
+        <a href="#20240228-beta" class="md-skip">
           Skip to content
         </a>
       
@@ -409,14 +409,15 @@
     
     
     
-    
-    
+      
+        
+        
       
       
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
@@ -573,6 +574,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#20240228-beta" class="md-nav__link">
+    <span class="md-ellipsis">
+      2024.02.28 – beta
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#20231008-beta" class="md-nav__link">
     <span class="md-ellipsis">
       2023.10.08 – beta
@@ -642,20 +652,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -752,20 +760,18 @@
     
     
     
-    
-    
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -816,6 +822,27 @@
   
   <span class="md-ellipsis">
     GeoPackage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../delivery/fgb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FlatGeobuf
   </span>
   
 
@@ -979,6 +1006,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#20240228-beta" class="md-nav__link">
+    <span class="md-ellipsis">
+      2024.02.28 – beta
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#20231008-beta" class="md-nav__link">
     <span class="md-ellipsis">
       2023.10.08 – beta
@@ -1040,11 +1076,42 @@
 
   <h1>Release Notes</h1>
 
+<h2 id="20240228-beta">2024.02.28 – beta<a class="headerlink" href="#20240228-beta" title="Permanent link">&para;</a></h2>
+<p><em>Release date: 28 February 2024</em></p>
+<p>The most notable change with this release is the addition of the <code>b3_bouwlagen</code> attribute that estimates the number of floors of a building. This is based on the <a href="https://repository.tudelft.nl/islandora/object/uuid%3A6de4255c-ab2b-49c2-a282-ed779de092a1">work of Ellie Roy</a>, which was adapted for and integrated into the 3DBAG generation pipeline. For now only predictions up to 5 floors are available due to the reduced accuracy of the prediction model for higher buildings. Furthermore, due to certain constraints in the building features, predictions for the number of floors are missing for some lower-height buildings but they will become available in a future release.</p>
+<p>A number of other addtions and bug fixes is also included in this release. See below for the full details.</p>
+<h4 id="changed-fixed">Changed / Fixed<a class="headerlink" href="#changed-fixed" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Updated BAG source data. See the <a href="https://3dbag.nl/en/download#metadata">Metadata for the details</a></li>
+<li>Fix polygons with duplicate vertices prior to triangulation, this reduces significantly the number of missing faces for buildings in the OBJ output and in the 3D viewer</li>
+<li>Fix incorrect semantic labels for ground and roof surfaces in OBJ and GPKG outputs (<code>labels</code> attribute)</li>
+<li>Update CityJSON outputs to CityJSON v2.0</li>
+<li>Added the <code>PointOfContact</code> information, 3DBAG <code>version</code> and a link to the full metadata file in the metadata object of CityJSON outputs</li>
+<li>Added <code>processStep</code>-s to the lineage (see the metadata)</li>
+<li>Changed the URL scheme for downloads</li>
+</ul>
+<h4 id="added">Added<a class="headerlink" href="#added" title="Permanent link">&para;</a></h4>
+<ul>
+<li>New attribute <a href="https://docs.3dbag.nl/docs/en/schema/attributes/#b3_bouwlagen"><code>b3_bouwlagen</code></a></li>
+<li>New attribute <a href="https://docs.3dbag.nl/docs/en/schema/attributes/#b3_kwaliteitsindicator"><code>b3_kwaliteitsindicator</code></a></li>
+<li>New attribute <a href="https://docs.3dbag.nl/docs/en/schema/attributes/#b3_azimut"><code>b3_azimut</code></a></li>
+<li>New attribute <a href="https://docs.3dbag.nl/docs/en/schema/attributes/#b3_hellingshoek"><code>b3_hellingshoek</code></a></li>
+<li>The tile index is now available as a FlatGeobuf file. See download page</li>
+<li><a href="https://3dbag.nl/dashboard">Quality dashboard</a> with an analysis of various quality aspects of the release</li>
+<li>Previous versions of 3DBAG are now also available on the Downloads page, starting from version 2023.10.08</li>
+</ul>
+<h4 id="known-issues">Known issues<a class="headerlink" href="#known-issues" title="Permanent link">&para;</a></h4>
+<ul>
+<li>BAG date/time attributes in GPKG output are of the string type</li>
+<li>Attribute <code>b3_bouwlagen</code> are null for buildings with a negative minimum roof height.</li>
+<li>Attributes <code>b3_kwaliteitsindicator</code>, <code>b3_azimut</code>, <code>b3_hellingshoek</code> are currently missing from the CityJSON output</li>
+<li>The following tiles maybe have incomplete data in the GPKG 2D layer output (missing attributes): 9/500/596, 7/528/608, 7/384/496</li>
+</ul>
 <h2 id="20231008-beta">2023.10.08 – beta<a class="headerlink" href="#20231008-beta" title="Permanent link">&para;</a></h2>
 <p><em>Release date: 18 October 2023</em></p>
 <p>The most notable changes with this release are the addition of attributes with estimates for the area of various surfaces types (e.g. party wall, exterior wall, roof, floor), and the introduction of a new experimental RESTful API at <a href="https://api.3dbag.nl"><code>api.3dbag.nl</code></a>. The new API returns the full 3D geometry as well as all the attributes in the <a href="https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature">CityJSONFeatures format</a>. The WFS/WMS api's will remain available as well. </p>
 <p>A number of bug fixes is also included in this release. See below for the full details.</p>
-<h4 id="changed-fixed">Changed / Fixed<a class="headerlink" href="#changed-fixed" title="Permanent link">&para;</a></h4>
+<h4 id="changed-fixed_1">Changed / Fixed<a class="headerlink" href="#changed-fixed_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Updated BAG source data. See the <a href="https://3dbag.nl/en/download#metadata">Metadata for the details</a>.</li>
 <li>Fix <a href="https://geoforum.nl/t/discrepancies-between-3d-bag-version-21-09-8-and-the-ahn3-dataset/8513/4?u=ylannl">an error</a> with the <code>b3_mutatie_ahn3_ahn4</code> attribute due to an issue with our AHN3 input tiles. This only affects a small number of buildings.</li>
@@ -1053,18 +1120,20 @@
 <li>Added semantic surface labels back into the GPKG files (3D layers only) in the <code>labels</code> attribute. Previously this attribute was called <code>semantic_values</code>.</li>
 <li>Removed old API endpoint <code>https://data.3dbag.nl/api/BAG3D_v2</code></li>
 </ul>
-<h4 id="added">Added<a class="headerlink" href="#added" title="Permanent link">&para;</a></h4>
+<h4 id="added_1">Added<a class="headerlink" href="#added_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>New 3D API at <a href="https://api.3dbag.nl"><code>api.3dbag.nl</code></a> that returns <a href="https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature">CityJSONFeatures</a> with 3D geometry. This beta version of the API is currently not OGC-compliant, but we aim for compliance in a later release. </li>
 <li><code>b3_bag_bag_overlap</code> attribute, which is the area (m2) of overlap between BAG polygons</li>
-<li>The following attributes were added in a project funded by the Rijksdienst voor Ondernemend Nederland (RVO). In this project, a method was implemented to calculate the volume of each 3DBAG building, as well as the areas of the wall-, roof- and ground floor- surfaces of each building. For the walls, a distinction was made between surfaces that are in contact with the outside air (outer walls, <code>buitenmuur</code>) and those that are not (party walls, <code>scheidingsmuur</code>). This was the most challenging part of the project as it required the generation of the geometry of those parts of the walls that are shared with another 3DBAG building. These calculations are all based on the LoD2.2 geometries and it should be noted that the areas refer only to those parts of the buildings that are above ground, as we have no elevation data for the underground parts.</li>
+<li>The following attributes were added in a project funded by the Rijksdienst voor Ondernemend Nederland (RVO). In this project, a method was implemented to calculate the volume of each 3DBAG building, as well as the areas of the wall-, roof- and ground floor- surfaces of each building. For the walls, a distinction was made between surfaces that are in contact with the outside air (outer walls, <code>buitenmuur</code>) and those that are not (party walls, <code>scheidingsmuur</code>). This was the most challenging part of the project as it required the generation of the geometry of those parts of the walls that are shared with another 3DBAG building. These calculations are all based on the LoD2.2 geometries and it should be noted that the areas refer only to those parts of the buildings that are above ground, as we have no elevation data for the underground parts.<ul>
 <li><code>b3_opp_grond</code></li>
 <li><code>b3_opp_dak_plat</code></li>
 <li><code>b3_opp_dak_schuin</code></li>
 <li><code>b3_opp_scheidingsmuur</code></li>
 <li><code>b3_opp_buitenmuur</code></li>
 </ul>
-<h4 id="known-issues">Known issues<a class="headerlink" href="#known-issues" title="Permanent link">&para;</a></h4>
+</li>
+</ul>
+<h4 id="known-issues_1">Known issues<a class="headerlink" href="#known-issues_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>BAG date/time attributes in GPKG output are of the string type.</li>
 <li>The following tiles have incomplete data in the GPKG format (missing layers): <code>9/336/672</code>, <code>8/560/352</code>.</li>
@@ -1072,9 +1141,10 @@
 <li>Small number of 3D models have invalid geometry. This affects less than 1% of the models.</li>
 </ul>
 <h2 id="20230809-beta">2023.08.09 – beta<a class="headerlink" href="#20230809-beta" title="Permanent link">&para;</a></h2>
-<p><em>Release date: 9 August 2023</em></p>
+<p><em>Release date: 9 August 2023</em>
+<strong>Patch release of 2023.06.22</strong></p>
 <p>With this release we fix an error with the attributes <code>h_dak_min</code>, <code>h_dak_50p</code>, <code>h_dak_70p</code>, <code>h_dak_max</code> in the GPKG and WFS formats. In 3DBAG version 2023.06.22 the values of these attributes were off by 15 meters. This is fixed in this release.</p>
-<h4 id="changed-fixed_1">Changed / Fixed<a class="headerlink" href="#changed-fixed_1" title="Permanent link">&para;</a></h4>
+<h4 id="changed-fixed_2">Changed / Fixed<a class="headerlink" href="#changed-fixed_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Fix 15 meter offset in <code>h_dak_min</code>, <code>h_dak_50p</code>, <code>h_dak_70p</code>, <code>h_dak_max</code> attributes on roofparts in GPKG and WFS formats.</li>
 </ul>
@@ -1092,7 +1162,7 @@
 <ul>
 <li>Regenerated 3D tiles to fix a number of display issues in the 3D BAG viewer, including incorrect placement of search result marker.</li>
 </ul>
-<h4 id="added_1">Added<a class="headerlink" href="#added_1" title="Permanent link">&para;</a></h4>
+<h4 id="added_2">Added<a class="headerlink" href="#added_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>The building part ID (<code>pand_deel_id</code>) to the 3D layers. Previously it was only part of the 2D layers.</li>
 <li>Reconstruction algorithm<ul>
@@ -1116,7 +1186,7 @@
 <li>Download link for each format (included on the <code>tiles</code> WMS/WFS layer).</li>
 <li>Extended testing of all data formats (included on the <code>tiles</code> WMS/WFS layer).</li>
 </ul>
-<h4 id="changed-fixed_2">Changed / Fixed<a class="headerlink" href="#changed-fixed_2" title="Permanent link">&para;</a></h4>
+<h4 id="changed-fixed_3">Changed / Fixed<a class="headerlink" href="#changed-fixed_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Update of the source vector data sets (BAG, Top10NL) to the version available on 2023-06-05 (TOP10NL) and 2023-06-08 (BAG).</li>
 <li>Update of the source point cloud data sets. Now AHN3 and AHN4 are used.</li>
@@ -1307,7 +1377,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="known-issues_1">Known issues<a class="headerlink" href="#known-issues_1" title="Permanent link">&para;</a></h4>
+<h4 id="known-issues_2">Known issues<a class="headerlink" href="#known-issues_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>BAG date/time attributes in GPKG output are of the string type.</li>
 <li>Missing tiles from download page: <code>7/1008/656</code>, <code>8/720/344</code>, <code>9/1000/1068</code>. The 3DBAG viewer may have some additional tiles missing.</li>
@@ -1322,12 +1392,12 @@
 <p>For this second release we focused primarily on improving the data quality and the way the data is disseminated. The overall geometric validity of the 3D models has risen to 98.25% (up from ~89% in the previous release). Another highlight is that the 3D outputs are no longer triangulated, as requested by several users. Altogether this should make it easier to use our models in other software. These and more changes are described below in more detail. </p>
 <p>This 3DBAG release contains 9 692 978 buildings. This is 7.72% less buildings than available in the BAG dataset, mostly due to outdated or otherwise insufficient input data. We hope to do a release based on the updated AHN4 soon, but this release is still based on AHN3.</p>
 <p>Thank you for using 3DBAG!</p>
-<h4 id="added_2">Added<a class="headerlink" href="#added_2" title="Permanent link">&para;</a></h4>
+<h4 id="added_3">Added<a class="headerlink" href="#added_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>The building part ID (<code>pand_deel_id</code>) to the 3D layers. Previously it was only part of the 2D layers.</li>
 <li>A new layer (<code>ondergrond</code>) with parts of the building polygons that were cut off during the reconstruction, because they were detected as the ground.</li>
 </ul>
-<h4 id="changed-fixed_3">Changed / Fixed<a class="headerlink" href="#changed-fixed_3" title="Permanent link">&para;</a></h4>
+<h4 id="changed-fixed_4">Changed / Fixed<a class="headerlink" href="#changed-fixed_4" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Update of the source data sets (BAG, BGT, Top10NL) to the version available on 2021-09-07.</li>
 <li>3D geometries are <strong>not triangulated</strong> anymore in the CityJSON, GeoPackage, PostgreSQL formats. The OBJ format remains triangulated.</li>
@@ -1431,7 +1501,7 @@
 <li>Fixed the duplicate / cloned objects in the output.</li>
 <li>Improve 3D tiles export and rendering in the Viewer</li>
 </ul>
-<h4 id="known-issues_2">Known issues<a class="headerlink" href="#known-issues_2" title="Permanent link">&para;</a></h4>
+<h4 id="known-issues_3">Known issues<a class="headerlink" href="#known-issues_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Artificial vertical 'screens' still occur in some building models.</li>
 <li>1.75% of the buildings is geometrically invalid, consult the <code>val3dity_codes</code> attribute to find out which ones.</li>
@@ -1443,7 +1513,7 @@
 </ul>
 <h2 id="21031-beta">21.03.1 – beta<a class="headerlink" href="#21031-beta" title="Permanent link">&para;</a></h2>
 <p><em>Release date: 26 March 2021</em></p>
-<h4 id="added_3">Added<a class="headerlink" href="#added_3" title="Permanent link">&para;</a></h4>
+<h4 id="added_4">Added<a class="headerlink" href="#added_4" title="Permanent link">&para;</a></h4>
 <ul>
 <li>A brand new 3D viewer.</li>
 <li>Multiple LoDs, LoD1.2, LoD1.3, LoD2.2.</li>
@@ -1467,7 +1537,7 @@
 <ul>
 <li>CSV data format.</li>
 </ul>
-<h4 id="known-issues_3">Known issues<a class="headerlink" href="#known-issues_3" title="Permanent link">&para;</a></h4>
+<h4 id="known-issues_4">Known issues<a class="headerlink" href="#known-issues_4" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Some buildings have a 'spike': a large deviation in the building geometry due to one vertex with an erroneous coordinate (3D models only).</li>
 <li>Not all buildings are geometrically valid (eg. missing face). Note that this should be evident from the val3dity_codes attribute (3D models only).</li>
@@ -1549,10 +1619,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
     
   </body>
