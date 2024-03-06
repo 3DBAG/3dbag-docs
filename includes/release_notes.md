@@ -13,21 +13,21 @@ A number of bug fixes is also included in this release. See below for the full d
 + Update CityJSON outputs to CityJSON v2.0
 + Added the `PointOfContact` information, 3DBAG `version` and a link to the full metadata file in the metadata object of CityJSON outputs
 + Added `processStep`-s to the lineage (see the metadata)
-+ Old versions of 3DBAG are now more easily accessible
++ Changed the URL scheme for downloads
 
 #### Added
 + New attribute `b3_bouwlagen`
 + New attribute `b3_kwaliteitsindicator`
 + New attribute `b3_azimut` for LoD 2.2 roofparts in GPKG 2D layers
 + New attribute `b3_hellingshoek` for LoD 2.2 roofparts in GPKG 2D layers
-+ Quality dashboard with detailed information about the release
-+ Previous versions are available as GPKG dump on the Downloads page
++ Make the tile index available as a FlatGeoBuf file. See download page
++ Quality dashboard with an analysis of various quality aspects of the release
++ Previous versions of 3DBAG are no also available on the Downloads page, starting from the version 2023.10.08
 
 #### Known issues
 + BAG date/time attributes in GPKG output are of the string type
 + Attributes `b3_kwaliteitsindicator`, `b3_azimut`, `b3_hellingshoek` are currently missing from the CityJSON output
 + The following tiles maybe have incomplete data in the GPKG 2D layer output (missing attributes): 9/500/596, 7/528/608, 7/384/496
-+ The following tiles are completely missing: XX
 + A number of 3D models have invalid geometry. This affects less than 1% of the models.
 
 ## 2023.10.08 – beta
