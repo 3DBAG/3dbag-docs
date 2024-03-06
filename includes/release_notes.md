@@ -7,12 +7,13 @@ The most notable change with this release is the addition of the `b3_bouwlagen` 
 A number of bug fixes is also included in this release. See below for the full details.
 
 #### Changed / Fixed
-+ Updated BAG source data. See the [Metadata for the details](https://3dbag.nl/en/download#metadata).
-+ Fix polygons with duplicate vertices prior to triangulation, this reduces significantly the number missing faces for buildings in the OBJ output and in the 3D viewer.
-+ Fix incorrect semantic labels for ground and roof surfaces in OBJ and GPKG outputs (`labels` attribute).
++ Updated BAG source data. See the [Metadata for the details](https://3dbag.nl/en/download#metadata)
++ Fix polygons with duplicate vertices prior to triangulation, this reduces significantly the number of missing faces for buildings in the OBJ output and in the 3D viewer
++ Fix incorrect semantic labels for ground and roof surfaces in OBJ and GPKG outputs (`labels` attribute)
 + Update CityJSON outputs to CityJSON v2.0
-+ Added the `PointOfContact` information, 3DBAG `version` and a link to the full metadata file in the metadata object of CityJSON outputs.
++ Added the `PointOfContact` information, 3DBAG `version` and a link to the full metadata file in the metadata object of CityJSON outputs
 + Added `processStep`-s to the lineage (see the metadata)
++ Old versions of 3DBAG are now more easily accessible
 
 #### Added
 + New attribute `b3_bouwlagen`
@@ -23,9 +24,9 @@ A number of bug fixes is also included in this release. See below for the full d
 + Previous versions are available as GPKG dump on the Downloads page
 
 #### Known issues
-+ BAG date/time attributes in GPKG output are of the string type.
++ BAG date/time attributes in GPKG output are of the string type
 + Attributes `b3_kwaliteitsindicator`, `b3_azimut`, `b3_hellingshoek` are currently missing from the CityJSON output
-+ The following tiles have incomplete data in the GPKG format (missing layers): XX
++ The following tiles maybe have incomplete data in the GPKG 2D layer output (missing attributes): 9/500/596, 7/528/608, 7/384/496
 + The following tiles are completely missing: XX
 + A number of 3D models have invalid geometry. This affects less than 1% of the models.
 
@@ -51,11 +52,11 @@ A number of bug fixes is also included in this release. See below for the full d
 + New 3D API at [`api.3dbag.nl`](https://api.3dbag.nl) that returns [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) with 3D geometry. This beta version of the API is currently not OGC-compliant, but we aim for compliance in a later release. 
 + `b3_bag_bag_overlap` attribute, which is the area (m2) of overlap between BAG polygons
 + The following attributes were added in a project funded by the Rijksdienst voor Ondernemend Nederland (RVO). In this project, a method was implemented to calculate the volume of each 3DBAG building, as well as the areas of the wall-, roof- and ground floor- surfaces of each building. For the walls, a distinction was made between surfaces that are in contact with the outside air (outer walls, `buitenmuur`) and those that are not (party walls, `scheidingsmuur`). This was the most challenging part of the project as it required the generation of the geometry of those parts of the walls that are shared with another 3DBAG building. These calculations are all based on the LoD2.2 geometries and it should be noted that the areas refer only to those parts of the buildings that are above ground, as we have no elevation data for the underground parts.
-  + `b3_opp_grond`
-  + `b3_opp_dak_plat`
-  + `b3_opp_dak_schuin`
-  + `b3_opp_scheidingsmuur`
-  + `b3_opp_buitenmuur`
+    + `b3_opp_grond`
+    + `b3_opp_dak_plat`
+    + `b3_opp_dak_schuin`
+    + `b3_opp_scheidingsmuur`
+    + `b3_opp_buitenmuur`
 
 #### Known issues
 + BAG date/time attributes in GPKG output are of the string type.
@@ -66,6 +67,7 @@ A number of bug fixes is also included in this release. See below for the full d
 ## 2023.08.09 – beta
 
 *Release date: 9 August 2023*
+__Patch release of 2023.06.22__
 
 With this release we fix an error with the attributes `h_dak_min `, `h_dak_50p`, `h_dak_70p`, `h_dak_max` in the GPKG and WFS formats. In 3DBAG version 2023.06.22 the values of these attributes were off by 15 meters. This is fixed in this release.
 
