@@ -1,5 +1,5 @@
-[FlatGeobuf](https://flatgeobuf.org/) is a performant binary encoding for geographic data. We make the tile index for each 3DBAG release available in this format.
+[FlatGeobuf](https://flatgeobuf.org/) is een performant binaire bestandsformaat voor geografische data. We maken de tegel index voor iedere 3DBAG release beschikbaar in dit formaat.
 
 ## QGIS
-You can directly load the FlatGeobuf tile index with the URL that you find on the 3DBAG download page. No need to download the file. To to this go to `Layer > Add layer > Add Vector Layer`. Then select for `Source type` the option `HTTP(S),cloud,etc.`, paste the URL in the URI field and click the 'Add' button.
+Je kunt de FlatGeobuf tegel index direct inladen in QGIS met de URL die je vind op de 3DBAG download pagina. Het is niet nodig het bestand te downloaden. Ga naar  `Layer > Add layer > Add Vector Layer`. Selecteer voor `Source type` de optie `HTTP(S),cloud,etc.`, plak de URL in het URI veld en klik op de  'Add' knop.
 

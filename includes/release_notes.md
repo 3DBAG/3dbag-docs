@@ -20,8 +20,8 @@ A number of other addtions and bug fixes is also included in this release. See b
 + New attribute [`b3_kwaliteitsindicator`](https://docs.3dbag.nl/docs/en/schema/attributes/#b3_kwaliteitsindicator)
 + New attribute [`b3_azimut`](https://docs.3dbag.nl/docs/en/schema/attributes/#b3_azimut)
 + New attribute [`b3_hellingshoek`](https://docs.3dbag.nl/docs/en/schema/attributes/#b3_hellingshoek)
-+ Make the tile index available as a FlatGeobuf file. See download page
-+ Quality dashboard with an analysis of various quality aspects of the release
++ The tile index is now available as a FlatGeobuf file. See download page
++ [Quality dashboard](https://3dbag.nl/dashboard) with an analysis of various quality aspects of the release
 + Previous versions of 3DBAG are now also available on the Downloads page, starting from version 2023.10.08
 
 #### Known issues
@@ -29,7 +29,6 @@ A number of other addtions and bug fixes is also included in this release. See b
 + Attribute `b3_bouwlagen` are null for buildings with a negative minimum roof height.
 + Attributes `b3_kwaliteitsindicator`, `b3_azimut`, `b3_hellingshoek` are currently missing from the CityJSON output
 + The following tiles maybe have incomplete data in the GPKG 2D layer output (missing attributes): 9/500/596, 7/528/608, 7/384/496
-+ A number of 3D models have invalid geometry. This affects less than 1% of the models.
 
 ## 2023.10.08 – beta
 
