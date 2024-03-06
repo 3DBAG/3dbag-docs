@@ -4,7 +4,7 @@
 
 The most notable change with this release is the addition of the `b3_bouwlagen` attribute that estimates the number of floors of a building. This is based on the [work of Ellie Roy](https://repository.tudelft.nl/islandora/object/uuid%3A6de4255c-ab2b-49c2-a282-ed779de092a1), which was adapted for and integrated into the 3DBAG generation pipeline. For now only predictions up to 5 floors are available due to the reduced accuracy of the prediction model for higher buildings. Furthermore, due to certain constraints in the building features, predictions for the number of floors are missing for some lower-height buildings but they will become available in a future release.
 
-A number of bug fixes is also included in this release. See below for the full details.
+A number of other addtions and bug fixes is also included in this release. See below for the full details.
 
 #### Changed / Fixed
 + Updated BAG source data. See the [Metadata for the details](https://3dbag.nl/en/download#metadata)
@@ -26,6 +26,7 @@ A number of bug fixes is also included in this release. See below for the full d
 
 #### Known issues
 + BAG date/time attributes in GPKG output are of the string type
++ Attribute `b3_bouwlagen` are null for buildings with a negative minimum roof height.
 + Attributes `b3_kwaliteitsindicator`, `b3_azimut`, `b3_hellingshoek` are currently missing from the CityJSON output
 + The following tiles maybe have incomplete data in the GPKG 2D layer output (missing attributes): 9/500/596, 7/528/608, 7/384/496
 + A number of 3D models have invalid geometry. This affects less than 1% of the models.
