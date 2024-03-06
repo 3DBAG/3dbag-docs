@@ -67,13 +67,13 @@
     "en": {
       "description": "Indicates that the buildings has included in the BAG registration.",
       "type": "categorical",
-      "unit": "yes/no",
+      "unit": "true/false",
       "source": "BAG. See [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     },
     "nl": {
       "description": "Een aanduiding waarmee kan worden aangegeven dat een pand in de registratie is opgenomen als gevolg van een feitelijke constatering, zonder dat er op het moment van opname sprake was van een regulier brondocument voor deze opname.",
       "type": "categorisch",
-      "unit": "yes/no",
+      "unit": "true/false",
       "source": "BAG. Zie [BAG Catalogus](https://www.geobasisregistraties.nl/documenten/publicatie/2018/03/12/catalogus-2018)"
     }
   },
@@ -311,12 +311,12 @@
     "en": {
       "description": "The building is greenhouse or warehouse (according to TOP10NL) or has an area of over 70000 square meters.",
       "type": "categorical",
-      "unit": "yes/no"
+      "unit": "true/false"
     },
     "nl": {
       "description": "Het gebouw is een kas of een warenhuis volgens de TOP10NL of heeft een oppervlakte van meer dan 70000 vierkante meter.",
       "type": "categorisch",
-      "unit": "yes/no"
+      "unit": "true/false"
     }
   },
   "b3_reconstructie_onvolledig": {
@@ -455,12 +455,12 @@
     "en": {
       "description": "`true` if there was a significant change detected in the building between the AHN3 and AHN4 pointclouds.",
       "type": "categorical",
-      "unit": "yes/no"
+      "unit": "true/false"
     },
     "nl": {
       "description": "`true` als er een significante verandering is gedetecteerd in het pand tussen de AHN3 en AHN4 puntenwolken.",
       "type": "categorisch",
-      "unit": "yes/no"
+      "unit": "true/false"
     }
   },
   "b3_nodata_fractie_ahn3": {
@@ -679,6 +679,54 @@
       "description": "Pand-oppervlaksemantiek. Alleen beschikbaar in de GPKG 3D lagen. Dit is een array van integers, waarbij een integer verwijst naar een oppervlaktype (0: `GroundSurface`, 1: `RoofSurface`, 2: `OuterWallSurface`, 3: `InnerWallSurface`). Als een oppervlak geen semantische waarde heeft, wordt NULL gebruikt. De lengte van de array staat dus gelijk aan het aantal 3D polygonen van de geometrie, en de volgorde van waarden in de array correspondeert met de volgorde van de polygonen.",
       "type": "lijst",
       "unit": "-"
+    }
+  },
+  "b3_bouwlagen": {
+    "en": {
+      "description": "An estimation of the number of floors in the building. Estimates are only are available for buildings with up to 5 estimated floors.",
+      "type": "nominal number",
+      "unit": "-"
+    },
+    "nl": {
+      "description": "Een schatting van het aantal bouwlagen in het gebouw. Schattingen zijn alleen beschikbaar voor gebouwen met maximaal 5 geschatte bouwlagen.",
+      "type": "nominaal getal",
+      "unit": "-"
+    }
+  },
+  "b3_kwaliteitsindicator": {
+    "en": {
+      "description": "Indication of the reliability of the building reconstruction. Value `false` indicates that the reconstruction is possibly incorrect. `b3_kwaliteitsindicator = (b3_bag_bag_overlap == 0) AND (b3_val3dity_lod22 == []) AND ( (b3_pw_selectie_reden != _HIGHEST_YET_INSUFFICIENT_COVERAGE) AND (b3_pw_selectie_reden != _LATEST_BUT_OUTDATED) )`",
+      "type": "categorical",
+      "unit": "true/false"
+    },
+    "nl": {
+      "description": "Indicatie van de betrouwbaarheid van de gebouwreconstructie. Waarde `false` geeft aan dat de gebouwreconstructie mogelijk niet correct is. `b3_kwaliteitsindicator = (b3_bag_bag_overlap == 0) AND (b3_val3dity_lod22 == []) AND ( (b3_pw_selectie_reden != _HIGHEST_YET_INSUFFICIENT_COVERAGE) AND (b3_pw_selectie_reden != _LATEST_BUT_OUTDATED) )`",
+      "type": "categorisch",
+      "unit": "true/false"
+    }
+  },
+  "b3_azimut": {
+    "en": {
+      "description": "Azimuth of roofpart. Available for the LoD 2.2 roofparts in GPKG 2D layers.",
+      "type": "real number",
+      "unit": "degrees"
+    },
+    "nl": {
+      "description": "Azimut van dakdeel. Beschikbaar voor de LoD 2.2 dakdelen in de GPKG 2D lagen.",
+      "type": "reëel getal",
+      "unit": "graden"
+    }
+  },
+  "b3_hellingshoek": {
+    "en": {
+      "description": "Slope of roofpart. Available for the LoD 2.2 roofparts in GPKG 2D layers.",
+      "type": "real number",
+      "unit": "degrees"
+    },
+    "nl": {
+      "description": "Hellingshoek van dakdeel. Beschikbaar voor de LoD 2.2 dakdelen in de GPKG 2D lagen",
+      "type": "reëel getal",
+      "unit": "graden"
     }
   }
 }
