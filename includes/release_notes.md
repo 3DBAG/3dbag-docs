@@ -17,7 +17,7 @@ A number of other addtions and bug fixes is also included in this release. See b
 
 #### Added
 + New attribute [`b3_bouwlagen`](https://docs.3dbag.nl/en/schema/attributes/#b3_bouwlagen)
-+ New attribute [`b3_kwaliteitsindicator`](https:/docs.3dbag.nl/en/schema/attributes/#b3_kwaliteitsindicator)
++ New attribute [`b3_kwaliteitsindicator`](https://docs.3dbag.nl/en/schema/attributes/#b3_kwaliteitsindicator)
 + New attribute [`b3_azimut`](https://docs.3dbag.nl/en/schema/attributes/#b3_azimut)
 + New attribute [`b3_hellingshoek`](https://docs.3dbag.nl/en/schema/attributes/#b3_hellingshoek)
 + The tile index is now available as a FlatGeobuf file. See download page
