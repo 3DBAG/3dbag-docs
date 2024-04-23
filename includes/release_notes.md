@@ -1,6 +1,7 @@
 ## 2024.04.20 – beta
 
 *Release date: 23 April 2024*
+
 __Patch release of 2024.02.28__
 
 This release fixes a number of issues with the previous release. Most notable the number of missing buildings is significantly reduced, and the attribute `b3_bouwlagen` was fixed for buildings below NAP.
