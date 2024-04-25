@@ -1,18 +1,17 @@
 ## 2024.04.20 – beta
 
-*Release date: 23 April 2024*
+*Release date: 25 April 2024*
 __Patch release of 2024.02.28__
 
-This release fixes a number of issues with the previous release. Most notable the number of missing buildings is significantly reduced, and the attribute `b3_bouwlagen` was fixed for buildings below NAP.
+This release fixes a number of issues with the previous release. The number of missing buildings is significantly reduced, making this the largest 3DBAG release ever with 10 413 738 reconstructed buildings. Also an issue with the attribute `b3_bouwlagen` was fixed for buildings with a negative minimum roof elevation.
 
 #### Changed / Fixed
-+ Fixed: Attribute `b3_bouwlagen` are null for buildings with a negative minimum roof height.
-+ The number of missing buildings was reduced significantly.
++ Fixed: Attribute `b3_bouwlagen` are null for buildings with a negative minimum roof elevation.
++ The number of missing buildings was reduced by 40842 compared to the previous released. 
 
 #### Known issues
 + BAG date/time attributes in GPKG output are of the string type
 + Attributes `b3_kwaliteitsindicator`, `b3_azimut`, `b3_hellingshoek` are currently missing from the CityJSON output
-+ The following tiles maybe have incomplete data in the GPKG 2D layer output (missing attributes): 9/500/596, 7/528/608, 7/384/496
 
 ## 2024.02.28 – beta
 
