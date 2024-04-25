@@ -1,6 +1,7 @@
 ## 2024.04.20 – beta
 
 *Release date: 25 April 2024*
+
 __Patch release of 2024.02.28__
 
 This release fixes a number of issues with the previous release. The number of missing buildings is significantly reduced, making this the largest 3DBAG release ever with 10 413 738 reconstructed buildings. Also an issue with the attribute `b3_bouwlagen` was fixed for buildings with a negative minimum roof elevation.
@@ -82,6 +83,7 @@ A number of bug fixes is also included in this release. See below for the full d
 ## 2023.08.09 – beta
 
 *Release date: 9 August 2023*
+
 __Patch release of 2023.06.22__
 
 With this release we fix an error with the attributes `h_dak_min `, `h_dak_50p`, `h_dak_70p`, `h_dak_max` in the GPKG and WFS formats. In 3DBAG version 2023.06.22 the values of these attributes were off by 15 meters. This is fixed in this release.
