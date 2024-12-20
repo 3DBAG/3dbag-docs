@@ -38,13 +38,13 @@ Daktype van het pand.
 
 *Waarden*:
 
-| Waarden | Omschrijving |
+| Waarde | Omschrijving |
 | :----- | :----------- |
 | `slanted` | Dat met ten minste één schuin oppervlak. |
 | `multiple horizontal` | Dak met meerdere, uitsluitend horizontale oppervlakken. |
-| `single horizontal` | Dak met een enkel horizontaal oppervlak. |
+| `horizontal` | Dak met een enkel horizontaal oppervlak. |
 | `no points` | Er was geen punt gevonden voor het gebouw. |
-| `could not detect` | Kon geen dakoppervlak detecteren, ondanks dat er punten gevonden waren. |
+| `no planes` | Kon geen dakoppervlak detecteren, ondanks dat er punten gevonden waren. |
 
 ## `b3_dd_id`
 
@@ -54,6 +54,22 @@ Dakdeel ID.
 
 *Eenheid*: -
 
+
+## `b3_extrusie`
+
+Geeft aan welke methode is gebruikt om het 3D model te genereren.
+
+*Datatype*: categorisch
+
+*Eenheid*: -
+
+*Waarden*:
+
+| Waarde | Omschrijving |
+| :----- | :----------- |
+| `0` | LoD1.2, LoD1.3 en LoD2.2 modellen zijn gegenereerd. |
+| `1` | Er is alleen een simpele LoD1.1 extrusie gedaan. Dit kan voorkomen voor gebouwen met een zeer groot oppervlak zoals kassen en warenhuizen. |
+| `2` | Er kon geen 3D model worden gegenereerd door een gebrek aan puntenwolk data. |
 
 ## `b3_h_dak_50p`
 
@@ -109,9 +125,18 @@ Hellingshoek van dakdeel. Beschikbaar voor de LoD 2.2 dakdelen in de GPKG 2D lag
 *Eenheid*: graden
 
 
+## `b3_is_glas_dak`
+
+Het gebouw heeft een glas dak. Let op: dit is gebaseerd op een experimentele automatische puntenwolk analyse.
+
+*Datatype*: categorisch
+
+*Eenheid*: true/false
+
+
 ## `b3_kas_warenhuis`
 
-Het gebouw is een kas of een warenhuis volgens de TOP10NL of heeft een oppervlakte van meer dan 70000 vierkante meter.
+Het gebouw is een kas of een warenhuis volgens de TOP10NL.
 
 *Datatype*: categorisch
 
@@ -136,6 +161,24 @@ Indicatie van de betrouwbaarheid van de gebouwreconstructie. Waarde `false` geef
 *Eenheid*: true/false
 
 
+## `b3_mutatie_ahn4_ahn5`
+
+`true` als er een significante verandering is gedetecteerd in het pand tussen de AHN4 en AHN5 puntenwolken.
+
+*Datatype*: categorisch
+
+*Eenheid*: true/false
+
+
+## `b3_n_vlakken`
+
+Het aantal dakvlakken gedetecteerd in de puntenwolk.
+
+*Datatype*: nominaal getal
+
+*Eenheid*: -
+
+
 ## `b3_nodata_fractie_ahn3`
 
 Fractie van het BAG polygon met onvoldoende AHN3 punten dekking. Alleen punten geclassificeerd als gebouw of grond worden gebruikt.
@@ -154,6 +197,15 @@ Fractie van het BAG polygon met onvoldoende AHN4 punten dekking. Alleen punten g
 *Eenheid*: -
 
 
+## `b3_nodata_fractie_ahn5`
+
+Fractie van het BAG polygon met onvoldoende AHN5 punten dekking. Alleen punten geclassificeerd als gebouw of grond worden gebruikt.
+
+*Datatype*: reëel getal
+
+*Eenheid*: -
+
+
 ## `b3_nodata_radius_ahn3`
 
 Straal van de grootste cirkel die binnen het BAG polygoon valt en geen AHN3 punten bevat. Alleen punten geclassificeerd als gebouw of grond worden gebruikt.
@@ -166,6 +218,15 @@ Straal van de grootste cirkel die binnen het BAG polygoon valt en geen AHN3 punt
 ## `b3_nodata_radius_ahn4`
 
 Straal van de grootste cirkel die binnen het BAG polygoon valt en geen AHN4 punten bevat. Alleen punten geclassificeerd als gebouw of grond worden gebruikt.
+
+*Datatype*: reëel getal
+
+*Eenheid*: meter
+
+
+## `b3_nodata_radius_ahn5`
+
+Straal van de grootste cirkel die binnen het BAG polygoon valt en geen AHN5 punten bevat. Alleen punten geclassificeerd als gebouw of grond worden gebruikt.
 
 *Datatype*: reëel getal
 
@@ -244,6 +305,15 @@ Puntdichtheid van de AHN4-puntenwolk voor het pand. Alleen punten geclassificeer
 *Eenheid*: punten per vierkante meter
 
 
+## `b3_puntdichtheid_ahn5`
+
+Puntdichtheid van de AHN5-puntenwolk voor het pand. Alleen punten geclassificeerd als gebouw of grond worden in beschouwing genomen. Eenheid: punten per vierkante meter.
+
+*Datatype*: nominaal getal
+
+*Eenheid*: punten per vierkante meter
+
+
 ## `b3_pw_bron`
 
 Bron van de puntenwolk, bijv. AHN3 of AHN4.
@@ -262,6 +332,15 @@ Inwinjaar van de bron puntenwolk. Dit is bepaald door naar de GPS tijd van de AH
 *Eenheid*: `YYYY`
 
 
+## `b3_pw_onvoldoende`
+
+De puntenwolk was onvoldoende voor het genereren van een 3D model
+
+*Datatype*: categorisch
+
+*Eenheid*: true/false
+
+
 ## `b3_pw_selectie_reden`
 
 Geeft achtergrond informatie met betrekking tot de puntenwolk selectie (zie `pw_bron` attribuut).
@@ -272,22 +351,13 @@ Geeft achtergrond informatie met betrekking tot de puntenwolk selectie (zie `pw_
 
 *Waarden*:
 
-| Waarden | Omschrijving |
+| Waarde | Omschrijving |
 | :----- | :----------- |
 | ``PREFERRED_AND_LATEST`` | De geselecteerde puntenwolk heeft een goede puntdekking en er is geen recentere puntenwolk met voldoende puntdekking beschikbaar. |
 | ``PREFERRED_NOT_LATEST`` | De geselecteerde puntenwolk heeft een goede point puntdekking en er is een recentere puntenwolk met voldoende puntdekking beschikbaar. De nieuwere puntewolk is echter niet geselecteerd omdat er geen mutatie is gedecteerd. |
 | ``LATEST_WITH_MUTATION`` | De geselecteerde puntenwolk heeft een goede puntdekking en er is een mutatie ten opzichte van een oudere puntenwolk gedetecteerd. |
 | ``_HIGHEST_YET_INSUFFICIENT_COVERAGE`` | De geselecteerde puntenwolk heeft hoogste puntdekking van alle kandidaat puntenwolken, maar de puntdekking is alsnog mogelijk niet voldoende. Dit gebouw vertoont mogelijk reconstructie fouten. |
 | ``_LATEST_BUT_OUTDATED`` | De geselecteerde puntenwolk is de meerst recente, maar is mogelijk alsnog te oud voor dit pand. Dit kan gebeurt als het oorspronkelijk bouwjaar gelijk aan of jonger is dan het inwin jaar van de puntenwolk. |
-
-## `b3_reconstructie_onvolledig`
-
-Geeft aan of de volledige LoD1.2/LoD1.3/LoD2.2 reconstructie is overgeslagen voor het pand.
-
-*Datatype*: None
-
-*Eenheid*: None
-
 
 ## `b3_rmse_lod12`
 
@@ -314,6 +384,15 @@ Root Mean Square Error van de 3D afstanden tussen de puntenwolk en het LoD2.2 mo
 *Datatype*: reëel getal
 
 *Eenheid*: meter
+
+
+## `b3_succes`
+
+Object is verwerkt zonder software fouten.
+
+*Datatype*: categorisch
+
+*Eenheid*: true/false
 
 
 ## `b3_val3dity_lod12`

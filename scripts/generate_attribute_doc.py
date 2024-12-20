@@ -21,13 +21,13 @@ if lang == "en":
     unit_txt = "*Unit*"
     source_txt = "*Source*"
     values_txt = "*Values*"
-    values_tbl_header = "| Values | Description |\n| :---- | :---------- |\n"
+    values_tbl_header = "| Value | Description |\n| :---- | :---------- |\n"
 else:
     type_txt = "*Datatype*"
     unit_txt = "*Eenheid*"
     source_txt = "*Bron*"
     values_txt = "*Waarden*"
-    values_tbl_header = "| Waarden | Omschrijving |\n| :----- | :----------- |\n"
+    values_tbl_header = "| Waarde | Omschrijving |\n| :----- | :----------- |\n"
 
 with attributes_md.open("w") as fo:
     if lang == "en":

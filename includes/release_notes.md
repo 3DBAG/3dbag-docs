@@ -1,3 +1,38 @@
+## 2024.12.16 – beta
+
+*Release date: 20 December 2024*
+
+With this release we are including the AHN5 pointcloud as input data for 3DBAG. This means that the 3DBAG buildings are updated in the north-west, west and southern parts of the country. There are also a couple of new attributes, and in the CityJSON output you will now also find BAG objects for which no 3D model could be reconstructed due to a lack of elevation data or another reason (you can infer this from the object attributes). Under the hood we have done a lot of work to improve the [open source software](https://github.com/3DBAG) that we maintain to generate the 3DBAG, so that we can keep updating the 3DBAG in the future more efficiently. This release counts 10 796 210 BAG objects with a 3D building model.
+
+This release was funded by the [3DBAG innovation platform](https://innovation.3dbag.nl).
+
+#### Changed / Fixed
++ Fixed: attribute `b3_bouwlagen` are null for buildings with a negative minimum roof elevation.
++ Fixed: attributes `b3_azimut`, `b3_hellingshoek` are null for many buildings.
++ Removed atribute `b3_reconstructie_onvolledig`, replaced by `b3_extrusie` and `b3_pw_onvoldoende`.
++ The computation of the `b3_rmse_*` attributes are now calculated using all the AHN building points, instead of only roofplane points.
++ Buildings with a footprint area above 30 000 square meters and very complex buildings with more than 900 roofplanes are now only reconstruction in LoD1.1.
+
+#### Added
++ The attributes `b3_azimut`, `b3_hellingshoek` are now also available in the CityJSON output
++ Output for all buildings in CityJSON output, also those without 3D model
++ new attributes:
+    + [`b3_n_vlakken`](https://docs.3dbag.nl/en/schema/attributes/#b3_n_vlakken)
+    + [`b3_is_glas_dak`](https://docs.3dbag.nl/en/schema/attributes/#b3_is_glas_dak)
+    + [`b3_extrusie`](https://docs.3dbag.nl/en/schema/attributes/#b3_extrusie)
+    + [`b3_succes`](https://docs.3dbag.nl/en/schema/attributes/#b3_succes)
+    + [`b3_mutatie_ahn4_ahn5`](https://docs.3dbag.nl/en/schema/attributes/#b3_mutatie_ahn4_ahn5)
+    + [`b3_puntdichtheid_ahn5`](https://docs.3dbag.nl/en/schema/attributes/#b3_puntdichtheid_ahn5)
+    + [`b3_nodata_fractie_ahn5`](https://docs.3dbag.nl/en/schema/attributes/#b3_nodata_fractie_ahn5)
+    + [`b3_nodata_radius_ahn5`](https://docs.3dbag.nl/en/schema/attributes/#b3_nodata_radius_ahn5)
+    + [`b3_pw_onvoldoende`](https://docs.3dbag.nl/en/schema/attributes/#b3_pw_onvoldoende)
+    
+
+#### Known issues
++ BAG date/time attributes in GPKG output are of the string type
++ A small number of triangulated builings in the OBJ output have large spikes.
++ Attribute `b3_kwaliteitsindicator` is currently missing from the CityJSON output
+
 ## 2024.04.20 – beta
 
 *Release date: 25 April 2024*

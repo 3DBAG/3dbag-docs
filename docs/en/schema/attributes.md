@@ -38,13 +38,13 @@ Roof type of the building.
 
 *Values*:
 
-| Values | Description |
+| Value | Description |
 | :---- | :---------- |
 | `slanted` | Roof with at least one slanted surface. |
 | `multiple horizontal` | Roof with multiple, only horizontal surfaces. |
-| `single horizontal` | Roof with a single horizontal surface. |
+| `horizontal` | Roof with a single horizontal surface. |
 | `no points` | No point was found for the building. |
-| `could not detect` | Could not detect a roof surface, even though points were found. |
+| `no planes` | Could not detect a roof surface, even though points were found. |
 
 ## `b3_dd_id`
 
@@ -54,6 +54,22 @@ Dak Deel ID. Roofpart ID.
 
 *Unit*: -
 
+
+## `b3_extrusie`
+
+Indicates which method was used to generate the 3D model.
+
+*Data type*: categorical
+
+*Unit*: -
+
+*Values*:
+
+| Value | Description |
+| :---- | :---------- |
+| `0` | LoD1.2, LoD1.3 and LoD2.2 models were generated. |
+| `1` | Only a simple LoD1.1 extrusion was done. This can occur for buildings with a very large footprint such as greenhouses and warehouses. |
+| `2` | No 3D model could be generated due to a lack of pointcloud data. |
 
 ## `b3_h_dak_50p`
 
@@ -109,9 +125,18 @@ Slope of roofpart. Available for the LoD 2.2 roofparts in GPKG 2D layers.
 *Unit*: degrees
 
 
+## `b3_is_glas_dak`
+
+The building has a glass roof. Notice: this is based on an experimental automated pointcloud analysis.
+
+*Data type*: categorical
+
+*Unit*: true/false
+
+
 ## `b3_kas_warenhuis`
 
-The building is greenhouse or warehouse (according to TOP10NL) or has an area of over 70000 square meters.
+The building is greenhouse or warehouse according to the TOP10NL dataset.
 
 *Data type*: categorical
 
@@ -136,6 +161,24 @@ Indication of the reliability of the building reconstruction. Value `false` indi
 *Unit*: true/false
 
 
+## `b3_mutatie_ahn4_ahn5`
+
+`true` if there was a significant change detected in the building between the AHN4 and AHN5 pointclouds.
+
+*Data type*: categorical
+
+*Unit*: true/false
+
+
+## `b3_n_vlakken`
+
+The number of roofplanes detected in the pointcloud.
+
+*Data type*: nominal number
+
+*Unit*: -
+
+
 ## `b3_nodata_fractie_ahn3`
 
 Fraction of the footprint area that has no point data in the AHN3 point cloud. Only points classified as building or ground are considered.
@@ -154,6 +197,15 @@ Fraction of the footprint area that has no point data in the AHN4 point cloud. O
 *Unit*: -
 
 
+## `b3_nodata_fractie_ahn5`
+
+Fraction of the footprint area that has no point data in the AHN5 point cloud. Only points classified as building or ground are considered.
+
+*Data type*: real number
+
+*Unit*: -
+
+
 ## `b3_nodata_radius_ahn3`
 
 Radius of the largest circle inside the BAG polygon without any AHN3 points. Only points classified as building or ground are considered.
@@ -166,6 +218,15 @@ Radius of the largest circle inside the BAG polygon without any AHN3 points. Onl
 ## `b3_nodata_radius_ahn4`
 
 Radius of the largest circle inside the BAG polygon without any AHN4 points. Only points classified as building or ground are considered.
+
+*Data type*: real number
+
+*Unit*: metre
+
+
+## `b3_nodata_radius_ahn5`
+
+Radius of the largest circle inside the BAG polygon without any AHN5 points. Only points classified as building or ground are considered.
 
 *Data type*: real number
 
@@ -237,7 +298,16 @@ Density of the AHN3 point cloud on BAG polygon. Only points classified as buildi
 
 ## `b3_puntdichtheid_ahn4`
 
-Density of the AHN4 point cloud on BAG polygon. Only points classified as building or ground are considered. Unit: points per square metre.
+Density of the AHN4 point cloud on BAG polygon. Only points classified as building or ground are considered.
+
+*Data type*: nominal number
+
+*Unit*: points per square metre
+
+
+## `b3_puntdichtheid_ahn5`
+
+Density of the AHN5 point cloud on BAG polygon. Only points classified as building or ground are considered.
 
 *Data type*: nominal number
 
@@ -262,6 +332,15 @@ Acquisition year of the point cloud. This is determined by looking at the GPS ti
 *Unit*: `YYYY`
 
 
+## `b3_pw_onvoldoende`
+
+The input pointcloud was insufficient to generate a 3D model.
+
+*Data type*: categorical
+
+*Unit*: true/false
+
+
 ## `b3_pw_selectie_reden`
 
 Provides information about the pointcloud selection indicated in the `pw_bron` attribute.
@@ -272,22 +351,13 @@ Provides information about the pointcloud selection indicated in the `pw_bron` a
 
 *Values*:
 
-| Values | Description |
+| Value | Description |
 | :---- | :---------- |
 | ``PREFERRED_AND_LATEST`` | The selected point cloud has a good point coverage and there are no newer point clouds available that also have good point coverage. |
 | ``PREFERRED_NOT_LATEST`` | The selected point cloud has a good point coverage and there is a newer point cloud available that also has good coverage. Newer pointcloud was not selected because no mutation was detected. |
 | ``LATEST_WITH_MUTATION`` | The selected point cloud has a good point coverage and a mutation was detected compared to the older pointclouds. |
 | ``_HIGHEST_YET_INSUFFICIENT_COVERAGE`` | The selected point cloud has possible poor point coverage. Nonetheless, it is the point cloud with the highest point coverage among all available point clouds. |
 | ``_LATEST_BUT_OUTDATED`` | The selected pointcloud is the latest one available, but it may be outdated for this building. This happens when the year of construction is equal or later than the point cloud acquisition date. |
-
-## `b3_reconstructie_onvolledig`
-
-Indicates whether full LoD1.2/LoD1.3/LoD2.2 reconstruction was skipped for this feature.
-
-*Data type*: None
-
-*Unit*: None
-
 
 ## `b3_rmse_lod12`
 
@@ -314,6 +384,15 @@ Root Mean Square Error of the 3D distances between the point cloud and the LoD2.
 *Data type*: real number
 
 *Unit*: metre
+
+
+## `b3_succes`
+
+Object was processed without any software errors.
+
+*Data type*: categorical
+
+*Unit*: true/false
 
 
 ## `b3_val3dity_lod12`
