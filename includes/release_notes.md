@@ -1,4 +1,4 @@
-## 2024.12.16 – beta
+## 2024.12.16
 
 *Release date: 20 December 2024*
 
