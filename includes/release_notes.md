@@ -4,7 +4,7 @@
 
 With this release we are including the AHN5 pointcloud as input data for 3DBAG. This means that the 3DBAG buildings are updated in the north-west, west and southern parts of the country. There are also a couple of new attributes, and in the CityJSON output you will now also find BAG objects for which no 3D model could be reconstructed due to a lack of elevation data or another reason (you can infer this from the object attributes). 
 
-This is also the first version of 3DBAG that was generated using the improved 3DBAG software pipeline. These software improvements were made possible by WaU subsidy from [Kadaster](https://www.kadaster.nl). Thanks to these improvements we can keep updating the 3DBAG in the future. All our software is [open source](https://github.com/3DBAG).
+This is also the first version of 3DBAG that was generated using the improved 3DBAG software pipeline. These software improvements were made possible by a WaU subsidy from [Kadaster](https://www.kadaster.nl). Thanks to these improvements we can keep updating the 3DBAG in the future. All our software is [open source](https://github.com/3DBAG).
 
 This release counts 10 796 210 BAG objects with a 3D building model and was funded by the [3DBAG innovation platform](https://innovation.3dbag.nl).
 
