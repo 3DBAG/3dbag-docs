@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/logo.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#20240420-beta" class="md-skip">
+        <a href="#20241216-beta" class="md-skip">
           Ga naar inhoud
         </a>
       
@@ -574,6 +574,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#20241216-beta" class="md-nav__link">
+    <span class="md-ellipsis">
+      2024.12.16 – beta
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#20240420-beta" class="md-nav__link">
     <span class="md-ellipsis">
       2024.04.20 – beta
@@ -1015,6 +1024,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#20241216-beta" class="md-nav__link">
+    <span class="md-ellipsis">
+      2024.12.16 – beta
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#20240420-beta" class="md-nav__link">
     <span class="md-ellipsis">
       2024.04.20 – beta
@@ -1094,16 +1112,51 @@
 
   <h1>Release-opmerkingen</h1>
 
+<h2 id="20241216-beta">2024.12.16 – beta<a class="headerlink" href="#20241216-beta" title="Permanent link">&para;</a></h2>
+<p><em>Release date: 20 December 2024</em></p>
+<p>With this release we are including the AHN5 pointcloud as input data for 3DBAG. This means that the 3DBAG buildings are updated in the north-west, west and southern parts of the country. There are also a couple of new attributes, and in the CityJSON output you will now also find BAG objects for which no 3D model could be reconstructed due to a lack of elevation data or another reason (you can infer this from the object attributes). Under the hood we have done a lot of work to improve the <a href="https://github.com/3DBAG">open source software</a> that we maintain to generate the 3DBAG, so that we can keep updating the 3DBAG in the future more efficiently. This release counts 10 796 210 BAG objects with a 3D building model.</p>
+<p>This release was funded by the <a href="https://innovation.3dbag.nl">3DBAG innovation platform</a>.</p>
+<h4 id="changed-fixed">Changed / Fixed<a class="headerlink" href="#changed-fixed" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Fixed: attribute <code>b3_bouwlagen</code> are null for buildings with a negative minimum roof elevation.</li>
+<li>Fixed: attributes <code>b3_azimut</code>, <code>b3_hellingshoek</code> are null for many buildings.</li>
+<li>Removed atribute <code>b3_reconstructie_onvolledig</code>, replaced by <code>b3_extrusie</code> and <code>b3_pw_onvoldoende</code>.</li>
+<li>The computation of the <code>b3_rmse_*</code> attributes are now calculated using all the AHN building points, instead of only roofplane points.</li>
+<li>Buildings with a footprint area above 30 000 square meters and very complex buildings with more than 900 roofplanes are now only reconstruction in LoD1.1.</li>
+</ul>
+<h4 id="added">Added<a class="headerlink" href="#added" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The attributes <code>b3_azimut</code>, <code>b3_hellingshoek</code> are now also available in the CityJSON output</li>
+<li>Output for all buildings in CityJSON output, also those without 3D model</li>
+<li>new attributes:<ul>
+<li><a href="https://docs.3dbag.nl/en/schema/attributes/#b3_n_vlakken"><code>b3_n_vlakken</code></a></li>
+<li><a href="https://docs.3dbag.nl/en/schema/attributes/#b3_is_glas_dak"><code>b3_is_glas_dak</code></a></li>
+<li><a href="https://docs.3dbag.nl/en/schema/attributes/#b3_extrusie"><code>b3_extrusie</code></a></li>
+<li><a href="https://docs.3dbag.nl/en/schema/attributes/#b3_succes"><code>b3_succes</code></a></li>
+<li><a href="https://docs.3dbag.nl/en/schema/attributes/#b3_mutatie_ahn4_ahn5"><code>b3_mutatie_ahn4_ahn5</code></a></li>
+<li><a href="https://docs.3dbag.nl/en/schema/attributes/#b3_puntdichtheid_ahn5"><code>b3_puntdichtheid_ahn5</code></a></li>
+<li><a href="https://docs.3dbag.nl/en/schema/attributes/#b3_nodata_fractie_ahn5"><code>b3_nodata_fractie_ahn5</code></a></li>
+<li><a href="https://docs.3dbag.nl/en/schema/attributes/#b3_nodata_radius_ahn5"><code>b3_nodata_radius_ahn5</code></a></li>
+<li><a href="https://docs.3dbag.nl/en/schema/attributes/#b3_pw_onvoldoende"><code>b3_pw_onvoldoende</code></a></li>
+</ul>
+</li>
+</ul>
+<h4 id="known-issues">Known issues<a class="headerlink" href="#known-issues" title="Permanent link">&para;</a></h4>
+<ul>
+<li>BAG date/time attributes in GPKG output are of the string type</li>
+<li>A small number of triangulated builings in the OBJ output have large spikes.</li>
+<li>Attribute <code>b3_kwaliteitsindicator</code> is currently missing from the CityJSON output</li>
+</ul>
 <h2 id="20240420-beta">2024.04.20 – beta<a class="headerlink" href="#20240420-beta" title="Permanent link">&para;</a></h2>
 <p><em>Release date: 25 April 2024</em></p>
 <p><strong>Patch release of 2024.02.28</strong></p>
 <p>This release fixes a number of issues with the previous release. The number of missing buildings is significantly reduced, making this the largest 3DBAG release ever with 10 413 738 reconstructed buildings. Also an issue with the attribute <code>b3_bouwlagen</code> was fixed for buildings with a negative minimum roof elevation.</p>
-<h4 id="changed-fixed">Changed / Fixed<a class="headerlink" href="#changed-fixed" title="Permanent link">&para;</a></h4>
+<h4 id="changed-fixed_1">Changed / Fixed<a class="headerlink" href="#changed-fixed_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Fixed: Attribute <code>b3_bouwlagen</code> are null for buildings with a negative minimum roof elevation.</li>
 <li>The number of missing buildings was reduced by 40842 compared to the previous released. </li>
 </ul>
-<h4 id="known-issues">Known issues<a class="headerlink" href="#known-issues" title="Permanent link">&para;</a></h4>
+<h4 id="known-issues_1">Known issues<a class="headerlink" href="#known-issues_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>BAG date/time attributes in GPKG output are of the string type</li>
 <li>Attributes <code>b3_kwaliteitsindicator</code>, <code>b3_azimut</code>, <code>b3_hellingshoek</code> are currently missing from the CityJSON output</li>
@@ -1112,7 +1165,7 @@
 <p><em>Release date: 28 February 2024</em></p>
 <p>The most notable change with this release is the addition of the <code>b3_bouwlagen</code> attribute that estimates the number of floors of a building. This is based on the <a href="https://repository.tudelft.nl/islandora/object/uuid%3A6de4255c-ab2b-49c2-a282-ed779de092a1">work of Ellie Roy</a>, which was adapted for and integrated into the 3DBAG generation pipeline. For now only predictions up to 5 floors are available due to the reduced accuracy of the prediction model for higher buildings. Furthermore, due to certain constraints in the building features, predictions for the number of floors are missing for some lower-height buildings but they will become available in a future release.</p>
 <p>A number of other additions and bug fixes is also included in this release. See below for the full details.</p>
-<h4 id="changed-fixed_1">Changed / Fixed<a class="headerlink" href="#changed-fixed_1" title="Permanent link">&para;</a></h4>
+<h4 id="changed-fixed_2">Changed / Fixed<a class="headerlink" href="#changed-fixed_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Updated BAG source data. See the <a href="https://3dbag.nl/en/download#metadata">Metadata for the details</a></li>
 <li>Fix polygons with duplicate vertices prior to triangulation, this reduces significantly the number of missing faces for buildings in the OBJ output and in the 3D viewer</li>
@@ -1122,7 +1175,7 @@
 <li>Added <code>processStep</code>-s to the lineage (see the metadata)</li>
 <li>Changed the URL scheme for downloads</li>
 </ul>
-<h4 id="added">Added<a class="headerlink" href="#added" title="Permanent link">&para;</a></h4>
+<h4 id="added_1">Added<a class="headerlink" href="#added_1" title="Permanent link">&para;</a></h4>
 <ul>
 <li>New attribute <a href="https://docs.3dbag.nl/en/schema/attributes/#b3_bouwlagen"><code>b3_bouwlagen</code></a></li>
 <li>New attribute <a href="https://docs.3dbag.nl/en/schema/attributes/#b3_kwaliteitsindicator"><code>b3_kwaliteitsindicator</code></a></li>
@@ -1132,7 +1185,7 @@
 <li><a href="https://3dbag.nl/dashboard">Quality dashboard</a> with an analysis of various quality aspects of the release</li>
 <li>Previous versions of 3DBAG are now also available on the Downloads page, starting from version 2023.10.08</li>
 </ul>
-<h4 id="known-issues_1">Known issues<a class="headerlink" href="#known-issues_1" title="Permanent link">&para;</a></h4>
+<h4 id="known-issues_2">Known issues<a class="headerlink" href="#known-issues_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>BAG date/time attributes in GPKG output are of the string type</li>
 <li>Attribute <code>b3_bouwlagen</code> are null for buildings with a negative minimum roof height.</li>
@@ -1143,7 +1196,7 @@
 <p><em>Release date: 18 October 2023</em></p>
 <p>The most notable changes with this release are the addition of attributes with estimates for the area of various surfaces types (e.g. party wall, exterior wall, roof, floor), and the introduction of a new experimental RESTful API at <a href="https://api.3dbag.nl"><code>api.3dbag.nl</code></a>. The new API returns the full 3D geometry as well as all the attributes in the <a href="https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature">CityJSONFeatures format</a>. The WFS/WMS api's will remain available as well. </p>
 <p>A number of bug fixes is also included in this release. See below for the full details.</p>
-<h4 id="changed-fixed_2">Changed / Fixed<a class="headerlink" href="#changed-fixed_2" title="Permanent link">&para;</a></h4>
+<h4 id="changed-fixed_3">Changed / Fixed<a class="headerlink" href="#changed-fixed_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Updated BAG source data. See the <a href="https://3dbag.nl/en/download#metadata">Metadata for the details</a>.</li>
 <li>Fix <a href="https://geoforum.nl/t/discrepancies-between-3d-bag-version-21-09-8-and-the-ahn3-dataset/8513/4?u=ylannl">an error</a> with the <code>b3_mutatie_ahn3_ahn4</code> attribute due to an issue with our AHN3 input tiles. This only affects a small number of buildings.</li>
@@ -1152,7 +1205,7 @@
 <li>Added semantic surface labels back into the GPKG files (3D layers only) in the <code>labels</code> attribute. Previously this attribute was called <code>semantic_values</code>.</li>
 <li>Removed old API endpoint <code>https://data.3dbag.nl/api/BAG3D_v2</code></li>
 </ul>
-<h4 id="added_1">Added<a class="headerlink" href="#added_1" title="Permanent link">&para;</a></h4>
+<h4 id="added_2">Added<a class="headerlink" href="#added_2" title="Permanent link">&para;</a></h4>
 <ul>
 <li>New 3D API at <a href="https://api.3dbag.nl"><code>api.3dbag.nl</code></a> that returns <a href="https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature">CityJSONFeatures</a> with 3D geometry. This beta version of the API is currently not OGC-compliant, but we aim for compliance in a later release. </li>
 <li><code>b3_bag_bag_overlap</code> attribute, which is the area (m2) of overlap between BAG polygons</li>
@@ -1165,7 +1218,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="known-issues_2">Known issues<a class="headerlink" href="#known-issues_2" title="Permanent link">&para;</a></h4>
+<h4 id="known-issues_3">Known issues<a class="headerlink" href="#known-issues_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>BAG date/time attributes in GPKG output are of the string type.</li>
 <li>The following tiles have incomplete data in the GPKG format (missing layers): <code>9/336/672</code>, <code>8/560/352</code>.</li>
@@ -1176,7 +1229,7 @@
 <p><em>Release date: 9 August 2023</em></p>
 <p><strong>Patch release of 2023.06.22</strong></p>
 <p>With this release we fix an error with the attributes <code>h_dak_min</code>, <code>h_dak_50p</code>, <code>h_dak_70p</code>, <code>h_dak_max</code> in the GPKG and WFS formats. In 3DBAG version 2023.06.22 the values of these attributes were off by 15 meters. This is fixed in this release.</p>
-<h4 id="changed-fixed_3">Changed / Fixed<a class="headerlink" href="#changed-fixed_3" title="Permanent link">&para;</a></h4>
+<h4 id="changed-fixed_4">Changed / Fixed<a class="headerlink" href="#changed-fixed_4" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Fix 15 meter offset in <code>h_dak_min</code>, <code>h_dak_50p</code>, <code>h_dak_70p</code>, <code>h_dak_max</code> attributes on roofparts in GPKG and WFS formats.</li>
 </ul>
@@ -1194,7 +1247,7 @@
 <ul>
 <li>Regenerated 3D tiles to fix a number of display issues in the 3D BAG viewer, including incorrect placement of search result marker.</li>
 </ul>
-<h4 id="added_2">Added<a class="headerlink" href="#added_2" title="Permanent link">&para;</a></h4>
+<h4 id="added_3">Added<a class="headerlink" href="#added_3" title="Permanent link">&para;</a></h4>
 <ul>
 <li>The building part ID (<code>pand_deel_id</code>) to the 3D layers. Previously it was only part of the 2D layers.</li>
 <li>Reconstruction algorithm<ul>
@@ -1218,7 +1271,7 @@
 <li>Download link for each format (included on the <code>tiles</code> WMS/WFS layer).</li>
 <li>Extended testing of all data formats (included on the <code>tiles</code> WMS/WFS layer).</li>
 </ul>
-<h4 id="changed-fixed_4">Changed / Fixed<a class="headerlink" href="#changed-fixed_4" title="Permanent link">&para;</a></h4>
+<h4 id="changed-fixed_5">Changed / Fixed<a class="headerlink" href="#changed-fixed_5" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Update of the source vector data sets (BAG, Top10NL) to the version available on 2023-06-05 (TOP10NL) and 2023-06-08 (BAG).</li>
 <li>Update of the source point cloud data sets. Now AHN3 and AHN4 are used.</li>
@@ -1409,7 +1462,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="known-issues_3">Known issues<a class="headerlink" href="#known-issues_3" title="Permanent link">&para;</a></h4>
+<h4 id="known-issues_4">Known issues<a class="headerlink" href="#known-issues_4" title="Permanent link">&para;</a></h4>
 <ul>
 <li>BAG date/time attributes in GPKG output are of the string type.</li>
 <li>Missing tiles from download page: <code>7/1008/656</code>, <code>8/720/344</code>, <code>9/1000/1068</code>. The 3DBAG viewer may have some additional tiles missing.</li>
@@ -1424,12 +1477,12 @@
 <p>For this second release we focused primarily on improving the data quality and the way the data is disseminated. The overall geometric validity of the 3D models has risen to 98.25% (up from ~89% in the previous release). Another highlight is that the 3D outputs are no longer triangulated, as requested by several users. Altogether this should make it easier to use our models in other software. These and more changes are described below in more detail. </p>
 <p>This 3DBAG release contains 9 692 978 buildings. This is 7.72% less buildings than available in the BAG dataset, mostly due to outdated or otherwise insufficient input data. We hope to do a release based on the updated AHN4 soon, but this release is still based on AHN3.</p>
 <p>Thank you for using 3DBAG!</p>
-<h4 id="added_3">Added<a class="headerlink" href="#added_3" title="Permanent link">&para;</a></h4>
+<h4 id="added_4">Added<a class="headerlink" href="#added_4" title="Permanent link">&para;</a></h4>
 <ul>
 <li>The building part ID (<code>pand_deel_id</code>) to the 3D layers. Previously it was only part of the 2D layers.</li>
 <li>A new layer (<code>ondergrond</code>) with parts of the building polygons that were cut off during the reconstruction, because they were detected as the ground.</li>
 </ul>
-<h4 id="changed-fixed_5">Changed / Fixed<a class="headerlink" href="#changed-fixed_5" title="Permanent link">&para;</a></h4>
+<h4 id="changed-fixed_6">Changed / Fixed<a class="headerlink" href="#changed-fixed_6" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Update of the source data sets (BAG, BGT, Top10NL) to the version available on 2021-09-07.</li>
 <li>3D geometries are <strong>not triangulated</strong> anymore in the CityJSON, GeoPackage, PostgreSQL formats. The OBJ format remains triangulated.</li>
@@ -1533,7 +1586,7 @@
 <li>Fixed the duplicate / cloned objects in the output.</li>
 <li>Improve 3D tiles export and rendering in the Viewer</li>
 </ul>
-<h4 id="known-issues_4">Known issues<a class="headerlink" href="#known-issues_4" title="Permanent link">&para;</a></h4>
+<h4 id="known-issues_5">Known issues<a class="headerlink" href="#known-issues_5" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Artificial vertical 'screens' still occur in some building models.</li>
 <li>1.75% of the buildings is geometrically invalid, consult the <code>val3dity_codes</code> attribute to find out which ones.</li>
@@ -1545,7 +1598,7 @@
 </ul>
 <h2 id="21031-beta">21.03.1 – beta<a class="headerlink" href="#21031-beta" title="Permanent link">&para;</a></h2>
 <p><em>Release date: 26 March 2021</em></p>
-<h4 id="added_4">Added<a class="headerlink" href="#added_4" title="Permanent link">&para;</a></h4>
+<h4 id="added_5">Added<a class="headerlink" href="#added_5" title="Permanent link">&para;</a></h4>
 <ul>
 <li>A brand new 3D viewer.</li>
 <li>Multiple LoDs, LoD1.2, LoD1.3, LoD2.2.</li>
@@ -1569,7 +1622,7 @@
 <ul>
 <li>CSV data format.</li>
 </ul>
-<h4 id="known-issues_5">Known issues<a class="headerlink" href="#known-issues_5" title="Permanent link">&para;</a></h4>
+<h4 id="known-issues_6">Known issues<a class="headerlink" href="#known-issues_6" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Some buildings have a 'spike': a large deviation in the building geometry due to one vertex with an erroneous coordinate (3D models only).</li>
 <li>Not all buildings are geometrically valid (eg. missing face). Note that this should be evident from the val3dity_codes attribute (3D models only).</li>
@@ -1625,7 +1678,7 @@
       
     
     <a href="https://twitter.com/3D_BAG" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
     </a>
   
     
@@ -1636,7 +1689,7 @@
       
     
     <a href="https://github.com/tudelft3d" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
 </div>
@@ -1654,7 +1707,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Gekopieerd naar klembord", "clipboard.copy": "Kopi\u00ebren naar klembord", "search.result.more.one": "1 extra overeenkomst op deze pagina", "search.result.more.other": "# extra overeenkomsten op deze pagina", "search.result.none": "Geen overeenkomende documenten", "search.result.one": "1 overeenkomende document", "search.result.other": "# overeenkomende documenten", "search.result.placeholder": "Typ om te beginnen met zoeken", "search.result.term.missing": "Ontbreekt", "select.version": "Selecteer versie"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   </body>
