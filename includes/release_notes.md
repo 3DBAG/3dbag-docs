@@ -9,7 +9,6 @@ This is also the first version of 3DBAG that was generated using the improved 3D
 This release counts 10 796 210 BAG objects with a 3D building model and was funded by the [3DBAG innovation platform](https://innovation.3dbag.nl).
 
 #### Changed / Fixed
-+ Fixed: attribute `b3_bouwlagen` are null for buildings with a negative minimum roof elevation.
 + Fixed: attributes `b3_azimut`, `b3_hellingshoek` are null for many buildings.
 + Removed atribute `b3_reconstructie_onvolledig`, replaced by `b3_extrusie` and `b3_pw_onvoldoende`.
 + The computation of the `b3_rmse_*` attributes are now calculated using all the AHN building points, instead of only roofplane points.
