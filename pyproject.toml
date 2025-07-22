@@ -1,0 +1,20 @@
+[project]
+name = "3dbag-docs"
+version = "2024.12.16"
+description = "3DBAG documentation"
+readme = "README.md"
+license = "CC-BY 4.0"
+license-files = ["LICEN[CS]E*"]
+authors = [
+    { name = "Balázs Dukai", email = "balazs.dukai@3dgi.nl" },
+    { name = "Ravi Peters", email = "ravi.peters@3dgi.nl" },
+    { name = "Gina Stavropoulou", email = "G.Stavropoulou@tudelft.nl" },
+]
+requires-python = ">=3.11"
+dependencies = [
+    "mkdocs-material~=9.6.15",
+    "bag3d-specs",
+]
+
+[tool.uv.sources]
+bag3d-specs = { git = "https://github.com/3DBAG/3dbag-specs.git", rev = "2025.07.21"}

@@ -5,21 +5,20 @@
 The documentation is made with [MkDocs](https://www.mkdocs.org/), read its documentation for the details.
 
 1) Clone the repo.
-2) Create a virtual environment with `make venv` or manually. If you have the venv in a custom location, then you'll need to set the `VENV_DIR` variable for the make targets, for example `make VENV_DIR=~/.virtualenvs/3dbag-docs install`.
-3) Install the dependencies:
+2) Install [uv](https://docs.astral.sh/uv/) if you don't have it.
+3) Set up the project
 
-    `make install`
+    `make setup`
 
 4) Edit the pages in `docs/`.
 
-5) Serve the pages locally (hot-reloaded) to see your changes. You need to serve the Dutch and English versions separately. Go to http://127.0.0.1:8000/en/ or http://127.0.0.1:8000/nl/.
+5) Build the pages locally to generate the attribute and layer pages.
+   
+   `make build`
+
+5) Serve the pages locally (live-reloaded) to see your changes. You need to serve the Dutch and English versions separately. Go to http://127.0.0.1:8000/en/ or http://127.0.0.1:8000/nl/.
 
    `make serve_en` or `make serve_nl`
-
-6) Build the pages locally to check that it works.
-   
-   `mkdocs build`
-
 
 ### Theme
 
