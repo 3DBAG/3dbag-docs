@@ -12,9 +12,10 @@ authors = [
 ]
 requires-python = ">=3.11"
 dependencies = [
-    "mkdocs-material~=9.6.15",
     "bag3d-specs",
+    "mkdocs-material~=9.6.15",
+    "tabulate>=0.9.0",
 ]
 
 [tool.uv.sources]
-bag3d-specs = { git = "https://github.com/3DBAG/3dbag-specs.git", rev = "2025.07.21"}
+bag3d-specs = { git = "https://github.com/3DBAG/3dbag-specs.git", branch = "develop" }
