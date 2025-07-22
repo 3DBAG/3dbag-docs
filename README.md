@@ -4,25 +4,21 @@
 
 The documentation is made with [MkDocs](https://www.mkdocs.org/), read its documentation for the details.
 
-1) Clone the repo
+1) Clone the repo.
+2) Install [uv](https://docs.astral.sh/uv/) if you don't have it.
+3) Set up the project
 
-2) Install python packages:
+    `make setup`
 
-    `pip install mkdocs mkdocs-material`
+4) Edit the pages in `docs/`.
 
-3) Edit the pages in `docs/`
-
-4) If you edited the attribute catalogue, generate the attribute pages
-
-   `python scripts/generate_attribute_doc.py . 'en'`
-
-5) Build the pages locally
+5) Build the pages locally to generate the attribute and layer pages.
    
-   `bash scripts/build.sh`
+   `make build`
 
-6) View the generated files
-   
-   `python -m http.server 8000 --directory generated`
+5) Serve the pages locally (live-reloaded) to see your changes. You need to serve the Dutch and English versions separately. Go to http://127.0.0.1:8000/en/ or http://127.0.0.1:8000/nl/.
+
+   `make serve_en` or `make serve_nl`
 
 ### Theme
 
