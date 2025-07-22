@@ -73,3 +73,7 @@ The attribute catalogue follows a specified schema. Each attribute in the catalo
 ### Documenting data layers
 
 Works the same way as the attributes, but with a different python script and json catalogue.
+
+## 3DBAG organisation
+
+This software is part of the 3DBAG project. For more information visit the [3DBAG organisation](https://github.com/3DBAG).
