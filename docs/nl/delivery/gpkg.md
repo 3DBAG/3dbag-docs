@@ -1,5 +1,3 @@
-
-
 [GeoPackage](https://www.geopackage.org) is een open bestandsformaat dat conventies beschrijft hoe data opgeslagen kunnen worden in een [SQLite](https://www.sqlite.org/index.html) database. Het ondersteunt vector features, tile matrix sets, attributen en er is ruimte voor extensies. Het formaat ondersteunt 3D-geometrieën, en kan geopend worden met bijvoorbeeld QGIS, ArcGIS of FME.
 
 Wie bieden een apart 3DBAG GeoPackage-bestand aan voor iedere tegel. En daarnaast is er een groot GeoPackage bestand beschikbaar waar de complete 3DBAG in zie. Alle GeoPackage bestanden bevatten [alle lagen](../../schema/layers/#data-layers).
@@ -37,4 +35,38 @@ Wanneer je de data in QGIS importeert (door het bestand er naar toe te slepen of
   </a>
   <figcaption>Een tegel in GeoPackage-formaat in QGIS. Bovenaan de 3D Map View, links de attributen, en onderaan de features in 2D.</figcaption>
 </figure>
+
+## Importeren van QGIS naar Postgres
+
+Om je 3DBAG `.gpkg`-bestand vanuit QGIS in je PostgreSQL-database te importeren, moet je mogelijk het type van de geometriekolom aanpassen voor compatibiliteit. Volg deze stappen:
+
+1. **Geometrietype converteren (indien nodig):**
+   - Gebruik de tool `Geometrieën verzamelen` om het geometrietype te standaardiseren.
+   - Ga naar `Vector` → `Geometrietools` → `Geometrieën verzamelen`.
+   - Selecteer je laag en maak een tijdelijke uitvoerlaag aan.
+
+   <figure>
+     <a href="../../../images_common/gpkg3.png">
+       <img src="../../../images_common/gpkg3.png" />
+     </a>
+     <figcaption>Het type van de geometriekolom aanpassen in QGIS.</figcaption>
+   </figure>
+
+2. **Laag importeren naar PostgreSQL:**
+   - Open `Database` → `DB Manager`.
+   - Vouw `PostGIS` uit en maak verbinding met je database.
+   - Klik op de knop **Laag/bestand importeren**.
+   - Selecteer de tijdelijke laag als invoer.
+   - Vul de benodigde gegevens in (tabelnaam, schema, enz.).
+
+   <figure>
+     <a href="../../../images_common/gpkg4.png">
+       <img src="../../../images_common/gpkg4.png" />
+     </a>
+     <figcaption>Een laag importeren van QGIS naar je database.</figcaption>
+   </figure>
+
+**Tips:**
+- Als je laag 3D-geometrieën bevat (met Z-waarden), zorg er dan voor dat de doel-tabel in PostgreSQL 3D-geometrie ondersteunt, of gebruik QGIS-tools om naar 2D te converteren vóór het importeren.
+- Je kunt ook de optie "Features opslaan als..." gebruiken (rechtermuisklik op de laag) om direct naar PostgreSQL te exporteren, met meer controle over het geometrietype en andere opties.
 
