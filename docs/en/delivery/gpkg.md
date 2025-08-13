@@ -37,3 +37,34 @@ When opening a 3DBAG file in QGIS (by dragging the file or going to `Layer` -> `
   </a>
   <figcaption>A portion of the 3DBAG data in GeoPackage format. On the top is the 3D Map View, in the left the attributes, and in the bottom the 2D features.</figcaption>
 </figure>
+
+## Import from QGIS to Postgres
+To import your 3DBAG `.gpkg` file from QGIS into your PostgreSQL database, you may need to convert the geometry column type to ensure compatibility. Follow these steps:
+
+#### 1) Convert Geometry Type:
+
+Use the `Collect Geometries` tool to standardize the geometry type.
+Go to `Vector` → `Geometry Tools` → `Collect Geometries`.
+Select your layer and create a temporary output layer.
+ 
+ <figure>
+  <a href="../../../images_common/gpkg3.png">
+    <img src="../../../images_common/gpkg3.png" />
+  </a>
+  <figcaption>Changing the geometry column type in QGIS.</figcaption>
+</figure>
+
+#### 2) Import the Layer to PostgreSQL
+
+1) Open `Database`-->`DB Manager`
+2) Expand `PostGIS` and connect to your database. 
+3) Click the `Import Layer/File` button and 
+4) Select the temporary layer as the input.
+5) Fill n the required details (table name, schema, etc.)
+
+ <figure>
+  <a href="../../../images_common/gpkg4.png">
+    <img src="../../../images_common/gpkg4.png" />
+  </a>
+  <figcaption>How to import layer from QGIS to your DB.</figcaption>
+</figure>
