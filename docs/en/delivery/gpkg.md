@@ -60,7 +60,7 @@ Select your layer and create a temporary output layer.
 2) Expand `PostGIS` and connect to your database. 
 3) Click the `Import Layer/File` button and 
 4) Select the temporary layer as the input.
-5) Fill n the required details (table name, schema, etc.)
+5) Fill in the required details (table name, schema, etc.)
 
  <figure>
   <a href="../../../images_common/gpkg4.png">
