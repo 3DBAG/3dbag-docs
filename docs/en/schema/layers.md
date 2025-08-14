@@ -49,29 +49,37 @@ Stores the attributes and geometry of the `Pand` object of the BAG, plus the att
 
 A 3D model of the building parts above the terrain, modelled in LoD1.2. Can join to `pand` on `fid`.
 
+Unique ID is created with: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id)
 
 ## `lod12_2d`
 
 The 2D projection of the LoD1.2 model. The elevation of the detected LoD1.2 roof planes are stored as height attributes ([`h_dak_*`](attributes.md#h_dak_50p)). Only the above terrain parts of the BAG footprint are included. Can join to `pand` on `fid`.
 
+Unique ID is created with: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id) + [`b3_dd_id`](attributes.md#b3_dd_id)
 
 ## `lod13_3d`
 
 A 3D model of the building parts above the terrain, modelled in LoD1.3. Can join to `pand` on `fid`.
+
+Unique ID is created with: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id)
 
 
 ## `lod13_2d`
 
 The 2D projection of the LoD1.3 model. The elevation of the detected LoD1.3 roof planes are stored as height attributes ([`h_dak_*`](attributes.md#h_dak_50p)). Only the above terrain parts of the BAG footprint are included. Can join to `pand` on `fid`.
 
+Unique ID is created with: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id) + [`b3_dd_id`](attributes.md#b3_dd_id)
 
 ## `lod22_3d`
 
 A 3D model of the building parts above the terrain, modelled in LoD2.2. Can join to `pand` on `fid`.
 
+Unique ID is created with: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id)
 
 ## `lod22_2d`
 
 The 2D projection of the LoD2.2 model. The elevation of the detected LoD2.2 roof planes are stored as height attributes ([`h_dak_*`](attributes.md#h_dak_50p)). Note that the slanted roof planes of the 3D model cannot be reconstructed from these 2D polygons and height attributes. Only the above terrain parts of the BAG footprint are included. Can join to `pand` on `fid`.
+
+Unique ID is created with: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id) + [`b3_dd_id`](attributes.md#b3_dd_id)
 
 <!-- end layers (DO NOT REMOVE THIS MARKER) -->
