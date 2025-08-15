@@ -17,7 +17,7 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
 + [Subdivision of 3DBAG into indoor entities by Coders CO.](https://www.linkedin.com/posts/coders-co-_pdf2gis-3dbag-cityjson-activity-6889168061253922817-Ck0Q)
 
 ## Public adoption of 3DBAG in other platforms
-+ [Amsterdam 3D](https://3d.amsterdam.nl/web/index.html)
++ [Amsterdam 3D](https://3d.amsterdam.nl)
 + [Utrecht 3D](https://3d.utrecht.nl/)
 + [Zwolle](https://www.youtube.com/watch?v=7jLEX_LBXxw)
 + ESRI
@@ -34,17 +34,17 @@ Below you can find a list of notable articles, posts, tweets and videos about 3D
 + [Infraworks video tutorial by Richard de Nier](https://www.linkedin.com/posts/richarddenier_3d-bag-viewer-activity-6783767736385384448-ZZEF)
 + [3D BAG in Revit video by BFAS](https://www.linkedin.com/feed/update/urn:li:activity:6822857615140241408/)
 + [3D BAG in AutoCAD article + video by RODEMA](https://www.autocad-cursus.info/cad-downloads/3d-bag-data-inlezen-in-autocad)
-+ [3D BAG CityJSON to IFC article + video by Hans Lammerts](https://blueai.nl/wp-content/uploads/2021/05/3D-BAG.pdf)
-+ [How-to: 3D BAG TU Delft naar ArcGIS](https://esri-nederland-content-esrinl-content.hub.arcgis.com/apps/how-to-3d-bag-tu-delft-naar-arcgis)
++ [3D BAG CityJSON to IFC video by Hans Lammerts](https://www.youtube.com/watch?v=N-cq9BVcwps)
 
 
 ## 3DBAG in the news
 + [Used in the interactive maps for the Dutch tv-programme Ruimteschip Aarde](https://kro-ncrv.nl/programmas/ruimteschip-aarde/postcodetools-ruimteschip-aarde)
-+ [3DBAG gets ERC funding](https://www.delta.tudelft.nl/twee-erc-commercialisatiebeurzen-voor-delft#)
++ [3DBAG gets ERC funding](https://delta.tudelft.nl/article/twee-erc-commercialisatiebeurzen-voor-delft)
 + [3D BAG wins the 2021 Geospatial World Excellence Award in the Content Platform category](https://3d.bk.tudelft.nl/news/2021/11/02/3dbag-GWF-content-platform-prize.html)
 + [Reddit](https://www.reddit.com/r/thenetherlands/comments/mgcjuf/3d_modellen_voor_alle_10_miljoen_gebouwen_in/)
 + [Tweakers.net](https://tweakers.net/nieuws/180004/een-kaart-met-body-alle-gebouwen-in-nederland-in-3d.html)
-+ [Geo-Info](https://3d.bk.tudelft.nl/rypeters/pdfs/21_geoinfo_3dbag.pdf)
++ [Geo-Info](https://research.tudelft.nl/files/96577980/21_geoinfo_3dbag.pdf)
++ [GIM-International](https://www.gim-international.com/content/article/3dbag-automatically-generated-3d-models-of-10-million-buildings)
 + [BK nieuws](https://www.tudelft.nl/2021/bk/alle-10-miljoen-gebouwen-in-nederland-ontsloten-in-3d)
 + [LinkedIn announcement by Jantien Stoter](https://www.linkedin.com/posts/jantien-stoter-7721346_3dbag-activity-6782213871764684800-fVR9)
 

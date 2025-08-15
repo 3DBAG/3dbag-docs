@@ -8,11 +8,11 @@ De [Basisregistratie Adressen en Gebouwen (BAG)](https://www.kadaster.nl/zakelij
 
 De BAG bevat meerdere objecttypen. Voor de 3DBAG worden alleen de panden gebruikt. De polygonen in de BAG representeren de omlijning van panden als de projectie van bovenaf (inclusief ondergrondse delen), in tegenstelling tot de BGT die de geometrie van gebouwen modelleert daar waar het pand het maaiveld raakt, de zogenaamde footprint. De geometrie van BAG-panden wordt verkregen uit luchtfoto's en terrestrische metingen en kent een positionele nauwkeurigheid van 30 cm. Een overzicht van de attributen van BAG-objecten is [hier](https://imbag.github.io/praktijkhandleiding/attributen) te vinden.
 
-Als inputdata voor de 3DBAG wordt altijd de meest recente [BAG 2.0](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag/bag-2.0-producten/bag-2.0-wat-is-er-veranderd) gebruikt. 
+Als inputdata voor de 3DBAG wordt altijd de meest recente [BAG 2.0](https://www.kadaster.nl/zakelijk/registraties/basisregistraties/bag/bag-2.0-producten/bag-2.0-wat-is-er-veranderd) gebruikt.
 
 ## AHN
 
-Het [Actueel Hoogtebestand Nederland (AHN)](https://www.ahn.nl/>) is het openlijk beschikbare digitale hoogtemodel van Nederland. Vanuit de lucht worden door middel van LiDAR-metingen precieze en gedetailleerde hoogtegegevens ingewonnen, resulterend in een dataset met gemiddeld 8 punten per vierkante meter voor de huidige AHN versie (AHN3).
+Het [Actueel Hoogtebestand Nederland (AHN)](https://www.ahn.nl/) is het openlijk beschikbare digitale hoogtemodel van Nederland. Vanuit de lucht worden door middel van LiDAR-metingen precieze en gedetailleerde hoogtegegevens ingewonnen, resulterend in een dataset met gemiddeld 8 punten per vierkante meter voor de huidige AHN versie (AHN3).
 
 Voor de 3DBAG wordt er gebruikt gemaakt van een slimme combinatie van AHN3 en AHN4. AHN3 is tussen 2014 en 2019 ingewonnen, en AHN4 tussen 2020 en 2022. Informatie over het precieze inwinjaar van een specifiek gebied kun je [hier](https://www.ahn.nl/historie) vinden. Let op dat indien een gebouw gebouwd of gewijzigd is na de inwindatum van de meeste recente AHN puntenwolk, het voor kan komen dat dit gebouw nog niet bestaat of niet meer klopt in de 3DBAG.
 

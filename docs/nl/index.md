@@ -23,15 +23,15 @@ De 3DBAG is eveneens een plek voor experimenten. We gebruiken de data zelf ook o
 
 - **Drie [levels of detail](schema/concepts.md#level-of-detail-lod)**.
 Kies de meest geschikte LoD voor je toepassing: LoD1.2, LoD1.3 of LoD2.2.
-- **Zowel 2D als 3D**.  
+- **Zowel 2D als 3D**.
 Naast de 3D modellen bieden we ook 2D projecties van de dakvormen met bijgevoegde hoogtereferenties aan.
-- **Ondergrondse en met elkaar overlappende panden/panddelen niet meegenomen**. 
+- **Ondergrondse en met elkaar overlappende panden/panddelen niet meegenomen**.
 Zowel volledig ondergrondse als overlappende panden (wanneer een pand boven een ander zweeft) zijn niet meegenomen in de reconstructie. Van panden met delen onder het maaiveld zijn de ondergrondse delen afgesneden.
 - **Terugval op simpele modellen bij problematische invoer**.
 De punten van panden met glazen daken, voornamelijk kassen, zijn inconsistent in het AHN. Voor deze panden die doorgaans een zeer simpele vorm hebben, vallen we terug op een versimpeld 3D model om alsnog bruikbare modellen te verkrijgen, ook op hogere detailniveaus.
-- **Geïntegreerde kwaliteitscontrole**.  
+- **Geïntegreerde kwaliteitscontrole**.
 Tijdens het reconstructieproces worden alle 3D modellen gevalideerd met [val3dity](https://github.com/tudelft3d/val3dity) zodat je de 3D data niet zelf hoeft te valideren.
-- **Beschikbaar in verscheidene formaten**.  
+- **Beschikbaar in verscheidene formaten**.
 CityJSON, GeoPackage, Wavefront OBJ, WMS en WFS.
 
 ## Belangrijke toepassingen
@@ -52,7 +52,7 @@ Heb je de 3DBAG gebruikt voor een interessante toepassing? [We horen er graag ov
 
 ### 3D Basisvoorziening
 
-De [3D Basisvoorziening](https://www.pdok.nl/3d-basisvoorziening) is een verzameling van Nederlandse 3D datasets die gemaakt zijn in een samenwerking tussen het Kadaster en de 3D geoinformation onderzoeksgroep. De voorziening is beschikbaar gesteld in de zomer van 2020. Waar de 3DBAG zich beperkt tot 3D modellen van gebouwen uit de BAG, wordt in de 3D Basisvoorziening naast de BAG ook de Basisregistratie Grootschalige Topografie (BGT) meegenomen voor het modelleren van terreinobjecten in 3D. De 3DBAG bevat derhalve uitsluitend panden, terwijl de 3D Basisvoorziening een waterdicht 3D model van het hele land is, inclusief het terrein. Daarnaast gebruikt de 3DBAG alleen het AHN als hoogtebron, terwijl de 3D Basisvoorziening behalve het AHN ook een jaarlijks geüpdatete puntenwolk verkregen uit stereobeelden (van [Beeldmateriaal Nederland](https://www.beeldmateriaal.nl/)) gebruikt. Zowel de stereobeelden als de puntenwolk die eruit verkregen wordt zijn geen open data.
+De [3D Basisvoorziening](https://www.pdok.nl/introductie/-/article/3d-basisvoorziening-1) is een verzameling van Nederlandse 3D datasets die gemaakt zijn in een samenwerking tussen het Kadaster en de 3D geoinformation onderzoeksgroep. De voorziening is beschikbaar gesteld in de zomer van 2020. Waar de 3DBAG zich beperkt tot 3D modellen van gebouwen uit de BAG, wordt in de 3D Basisvoorziening naast de BAG ook de Basisregistratie Grootschalige Topografie (BGT) meegenomen voor het modelleren van terreinobjecten in 3D. De 3DBAG bevat derhalve uitsluitend panden, terwijl de 3D Basisvoorziening een waterdicht 3D model van het hele land is, inclusief het terrein. Daarnaast gebruikt de 3DBAG alleen het AHN als hoogtebron, terwijl de 3D Basisvoorziening behalve het AHN ook een jaarlijks geüpdatete puntenwolk verkregen uit stereobeelden (van [Beeldmateriaal Nederland](https://www.beeldmateriaal.nl/)) gebruikt. Zowel de stereobeelden als de puntenwolk die eruit verkregen wordt zijn geen open data.
 
 De tools en algoritmen die zijn gebruikt voor het genereren van de 3D Basisvoorziening zijn door de 3D geoinformation groep gemaakt. In feite zijn de LoD1.3 modellen in de 3D Basisvoorziening gegenereerd met een vorige, meer stabiele versie van dezelfde algoritmen die we gebruiken in de 3DBAG. Sindsdien hebben we het reconstructieproces verbeterd vooral gericht op een betere LoD2.2 reconstructie.
 
@@ -70,9 +70,8 @@ Naast gebouwmodellen, bevat de 3D geluidsdata twee aanvullende lagen, zowel voor
 
 ## Financiering
 
-![erc_logo](../images_common/erc_logo_small.png){ align=left } 
+![erc_logo](../images_common/erc_logo_small.png){ align=left }
 
 *Dit project heeft financiering ontvangen van de Europese Commissie (ERC) onder het European Unions Horizon2020 Research & Innovation Programme: grant agreement no. 677312 UMnD: Urban modelling in higher dimensions and grant agreement no. 101068452 3DBAG: detailed 3D Building models Automatically Generated for very large areas*
 
 De techniek achter de 3DBAG is ontwikkeld door de [3D Geoinformation research group](https://3d.bk.tudelft.nl/), Afdeling Urbanism, Delft University of Technology. Dit is onder andere gedaan binnen verschillende onderzoeksprojecten. Hiervoor hebben is financiering ontvangen van de European Commission (ERC), de  Nederlandse Organisatie voor Wetenschappelijk Onderzoek (NWO) en het Amsterdam Institute of Advanced Metropolitan Solutions (AMS).  De algoritmes zijn verder verbeterd in samenwerkingen met partners zoals RIVM, Rijkswaterstaat en Kadaster.
-

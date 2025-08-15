@@ -646,7 +646,7 @@ Attributes specification file and schema: [https://downloads.3dbag.nl](https://d
 
 | Property      | Value                                                                                                                                 |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Description   | [Val3dity error codes](https://val3dity.readthedocs.io/en/latest/errors) for the LoD1.2 3D model. An empty list means valid geometry. |
+| Description   | [Val3dity error codes](https://val3dity.readthedocs.io/2.5.1/errors.html) for the LoD1.2 3D model. An empty list means valid geometry. |
 | Source        | -                                                                                                                                     |
 | Data Type     | ARRAY<INT>                                                                                                                            |
 | Unit          | -                                                                                                                                     |
@@ -669,7 +669,7 @@ Attributes specification file and schema: [https://downloads.3dbag.nl](https://d
 
 | Property      | Value                                                                                                                                 |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Description   | [Val3dity error codes](https://val3dity.readthedocs.io/en/latest/errors) for the LoD1.3 3D model. An empty list means valid geometry. |
+| Description   | [Val3dity error codes](https://val3dity.readthedocs.io/2.5.1/errors.html) for the LoD1.3 3D model. An empty list means valid geometry. |
 | Source        | -                                                                                                                                     |
 | Data Type     | ARRAY<INT>                                                                                                                            |
 | Unit          | -                                                                                                                                     |
@@ -692,7 +692,7 @@ Attributes specification file and schema: [https://downloads.3dbag.nl](https://d
 
 | Property      | Value                                                                                                                                 |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Description   | [Val3dity error codes](https://val3dity.readthedocs.io/en/latest/errors) for the LoD2.2 3D model. An empty list means valid geometry. |
+| Description   | [Val3dity error codes](https://val3dity.readthedocs.io/2.5.1/errors.html) for the LoD2.2 3D model. An empty list means valid geometry. |
 | Source        | -                                                                                                                                     |
 | Data Type     | ARRAY<INT>                                                                                                                            |
 | Unit          | -                                                                                                                                     |
@@ -1305,4 +1305,3 @@ Attributes specification file and schema: [https://downloads.3dbag.nl](https://d
 | CityJSON      | Data Type  | number      |
 | GeoPackage    | Locations  | lod22_2d    |
 | GeoPackage    | Data Type  | FLOAT       |
-

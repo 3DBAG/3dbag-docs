@@ -23,16 +23,16 @@ For the 3DBAG the relevant LoDs are 1.2, 1.3, and 2.2. Note that apart from the 
 
 ## 3D geometric primitives
 
-In 2D GIS, the geometry of objects can be represented by *points*, *lines*, *polygons* and their variations. There are standards that prescribe a set of rules for these primitives so that data can be exchanged in an interoperable manner (eg [Simple Feature Access](https://www.ogc.org/standards/sfa)). 
+In 2D GIS, the geometry of objects can be represented by *points*, *lines*, *polygons* and their variations. There are standards that prescribe a set of rules for these primitives so that data can be exchanged in an interoperable manner (eg [Simple Feature Access](https://www.ogc.org/standards/sfa)).
 
 In 3D GIS, the geometric primitives and their rules need to be extended to the third dimension, so that their interactions can be described in a meaningful way. The figure below gives an overview of the commonly used primitives in 3D GIS.
 
 <figure>
-  <img src="https://val3dity.readthedocs.io/en/latest/_images/geomprimitives.svg" />
+  <img src="https://val3dity.readthedocs.io/2.5.1/_images/geomprimitives.svg" />
   <figcaption>3D primitives handled by val3dity. See: <b>Val3dity: validation of 3D GIS primitives according to the international standards.</b> Hugo Ledoux. Open Geospatial Data, Software and Standards 3 (1), 2018, pp. 1. <a href="http://dx.doi.org/10.1186/s40965-018-0043-x">DOI</a></figcaption>
 </figure>
 
-For the 3DBAG the most relevant primitive is the [Solid](https://val3dity.readthedocs.io/en/latest/definitions/#solid), as we treat the building models as Solids in our process. This distinction is important, because of the (stricter) rules that apply to Solids, compared to other 3D primitives.
+For the 3DBAG the most relevant primitive is the [Solid](https://val3dity.readthedocs.io/2.5.1/definitions.html#solid), as we treat the building models as Solids in our process. This distinction is important, because of the (stricter) rules that apply to Solids, compared to other 3D primitives.
 
 !!! note "3D primitives and data formats"
     Not every data format supports the 3D primitives mentioned above. In fact, this applies to all our export formats except CityJSON. Therefore, in such formats we use the geometry types that are the closest equivalent to Solids. The PostgreSQL backup is a bit of an outlier here, because technically PostGIS can store Solids, but only with the [SFCGAL extension](http://www.sfcgal.org/). In order to cause the least friction for restoring the PostgreSQL backup, we store the 3D geometries as `MultiPolygonZ`.
@@ -47,6 +47,6 @@ We integrated val3dity into our process, and so we validate each 3D model after 
     The attributes starting with [`b3_val3dity_`](attributes.md##b3_val3dity_lod12) store the error codes from val3dity (if any) for a model.
 
 <figure>
-  <img src="https://val3dity.readthedocs.io/en/latest/_images/errorcodes.png" />
-  <figcaption>val3dity error codes. See <a href="https://val3dity.readthedocs.io/en/latest/errors/">the full description of each code</a> in the val3dity documentation.</figcaption>
+  <img src="https://val3dity.readthedocs.io/2.5.1/_images/errorcodes.png" />
+  <figcaption>val3dity error codes. See <a href="https://val3dity.readthedocs.io/2.5.1/errors.html/">the full description of each code</a> in the val3dity documentation.</figcaption>
 </figure>
