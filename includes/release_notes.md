@@ -1,8 +1,37 @@
+## 2025.09.03
+
+*Release date: XX September 2025*
+
+Improvements behind the scenes
+New attribute schema
+
+This release counts 107 715 47 BAG objects with a 3D building model and was funded by the [3DBAG innovation platform](https://innovation.3dbag.nl). All our software is [open source](https://github.com/3DBAG).
+
+#### Changed / Fixed
++ Attribute `b3_kwaliteitsindicator` was added to the CityJSON output
++ Removed attribute `b3_succes`
++ Fixed extremely low and negative roof elevation values for some buildings
++ Fixed in download map: [Transparancy reduces after map move](https://github.com/3DBAG/3dbag-viewer/issues/95)
++ Fixed attribute `b3_kwaliteitsindicator` being always false
+
+#### Added
++ New output formats
+    + 3D tiles
+    + IFC
++ new attributes:
+    + [`b3_h_nok`](https://docs.3dbag.nl/en/schema/attributes/#b3_h_nok)
+    + [`b3_n_nok`](https://docs.3dbag.nl/en/schema/attributes/#b3_n_nok)
+
+#### Known issues
++ 397 512 BAG features without 3D model (typically due to a lack of elevation data) are missing from the output.
++ `b3_opp_dak_*`, `b3_opp_grond` does not account for any holes in the roofpart polygon.
++ BAG date/time attributes in GPKG output are of the string type
+
 ## 2024.12.16
 
 *Release date: 20 December 2024*
 
-With this release we are including the AHN5 pointcloud as input data for 3DBAG. This means that the 3DBAG buildings are updated in the north-west, west and southern parts of the country. There are also a couple of new attributes, and in the CityJSON output you will now also find BAG objects for which no 3D model could be reconstructed due to a lack of elevation data or another reason (you can infer this from the object attributes). 
+With this release we are including the AHN5 pointcloud as input data for 3DBAG. This means that the 3DBAG buildings are updated in the north-west, west and southern parts of the country. There are also a couple of new attributes, and in the CityJSON output you will now also find BAG objects for which no 3D model could be reconstructed due to a lack of elevation data or another reason (you can infer this from the object attributes).
 
 This is also the first version of 3DBAG that was generated using the improved 3DBAG software pipeline. These software improvements were made possible by a WaU subsidy from [Kadaster](https://www.kadaster.nl). Thanks to these improvements we can keep updating the 3DBAG in the future. All our software is [open source](https://github.com/3DBAG).
 
@@ -27,7 +56,7 @@ This release counts 10 796 210 BAG objects with a 3D building model and was fund
     + [`b3_nodata_fractie_ahn5`](https://docs.3dbag.nl/en/schema/attributes/#b3_nodata_fractie_ahn5)
     + [`b3_nodata_radius_ahn5`](https://docs.3dbag.nl/en/schema/attributes/#b3_nodata_radius_ahn5)
     + [`b3_pw_onvoldoende`](https://docs.3dbag.nl/en/schema/attributes/#b3_pw_onvoldoende)
-    
+
 
 #### Known issues
 + BAG date/time attributes in GPKG output are of the string type
@@ -44,7 +73,7 @@ This release fixes a number of issues with the previous release. The number of m
 
 #### Changed / Fixed
 + Fixed: Attribute `b3_bouwlagen` are null for buildings with a negative minimum roof elevation.
-+ The number of missing buildings was reduced by 40842 compared to the previous released. 
++ The number of missing buildings was reduced by 40842 compared to the previous released.
 
 #### Known issues
 + BAG date/time attributes in GPKG output are of the string type
@@ -86,7 +115,7 @@ A number of other additions and bug fixes is also included in this release. See 
 
 *Release date: 18 October 2023*
 
-The most notable changes with this release are the addition of attributes with estimates for the area of various surfaces types (e.g. party wall, exterior wall, roof, floor), and the introduction of a new experimental RESTful API at [`api.3dbag.nl`](https://api.3dbag.nl). The new API returns the full 3D geometry as well as all the attributes in the [CityJSONFeatures format](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature). The WFS/WMS api's will remain available as well. 
+The most notable changes with this release are the addition of attributes with estimates for the area of various surfaces types (e.g. party wall, exterior wall, roof, floor), and the introduction of a new experimental RESTful API at [`api.3dbag.nl`](https://api.3dbag.nl). The new API returns the full 3D geometry as well as all the attributes in the [CityJSONFeatures format](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature). The WFS/WMS api's will remain available as well.
 
 A number of bug fixes is also included in this release. See below for the full details.
 
@@ -101,7 +130,7 @@ A number of bug fixes is also included in this release. See below for the full d
 
 #### Added
 
-+ New 3D API at [`api.3dbag.nl`](https://api.3dbag.nl) that returns [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) with 3D geometry. This beta version of the API is currently not OGC-compliant, but we aim for compliance in a later release. 
++ New 3D API at [`api.3dbag.nl`](https://api.3dbag.nl) that returns [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) with 3D geometry. This beta version of the API is currently not OGC-compliant, but we aim for compliance in a later release.
 + `b3_bag_bag_overlap` attribute, which is the area (m2) of overlap between BAG polygons
 + The following attributes were added in a project funded by the Rijksdienst voor Ondernemend Nederland (RVO). In this project, a method was implemented to calculate the volume of each 3DBAG building, as well as the areas of the wall-, roof- and ground floor- surfaces of each building. For the walls, a distinction was made between surfaces that are in contact with the outside air (outer walls, `buitenmuur`) and those that are not (party walls, `scheidingsmuur`). This was the most challenging part of the project as it required the generation of the geometry of those parts of the walls that are shared with another 3DBAG building. These calculations are all based on the LoD2.2 geometries and it should be noted that the areas refer only to those parts of the buildings that are above ground, as we have no elevation data for the underground parts.
     + `b3_opp_grond`
@@ -131,7 +160,7 @@ With this release we fix an error with the attributes `h_dak_min `, `h_dak_50p`,
 
 *Release date: 22 June 2023*
 
-This is the third public beta release of the 3DBAG. It's been a while since the second release. As it turns out it costs quite some work to properly maintain and update 3DBAG next to our busy day jobs. Fortunately we were able to receive funding from the ERC to bring the 3DBAG to a level where it can be maintained and developed reliably. The current release is the first of three that is financed by the ERC budget, and it paves the way towards a stable, open 3DBAG service. We are very happy to see that so many people found a use for 3DBAG to help them with their business, research or hobby projects. And we remain committed to keep maintaining 3DBAG into the future, of course as an open dataset. 
+This is the third public beta release of the 3DBAG. It's been a while since the second release. As it turns out it costs quite some work to properly maintain and update 3DBAG next to our busy day jobs. Fortunately we were able to receive funding from the ERC to bring the 3DBAG to a level where it can be maintained and developed reliably. The current release is the first of three that is financed by the ERC budget, and it paves the way towards a stable, open 3DBAG service. We are very happy to see that so many people found a use for 3DBAG to help them with their business, research or hobby projects. And we remain committed to keep maintaining 3DBAG into the future, of course as an open dataset.
 
 [The team behind 3DBAG](group.md) has changed in the sense that some people have moved on to other jobs, others are working on 3DBAG with a different affiliation ([3DGI](https://3dgi.xyz), a spinoff of the [tudelft3d](https://3d.bk.tudelft.nl/) research group) and we also have welcomed a [new member](http://3d.bk.tudelft.nl/gstavropoulou).
 
@@ -246,7 +275,7 @@ Thank you for using the 3DBAG! As always our [feedback forms](https://forms.gle/
 
 This is the second public beta release of the renewed 3DBAG. Before addressing what has changed with this release we would like to take a moment to thank everyone that has been downloading and using the first release. It's very exciting to see how people from various disciplines found ways to apply 3DBAG for their use cases! (also see our new [In the media](media.md) page). A special thanks also to everyone that filled out our feedback forms or gave us feedback in other ways. This is much appreciated!
 
-For this second release we focused primarily on improving the data quality and the way the data is disseminated. The overall geometric validity of the 3D models has risen to 98.25% (up from ~89% in the previous release). Another highlight is that the 3D outputs are no longer triangulated, as requested by several users. Altogether this should make it easier to use our models in other software. These and more changes are described below in more detail. 
+For this second release we focused primarily on improving the data quality and the way the data is disseminated. The overall geometric validity of the 3D models has risen to 98.25% (up from ~89% in the previous release). Another highlight is that the 3D outputs are no longer triangulated, as requested by several users. Altogether this should make it easier to use our models in other software. These and more changes are described below in more detail.
 
 This 3DBAG release contains 9 692 978 buildings. This is 7.72% less buildings than available in the BAG dataset, mostly due to outdated or otherwise insufficient input data. We hope to do a release based on the updated AHN4 soon, but this release is still based on AHN3.
 
