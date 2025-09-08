@@ -1,30 +1,42 @@
 ## 2025.09.03
 
-*Release date: XX September 2025*
+*Release date: 09 September 2025*
 
-Improvements behind the scenes
+Today we are excited to release a new version of the 3DBAG. Major new features include two new output formats: [3D Tiles](https://www.ogc.org/standards/3dtiles/) and [IFC](https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications/). There are also some smaller improvements, such as the new attribute `b3_h_nok` containing the main ridgeline elevation. Finally, the documentation received attention with new sections on Scripts, Attributes, IFC.
+
+The tooling behind the scenes also received many improvements allowing us to release new 3DBAG versions faster and more reliably in the future.
 New attribute schema
+
+Updated roofer version
+Zulip community
 
 This release counts 107 715 47 BAG objects with a 3D building model and was funded by the [3DBAG innovation platform](https://innovation.3dbag.nl). All our software is [open source](https://github.com/3DBAG).
 
+Special thanks to Amir Hakim for his work on our IFC export.
+
 #### Changed / Fixed
 + Attribute `b3_kwaliteitsindicator` was added to the CityJSON output
++ Fixed attribute `b3_kwaliteitsindicator` being always false
 + Removed attribute `b3_succes`
 + Fixed extremely low and negative roof elevation values for some buildings
-+ Fixed in download map: [Transparancy reduces after map move](https://github.com/3DBAG/3dbag-viewer/issues/95)
-+ Fixed attribute `b3_kwaliteitsindicator` being always false
++ Fixed in tile download map:
+  + [Transparancy reduces after map move](https://github.com/3DBAG/3dbag-viewer/issues/95)
+  + Map start point is now set to the center of the country.
++ Attribute schema page in [documentation](https://docs.3dbag.nl/en/schema/attributes/)
 
 #### Added
 + New output formats
-    + 3D tiles
-    + IFC
+    + 3D tiles version 1.1
+    + IFC version 4.3
 + new attributes:
     + [`b3_h_nok`](https://docs.3dbag.nl/en/schema/attributes/#b3_h_nok)
     + [`b3_n_nok`](https://docs.3dbag.nl/en/schema/attributes/#b3_n_nok)
++ [Structured attribute schema](https://github.com/3DBAG/3dbag-specs/blob/master/resources/attributes.json). This is used during the 3DBAG generation process and to generate documentation.
++ Page on [3dbag-scripts](https://github.com/3DBAG/3dbag-scripts) in the documentation.
 
 #### Known issues
 + 397 512 BAG features without 3D model (typically due to a lack of elevation data) are missing from the output.
-+ `b3_opp_dak_*`, `b3_opp_grond` does not account for any holes in the roofpart polygon.
++ `b3_opp_dak_*`, `b3_opp_grond` do not account for holes in the polygon.
 + BAG date/time attributes in GPKG output are of the string type
 
 ## 2024.12.16
