@@ -1,12 +1,12 @@
 Webservices maken het mogelijk om via een URL exact te specificeren welke 3DBAG gebouwen je wilt downloaden. Wij bieden traditionele 2D webservices (WFS/WMS) en een 3D webservice aan (3DBAG API).
 
-De 2D webservices worden ondersteund door de meeste GIS software pakketten. Ze bevatten zowel de [2D lagen](../schema/layers.md#data-layers), als de tegel-index die we gebruiken voor het verspreiden van de data in de verschillende formaten. 
+De 2D webservices worden ondersteund door de meeste GIS software pakketten. Ze bevatten zowel de [2D lagen](../schema/layers.md#data-layers), als de tegel-index die we gebruiken voor het verspreiden van de data in de verschillende formaten.
 
 Daarnaast is er ook een 3DBAG 3D API beschikbaar. Hiermee kunnen alle 3DBAG gebouwen met 3D geometrie en alle beschikbare attributen in het [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) formaat gedownload worden.
 
 De links naar de webservices staan op de 3DBAG [Downloads](https://3dbag.nl/nl/download) pagina.
 
-## 2D webservices 
+## 2D webservices
 
 ### WFS (2D)
 
@@ -80,13 +80,13 @@ Momenteel is de 3DBAG API nog niet OGC-compliant, maar het is wel ons doel om in
 
 ## 3D Tiles
 
-[3D Tiles](https://www.ogc.org/standards/3dtiles/) is een Open Geospatial Consortium community standaard voor het streamen van enorme heterogene 3D geospatial datasets. 
+[3D Tiles](https://www.ogc.org/standards/3dtiles/) is een Open Geospatial Consortium community standaard voor het streamen van enorme heterogene 3D geospatial datasets.
 Wij gebruiken 3D Tiles voor het streamen van de gebouwmodellen naar onze 3D Viewer en we stellen dezelfde set 3D Tiles ook beschikbaar voor extern gebruik.
 
-De drie LoD-s (LoD1.2, LoD1.3, LoD2.2) worden als aparte tegelsets aangeboden. 
+De drie LoD-s (LoD1.2, LoD1.3, LoD2.2) worden als aparte tegelsets aangeboden.
 De link naar de tegelsets is te vinden op onze [Downloads pagina](https://3dbag.nl/nl/download).
 
-Het volume aan gebruik is niet beperkt, maar dit kan in de toekomst veranderen.
+Er zijn momenteen geen beperkingen in kwa gebruiksvolume, maar dit kan in de toekomst veranderen.
 De [Copyright notice](https://docs.3dbag.nl/nl/copyright/) is verplicht.
 
 Details van de 3D-tegels:
@@ -94,15 +94,15 @@ Details van de 3D-tegels:
 - Maakt gebruik van 3D Tiles v1.1.
 - De tileset en content CRS is EPSG:4978.
 - De content van de tileset is binair glTF (.glb).
-- De glTF-assets bevatten kenmerk metadata (per Gebouw), met behulp van de [EXT_mesh_features](https://github.com/CesiumGS/glTF/tree/3d-tiles-next/extensions/2.0/Vendor/EXT_mesh_features) en [EXT_structural_metadata](https://github.com/CesiumGS/glTF/tree/3d-tiles-next/extensions/2.0/Vendor/EXT_structural_metadata) extensies.
+- De glTF-assets bevatten metadata attributen (per Gebouw), met behulp van de [EXT_mesh_features](https://github.com/CesiumGS/glTF/tree/3d-tiles-next/extensions/2.0/Vendor/EXT_mesh_features) en [EXT_structural_metadata](https://github.com/CesiumGS/glTF/tree/3d-tiles-next/extensions/2.0/Vendor/EXT_structural_metadata) extensies.
 - De gebouwen zijn in een uniforme kleur gekleurd.
-- De glTF-bestanden zijn gecomprimeerd, met behulp van de [KHR_mesh_quantization](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_mesh_quantization) en [EXT_meshopt_compression](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Vendor/EXT_meshopt_compression).
-- De belangrijkste tegelset maakt gebruik van expliciete tegeling en is opgesplitst in verschillende [External tilesets](https://docs.ogc.org/cs/22-025r4/22-025r4.html#core-external-tilesets).
+- De glTF-bestanden zijn gecomprimeerd, met behulp van de [KHR_mesh_quantization](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_mesh_quantization) en [EXT_meshopt_compression](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Vendor/EXT_meshopt_compression) extensies.
+- De tileset gebruikt _explicit tiling_ en is opgesplitst in meerdere [External tilesets](https://docs.ogc.org/cs/22-025r4/22-025r4.html#core-external-tilesets).
 
-3D Tiles zijn gemaakt met [Tyler](https://github.com/3DGI/tyler).
+Onze 3D Tiles worden gemaakt met [Tyler](https://github.com/3DGI/tyler).
 
 Hieronder vind je een voorbeeld script om de 3DBAG 3D-tegels in een Cesium viewer op te nemen.
-Merk op dat je `<YOUR CESIUM ION TOKEN>` moet vervangen door jouw Cesium Ion toegangstoken.
+Merk op dat je `<YOUR CESIUM ION TOKEN>` moet vervangen met je eigen [Cesium Ion access token](https://ion.cesium.com/signup/).
 
 ```html
 <!DOCTYPE html>

@@ -47,36 +47,36 @@ Bevat de attributen en geometrie van het `Pand`-object van de BAG, plus de attri
 
 Een 3D model van de bovengrondse gebouwdelen, gemodelleerd in LoD1.2. Kan samengevoegd worden met `pand` op `fid`.
 
-Unieke ID wordt aangemaakt met: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id)
+Een unieke ID kan worden aangemaakt met: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id)
 
 ## `lod12_2d`
 
 De 2D projectie van het LoD1.2 model. De elevatie van de gedetecteerde LoD1.2 dakoppervlakken zijn opgeslagen als hoogteattributen ([`h_dak_*`](attributes.md#h_dak_50p)). Alleen de bovengrondse delen van de BAG-voetafdruk zijn meegenomen. Kan samengevoegd worden met `pand` op `fid`.
 
-Unieke ID wordt aangemaakt met: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id) + [`b3_dd_id`](attributes.md#b3_dd_id)
+Een unieke ID kan worden aangemaakt met: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id) + [`b3_dd_id`](attributes.md#b3_dd_id)
 
 ## `lod13_3d`
 
 Een 3D model van de bovengrondse gebouwdelen, gemodelleerd in LoD1.3. Kan samengevoegd worden met `pand` op `fid`.
 
-Unieke ID wordt aangemaakt met: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id)
+Een unieke ID kan worden aangemaakt met: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id)
 
 ## `lod13_2d`
 
 De 2D projectie van het LoD1.3 model. De elevatie van de gedetecteerde LoD1.3 dakoppervlakken zijn opgeslagen als hoogteattributen ([`h_dak_*`](attributes.md#h_dak_50p)). Alleen de bovengrondse delen van de BAG-voetafdruk zijn meegenomen. Kan samengevoegd worden met `pand` op `fid`.
 
-Unieke ID wordt aangemaakt met: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id) + [`b3_dd_id`](attributes.md#b3_dd_id)
+Een unieke ID kan worden aangemaakt met: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id) + [`b3_dd_id`](attributes.md#b3_dd_id)
 
 ## `lod22_3d`
 
 Een 3D model van de bovengrondse gebouwdelen, gemodelleerd in LoD2.2. Kan samengevoegd worden met `pand` op `fid`.
 
-Unieke ID wordt aangemaakt met: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id)
+Een unieke ID kan worden aangemaakt met: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id)
 
 ## `lod22_2d`
 
 De 2D projectie van het LoD2.2 model. De elevatie van de gedetecteerde LoD2.2 dakoppervlakken zijn opgeslagen als hoogteattributen ([`h_dak_*`](attributes.md#h_dak_50p)). Alleen de bovengrondse delen van de BAG-voetafdruk zijn meegenomen. Kan samengevoegd worden met `pand` op `fid`.
 
-Unieke ID wordt aangemaakt met: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id) + [`b3_dd_id`](attributes.md#b3_dd_id)
+Een unieke ID kan worden aangemaakt met: [`fid`](attributes.md#fid) + [`b3_pand_deel_id`](attributes.md#b3_pand_deel_id) + [`b3_dd_id`](attributes.md#b3_dd_id)
 
 <!-- end layers (DO NOT REMOVE THIS MARKER) -->
