@@ -646,7 +646,7 @@ Attribuut specificatie bestand en schema: [https://downloads.3dbag.nl](https://d
 
 | Eigenschap    | Waarde                                                                                                                                         |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Description   | [Val3dity foutcodes](https://val3dity.readthedocs.io/2.5.1/errors.html) voor het LoD1.2 3D model. Een lege lijst betekent een valide geometrie. |
+| Description   | [Val3dity foutcodes](https://val3dity.readthedocs.io/en/latest/errors) voor het LoD1.2 3D model. Een lege lijst betekent een valide geometrie. |
 | Source        | -                                                                                                                                              |
 | Data Type     | ARRAY<INT>                                                                                                                                     |
 | Unit          | -                                                                                                                                              |
@@ -669,7 +669,7 @@ Attribuut specificatie bestand en schema: [https://downloads.3dbag.nl](https://d
 
 | Eigenschap    | Waarde                                                                                                                                         |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Description   | [Val3dity foutcodes](https://val3dity.readthedocs.io/2.5.1/errors.html) voor het LoD1.3 3D model. Een lege lijst betekent een valide geometrie. |
+| Description   | [Val3dity foutcodes](https://val3dity.readthedocs.io/en/latest/errors) voor het LoD1.3 3D model. Een lege lijst betekent een valide geometrie. |
 | Source        | -                                                                                                                                              |
 | Data Type     | ARRAY<INT>                                                                                                                                     |
 | Unit          | -                                                                                                                                              |
@@ -692,7 +692,7 @@ Attribuut specificatie bestand en schema: [https://downloads.3dbag.nl](https://d
 
 | Eigenschap    | Waarde                                                                                                                                         |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Description   | [Val3dity foutcodes](https://val3dity.readthedocs.io/2.5.1/errors.html) voor het LoD2.2 3D model. Een lege lijst betekent een valide geometrie. |
+| Description   | [Val3dity foutcodes](https://val3dity.readthedocs.io/en/latest/errors) voor het LoD2.2 3D model. Een lege lijst betekent een valide geometrie. |
 | Source        | -                                                                                                                                              |
 | Data Type     | ARRAY<INT>                                                                                                                                     |
 | Unit          | -                                                                                                                                              |
@@ -1305,3 +1305,4 @@ Attribuut specificatie bestand en schema: [https://downloads.3dbag.nl](https://d
 | CityJSON          | Data Type    | number      |
 | GeoPackage        | Locations    | lod22_2d    |
 | GeoPackage        | Data Type    | FLOAT       |
+
