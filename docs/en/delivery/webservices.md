@@ -67,6 +67,7 @@ with urllib.request.urlopen(myurl) as response:
             for f in j["features"]:
                 my_file.write(json.dumps(f) + "\n")
 ```
+
 If you need your data in CityJSON format, you can convert from CityJSONSeq to CityJSON, using the tool [cjio](https://github.com/cityjson/cjio) as follows:
 
 ```bash

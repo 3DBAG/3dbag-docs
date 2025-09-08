@@ -2,7 +2,7 @@ Webservices maken het mogelijk om via een URL exact te specificeren welke 3DBAG 
 
 De 2D webservices worden ondersteund door de meeste GIS software pakketten. Ze bevatten zowel de [2D lagen](../schema/layers.md#data-layers), als de tegel-index die we gebruiken voor het verspreiden van de data in de verschillende formaten. 
 
-Daarnaast is er ook een experimentele 3DBAG API beschikbaar. Hiermee kunnen alle 3DBAG gebouwen met 3D geometrie en alle beschikbare attributen in het [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) formaat gedownload worden.
+Daarnaast is er ook een 3DBAG 3D API beschikbaar. Hiermee kunnen alle 3DBAG gebouwen met 3D geometrie en alle beschikbare attributen in het [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) formaat gedownload worden.
 
 De links naar de webservices staan op de 3DBAG [Downloads](https://3dbag.nl/nl/download) pagina.
 
@@ -45,7 +45,7 @@ In die video wordt eveneens de [PDOK services plugin](https://plugins.qgis.org/p
 
 ## 3DBAG API (3D)
 
-De experimentele 3DBAG API is beschikbaar via [api.3dbag.nl](https://api.3dbag.nl). Gedetailleerde informatie over de werking kan gevonden worden op de [ingebedde documentatie pagina](https://api.3dbag.nl/api.html). In tegenstelling tot de 2D webservices hierboven, wordt er 3D geometrie geleverd. De 3DBAG API kan gebruikt worden om een enkel gebouw binnen te halen (op basis van de BAG `identificatie` code) of om alle gebouwen binnen een bounding box binnen te halen. De 3DBAG objecten worden teruggegeven in het [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) formaat.
+De 3DBAG API is beschikbaar via [api.3dbag.nl](https://api.3dbag.nl). Gedetailleerde informatie over de werking kan gevonden worden op de [ingebedde documentatie pagina](https://api.3dbag.nl/api.html). In tegenstelling tot de 2D webservices hierboven, wordt er 3D geometrie geleverd. De 3DBAG API kan gebruikt worden om een enkel gebouw binnen te halen (op basis van de BAG `identificatie` code) of om alle gebouwen binnen een bounding box binnen te halen. De 3DBAG objecten worden teruggegeven in het [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) formaat.
 
 Hieronder staat een korte python code die laat zijn hoe je een [`.city.jsonl` bestand](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) kan maken van een  verzoek aan de 3DBAG API:
 
@@ -66,7 +66,15 @@ with urllib.request.urlopen(myurl) as response:
                 my_file.write(json.dumps(f) + "\n")
 ```
 
-De 3DBAG API zit momenteel in een experimentele beta fase. Momenteel is deze nog niet OGC-compliant, maar het is wel ons doel om in een latere versie van de 3DBAG volledig compliant te zijn met de [OGC API Features specificatie](https://ogcapi.ogc.org/features/). Momenteel wordt alleen het CRS Amersfoort / RD New + NAP height (EPSG:7415) ondersteund.
+Als je je data in CityJSON-formaat nodig hebt, kun je van CityJSONSeq naar CityJSON converteren met het gereedschap [cjio](https://github.com/cityjson/cjio) als volgt:
+
+```bash
+cat <path-to>output.city.jsonl | cjio stdin save <path-to>output.city.json
+```
+
+Let op: Voor verzoeken die meer dan 10 gebouwen retourneren, worden de resultaten door de 3DBAG API gepagineerd. We raden aan om [ons script te gebruiken om gepagineerde responses om te zetten naar één CityJSON-bestand](https://github.com/3DBAG/3dbag-scripts/blob/main/api_to_cityjson.py).
+
+Momenteel is de 3DBAG API nog niet OGC-compliant, maar het is wel ons doel om in een latere versie van de 3DBAG volledig compliant te zijn met de [OGC API Features specificatie](https://ogcapi.ogc.org/features/). Momenteel wordt alleen het CRS Amersfoort / RD New + NAP height (EPSG:7415) ondersteund.
 
 ## 3D Tiles
 
