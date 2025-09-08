@@ -1,4 +1,4 @@
-Webservices maken het mogelijk om via een URL exact te specificeren welke 3DBAG gebouwen je wilt downloaden. Wij bieden traditionele 2D webservices (WFS/WMS) en een experimentele 3D webservice aan.
+Webservices maken het mogelijk om via een URL exact te specificeren welke 3DBAG gebouwen je wilt downloaden. Wij bieden traditionele 2D webservices (WFS/WMS) en een 3D webservice aan (3DBAG API).
 
 De 2D webservices worden ondersteund door de meeste GIS software pakketten. Ze bevatten zowel de [2D lagen](../schema/layers.md#data-layers), als de tegel-index die we gebruiken voor het verspreiden van de data in de verschillende formaten. 
 
