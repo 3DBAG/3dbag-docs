@@ -26,6 +26,8 @@ Beschikbare lagen:
   <figcaption>LoD1.3 2D laag van de WFS gevisualiseerd in QGIS, met de BRT Achtergrondkaart van PDOK op de achtergrond.</figcaption>
 </figure>
 
+Om de WFS-laag correct te filteren in Python, kun je [ons script](https://github.com/3DBAG/3dbag-scripts/blob/main/wfs_filtering.py) raadplegen.
+
 ### WMS (2D)
 
 Ook [Web Map Service (WMS)](https://www.ogc.org/standards/wms) is een OGC-standaard, maar dan om kaarten als afbeelding op te vragen.

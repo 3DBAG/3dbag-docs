@@ -27,6 +27,8 @@ Available layers:
   <figcaption>LoD1.3 2D WFS layer visualised in QGIS, with the BRT Baselayer from PDOK in the background.</figcaption>
 </figure>
 
+In order to properly filter the WFS layer in python, please take a look at[our script](https://github.com/3DBAG/3dbag-scripts/blob/main/wfs_filtering.py).
+
 ### WMS (2D)
 
 The [Web Map Service](https://www.ogc.org/standards/wms) is an Open Geospatial Consortium standard to retrieve maps as images through the internet.
