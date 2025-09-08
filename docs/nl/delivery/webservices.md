@@ -67,3 +67,87 @@ with urllib.request.urlopen(myurl) as response:
 ```
 
 De 3DBAG API zit momenteel in een experimentele beta fase. Momenteel is deze nog niet OGC-compliant, maar het is wel ons doel om in een latere versie van de 3DBAG volledig compliant te zijn met de [OGC API Features specificatie](https://ogcapi.ogc.org/features/). Momenteel wordt alleen het CRS Amersfoort / RD New + NAP height (EPSG:7415) ondersteund.
+
+## 3D Tiles
+
+[3D Tiles](https://www.ogc.org/standards/3dtiles/) is een Open Geospatial Consortium community standaard voor het streamen van enorme heterogene 3D geospatial datasets. 
+Wij gebruiken 3D Tiles voor het streamen van de gebouwmodellen naar onze 3D Viewer en we stellen dezelfde set 3D Tiles ook beschikbaar voor extern gebruik.
+
+De drie LoD-s (LoD1.2, LoD1.3, LoD2.2) worden als aparte tegelsets aangeboden. 
+De link naar de tegelsets is te vinden op onze [Downloads pagina](https://3dbag.nl/nl/download).
+
+Het volume aan gebruik is niet beperkt, maar dit kan in de toekomst veranderen.
+De [Copyright notice](https://docs.3dbag.nl/nl/copyright/) is verplicht.
+
+Details van de 3D-tegels:
+
+- Maakt gebruik van 3D Tiles v1.1.
+- De tileset en content CRS is EPSG:4978.
+- De content van de tileset is binair glTF (.glb).
+- De glTF-assets bevatten kenmerk metadata (per Gebouw), met behulp van de [EXT_mesh_features](https://github.com/CesiumGS/glTF/tree/3d-tiles-next/extensions/2.0/Vendor/EXT_mesh_features) en [EXT_structural_metadata](https://github.com/CesiumGS/glTF/tree/3d-tiles-next/extensions/2.0/Vendor/EXT_structural_metadata) extensies.
+- De gebouwen zijn in een uniforme kleur gekleurd.
+- De glTF-bestanden zijn gecomprimeerd, met behulp van de [KHR_mesh_quantization](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_mesh_quantization) en [EXT_meshopt_compression](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Vendor/EXT_meshopt_compression).
+- De belangrijkste tegelset maakt gebruik van expliciete tegeling en is opgesplitst in verschillende [External tilesets](https://docs.ogc.org/cs/22-025r4/22-025r4.html#core-external-tilesets).
+
+3D Tiles zijn gemaakt met [Tyler](https://github.com/3DGI/tyler).
+
+Hieronder vind je een voorbeeld script om de 3DBAG 3D-tegels in een Cesium viewer op te nemen.
+Merk op dat je `<YOUR CESIUM ION TOKEN>` moet vervangen door jouw Cesium Ion toegangstoken.
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <!-- Include the CesiumJS JavaScript and CSS files -->
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.133/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.133/Build/Cesium/Widgets/widgets.css"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="cesiumContainer"></div>
+
+<script type="module">
+    // Your access token can be found at: https://ion.cesium.com/tokens.
+    // Replace `your_access_token` with your Cesium ion access token.
+    Cesium.Ion.defaultAccessToken = '<YOUR CESIUM ION TOKEN>';
+
+    // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
+    const viewer = new Cesium.Viewer('cesiumContainer', {
+        terrain: Cesium.Terrain.fromWorldTerrain(),
+    });
+
+
+    try {
+        const tileset = await Cesium.Cesium3DTileset.fromUrl(
+            'https://data.3dbag.nl/v20250903/cesium3dtiles/lod22/tileset.json'
+        );
+        viewer.scene.primitives.add(tileset)
+        viewer.zoomTo(
+            tileset,
+            new Cesium.HeadingPitchRange(
+                0.5,
+                -0.5,
+                tileset.boundingSphere.radius * 0.05
+            )
+        );
+    } catch (error) {
+        // Handle errors
+        console.log(`There was an error while creating the 3D tileset. ${error}`);
+    }
+
+</script>
+
+</div>
+
+</body>
+
+</html>
+```
