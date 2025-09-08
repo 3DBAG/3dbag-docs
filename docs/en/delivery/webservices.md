@@ -49,7 +49,7 @@ The video also refers to the [PDOK services plugin](https://plugins.qgis.org/plu
 
 The base URL of the 3DBAG API is [api.3dbag.nl](https://api.3dbag.nl) and more information about the available endpoints can be found on its [embedded documentation page](https://api.3dbag.nl/api.html). As opposed to the 2D webservices described above, the 3DBAG API returns 3D geometries. It can be used to retrieve [a single building](https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1655100000500568) (using the BAG `identificatie` code) or [all buildings within a certain bounding box](https://api.3dbag.nl//collections/pand/items?bbox=75900.011,447000.034,76000.011,447200.034) with all the available attributes in [CityJSONFeature objects](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature).  
 
- The 3D API returns a sequence of CityJSONFeature objects which can be stored in a [CityJSONSeq](https://www.cityjson.org/cityjsonseq/) file with the suffix `city.jsonl`, using the python snippet below:
+ The 3D API returns a sequence of CityJSONFeature objects which can be saved in a [CityJSONSeq](https://www.cityjson.org/cityjsonseq/) file with the `city.jsonl` extension, using the Python snippet below:
 
 ```python
 import urllib.request
@@ -73,10 +73,9 @@ If you need your data in CityJSON format, you can convert from CityJSONSeq to Ci
 cat <path-to>output.city.jsonl | cjio stdin save <path-to>output.city.json
 ```
 
-It is important to notice that for requests of that return  more than 10 building the 3DBAG API results are paginated. We recommend using our script in order to convert your requests into CityJSON files in one step.
+Note: For requests that return more than 10 buildings, the 3DBAG API paginates the results. We recommend using [our script to convert paginated responses into a single CityJSON file](https://github.com/3DBAG/3dbag-scripts/blob/main/api_to_cityjson.py).
 
-
-The 3DBAG API is currently in an experimental beta state. It is currently not OGC-compliant, but we aim for full compliance with the [OGC API Features specification](https://ogcapi.ogc.org/features/) in a later release. At the moment the only supported CRS is Amersfoort / RD New + NAP height (EPSG:7415).
+The 3DBAG API is currently not OGC-compliant, but we aim for full compliance with the [OGC API Features specification](https://ogcapi.ogc.org/features/) in a later release. At the moment the only supported CRS is Amersfoort / RD New + NAP height (EPSG:7415).
 
 ## 3D Tiles
 
