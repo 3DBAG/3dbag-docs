@@ -1,5 +1,6 @@
 # Data Attributen
 
+Attribuut specificatie bestand en schema: [https://downloads.3dbag.nl](https://downloads.3dbag.nl)
 
 ## `b3_pand_deel_id`
 

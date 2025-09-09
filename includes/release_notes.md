@@ -30,6 +30,7 @@ Special thanks to Amir Hakim for his work on the IFC export functionality.
     + [`b3_h_nok`](https://docs.3dbag.nl/en/schema/attributes/#b3_h_nok)
     + [`b3_n_nok`](https://docs.3dbag.nl/en/schema/attributes/#b3_n_nok)
 + [Structured attribute schema](https://github.com/3DBAG/3dbag-specs/blob/master/resources/attributes.json). This is used during the 3DBAG generation process and to generate documentation.
++ List with the missing BAG objects was added to the metadata section on the download page.
 + Documentation: added references to 3dbag-scripts, added new export formats (IFC, 3D tiles).
 
 #### Known issues
