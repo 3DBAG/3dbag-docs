@@ -2,7 +2,7 @@
 
 *Release date: 09 September 2025*
 
-Today we are excited to release a new version of the 3DBAG. Major new features include two new output formats: [3D Tiles](https://www.ogc.org/standards/3dtiles/) (for web visualisation) and [IFC](https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications/) (for BIM users). There are also some smaller improvements, such as the new attribute `b3_h_nok` containing the main ridgeline elevation. And we made several improvements to the docs, like a new section on 3dbag-scripts.
+Today we are excited to release a new version of the 3DBAG. Major new features include two new output formats: [3D Tiles](https://www.ogc.org/standards/3dtiles/) (for web visualisation) and [IFC](https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications/) (for BIM users). There are also some smaller improvements, such as the new attribute `b3_h_nok` containing the main ridgeline elevation. And we made several improvements to the docs, like some pointers to our [3dbag-scripts](https://github.com/3DBAG/3dbag-scripts) for developers.
 
 The tooling behind the scenes also received [many improvements](https://github.com/3DBAG/3dbag-pipeline/releases/tag/v2025.09.03), allowing us to release new 3DBAG versions faster and more reliably in the future. A notable example is the introduction of a new global attribute schema, allowing us to define and enforce a consistent set of attributes across all 3DBAG outputs. We also use this global schema to automatically generate the attribute schema documentation, which is now guaranteed to be accurate and up-to-date without requiring manual edits.
 
@@ -20,7 +20,7 @@ Special thanks to Amir Hakim for his work on the IFC export functionality.
 + Fixed in tile download map:
     + [Transparancy reduces after map move](https://github.com/3DBAG/3dbag-viewer/issues/95)
     + Map start point is now set to the center of the country.
-+ Attribute schema page in [documentation](https://docs.3dbag.nl/en/schema/attributes/)
++ New attribute schema page in [documentation](https://docs.3dbag.nl/en/schema/attributes/)
 
 #### Added
 + New output formats
@@ -30,7 +30,7 @@ Special thanks to Amir Hakim for his work on the IFC export functionality.
     + [`b3_h_nok`](https://docs.3dbag.nl/en/schema/attributes/#b3_h_nok)
     + [`b3_n_nok`](https://docs.3dbag.nl/en/schema/attributes/#b3_n_nok)
 + [Structured attribute schema](https://github.com/3DBAG/3dbag-specs/blob/master/resources/attributes.json). This is used during the 3DBAG generation process and to generate documentation.
-+ Page on [3dbag-scripts](https://github.com/3DBAG/3dbag-scripts) in the documentation.
++ Documentation: added references to 3dbag-scripts, added new export formats (IFC, 3D tiles).
 
 #### Known issues
 + 397 512 BAG features without 3D model (typically due to a lack of elevation data) are missing from the output.
