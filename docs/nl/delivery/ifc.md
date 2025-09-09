@@ -2,4 +2,4 @@
 
 Sinds 3DBAG versie 2025.09.03 stellen we een experimentele IFC-versie van de 3DBAG-data beschikbaar. Dit is IFC versie 4.3 aangeboden in het IFC STEP-bestandsformaat (ISO 10303-21) met de extensie `.ifc`.
 
-Let op: Om meerdere 3DBAG-tiles in IFC-formaat te downloaden, kun je [dit script](https://github.com/3DBAG/3dbag-scripts/blob/main/tile_download.py) gebruiken.
+NB: Om geautomatiseerd meerdere 3DBAG-tiles in IFC-formaat te downloaden, kun je [dit script](https://github.com/3DBAG/3dbag-scripts/blob/main/tile_download.py) gebruiken.

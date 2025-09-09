@@ -3,7 +3,7 @@
 We have 3DBAG GeoPackage files available separately for each tile, and we also offer one big file that contains the entire 3DBAG dataset. The GeoPackage files contain [all the layers](../../schema/layers/#data-layers).
 
 
-Note: To download multiple 3DBAG tiles in GeoPackage format, please refer to [this script](https://github.com/3DBAG/3dbag-scripts/blob/main/tile_download.py).
+Note: To automatically download multiple 3DBAG tiles in GeoPackage format, please refer to [this script](https://github.com/3DBAG/3dbag-scripts/blob/main/tile_download.py).
 
 ### GeoPackage data dump file
 When working with the compressed GeoPackage files, it is not strictly necessary to decompress them.
@@ -49,7 +49,7 @@ To import your 3DBAG `.gpkg` file from QGIS into your PostgreSQL database, you m
 Use the `Collect Geometries` tool to standardize the geometry type.
 Go to `Vector` → `Geometry Tools` → `Collect Geometries`.
 Select your layer and create a temporary output layer.
- 
+
  <figure>
   <a href="../../../images_common/gpkg3.png">
     <img src="../../../images_common/gpkg3.png" />
@@ -60,8 +60,8 @@ Select your layer and create a temporary output layer.
 #### 2) Import the Layer to PostgreSQL
 
 1) Open `Database`-->`DB Manager`
-2) Expand `PostGIS` and connect to your database. 
-3) Click the `Import Layer/File` button and 
+2) Expand `PostGIS` and connect to your database.
+3) Click the `Import Layer/File` button and
 4) Select the temporary layer as the input.
 5) Fill in the required details (table name, schema, etc.)
 

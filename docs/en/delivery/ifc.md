@@ -2,4 +2,4 @@
 
 Since 3DBAG version 2025.09.03 we offer an experimental IFC version of the 3DBAG data. This is IFC version 4.3 provided in the IFC STEP-file format (ISO 10303-21) with the `.ifc` extension.
 
-Note: To download multiple 3DBAG tiles in IFC format, please refer to [this script](https://github.com/3DBAG/3dbag-scripts/blob/main/tile_download.py).
+Note: To automatically download multiple 3DBAG tiles in IFC format, please refer to [this script](https://github.com/3DBAG/3dbag-scripts/blob/main/tile_download.py).

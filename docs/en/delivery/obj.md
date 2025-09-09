@@ -2,7 +2,7 @@
 
 The OBJ files for the 3DBAG contain the 3D geometries only and [each 3D layer](../schema/layers.md#data-layers) is stored in a separate file. The three OBJ files are compressed into a single ZIP file per tile. The object coordinates are in the [Amersfoort / RD New + NAP height](http://epsg.io/7415) coordinate reference system.
 
-Note: To download multiple 3DBAG tiles in OBJ format, please refer to [this script](https://github.com/3DBAG/3dbag-scripts/blob/main/tile_download.py).
+Note: To automatically download multiple 3DBAG tiles in OBJ format, please refer to [this script](https://github.com/3DBAG/3dbag-scripts/blob/main/tile_download.py).
 
 ## Blender
 

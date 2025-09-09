@@ -2,7 +2,7 @@
 
 Wie bieden een apart 3DBAG GeoPackage-bestand aan voor iedere tegel. En daarnaast is er een groot GeoPackage bestand beschikbaar waar de complete 3DBAG in zie. Alle GeoPackage bestanden bevatten [alle lagen](../../schema/layers/#data-layers).
 
-Let op: Om meerdere 3DBAG-tiles in GeoPackage-formaat te downloaden, kun je [dit script](https://github.com/3DBAG/3dbag-scripts/blob/main/tile_download.py) gebruiken.
+NB: Om geautomatiseerd meerdere 3DBAG-tiles in GeoPackage-formaat te downloaden, kun je [dit script](https://github.com/3DBAG/3dbag-scripts/blob/main/tile_download.py) gebruiken.
 
 ### GeoPackage data dump bestand
 Bij het werken met gecomprimeerde GeoPackage bestanden is het niet strikt noodzakelijk om ze uit te pakken.
@@ -19,7 +19,7 @@ Een voorbeeld GDAL-commando voor toegang tot het ongecomprimeerde Nederlandse Ge
 Wanneer je de data in QGIS importeert (door het bestand er naar toe te slepen of te gaan naar `Layer` -> `Add Layer` -> `Add Vector Layer...`) kun je kiezen uit de verschillende lagen die het bestand bevat. Om de data in 3D te zien (vanaf QGIS 3.0, maar afhankelijk van de exacte versie):
 
 - Pas eerst de`Layer Properties` aan. Ga daar naar de `3D View` tab, verander `No Symbols` naar `Single Symbol` en pas de verandering toe.
-- Of: in oudere versies van QGIS 3 moet in plaats daarvan op dezelfde plek het knopje `Enable 3D renderer` aan worden gezet. 
+- Of: in oudere versies van QGIS 3 moet in plaats daarvan op dezelfde plek het knopje `Enable 3D renderer` aan worden gezet.
 
 - Ga vervolgens naar `View` -> `3D Map View` om de data te bekijken.
 
@@ -71,4 +71,3 @@ Om je 3DBAG `.gpkg`-bestand vanuit QGIS in je PostgreSQL-database te importeren,
 **Tips:**
 - Als je laag 3D-geometrieën bevat (met Z-waarden), zorg er dan voor dat de doel-tabel in PostgreSQL 3D-geometrie ondersteunt, of gebruik QGIS-tools om naar 2D te converteren vóór het importeren.
 - Je kunt ook de optie "Features opslaan als..." gebruiken (rechtermuisklik op de laag) om direct naar PostgreSQL te exporteren, met meer controle over het geometrietype en andere opties.
-

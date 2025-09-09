@@ -2,7 +2,7 @@
 
 De OBJ-bestanden van de 3DBAG bevatten alleen de 3D geometrieën en [elke 3D laag](../schema/layers.md#data-layers) is opgeslagen in een apart bestand. Ze zijn gecomprimeerd in een ZIP-bestand per tegel. De object-coördinaten zijn in het [Amersfoort / RD New + NAP height](http://epsg.io/7415) geodetisch coördinatensysteem.
 
-Let op: Om meerdere 3DBAG-tiles in OBJ-formaat te downloaden, kun je [dit script](https://github.com/3DBAG/3dbag-scripts/blob/main/tile_download.py) gebruiken.
+NB: Om geautomatiseerd meerdere 3DBAG-tiles in OBJ-formaat te downloaden, kun je [dit script](https://github.com/3DBAG/3dbag-scripts/blob/main/tile_download.py) gebruiken.
 
 ## Blender
 
@@ -40,4 +40,3 @@ Selecteer vervolgens het object (of alle individuele objecten als je ze op die m
 </figure>
 
 En verander X en Y naar 0. Druk wederom op `.` op het numpad om de camera weer te focussen op het model.
-
