@@ -1,24 +1,24 @@
 
 <!doctype html>
-<html lang="nl" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="3DBAG productbeschrijving">
+        <meta name="description" content="3DBAG documentation">
       
       
         <meta name="author" content="3D geoinformation research group">
       
       
-        <link rel="canonical" href="https://docs.3dbag.nl/nl/schema/concepts/">
+        <link rel="canonical" href="https://docs.3dbag.nl/en/delivery/ifc/">
       
       
-        <link rel="prev" href="../../overview/release_notes/">
+        <link rel="prev" href="../obj/">
       
       
-        <link rel="next" href="../layers/">
+        <link rel="next" href="../../copyright/">
       
       
       <link rel="icon" href="../../assets/images/logo.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Algemene concepten - 3DBAG</title>
+        <title>IFC - 3DBAG</title>
       
     
     
@@ -76,11 +76,6 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#algemene-concepten" class="md-skip">
-          Ga naar inhoud
-        </a>
       
     </div>
     <div data-md-component="announce">
@@ -139,7 +134,7 @@
       <div class="md-header__option">
         <div class="md-select">
           
-          <button class="md-header__button md-icon" aria-label="Selecteer taal">
+          <button class="md-header__button md-icon" aria-label="Select language">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
           </button>
           <div class="md-select__inner">
@@ -170,16 +165,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Zoeken" placeholder="Zoeken" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Zoeken">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Leegmaken" aria-label="Leegmaken" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -190,7 +185,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Zoeken initialiseren
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -226,7 +221,27 @@
           
   
   
-  Introductie
+  Introduction
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../schema/concepts/" class="md-tabs__link">
+          
+  
+  
+  Data Schema
 
         </a>
       </li>
@@ -244,31 +259,11 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../webservices/" class="md-tabs__link">
           
   
   
-  Dataschema
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../delivery/webservices/" class="md-tabs__link">
-          
-  
-  
-  Dataformaten
+  Data Formats
 
         </a>
       </li>
@@ -288,7 +283,7 @@
   
     
   
-  Gebruiksvoorwaarden
+  Copyright
 
       </a>
     </li>
@@ -320,7 +315,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="https://3dbag.nl/nl/viewer" class="md-tabs__link">
+      <a href="https://3dbag.nl/en/viewer" class="md-tabs__link">
         
   
   
@@ -339,7 +334,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="https://3dbag.nl/nl/download" class="md-tabs__link">
+      <a href="https://3dbag.nl/en/download" class="md-tabs__link">
         
   
   
@@ -372,7 +367,7 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigatie" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="3DBAG" class="md-nav__button md-logo" aria-label="3DBAG" data-md-component="logo">
       
@@ -438,7 +433,7 @@
   
   
   <span class="md-ellipsis">
-    Introductie
+    Introduction
     
   </span>
   
@@ -449,7 +444,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
-            Introductie
+            Introduction
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -465,7 +460,7 @@
   
   
   <span class="md-ellipsis">
-    Overzicht
+    Overview
     
   </span>
   
@@ -488,7 +483,7 @@
   
   
   <span class="md-ellipsis">
-    Databronnen
+    Data Sources
     
   </span>
   
@@ -511,7 +506,7 @@
   
   
   <span class="md-ellipsis">
-    Over ons
+    About Us
     
   </span>
   
@@ -534,7 +529,7 @@
   
   
   <span class="md-ellipsis">
-    In de media
+    In the media
     
   </span>
   
@@ -557,7 +552,124 @@
   
   
   <span class="md-ellipsis">
-    Release-opmerkingen
+    Release Notes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Data Schema
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Data Schema
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schema/concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    General Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schema/layers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Layers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schema/attributes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Attributes
     
   </span>
   
@@ -598,15 +710,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
-    Dataschema
+    Data Formats
     
   </span>
   
@@ -614,196 +726,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Dataschema
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Algemene concepten
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Algemene concepten
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhoudsopgave
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#level-of-detail-lod" class="md-nav__link">
-    <span class="md-ellipsis">
-      Level of Detail (LoD)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3d-geometrische-primitieven" class="md-nav__link">
-    <span class="md-ellipsis">
-      3D geometrische primitieven
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#valide-3d-geometrieen" class="md-nav__link">
-    <span class="md-ellipsis">
-      Valide 3D geometrieën
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../layers/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Datalagen
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../attributes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Data-attributen
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Dataformaten
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Dataformaten
+            Data Formats
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -814,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../delivery/webservices/" class="md-nav__link">
+      <a href="../webservices/" class="md-nav__link">
         
   
   
@@ -837,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../delivery/gpkg/" class="md-nav__link">
+      <a href="../gpkg/" class="md-nav__link">
         
   
   
@@ -860,7 +786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../delivery/fgb/" class="md-nav__link">
+      <a href="../fgb/" class="md-nav__link">
         
   
   
@@ -883,7 +809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../delivery/cityjson/" class="md-nav__link">
+      <a href="../cityjson/" class="md-nav__link">
         
   
   
@@ -906,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../delivery/obj/" class="md-nav__link">
+      <a href="../obj/" class="md-nav__link">
         
   
   
@@ -926,10 +852,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../delivery/ifc/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -940,6 +873,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -964,7 +898,7 @@
   
   
   <span class="md-ellipsis">
-    Gebruiksvoorwaarden
+    Copyright
     
   </span>
   
@@ -1003,7 +937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://3dbag.nl/nl/viewer" class="md-nav__link">
+      <a href="https://3dbag.nl/en/viewer" class="md-nav__link">
         
   
   
@@ -1025,7 +959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://3dbag.nl/nl/download" class="md-nav__link">
+      <a href="https://3dbag.nl/en/download" class="md-nav__link">
         
   
   
@@ -1053,47 +987,10 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Inhoudsopgave">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhoudsopgave
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#level-of-detail-lod" class="md-nav__link">
-    <span class="md-ellipsis">
-      Level of Detail (LoD)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3d-geometrische-primitieven" class="md-nav__link">
-    <span class="md-ellipsis">
-      3D geometrische primitieven
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#valide-3d-geometrieen" class="md-nav__link">
-    <span class="md-ellipsis">
-      Valide 3D geometrieën
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1109,48 +1006,11 @@
 
 
 
-<h1 id="algemene-concepten">Algemene concepten<a class="headerlink" href="#algemene-concepten" title="Permanent link">&para;</a></h1>
-<h2 id="level-of-detail-lod">Level of Detail (LoD)<a class="headerlink" href="#level-of-detail-lod" title="Permanent link">&para;</a></h2>
-<p>Ruimtelijke modellen zijn altijd een abstractie van de werkelijkheid. In 3D GIS geeft het Level of Detail (LoD) van een 3D model aan welke mate van detail in het model is opgenomen.</p>
-<p>Neem bijvoorbeeld een zeer simpel huis met vier hoeken en een puntdak. Een ruwe benadering van dit gebouw is een kubus. Een meer gedetailleerde representatie volgt de exacte (dak)vormen van het huis, waarbij de vlakken afzonderlijk identificeerbaar kunnen zijn, zodat er aanvullende informatie toegekend kan worden aan deze vlakken zoals het oppervlaktype, het materiaal etcetera.</p>
-<p>Deze aanvullende labels heten ook wel <em>semantiek</em>, en derhalve noemen we gelabelde vlakken <strong>semantische vlakken</strong>. In het geval van gebouwmodellen spreken we bijvoorbeeld over een <em>grondoppervlak</em>, <em>muuroppervlak</em>, <em>dakoppervlak</em>, enzovoort.</p>
-<p>In de 3DBAG gebruiken we de zogenaamde <a href="http://doi.org/10.1016/j.compenvurbsys.2016.04.005"><em>verfijnde LoD-specificatie</em></a>, welke in de onderstaande figuur getoond wordt.</p>
-<figure>
-  <img src="https://3d.bk.tudelft.nl/lod/lodtud.png" />
-  <figcaption><b>An improved LOD specification for 3D building models.</b> Filip Biljecki, Hugo Ledoux, and Jantien Stoter. Computers, Environment and Urban Systems, 59: 25–37, 2016. <a href="http://doi.org/10.1016/j.compenvurbsys.2016.04.005">DOI</a></figcaption>
-</figure>
+  <h1>IFC</h1>
 
-<p>Voor de 3DBAG reconstrueren we data op de volgende detailniveaus: 1.2, 1.3 en 2.2. Merk op dat behalve het verschil in de mate van geometrische details, een belangrijk verschil tussen LoD1 en LoD2 de aanwezigheid van <em>semantische oppervlakken</em> is. Deze informatie zorgt er bijvoorbeeld voor dat dak- en muuroppervlakken respectievelijk rood en grijs gevisualiseerd kunnen worden en dat hiermee analyses kunnen orden gedaan. Verder is het verschil tussen LoD1.2 en LoD1.3 dat laatstgenoemde onderscheid maakt tussen significante hoogteverschillen binnen een gebouw, terwijl het gebouw in LoD1.2 een uniforme hoogte heeft.</p>
-<!-- difficulties of modelling buildings in diff lod-s -->
-
-<!-- highest lod is not always the best -->
-
-<h2 id="3d-geometrische-primitieven">3D geometrische primitieven<a class="headerlink" href="#3d-geometrische-primitieven" title="Permanent link">&para;</a></h2>
-<p>In 2D GIS kan de geometrie van objecten worden gerepresenteerd door <em>punten</em>, <em>lijnen</em>, <em>polygonen</em> en variaties hierop. Er zijn standaarden die regels voorschrijven voor deze primitieven, zodat data probleemloos uitgewisseld kan worden (bijvoorbeeld <a href="https://www.ogc.org/standards/sfa">Simple Feature Access</a>).</p>
-<p>Voor 3D GIS moeten deze geometrische primitieven en de bijbehorende regels uitgebreid worden naar de derde dimensie. De onderstaande figuur geeft een overzicht van de veelgebruikte primitieven in 3D GIS.</p>
-<figure>
-  <img src="https://val3dity.readthedocs.io/2.5.1/_images/geomprimitives.svg" />
-  <figcaption>3D primitieven waar val3dity mee omgaat. Zie: <b>Val3dity: validation of 3D GIS primitives according to the international standards.</b> Hugo Ledoux. Open Geospatial Data, Software and Standards 3 (1), 2018, pp. 1. <a href="http://dx.doi.org/10.1186/s40965-018-0043-x">DOI</a></figcaption>
-</figure>
-
-<!-- I am unsure if there is a proper Dutch translation for Solid -->
-
-<p>Voor de 3DBAG is de meest relevante primitief de <a href="https://val3dity.readthedocs.io/2.5.1/definitions.html#solid">Solid</a>, aangezien we gebouwmodellen als zodanig beschouwen. Dit onderscheid is belangrijk omdat er andere (strictere) regels voor Solids gelden, ten opzichte van andere 3D primitieven.</p>
-<div class="admonition note">
-<p class="admonition-title">3D primitieven en dataformaten</p>
-<p>Niet ieder dataformaat ondersteunt de bovengenoemde 3D primitieven. Dat is eigenlijk zo voor al onze exportformaten, behalve CityJSON. Daarom gebruiken we in deze andere formaten de geometrietypes die het meest gelijkwaardig zijn aan Solids. De PostgreSQL backup is hierbij een bijzonder geval, omdat PostGIS technisch gezien Solids kan opslaan, maar alleen met de <a href="http://www.sfcgal.org/">SFCGAL-extensie</a>. Om het inladen van de PostgreSQL backup zo makkelijk mogelijk te maken, slaan we de 3D geometrieën op als <code>MultiPolygonZ</code>.</p>
-</div>
-<h2 id="valide-3d-geometrieen">Valide 3D geometrieën<a class="headerlink" href="#valide-3d-geometrieen" title="Permanent link">&para;</a></h2>
-<p>De validiteit van geometrieën is belangrijk voor het gebruik van de data in toepassingen. Er zijn standaarden die regels definiëren voor valide 3D objecten. <a href="https://val3dity.readthedocs.io/en/latest/">val3dity</a> is een software die 3D primitieven valideert aan de hand van de international standaard ISO19107.</p>
-<p>We hebben val3dity in ons proces geïntegreerd, waarmee we ieder 3D model valideren na reconstructie. De gebouwmodellen worden echter individueel gevalideerd tijdens het reconstructieproces, waardoor we geen fouten kunnen detecteren in de interactie tussen verschillende modellen (foutcodes boven de 500).</p>
-<div class="admonition nb">
-<p class="admonition-title">b3_val3dity_lod12", "b3_val3dity_lod13", "b3_val3dity_lod22</p>
-<p>De attributen die beginnen met <a href="../attributes/#b3_val3dity_lod12"><code>b3_val3dity_</code></a> geven de val3dity foutcodes van een model aan als die er zijn.</p>
-</div>
-<figure>
-  <img src="https://val3dity.readthedocs.io/2.5.1/_images/errorcodes.png" />
-  <figcaption>val3dity foutcodes. Zie <a href="https://val3dity.readthedocs.io/2.5.1/errors.html/">de volledige omschrijving van iedere code</a> in de documentatie van val3dity.</figcaption>
-</figure>
+<p><a href="https://technical.buildingsmart.org/standards/ifc/">IFC (Industry Foundation Classes)</a> is a global, open standard for sharing building and facility data. It is an open standard and widely used for Building Information Modeling (BIM) during the design and construction phases.</p>
+<p>Since 3DBAG version 2025.09.03 we offer an experimental IFC version of the 3DBAG data. This is IFC version 4.3 provided in the IFC STEP-file format (ISO 10303-21) with the <code>.ifc</code> extension.</p>
+<p>Note: To automatically download multiple 3DBAG tiles in IFC format, please refer to <a href="https://github.com/3DBAG/3dbag-scripts/blob/main/tile_download.py">this script</a>.</p>
 
 
 
@@ -1180,7 +1040,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://3dbag.nl">Copyright &copy; 2025 - 3DBAG</a> door de <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3d.bk.tudelft.nl/">3D geoinformation onderzoeksgroep</a> en <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3dgi.xyz/">3DGI</a> is gelicentieerd onder <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://3dbag.nl">Copyright &copy; 2025 - 3DBAG</a> by the <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3d.bk.tudelft.nl/">3D geoinformation research group</a> and <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3dgi.xyz/">3DGI</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
     </div>
   
   
@@ -1229,7 +1089,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Gekopieerd naar klembord", "clipboard.copy": "Kopi\u00ebren naar klembord", "search.result.more.one": "1 extra overeenkomst op deze pagina", "search.result.more.other": "# extra overeenkomsten op deze pagina", "search.result.none": "Geen overeenkomende documenten", "search.result.one": "1 overeenkomende document", "search.result.other": "# overeenkomende documenten", "search.result.placeholder": "Typ om te beginnen met zoeken", "search.result.term.missing": "Ontbreekt", "select.version": "Selecteer versie"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
