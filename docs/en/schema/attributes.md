@@ -1,7 +1,5 @@
 # Data Attributes
 
-Attributes specification file and schema: [https://downloads.3dbag.nl](https://downloads.3dbag.nl)
-
 ## `b3_pand_deel_id`
 
 | Property      | Value                                                                                                        |
@@ -1305,4 +1303,3 @@ Attributes specification file and schema: [https://downloads.3dbag.nl](https://d
 | CityJSON      | Data Type  | number      |
 | GeoPackage    | Locations  | lod22_2d    |
 | GeoPackage    | Data Type  | FLOAT       |
-
