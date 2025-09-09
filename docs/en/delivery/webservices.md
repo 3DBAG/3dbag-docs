@@ -1,6 +1,6 @@
 Webservices make it possible to specify via a URL exactly which models to download from the 3DBAG. We offer traditional 2D webservices (WFS and WMS) and a 3D webservice that we call the 3DBAG API.
 
-The 2D webservices are supported by all major GIS software packages. They serve directly the [2D layers](../schema/layers.md#data-layers) of the 3DBAG and a tile-index that corresponds to the 3DBAG tiles that are available for download in various formats. 
+The 2D webservices are supported by all major GIS software packages. They serve directly the [2D layers](../schema/layers.md#data-layers) of the 3DBAG and a tile-index that corresponds to the 3DBAG tiles that are available for download in various formats.
 
 Additionally, the 3D API can be used to retrieve 3DBAG buildings with their 3D geometry and all the available attributes in the [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) format.
 
@@ -50,7 +50,7 @@ The video also refers to the [PDOK services plugin](https://plugins.qgis.org/plu
 ## 3D services
 ### 3DBAG API 
 
-The base URL of the 3DBAG API is [api.3dbag.nl](https://api.3dbag.nl) and more information about the available endpoints can be found on its [embedded documentation page](https://api.3dbag.nl/api.html). As opposed to the 2D webservices described above, the 3DBAG API returns 3D geometries. It can be used to retrieve [a single building](https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1655100000500568) (using the BAG `identificatie` code) or [all buildings within a certain bounding box](https://api.3dbag.nl//collections/pand/items?bbox=75900.011,447000.034,76000.011,447200.034) with all the available attributes in [CityJSONFeature objects](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature).  
+The base URL of the 3DBAG API is [api.3dbag.nl](https://api.3dbag.nl) and more information about the available endpoints can be found on its [embedded documentation page](https://api.3dbag.nl/api.html). As opposed to the 2D webservices described above, the 3DBAG API returns 3D geometries. It can be used to retrieve [a single building](https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1655100000500568) (using the BAG `identificatie` code) or [all buildings within a certain bounding box](https://api.3dbag.nl//collections/pand/items?bbox=75900.011,447000.034,76000.011,447200.034) with all the available attributes in [CityJSONFeature objects](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature).
 
  The 3D API returns a sequence of CityJSONFeature objects which can be saved in a [CityJSONSeq](https://www.cityjson.org/cityjsonseq/) file with the `city.jsonl` extension, using the Python snippet below:
 
@@ -86,7 +86,7 @@ The 3DBAG API is currently not OGC-compliant, but we aim for full compliance wit
 [3D Tiles](https://www.ogc.org/standards/3dtiles/) is an Open Geospatial Consortium community standard for streaming massive heterogeneous 3D geospatial datasets.
 We use 3D Tiles for streaming the building models into our 3D Viewer and we make the same set of 3D Tiles available for external use too.
 
-The three LoD-s (LoD1.2, LoD1.3, LoD2.2) are served as separate tilesets. 
+The three LoD-s (LoD1.2, LoD1.3, LoD2.2) are served as separate tilesets.
 The link to the tilesets can be found on our [Downloads page](https://3dbag.nl/en/download).
 
 The volume of usage is not limited, but this may change in the future.
@@ -102,10 +102,10 @@ Details of the 3D Tiles:
 - The glTF files are compressed, using the [KHR_mesh_quantization](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_mesh_quantization) and [EXT_meshopt_compression](https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Vendor/EXT_meshopt_compression) extensions.
 - The main tileset is using explicit tiling and it is split into several [External tilesets](https://docs.ogc.org/cs/22-025r4/22-025r4.html#core-external-tilesets).
 
-3D Tiles were produced with [Tyler](https://github.com/3DGI/tyler).
+Our 3D Tiles are generated with [Tyler](https://github.com/3DGI/tyler).
 
 Below is a sample script to include the 3DBAG 3D Tiles in a Cesium viewer.
-Note that you need to substitute `<YOUR CESIUM ION TOKEN>` with your Cesium Ion access token.
+Note that you need to substitute `<YOUR CESIUM ION TOKEN>` with your own [Cesium Ion access token](https://ion.cesium.com/signup/).
 
 ```html
 <!DOCTYPE html>
