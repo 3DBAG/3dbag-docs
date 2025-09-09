@@ -2,6 +2,9 @@
 
 We have 3DBAG GeoPackage files available separately for each tile, and we also offer one big file that contains the entire 3DBAG dataset. The GeoPackage files contain [all the layers](../../schema/layers/#data-layers).
 
+
+Note: To download multiple 3DBAG tiles in GeoPackage format, please refer to [this script](https://github.com/3DBAG/3dbag-scripts/blob/main/tile_download.py).
+
 ### GeoPackage data dump file
 When working with the compressed GeoPackage files, it is not strictly necessary to decompress them.
 GDAL supports [virtual file systems](https://gdal.org/user/virtual_file_systems.html#vsizip-zip-archives), which allows to access the contents of the compressed .gpkg without decompressing the file first.

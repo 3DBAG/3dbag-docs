@@ -2,6 +2,8 @@
 
 Wie bieden een apart 3DBAG GeoPackage-bestand aan voor iedere tegel. En daarnaast is er een groot GeoPackage bestand beschikbaar waar de complete 3DBAG in zie. Alle GeoPackage bestanden bevatten [alle lagen](../../schema/layers/#data-layers).
 
+Let op: Om meerdere 3DBAG-tiles in GeoPackage-formaat te downloaden, kun je [dit script](https://github.com/3DBAG/3dbag-scripts/blob/main/tile_download.py) gebruiken.
+
 ### GeoPackage data dump bestand
 Bij het werken met gecomprimeerde GeoPackage bestanden is het niet strikt noodzakelijk om ze uit te pakken.
 GDAL ondersteunt [virtuele bestandssystemen](https://gdal.org/user/virtual_file_systems.html#vsizip-zip-archives), waardoor de inhoud van de gecomprimeerde .gpkg kan worden benaderd zonder het bestand eerst uit te pakken.
