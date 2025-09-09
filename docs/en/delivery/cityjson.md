@@ -6,6 +6,8 @@ The three guiding principles for the format are compactness, simplicity and ease
 
 The CityJSON files of the 3DBAG contain all the [3D layers](../../schema/layers/#data-layers) (LoD1.2, LoD1.3, LoD2.2), but only the attributes that apply to the whole building.
 
+Note: To download multiple 3DBAG tiles in CityJSON format, please refer to [this script](https://github.com/3DBAG/3dbag-scripts/blob/main/tile_download.py).
+
 ## ninja and azul
 
 [ninja](http://ninja.cityjson.org/) is a drag-and-drop web application for visualising and editing CityJSON files.
