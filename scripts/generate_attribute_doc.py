@@ -119,7 +119,7 @@ def attribute_to_markdown(attribute_name: str, attribute: Attribute,
 
     # Add formats table if applicable
     if formats_table := create_formats_table(attribute, lang):
-        table_title = "Data Format Specifications" if lang == DocumentationLanguage.EN else "Specificaties bestandsformaat"
+        table_title = "Dataformat availability" if lang == DocumentationLanguage.EN else "Beschikbaarheid bestandsformaten"
         sections.append(f"**{table_title}**")
         sections.append(formats_table)
 
@@ -131,13 +131,13 @@ def write_header(lang: DocumentationLanguage) -> str:
     """Generate the document header."""
     if lang == DocumentationLanguage.EN:
         title = "Data Attributes"
-        schema_text = "Attributes specification file and schema"
+        schema_text = "This is a list of all 3DBAG attributes"
     else:
         title = "Data Attributen"
-        schema_text = "Attribuut specificatie bestand en schema"
+        schema_text = "Dit is een lijst van alle 3DBAG attributen"
     return (
             f"# {title}" + DOUBLE_NEWLINE +
-            f"{schema_text}: [https://downloads.3dbag.nl](https://downloads.3dbag.nl)"
+            f"{schema_text}."
     )
 
 
