@@ -18,14 +18,14 @@ Special thanks to Amir Hakim for his work on our IFC export.
 + Removed attribute `b3_succes`
 + Fixed extremely low and negative roof elevation values for some buildings
 + Fixed in tile download map:
-  + [Transparancy reduces after map move](https://github.com/3DBAG/3dbag-viewer/issues/95)
-  + Map start point is now set to the center of the country.
+    + [Transparancy reduces after map move](https://github.com/3DBAG/3dbag-viewer/issues/95)
+    + Map start point is now set to the center of the country.
 + Attribute schema page in [documentation](https://docs.3dbag.nl/en/schema/attributes/)
 
 #### Added
 + New output formats
-    + 3D tiles version 1.1
-    + IFC version 4.3
+    + [3D tiles version 1.1](https://docs.3dbag.nl/docs/en/delivery/webservices/#3d-tiles)
+    + [IFC version 4.3](https://docs.3dbag.nl/docs/nl/delivery/ifc/)
 + new attributes:
     + [`b3_h_nok`](https://docs.3dbag.nl/en/schema/attributes/#b3_h_nok)
     + [`b3_n_nok`](https://docs.3dbag.nl/en/schema/attributes/#b3_n_nok)

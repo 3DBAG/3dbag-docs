@@ -1,16 +1,16 @@
-site_url: 'https://docs.3dbag.nl/en'
-site_name: '3DBAG'
-site_author: '3D geoinformation research group'
-site_description: '3DBAG documentation'
-docs_dir: '../../docs/en'
-site_dir: '../../generated/en'
+site_url: "https://docs.3dbag.nl/en"
+site_name: "3DBAG"
+site_author: "3D geoinformation research group"
+site_description: "3DBAG documentation"
+docs_dir: "../../docs/en"
+site_dir: "../../generated/en"
 copyright: '<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://3dbag.nl">Copyright &copy; 2025 - 3DBAG</a> by the <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3d.bk.tudelft.nl/">3D geoinformation research group</a> and <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3dgi.xyz/">3DGI</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>'
 extra_css:
   - stylesheets/extra.css
 
 theme:
   language: en
-  custom_dir: '../../overrides/'
+  custom_dir: "../../overrides/"
   name: material
   favicon: assets/images/logo.svg
   logo: assets/images/logo.svg
@@ -27,7 +27,6 @@ theme:
 
 extra:
   alternate:
-
     - name: English
       link: /en/
       lang: en
@@ -60,22 +59,23 @@ markdown_extensions:
 
 nav:
   - Introduction:
-    - 'Overview': index.md
-    - 'Data Sources': overview/sources.md
-    - 'About Us': 'overview/group.md'
-    - 'In the media': 'overview/media.md'
-    - 'Release Notes': 'overview/release_notes.md'
+      - "Overview": index.md
+      - "Data Sources": overview/sources.md
+      - "About Us": "overview/group.md"
+      - "In the media": "overview/media.md"
+      - "Release Notes": "overview/release_notes.md"
   - Data Schema:
-    - 'General Concepts': 'schema/concepts.md'
-    - 'Data Layers': 'schema/layers.md'
-    - 'Data Attributes': 'schema/attributes.md'
-  - 'Data Formats':
-      - 'Webservices': 'delivery/webservices.md'
-      - 'GeoPackage': 'delivery/gpkg.md'
-      - 'FlatGeobuf': 'delivery/fgb.md'
-      - 'CityJSON': 'delivery/cityjson.md'
-      - 'Wavefront OBJ': 'delivery/obj.md'
-  - 'Copyright': 'copyright.md'
+      - "General Concepts": "schema/concepts.md"
+      - "Data Layers": "schema/layers.md"
+      - "Data Attributes": "schema/attributes.md"
+  - "Data Formats":
+      - "Webservices": "delivery/webservices.md"
+      - "GeoPackage": "delivery/gpkg.md"
+      - "FlatGeobuf": "delivery/fgb.md"
+      - "CityJSON": "delivery/cityjson.md"
+      - "Wavefront OBJ": "delivery/obj.md"
+      - "IFC": "delivery/ifc.md"
+  - "Copyright": "copyright.md"
   - Contact: contact.md
-  - 'Viewer <svg style="width:16px;height:16px" viewBox="-3 -3 24 24"> <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg>': 'https://3dbag.nl/en/viewer'
-  - 'Downloads <svg style="width:16px;height:16px" viewBox="-3 -3 24 24"> <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg>': 'https://3dbag.nl/en/download'
+  - 'Viewer <svg style="width:16px;height:16px" viewBox="-3 -3 24 24"> <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg>': "https://3dbag.nl/en/viewer"
+  - 'Downloads <svg style="width:16px;height:16px" viewBox="-3 -3 24 24"> <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg>': "https://3dbag.nl/en/download"
