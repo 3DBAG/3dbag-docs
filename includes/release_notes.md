@@ -4,9 +4,9 @@
 
 Today we are excited to release a new version of the 3DBAG. Major new features include two new output formats: [3D Tiles](https://www.ogc.org/standards/3dtiles/) (for web visualisation) and [IFC](https://technical.buildingsmart.org/standards/ifc/ifc-schema-specifications/) (for BIM users). There are also some smaller improvements, such as the new attribute `b3_h_nok` containing the main ridgeline elevation. And we made several improvements to the docs, like a new section on 3dbag-scripts.
 
-The tooling behind the scenes also received many improvements, allowing us to release new 3DBAG versions faster and more reliably in the future. A notable example is the introduction of a new global attribute schema, allowing us to define and enforce a consistent set of attributes across all 3DBAG outputs. We also use this global schema to automatically generate the attribute schema documentation, which is now guaranteed to be accurate and up-to-date without requiring manual edits.
+The tooling behind the scenes also received [many improvements](https://github.com/3DBAG/3dbag-pipeline/releases/tag/v2025.09.03), allowing us to release new 3DBAG versions faster and more reliably in the future. A notable example is the introduction of a new global attribute schema, allowing us to define and enforce a consistent set of attributes across all 3DBAG outputs. We also use this global schema to automatically generate the attribute schema documentation, which is now guaranteed to be accurate and up-to-date without requiring manual edits.
 
-3DBAG is generated using 100% [open source software](https://github.com/3DBAG). For this release we used our building reconstruction software *roofer* version 1.0.0-beta-5. Zulip community
+3DBAG is generated using 100% [open source software](https://github.com/3DBAG). For this release we used our building reconstruction software [*roofer*](https://innovation.3dbag.nl/roofer/) version 1.0.0-beta-5. If you are interested in using the 3DBAG software or want to contribute to 3DBAG you are welcome to join our [Zulip chat](https://3dbag.zulipchat.com).
 
 This release counts 107 715 47 BAG objects with a 3D building model and was funded by the [3DBAG innovation platform](https://innovation.3dbag.nl).
 
