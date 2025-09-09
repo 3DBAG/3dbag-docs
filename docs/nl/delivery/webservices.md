@@ -45,7 +45,9 @@ Ook [Web Map Service (WMS)](https://www.ogc.org/standards/wms) is een OGC-standa
 
 In die video wordt eveneens de [PDOK services plugin](https://plugins.qgis.org/plugins/pdokservicesplugin/) geïntroduceerd, met handige webservices die kunnen fungeren als referentiekaart.
 
-## 3DBAG API (3D)
+
+## 3D webservices 
+### 3DBAG API
 
 De 3DBAG API is beschikbaar via [api.3dbag.nl](https://api.3dbag.nl). Gedetailleerde informatie over de werking kan gevonden worden op de [ingebedde documentatie pagina](https://api.3dbag.nl/api.html). In tegenstelling tot de 2D webservices hierboven, wordt er 3D geometrie geleverd. De 3DBAG API kan gebruikt worden om een enkel gebouw binnen te halen (op basis van de BAG `identificatie` code) of om alle gebouwen binnen een bounding box binnen te halen. De 3DBAG objecten worden teruggegeven in het [CityJSONFeatures](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature) formaat.
 
@@ -78,7 +80,7 @@ Let op: Voor verzoeken die meer dan 10 gebouwen retourneren, worden de resultate
 
 Momenteel is de 3DBAG API nog niet OGC-compliant, maar het is wel ons doel om in een latere versie van de 3DBAG volledig compliant te zijn met de [OGC API Features specificatie](https://ogcapi.ogc.org/features/). Momenteel wordt alleen het CRS Amersfoort / RD New + NAP height (EPSG:7415) ondersteund.
 
-## 3D Tiles
+### 3D Tiles
 
 [3D Tiles](https://www.ogc.org/standards/3dtiles/) is een Open Geospatial Consortium community standaard voor het streamen van enorme heterogene 3D geospatial datasets. 
 Wij gebruiken 3D Tiles voor het streamen van de gebouwmodellen naar onze 3D Viewer en we stellen dezelfde set 3D Tiles ook beschikbaar voor extern gebruik.
