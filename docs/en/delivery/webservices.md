@@ -27,7 +27,7 @@ Available layers:
   <figcaption>LoD1.3 2D WFS layer visualised in QGIS, with the BRT Baselayer from PDOK in the background.</figcaption>
 </figure>
 
-In order to properly filter the WFS layer in python, please take a look at[our script](https://github.com/3DBAG/3dbag-scripts/blob/main/wfs_filtering.py).
+In order to properly filter the WFS layer in python, please take a look at [our script](https://github.com/3DBAG/3dbag-scripts/blob/main/wfs_filtering.py).
 
 ### WMS (2D)
 
@@ -47,7 +47,8 @@ The [Web Map Service](https://www.ogc.org/standards/wms) is an Open Geospatial C
 The video also refers to the [PDOK services plugin](https://plugins.qgis.org/plugins/pdokservicesplugin/), which is very handy for loading base layers.
 
 
-## 3DBAG API (3D)
+## 3D services
+### 3DBAG API 
 
 The base URL of the 3DBAG API is [api.3dbag.nl](https://api.3dbag.nl) and more information about the available endpoints can be found on its [embedded documentation page](https://api.3dbag.nl/api.html). As opposed to the 2D webservices described above, the 3DBAG API returns 3D geometries. It can be used to retrieve [a single building](https://api.3dbag.nl/collections/pand/items/NL.IMBAG.Pand.1655100000500568) (using the BAG `identificatie` code) or [all buildings within a certain bounding box](https://api.3dbag.nl//collections/pand/items?bbox=75900.011,447000.034,76000.011,447200.034) with all the available attributes in [CityJSONFeature objects](https://www.cityjson.org/specs/2.0.0/#text-sequences-and-streaming-with-cityjsonfeature).
 
@@ -80,7 +81,7 @@ Note: For requests that return more than 10 buildings, the 3DBAG API paginates t
 
 The 3DBAG API is currently not OGC-compliant, but we aim for full compliance with the [OGC API Features specification](https://ogcapi.ogc.org/features/) in a later release. At the moment the only supported CRS is Amersfoort / RD New + NAP height (EPSG:7415).
 
-## 3D Tiles
+### 3D Tiles
 
 [3D Tiles](https://www.ogc.org/standards/3dtiles/) is an Open Geospatial Consortium community standard for streaming massive heterogeneous 3D geospatial datasets.
 We use 3D Tiles for streaming the building models into our 3D Viewer and we make the same set of 3D Tiles available for external use too.
