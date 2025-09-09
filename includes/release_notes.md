@@ -10,7 +10,7 @@ The tooling behind the scenes also received [many improvements](https://github.c
 
 This release counts 107 715 47 BAG objects with a 3D building model and was funded by the [3DBAG innovation platform](https://innovation.3dbag.nl).
 
-Special thanks to Amir Hakim for his work on our IFC export.
+Special thanks to Amir Hakim for his work on the IFC export functionality.
 
 #### Changed / Fixed
 + Attribute `b3_kwaliteitsindicator` was added to the CityJSON output
