@@ -119,7 +119,7 @@ def attribute_to_markdown(attribute_name: str, attribute: Attribute,
 
     # Add formats table if applicable
     if formats_table := create_formats_table(attribute, lang):
-        table_title = "Dataformat availability" if lang == DocumentationLanguage.EN else "Beschikbaarheid bestandsformaten"
+        table_title = "Data format availability" if lang == DocumentationLanguage.EN else "Beschikbaarheid bestandsformaten"
         sections.append(f"**{table_title}**")
         sections.append(formats_table)
 
