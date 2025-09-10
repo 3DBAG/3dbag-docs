@@ -18,4 +18,4 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-bag3d-specs = { git = "https://github.com/3DBAG/3dbag-specs.git", tag = "2025.07.22" }
+bag3d-specs = { git = "https://github.com/3DBAG/3dbag-specs.git", tag = "2025.09.03" }
