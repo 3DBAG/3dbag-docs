@@ -2,7 +2,7 @@
 
 ## Data and Documentation
 
- <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://3dbag.nl">3DBAG</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3d.bk.tudelft.nl/">3D geoinformation research group</a> and <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3dgi.xyz/">3DGI</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p> 
+ <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://3dbag.nl">3DBAG</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3d.bk.tudelft.nl/">3D geoinformation research group</a> and <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://3dgi.xyz/">3DGI</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
 
 The 3DBAG is open data. This includes all downloadable data files and data distributed through web services. You are free to copy, distribute, and adapt the 3DBAG data, as long as you,
 
@@ -14,7 +14,7 @@ The 3DBAG is open data. This includes all downloadable data files and data distr
 
 ### How to credit the 3DBAG data
 
-We require that you use the credit “© 3DBAG by tudelft3d and 3DGI”. 
+We require that you use the credit “© 3DBAG by tudelft3d and 3DGI”.
 
 In digital media you must also provide a link to [this copyright page](https://docs.3dbag.nl/en/copyright). In printed media, or where links are not possible, its best if you expand the credit to "3DBAG by 3D geoinformation research group (TU Delft) and 3DGI" and direct the readers to "3dbag.nl".
 
@@ -27,16 +27,14 @@ If you integrate the 3DBAG data in a browsable electronic map, the credit should
 Refer to the the article [Automated 3D Reconstruction of LoD2 and LoD1 Models for All 10 Million Buildings of the Netherlands](https://doi.org/10.14358/PERS.21-00032R2).
 
 ```
-@misc{peters2022,
-      title={Automated 3D reconstruction of LoD2 and LoD1 models for all 10 million buildings of the Netherlands}, 
+@article{Peters22,
+      title={Automated {3D} reconstruction of {LoD2} and {LoD1} models for all 10 million buildings of the {Netherlands}},
       author = "Ravi Peters and Bal{\'a}zs Dukai and Stelios Vitalis and {van Liempt}, Jordi and Jantien Stoter",
       year = "2022",
       doi = "10.14358/PERS.21-00032R2",
-      language = "English",
       volume = "88",
       pages = "165--170",
       journal = "Photogrammetric Engineering and Remote Sensing",
-      issn = "0099-1112",
       publisher = "American Society for Photogrammetry and Remote Sensing",
       number = "3",
 }
