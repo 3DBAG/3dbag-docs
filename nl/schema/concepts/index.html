@@ -1129,27 +1129,27 @@
 <p>In 2D GIS kan de geometrie van objecten worden gerepresenteerd door <em>punten</em>, <em>lijnen</em>, <em>polygonen</em> en variaties hierop. Er zijn standaarden die regels voorschrijven voor deze primitieven, zodat data probleemloos uitgewisseld kan worden (bijvoorbeeld <a href="https://www.ogc.org/standards/sfa">Simple Feature Access</a>).</p>
 <p>Voor 3D GIS moeten deze geometrische primitieven en de bijbehorende regels uitgebreid worden naar de derde dimensie. De onderstaande figuur geeft een overzicht van de veelgebruikte primitieven in 3D GIS.</p>
 <figure>
-  <img src="https://val3dity.readthedocs.io/2.5.1/_images/geomprimitives.svg" />
+  <img src="https://val3dity.readthedocs.io/2.6.0/_images/geomprimitives.svg" />
   <figcaption>3D primitieven waar val3dity mee omgaat. Zie: <b>Val3dity: validation of 3D GIS primitives according to the international standards.</b> Hugo Ledoux. Open Geospatial Data, Software and Standards 3 (1), 2018, pp. 1. <a href="http://dx.doi.org/10.1186/s40965-018-0043-x">DOI</a></figcaption>
 </figure>
 
 <!-- I am unsure if there is a proper Dutch translation for Solid -->
 
-<p>Voor de 3DBAG is de meest relevante primitief de <a href="https://val3dity.readthedocs.io/2.5.1/definitions.html#solid">Solid</a>, aangezien we gebouwmodellen als zodanig beschouwen. Dit onderscheid is belangrijk omdat er andere (strictere) regels voor Solids gelden, ten opzichte van andere 3D primitieven.</p>
+<p>Voor de 3DBAG is de meest relevante primitief de <a href="https://val3dity.readthedocs.io/2.6.0/definitions/#solid">Solid</a>, aangezien we gebouwmodellen als zodanig beschouwen. Dit onderscheid is belangrijk omdat er andere (strictere) regels voor Solids gelden, ten opzichte van andere 3D primitieven.</p>
 <div class="admonition note">
 <p class="admonition-title">3D primitieven en dataformaten</p>
 <p>Niet ieder dataformaat ondersteunt de bovengenoemde 3D primitieven. Dat is eigenlijk zo voor al onze exportformaten, behalve CityJSON. Daarom gebruiken we in deze andere formaten de geometrietypes die het meest gelijkwaardig zijn aan Solids. De PostgreSQL backup is hierbij een bijzonder geval, omdat PostGIS technisch gezien Solids kan opslaan, maar alleen met de <a href="http://www.sfcgal.org/">SFCGAL-extensie</a>. Om het inladen van de PostgreSQL backup zo makkelijk mogelijk te maken, slaan we de 3D geometrieën op als <code>MultiPolygonZ</code>.</p>
 </div>
 <h2 id="valide-3d-geometrieen">Valide 3D geometrieën<a class="headerlink" href="#valide-3d-geometrieen" title="Permanent link">&para;</a></h2>
-<p>De validiteit van geometrieën is belangrijk voor het gebruik van de data in toepassingen. Er zijn standaarden die regels definiëren voor valide 3D objecten. <a href="https://val3dity.readthedocs.io/en/latest/">val3dity</a> is een software die 3D primitieven valideert aan de hand van de international standaard ISO19107.</p>
+<p>De validiteit van geometrieën is belangrijk voor het gebruik van de data in toepassingen. Er zijn standaarden die regels definiëren voor valide 3D objecten. <a href="https://val3dity.readthedocs.io/">val3dity</a> is een software die 3D primitieven valideert aan de hand van de international standaard ISO19107.</p>
 <p>We hebben val3dity in ons proces geïntegreerd, waarmee we ieder 3D model valideren na reconstructie. De gebouwmodellen worden echter individueel gevalideerd tijdens het reconstructieproces, waardoor we geen fouten kunnen detecteren in de interactie tussen verschillende modellen (foutcodes boven de 500).</p>
 <div class="admonition nb">
 <p class="admonition-title">b3_val3dity_lod12", "b3_val3dity_lod13", "b3_val3dity_lod22</p>
 <p>De attributen die beginnen met <a href="../attributes/#b3_val3dity_lod12"><code>b3_val3dity_</code></a> geven de val3dity foutcodes van een model aan als die er zijn.</p>
 </div>
 <figure>
-  <img src="https://val3dity.readthedocs.io/2.5.1/_images/errorcodes.png" />
-  <figcaption>val3dity foutcodes. Zie <a href="https://val3dity.readthedocs.io/2.5.1/errors.html/">de volledige omschrijving van iedere code</a> in de documentatie van val3dity.</figcaption>
+  <img src="https://val3dity.readthedocs.io/2.6.0/_images/errorcodes.png" />
+  <figcaption>val3dity foutcodes. Zie <a href="https://val3dity.readthedocs.io/2.6.0/errors/">de volledige omschrijving van iedere code</a> in de documentatie van val3dity.</figcaption>
 </figure>
 
 
