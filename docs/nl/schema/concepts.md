@@ -28,20 +28,20 @@ In 2D GIS kan de geometrie van objecten worden gerepresenteerd door *punten*, *l
 Voor 3D GIS moeten deze geometrische primitieven en de bijbehorende regels uitgebreid worden naar de derde dimensie. De onderstaande figuur geeft een overzicht van de veelgebruikte primitieven in 3D GIS.
 
 <figure>
-  <img src="https://val3dity.readthedocs.io/2.5.1/_images/geomprimitives.svg" />
+  <img src="https://val3dity.readthedocs.io/2.6.0/_images/geomprimitives.svg" />
   <figcaption>3D primitieven waar val3dity mee omgaat. Zie: <b>Val3dity: validation of 3D GIS primitives according to the international standards.</b> Hugo Ledoux. Open Geospatial Data, Software and Standards 3 (1), 2018, pp. 1. <a href="http://dx.doi.org/10.1186/s40965-018-0043-x">DOI</a></figcaption>
 </figure>
 
 <!-- I am unsure if there is a proper Dutch translation for Solid -->
 
-Voor de 3DBAG is de meest relevante primitief de [Solid](https://val3dity.readthedocs.io/2.5.1/definitions.html#solid), aangezien we gebouwmodellen als zodanig beschouwen. Dit onderscheid is belangrijk omdat er andere (strictere) regels voor Solids gelden, ten opzichte van andere 3D primitieven.
+Voor de 3DBAG is de meest relevante primitief de [Solid](https://val3dity.readthedocs.io/2.6.0/definitions/#solid), aangezien we gebouwmodellen als zodanig beschouwen. Dit onderscheid is belangrijk omdat er andere (strictere) regels voor Solids gelden, ten opzichte van andere 3D primitieven.
 
 !!! note "3D primitieven en dataformaten"
     Niet ieder dataformaat ondersteunt de bovengenoemde 3D primitieven. Dat is eigenlijk zo voor al onze exportformaten, behalve CityJSON. Daarom gebruiken we in deze andere formaten de geometrietypes die het meest gelijkwaardig zijn aan Solids. De PostgreSQL backup is hierbij een bijzonder geval, omdat PostGIS technisch gezien Solids kan opslaan, maar alleen met de [SFCGAL-extensie](http://www.sfcgal.org/). Om het inladen van de PostgreSQL backup zo makkelijk mogelijk te maken, slaan we de 3D geometrieën op als `MultiPolygonZ`.
 
 ## Valide 3D geometrieën
 
-De validiteit van geometrieën is belangrijk voor het gebruik van de data in toepassingen. Er zijn standaarden die regels definiëren voor valide 3D objecten. [val3dity](https://val3dity.readthedocs.io/en/latest/) is een software die 3D primitieven valideert aan de hand van de international standaard ISO19107.
+De validiteit van geometrieën is belangrijk voor het gebruik van de data in toepassingen. Er zijn standaarden die regels definiëren voor valide 3D objecten. [val3dity](https://val3dity.readthedocs.io/) is een software die 3D primitieven valideert aan de hand van de international standaard ISO19107.
 
 We hebben val3dity in ons proces geïntegreerd, waarmee we ieder 3D model valideren na reconstructie. De gebouwmodellen worden echter individueel gevalideerd tijdens het reconstructieproces, waardoor we geen fouten kunnen detecteren in de interactie tussen verschillende modellen (foutcodes boven de 500).
 
@@ -49,6 +49,6 @@ We hebben val3dity in ons proces geïntegreerd, waarmee we ieder 3D model valide
     De attributen die beginnen met [`b3_val3dity_`](attributes.md#b3_val3dity_lod12) geven de val3dity foutcodes van een model aan als die er zijn.
 
 <figure>
-  <img src="https://val3dity.readthedocs.io/2.5.1/_images/errorcodes.png" />
-  <figcaption>val3dity foutcodes. Zie <a href="https://val3dity.readthedocs.io/2.5.1/errors.html/">de volledige omschrijving van iedere code</a> in de documentatie van val3dity.</figcaption>
+  <img src="https://val3dity.readthedocs.io/2.6.0/_images/errorcodes.png" />
+  <figcaption>val3dity foutcodes. Zie <a href="https://val3dity.readthedocs.io/2.6.0/errors/">de volledige omschrijving van iedere code</a> in de documentatie van val3dity.</figcaption>
 </figure>
