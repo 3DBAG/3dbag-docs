@@ -44,4 +44,4 @@ Refer to the the article [Automated 3D Reconstruction of LoD2 and LoD1 Models fo
 
 The software and components that we created for making and serving the 3DBAG are licensed independently of the 3DBAG data and documentation.
 
-Our viewer relies on [3DTilesRendererJS](https://github.com/NASA-AMMOS/3DTilesRendererJS) ([license](https://github.com/NASA-AMMOS/3DTilesRendererJS/blob/master/LICENSE)) by NASA AMMOS and [pg2b3dm](https://github.com/Geodan/pg2b3dm/) ([license](https://github.com/Geodan/pg2b3dm/blob/master/LICENSE)) by Geodan.
+Our viewer relies on [3DTilesRendererJS](https://github.com/NASA-AMMOS/3DTilesRendererJS) ([license](https://github.com/NASA-AMMOS/3DTilesRendererJS/blob/master/LICENSE)) by Garret Johnson and [tyler](https://github.com/3DGI/tyler/) ([license](https://github.com/3DGI/tyler/blob/master/LICENSE)) by 3DGI.

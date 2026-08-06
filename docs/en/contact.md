@@ -15,7 +15,7 @@ If you want to report issues with specific models, you can do so by clicking on 
 
 At the [GitHub repository](https://github.com/tudelft3d/3dbag-viewer/) of the viewer, bugs specifically in the viewer can be reported.
 
-Special thanks to NASA AMMOS for [3DTilesRendererJS](https://github.com/NASA-AMMOS/3DTilesRendererJS), which is used for visualising the buildings, and to Geodan for [pg2b3dm](https://github.com/Geodan/pg2b3dm/), used to export our data to 3D Tiles.
+Special thanks to Garret Johnson for [3DTilesRendererJS](https://github.com/NASA-AMMOS/3DTilesRendererJS), which is used for visualising the buildings, and to 3DGI for [tyler](https://github.com/3DGI/tyler/), used to export our data to 3D Tiles and other formats.
 
 ## Mail
 
